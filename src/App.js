@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+import { Button } from 'reactstrap';
+import About from "./About/about.jsx";
 
 function App() {
   return (

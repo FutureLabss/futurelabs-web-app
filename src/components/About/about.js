@@ -17,7 +17,7 @@ return (
       <div>
         <div className="mobile-yes my-auto">
           <h6 className="text-white yes">
-            &#x2970;
+            _-_
           </h6>
         </div>
 
@@ -200,7 +200,7 @@ return (
 
   </div>
 
-  <img className="img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+  {/* <img className="img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" /> */}
 
     
 </div>

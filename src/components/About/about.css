@@ -8,7 +8,7 @@ body{
 .horizontal {
     height: 23px;
     width: 2px;
-    background-color: rgb(197, 196, 194);
+    background-color: rgb(139, 139, 138);
 }
 
 .section1 {
@@ -347,7 +347,7 @@ color: #212121;
     .punchbox4 {
         /* background-color: red; */
         position: absolute;
-        top: 368%;
+        top: 385%;
         left: 20%;
         transform: translate(-15%, -50%);
         /* text-align: center; */

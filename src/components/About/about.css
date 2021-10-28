@@ -16,6 +16,7 @@ body{
     height: 100vh;
     background-position: center;
     object-fit: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -24,6 +25,7 @@ body{
     height: 100vh;
     background-position: center;
     object-fit: cover;
+    background-repeat: no-repeat;
     /* width: 100vw; */
     /* background-repeat: no-repeat; */
 
@@ -66,6 +68,7 @@ body{
     background-size: cover;
     background-position: center;
     object-fit: cover;
+    background-repeat: no-repeat;
 }
 
 .section2 {
@@ -354,7 +357,7 @@ color: #212121;
         height: 30px;
         position: absolute;
         left: 86%;
-        top: 84%;
+        top: 89%;
     }
 
     .no-break-mobile {

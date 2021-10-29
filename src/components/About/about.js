@@ -93,7 +93,7 @@ return (
           Blackberry...” 
         </h3>
         <br />
-        <h5>WE ARE FUTURISTS!</h5>
+        <h5 className="fonty">WE ARE FUTURISTS!</h5>
       </div>
       
     </div>
@@ -117,7 +117,9 @@ return (
             Blackberry...” 
           </h3>
           {/* <br /> */}
-        <h5>WE ARE FUTURISTS!</h5>
+        <h5 className="fonty">WE ARE FUTURISTS!</h5>
+        <img className="img-fluid mutty" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+        
       </div>
       </div>
       
@@ -149,7 +151,9 @@ return (
 
           </h3>
         {/* <br /> */}
-        <h5>THE BEST FUTURE IMAGINABLE!</h5>
+        <h5 className="fonty">THE BEST FUTURE IMAGINABLE!</h5>
+        <img className="img-fluid mutty" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+        
       </div>
       </div>
       
@@ -170,7 +174,7 @@ return (
 
         </h3>
         <br />
-        <h5>THE BEST FUTURE IMAGINABLE!</h5>
+        <h5 className="fonty">THE BEST FUTURE IMAGINABLE!</h5>
       </div>
       
     </div>
@@ -192,17 +196,140 @@ return (
 
   <div className="punchbox4 text-white">
 
-    <h5 className="sub-line">
+    <h5 className="sub-line subline2">
       The future was created by <br className="no-break-mobile" />
       men who dared to dream it <br className="no-break-mobile" />
       better than they met it.
     </h5>
+    <br />
+    <br />
+    
+    {/* <br /> */}
+    <img className="img-fluid mutty" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+        
 
   </div>
 
   {/* <img className="img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" /> */}
 
     
+</div>
+
+
+<div className="container-fluid">
+  <div className="row pt-3">
+    <div className="col-12 text-center">
+      <h5><strong className="contact">Contact us</strong></h5>
+    </div>
+  </div>
+  <div className="row pt-3 px-2">
+    <div className="col-sm-6">
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control rounded" placeholder="Your name" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <div class="input-group-append">
+          {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control rounded" placeholder="Your phone number" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <div class="input-group-append">
+          {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control rounded" placeholder="Your company" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <div class="input-group-append">
+          {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control rounded" placeholder="Your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <div class="input-group-append">
+          {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div className="col-sm-6">
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control text-box rounded" placeholder="Message" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <div class="input-group-append">
+          {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
+        </div>
+      </div>
+
+      <div className="d-flex justify-content-center mt-3">
+        <button class="mx-auto px-1 submit rounded p-2"><strong>Submit</strong></button>
+      </div>
+
+      
+
+      
+    </div>
+
+
+  </div>
+</div>
+
+<div className="container">
+  <div className="row mt-5 d-flex justify-content-around last">
+    <div className="col-sm-3">
+      <h6>
+        <strong>About Future Labs</strong> 
+      </h6>
+
+      <p>
+        We are a dedicated team of creative and innovative content and corporate strategists, Designers, Developers and Leaders;we will help
+        you build your project ideas into the reality you
+        hope to create.
+      </p>
+    </div>
+
+    <div className="col-sm-3">
+      <h6>
+        <strong>Contact Us </strong>
+      </h6>
+
+      <p>
+        +160726007432 <br />
+        hello@futurelabs.agency
+      </p>
+    </div>
+
+    <div className="col-sm-3">
+      <h6>
+        <strong>Let's Get in Touch</strong>
+        <p>
+          Sign up to recieve our newsletter about industry trends
+        </p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control rounded" placeholder="Enter your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary text-white email rounded" type="button">Send</button>
+          </div>
+        </div>
+
+      </h6>
+
+    </div>
+
+
+  </div>
+</div>
+
+<div className="container-fluid">
+  <div className="row">
+    <div className="col-12 foot">
+
+    </div>
+  </div>
 </div>
 
 

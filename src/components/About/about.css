@@ -17,6 +17,7 @@ body{
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -26,6 +27,7 @@ body{
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     /* width: 100vw; */
     /* background-repeat: no-repeat; */
 
@@ -73,6 +75,7 @@ body{
 
 .section2 {
     height: 100vh;
+    /* background-color: blue; */
 }
 
 .section4 {
@@ -160,11 +163,66 @@ body{
     top: 70%;
 }
 
-.section2-mute {
+.text-box {
+    height: 147px;
+}
 
+.form-control {
+    border: 2px solid;
+    border-color: rgb(252, 202, 166);
+}
+
+.foot {
+    background-color: #FF9000;
+    height: 42px;
+}
+
+.contact {
+    font-size: x-large;
+}
+
+.submit {
+    width: 70%;
+    border: 3px solid;
+    border-color: #FF9000;
+    background-color: white;
+}
+
+.last {
+    /* font-size: small; */
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.fonty {
+    font-family: Raleway !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 28px !important;
+    font-variant: small-caps !important;
+
+    color: #212121 !important;
+}
+
+.email {
+    background-color: #FF9000;
+    border: none;
+
+}
+
+.section2-mute {
+/* 87top */
     height: 30px;
-    margin-top: 87%;
+    margin-top: 112%;
     margin-left: 86%;
+}
+
+.mutty {
+    height: 30px;
 }
 
 /* .mute-position {
@@ -289,6 +347,10 @@ color: #212121;
 
     }
 
+    .subline2 {
+        line-height: 39px;
+    }
+
     .section3-mobile-yes {
         /* background-color: red; */
         display: block;
@@ -347,7 +409,7 @@ color: #212121;
     .punchbox4 {
         /* background-color: red; */
         position: absolute;
-        top: 385%;
+        top: 378%;
         left: 20%;
         transform: translate(-15%, -50%);
         /* text-align: center; */
@@ -461,6 +523,18 @@ color: #212121;
 
 
     
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 750px) {
+    .section2-mute {
+        display: none;
+
+    }
+
+    .mutty {
+        display: bloctio;
+    }
 }
 
 

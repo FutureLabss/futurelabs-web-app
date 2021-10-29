@@ -334,7 +334,7 @@ color: #212121;
         display: block;
         color: white;
         position: absolute;
-        bottom: -88%;
+        bottom: -100%;
         left: 7%;
         /* line-height: 3px; */
         font-size: 138px;
@@ -356,7 +356,7 @@ color: #212121;
         display: block;
         color: white;
         position: absolute;
-        bottom: -182%;
+        bottom: -200%;
         left: 7%;
         /* line-height: 3px; */
         font-size: 138px;

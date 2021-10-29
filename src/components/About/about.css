@@ -205,7 +205,7 @@ body{
     line-height: 28px !important;
     font-variant: small-caps !important;
 
-    color: #212121 !important;
+    /* color: #212121 !important; */
 }
 
 .email {

@@ -147,7 +147,7 @@ return (
             <br />
             model to deliver
             <br />
-            impactful business solutions
+            impactful business solutionsa
 
           </h3>
         {/* <br /> */}

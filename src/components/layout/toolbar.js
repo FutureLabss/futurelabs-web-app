@@ -1,6 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar'
 import { Nav } from 'react-bootstrap'
 import   { Offcanvas } from 'react-bootstrap'
+import { Link } from "react-router-dom"
 
 import './toolbar.js'
 
@@ -45,13 +46,12 @@ export default function ToolBar(props){
         <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
-        <Nav className="justify-content-end flex-grow-1 pe-3 ">
-          <Nav.Link href="#action1">SERVICES</Nav.Link>
-          <Nav.Link href="#action2">ABOUT</Nav.Link>
-          <Nav.Link href="#action2">BLOG</Nav.Link>
-          <Nav.Link href="#action1">SERVICES</Nav.Link>
-          <Nav.Link href="#action2">ABOUT</Nav.Link>
-          <Nav.Link href="#action2">BLOG</Nav.Link>
+        <Nav className="justify-content-end flex-grow-1 pe-3 noises">
+         <Link to="/services"> SERVICES</Link>
+         <Link to="/"> HOME</Link>
+         <Link to="/about"> ABOUT</Link>
+           <a href="https://futurelabs-agency.netlify.app/">bLOG</a>
+         
         </Nav>
       
       </Offcanvas.Body>

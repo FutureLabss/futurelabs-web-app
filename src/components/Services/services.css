@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway:wght@600;700&family=Roboto:wght@500;700&display=swap');
+
+
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.horizontal {
+    height: 23px;
+    width: 2px;
+    background-color: rgb(139, 139, 138);
+}
+
+.section1 {
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636105379/felix-mittermeier-nAjil1z3eLk-unsplash_2_uw9okh.png');
+    height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+
+.nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 34px;
+    padding-right: 34px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+    
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png');
+    height: 20px;
+    width: 140px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    width: 26px;
+    height: 2px;
+    background-color: rgb(247, 17, 17);
+    margin: 6px 0;
+}
+
+.no {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-yes {
+    display: none;
+}
+
+.box {
+    position: absolute;
+    top: 68px;
+    left: 263px;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+}
+
+
+.mute {
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    top: 70%;
+}
+
+.but{
+    position: relative;
+    width: 170px;
+height: 55px;
+left: 4.938rem;
+top: 31.25rem;
+background: rgba(0, 0, 0, 0.1);
+border: 3px solid #FF9000;
+box-sizing: border-box;
+border-radius: 8px;
+}
+
+.punchline {
+    position: relative;
+    width: 388px;
+height: 50px;
+left: 4.688rem;
+top: 29.438rem;
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 52px;
+line-height: 61px;
+/* identical to box height */
+color: #FFFFFF;
+
+}
+
+
+.section2{
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+padding: 0 !important;
+margin: 0;
+display: block;
+    background: url('https://res.cloudinary.com/dremo/image/upload/v1636105459/Zuga_Mockup_2_ggtcvf.png');
+}
+
+.word2{
+    position: relative;
+    width: 372px;
+    height: 122px;
+    left: 4.688rem;
+    top: 25rem;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 61px;
+    color: #FFFFFF;
+    }
+
+    .word3{
+        position: relative;
+        width: 372px;
+        height: 122px;
+        left: 4.688rem;
+        top: 21.875rem;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 52px;
+        line-height: 61px;
+        color: #FFFFFF;
+        }
+
+
+        .but2{
+            position: relative;
+            width: 170px;
+            height: 55px;
+            left: 4.688rem;
+            top: 18.75rem;
+            background: rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF9000;
+            box-sizing: border-box;
+            border-radius: 8px;
+            }
+            
+
+            .section3{
+                background-repeat: no-repeat;
+                height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+                padding: 0 !important;
+                margin: 0;
+                display: block;
+            background: url('https://res.cloudinary.com/dremo/image/upload/v1636105477/Web_Mockup_26_lly9h0.png');
+            }
+            
+            .word4{
+                position: relative;
+            width: 347px;
+            height: 61px;
+            left: 4.688rem;
+            top: 25rem;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 52px;
+            line-height: 61px;
+            /* identical to box height */
+            color: #FFFFFF;
+            }
+            
+            .but3{
+                position: relative;
+            width: 170px;
+            height: 55px;
+            left: 4.688rem;
+            top: 28.125rem;
+            background: rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF9000;
+            box-sizing: border-box;
+            border-radius: 8px;
+            }
+            
+            .section4{
+                height: 100vh;
+                background-position: center;
+                object-fit: cover;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 0 !important;
+                margin: 0;
+                display: block;
+            background: url('https://res.cloudinary.com/dremo/image/upload/v1636105484/flying_car_3_pdad4f.png');
+            }
+            
+            .word5{
+                position: relative;
+            width: 315px;
+            height: 61px;
+            left: 4.688rem;
+            top: 18.75rem;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 52px;
+            line-height: 61px;
+            /* identical to box height */
+            color: #FFFFFF;
+            }
+            
+            .but4{
+                position: relative;
+            width: 170px;
+            height: 55px;
+            left: 4.688rem;
+            top: 21.875rem;
+            background: rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF9000;
+            box-sizing: border-box;
+            border-radius: 8px;
+            }
+            
+            .section5{
+                height: 100vh;
+                background-position: center;
+                object-fit: cover;
+                background-repeat: no-repeat;
+                background-size: cover;
+            padding: 0 !important;
+            margin: 0;
+            display: block;
+                background: url('https://res.cloudinary.com/dremo/image/upload/v1636105374/1812217482_b8xrca.png'); 
+            }
+            
+            .word6{
+                position: relative;
+            width: 393px;
+            height: 61px;
+            left: 4.688rem;
+            top: 25rem;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 52px;
+            line-height: 61px;
+            /* identical to box height */
+            color: #FFFFFF;
+            }
+            
+            .but5{
+                position: relative;
+            width: 170px;
+            height: 55px;
+            left: 4.688rem;
+            top: 28.125rem;
+            background: rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF9000;
+            box-sizing: border-box;
+            border-radius: 8px;
+            }
+            
+            .section6{
+                height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+                padding: 0 !important;
+                margin: 0;
+                display: block;
+            background: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
+            }
+            
+            .word7{
+                position: relative;
+            width: 372px;
+            height: 122px;
+            left: 4.688rem;
+            top: 25rem;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 52px;
+            line-height: 61px;
+            color: #FFFFFF;
+            }
+            
+            .word8{
+                position: relative;
+            width: 372px;
+            height: 122px;
+            left: 4.688rem;
+            top: 21.875rem;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 52px;
+            line-height: 61px;
+            color: #FFFFFF;
+            }
+            
+            .but6{
+                position: relative;
+            width: 170px;
+            height: 55px;
+            left: 4.688rem;
+            top: 18.75rem;
+            background: rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF9000;
+            box-sizing: border-box;
+            border-radius: 8px;
+            }
+   

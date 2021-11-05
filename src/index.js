@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import About from './components/About/about';
+//import About from './components/About/about';
+import Services from './components/Services/services';
 // import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
-  <About />,
+  <Services />,
   document.getElementById('root')
 );
 

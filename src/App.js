@@ -2,6 +2,7 @@
 // import './App.css';
 import { Button } from 'reactstrap';
 import About from "./About/about.jsx";
+import Home from ".Home/home.jsx"
 
 function App() {
   return (

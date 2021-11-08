@@ -3,40 +3,7 @@ import './services.css'
 export default function services() {
     return (
         <div>
-          <div className="nav text-white py-2">
-    <div className="logo">
-      {/* Logo image is here */}
-    </div>
-    
-
-    <div className="sub-nav">
-      <div>
-        <div className="mobile-yes my-auto">
-          <h6 className="text-white yes">
-            _-_
-          </h6>
-        </div>
-
-        <div className="mobile-no my-auto">
-          <h6 className="text-white no">
-            All categories
-          </h6>
-        </div>
-
-      </div>
-
-      <div className="mx-3 mx-sm-4 my-auto horizontal rounded my-auto">
-        {/* Dividing hr */}
-      </div>
-
-      <div>
-        <div className="menu bg-white rounded"></div>
-        <div className="menu bg-white rounded"></div>
-        <div className="menu bg-white rounded"></div>
-      </div>
-    </div>
-
-  </div>
+         
 
   <div className="section1">
 

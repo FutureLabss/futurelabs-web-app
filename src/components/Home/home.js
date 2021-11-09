@@ -212,7 +212,7 @@ digital experiences.
           </div>
         </div>
         </div>  
-<div className="container-fluid">
+<div className="container">
   <div className="row pt-3">
     <div className="">
       <h5><strong className="contact container">Contact us</strong></h5>
@@ -222,7 +222,7 @@ digital experiences.
     <div className="col-sm-6">
 
       <div class="input-group mb-3 h-25">
-        <input type="text" class="form-control inputs rounded" placeholder="Your name" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <input type="text" class="form-control inputs  rounded" placeholder="Your name" aria-label="Recipient's username" aria-describedby="basic-addon2" />
         <div class="input-group-append">
           {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
         </div>
@@ -250,19 +250,16 @@ digital experiences.
       </div>
 
       
-    </div>
+    </div>  
 
     <div className="col-sm-6">
+    <div class=" message">
+  <textarea class="form-control inputss rounded " placeholder="Leave a comment here" id="floatingTextarea2" ></textarea>
+                                 
+</div>
+   
 
-    <div class="input-group mb-5 h-75">
-        <input type="text" class="form-control inputss rounded" placeholder="message" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-        <div class="input-group-append">
-          {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
-        </div>
-      </div>
-
-
-      <div className="d-flex justify-content-center ">
+      <div className="d-flex sends justify-content-center ">
         <button class="mx-auto px-1 submit rounded p-2"><strong>Submit</strong></button>
       </div>
 

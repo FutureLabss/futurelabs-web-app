@@ -658,13 +658,16 @@ line-height: 60px;
 font-style: normal;
 font-weight: bold;
 font-size: 19px;  
-line-height: 35px;
+line-height: 5px;
 width: 642px;
 height: 56px;
 color: rgba(33, 33, 33, 0.22);
 border: 2px solid rgba(255, 144, 0, 0.47);
 box-sizing: border-box;
 
+}
+.sends{
+    margin-top: 75px;
 }
 .inputss{
    
@@ -676,9 +679,9 @@ font-family: Raleway;
 font-style: normal;
 font-weight: bold;
 font-size: 20px;
-
-
+height: 320px;
 color: rgba(33, 33, 33, 0.22);
+
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 750px) {
@@ -689,6 +692,29 @@ color: rgba(33, 33, 33, 0.22);
 
     .mutty {
         display: bloctio;
+    }
+}
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sends{
+        margin-top: 3rem;  
+        margin-bottom: 20px;
+        height: 60px;
+        width: 100%;
+        font-size: 30px;
+    }
+    .inputss{
+        margin-top: 40px;
+    }
+    .sec{
+        margin-top: -520px;
     }
 }
 

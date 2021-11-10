@@ -2,19 +2,13 @@ import "./home.css"
 import ToolBar from "../layout/toolbar"
 
 
-
-
-
-
-
-
 export default function Home() {
 return (
       
 <div>
 
-  <ToolBar />
-
+  <ToolBar />                                           
+          
 <div className="section1">
 
   <div className="punchbox text-white">
@@ -159,7 +153,7 @@ digital experiences.
 <div className="section45">
 
  
- 
+   
 
     
 </div>

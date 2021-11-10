@@ -46,10 +46,11 @@ export default function ToolBar(props){
         <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
-        <Nav className="justify-content-end flex-grow-1 pe-3 noises">
+        <Nav className="justify-content-end flex-grow-1 pe-3 noise">
          <Link to="/services"> SERVICES</Link>
          <Link to="/"> HOME</Link>
          <Link to="/about"> ABOUT</Link>
+         <Link to="/strategy"> STRATEGY</Link>
            <a href="https://futurelabs-agency.netlify.app/">bLOG</a>
          
         </Nav>

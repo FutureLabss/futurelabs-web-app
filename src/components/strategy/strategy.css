@@ -6,52 +6,40 @@ body{
     overflow-x: hidden;
 }
 
-.horizontal {
-    height: 23px;
-    width: 2px;
-    background-color: rgb(139, 139, 138);
-}
-
-
-.nav {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('');
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 34px;
-    padding-right: 34px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    
-    
-}
-
-
-
-.sub-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png');
-    height: 20px;
-    width: 140px;
-    background-size: cover;
+.section12 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636542269/felix-mittermeier-nAjil1z3eLk-unsplash_1_yi8ivo.png');
+    height: 100vh;
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+
 }
-.noise{
-    font-family: Roboto;
+
+.punchliness {
+    font-family: Raleway;
 font-style: normal;
 font-weight: bold;
-font-size: 20px;
+font-size: 48px;
+line-height: 56px;
+padding-top:  25rem;
+color: #FFFFFF;
+
+}
+.sub-lines {
+   
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
 line-height: 28px;
 
 color: #FFFFFF;
-text-decoration: none;
 
+} 
+.mute {
+    height: 60px;
+    position: absolute;
+    left: 90%;
+    top: 85%;
 }

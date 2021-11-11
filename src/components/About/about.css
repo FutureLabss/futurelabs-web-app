@@ -160,7 +160,7 @@ body{
     height: 30px;
     position: absolute;
     left: 90%;
-    top: 70%;
+    top: 60% !important;
 }
 
 .text-box {

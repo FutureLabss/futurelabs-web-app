@@ -1,27 +1,27 @@
-import "./strategy.css"
+import "./modelling.css"
 import ToolBar from "../layout/toolbar"
 
-export default function strategy () {
+export default function modelling () {
     return (
        <div>
            <ToolBar />
            <section>
-           <div className="picture">
+           <div className="pictur">
            <div className="punchbox2 text-white container">
 
-<h4 className="punchlines veers">
-  Strategy
+<h4 className="punchlines bottom-left veers">
+3D Modeling
+
 </h4>
 
-<h5 className="sub-lines">
-We develop corporate & brand strategies that <br/>
-sets your apart.   
+<h5 className="sub-lines ">
+What if a 12 year old genius reimagined the future of <br/> urban transportation, flying cars and all?
 </h5>
 
 <br />
   
 
-<img className="img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+
 </div>
 
 
@@ -36,45 +36,45 @@ sets your apart.
 </div>
            </section>
            <section>
-               <div className="pictures">
+               <div className="picturet">
                <div className="punchbox2 text-white container">
 
 <h4 className="punchlines2 veer">
-Rapid Results Through Teamwork
+Precision
 </h4>
 
 <h5 className="sub-lines2">
-Harnessing the power of a team of talented<br/> innovators to build usable products and services
+Watches are meant to tell more than time,  with <br/>future time pieces, we redefined luxury and<br/>  precision
 </h5>
 
 <br />
   
-<img className=" stoped21" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+
 
 </div>
                </div>
            </section>
            <section>
-               <div className="pictures1">
+               <div className="pictures5">
                <div className="punchbox2 text-white container " >
 
 <h4 className="punchlines veer">
-Ideas Aren’t Enough
+Imagination
 </h4>
 
 <h5 className="sub-lines">
-This generation is only fascinated by results, let’s<br/> help you go from ideas to MVPs rapidly 
+It’s easier to build if we help you picture what your<br/> product will look ike before you even get started
 </h5>
 
 <br />
   
 
-<img className="img-fluid stoped2" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+
 </div>
                </div>
            </section>
            <section>
-           <div className="picturegroup">
+           <div className="picture44">
            <div className="punchbox2 text-white container">
 
 <h4 className="punchlines veers">
@@ -95,9 +95,6 @@ sets your apart.
 
       
     
-    
-
-
 
 
 

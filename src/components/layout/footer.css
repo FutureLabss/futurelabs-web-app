@@ -38,3 +38,11 @@ line-height: 21px;
 
 color: #000000
 }
+.ph-yes{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .ph-no{
+        display: block;
+    }
+}

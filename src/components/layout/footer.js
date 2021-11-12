@@ -4,7 +4,7 @@ import './footer.css'
 export default function Footer(props) {
     return (
         <div>
-            <div className="container">
+            <div className="container mt-5">
   <div className="row mt-5 d-flex justify-content-around last">
     
 
@@ -17,7 +17,7 @@ export default function Footer(props) {
         +160726007432 <br />
         hello@futurelabs.agency
       </p>
-      <div className="row">
+      <div className="row ph-no">
         <div className="col-sm-3">
 <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png" alt="" />
         </div>
@@ -25,6 +25,17 @@ export default function Footer(props) {
         <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png" alt="" />
           </div>
           <div className="col-sm-3">
+          <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png" alt="" />
+          </div>
+      </div>
+      <div className="row ph-yes">
+        <div className="col-md-4">
+<img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png" alt="" />
+        </div>
+        <div className="col-md-4">
+        <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png" alt="" />
+          </div>
+          <div className="col-md-4">
           <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png" alt="" />
           </div>
       </div>

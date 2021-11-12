@@ -218,7 +218,7 @@ color: #000000;
 
 }
 .piks{
-    
+    margin-top: 43%;
 }
 .last {
     /* font-size: small; */
@@ -683,7 +683,7 @@ box-sizing: border-box;
 
 }
 .sends{
-    margin-top: 75px;
+    margin-top: 14%;
 }
 .inputss{
    
@@ -695,7 +695,7 @@ font-family: Raleway;
 font-style: normal;
 font-weight: bold;
 font-size: 20px;
-height: 320px;
+height: 290px;
 color: rgba(33, 33, 33, 0.22);
 
 }

@@ -72,6 +72,21 @@ color: #FFFFFF;
 .veers{
     padding-top: 35%;
 }
+.stoped21{
+    position: absolute;
+    left: 90%;
+    margin-top: -25px;
+   }
+   .stoped2{
+    position: absolute;
+    left: 90%;
+    margin-top: -25px;
+   }
+   .stoped{
+    position: absolute;
+    left: 90%;
+    margin-top: -25px;
+   }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 767px) {
@@ -121,12 +136,8 @@ color: #FFFFFF;
 
     }
 
-    .section2-mute {
-        height: 30px;
-        margin-top: 190%;
-        margin-left: 86%;
-    }
 
+   
     .section2-box1-inner {
         margin-top: 30%;
         margin-left: 10%;
@@ -218,6 +229,30 @@ color: #FFFFFF;
         position: absolute;
         left: 86%;
         top: 89%;
+    }
+    .stoped21{
+        height: 30px;
+        position: absolute;
+        left: 86%;
+        top: 190%;
+    }
+    .stoped2{
+        height: 30px;
+        position: absolute;
+        left: 86%;
+        top: 290%;
+    }
+    .stoped{
+        height: 30px;
+        position: absolute;
+        left: 86%;
+        top: 389%;
+    }
+    .mute123 {
+        height: 30px;
+        position: absolute;
+        left: 86%;
+        top: 92%;
     }
 
     .no-break-mobile {

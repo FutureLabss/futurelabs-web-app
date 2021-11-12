@@ -21,7 +21,7 @@ sets your apart.
 <br />
   
 
-
+<img className="img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
 </div>
 
 
@@ -49,7 +49,7 @@ Harnessing the power of a team of talented<br/> innovators to build usable produ
 
 <br />
   
-
+<img className=" stoped21" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
 
 </div>
                </div>
@@ -69,7 +69,7 @@ This generation is only fascinated by results, let’s<br/> help you go from ide
 <br />
   
 
-
+<img className="img-fluid stoped2" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
 </div>
                </div>
            </section>
@@ -88,7 +88,7 @@ sets your apart.
 
 <br />
   
-
+<img className="img-fluid stoped" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
 
 </div>
 

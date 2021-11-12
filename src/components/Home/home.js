@@ -39,9 +39,9 @@ digital experiences.
 <div className="container-fluid section2">
   <div className="row">
 
-    <div className="col-sm-6 section2-box1">
-    <img className="" src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1635262165/Futurelabs-logo_2_fsvqs9.png" alt="" />
-      <div className="section2-box1-inner">
+    <div className="col-sm-6 section2-box1">    
+    
+      <div className="section2-box1-inner">            
       <h5 className="fontys mb-4"> We are  Future Labs!</h5>
         <h3 className="textss">
         Futurelabs is a digital<br/> agency with global <br/>footprints.
@@ -53,9 +53,10 @@ digital experiences.
         
     </div>
 
-    <div className="col-sm-6 p-0 section2-box2">
-      <div className="image2 bg-danger">
-        <img className="img-fluid section2-mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+    <div className="col-sm-6 p-0 section2-box2 text-center">
+      <div className="image2 text-center ">
+      <img className="piks" src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1635262165/Futurelabs-logo_2_fsvqs9.png" alt="" />
+       
         
         <div className="section2-mobile-yes">
           <h3 className="section2-mobile-inner"> 
@@ -140,7 +141,7 @@ digital experiences.
     <br />
     
     {/* <br /> */}
-    <img className="img-fluid mutty" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+    <img className="img-fluid mute123" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
         
 
   </div>

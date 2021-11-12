@@ -216,21 +216,21 @@ digital experiences.
   <div className="row pt-3 px-2">
     <div className="col-sm-6">
 
-      <div class="input-group mb-3 h-25">
+      <div class="input-group mb-2  h-25">
         <input type="text" class="form-control inputs  rounded" placeholder="Your name" aria-label="Recipient's username" aria-describedby="basic-addon2" />
         <div class="input-group-append">
           {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
         </div>
       </div>
 
-      <div class="input-group mb-3 h-25">
+      <div class="input-group mb-3  h-25">
         <input type="text" class="form-control inputs rounded" placeholder="Your phone number" aria-label="Recipient's username" aria-describedby="basic-addon2" />
         <div class="input-group-append">
           {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
         </div>
       </div>
 
-      <div class="input-group mb-3 h-25">
+      <div class="input-group mb-4 h-25">
         <input type="text" class="form-control inputs rounded" placeholder="Your company" aria-label="Recipient's username" aria-describedby="basic-addon2" />
         <div class="input-group-append">
           {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
@@ -254,8 +254,8 @@ digital experiences.
 </div>
    
 
-      <div className="d-flex sends justify-content-center ">
-        <button class="mx-auto px-1 submit rounded p-2"><strong>Submit</strong></button>
+      <div className="d-flex sends ">
+        <button class="mx-auto  submit rounded "><strong>Submit</strong></button>
       </div>
 
       

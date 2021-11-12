@@ -6,33 +6,51 @@ export default function Footer(props) {
         <div>
             <div className="container">
   <div className="row mt-5 d-flex justify-content-around last">
-    <div className="col-sm-3">
-      <h6>
-        <strong>About Future Labs</strong> 
-      </h6>
-
-      <p>
-        We are a dedicated team of creative and innovative content and corporate strategists, Designers, Developers and Leaders;we will help
-        you build your project ideas into the reality you
-        hope to create.
-      </p>
-    </div>
+    
 
     <div className="col-sm-3">
       <h6>
-        <strong>Contact Us </strong>
+      <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt="" />
       </h6>
 
-      <p>
+      <p className="ca">
         +160726007432 <br />
         hello@futurelabs.agency
       </p>
+      <div className="row">
+        <div className="col-sm-3">
+<img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png" alt="" />
+        </div>
+        <div className="col-sm-3">
+        <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png" alt="" />
+          </div>
+          <div className="col-sm-3">
+          <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png" alt="" />
+          </div>
+      </div>
     </div>
-
     <div className="col-sm-3">
       <h6>
-        <strong>Let's Get in Touch</strong>
-        <p>
+        <strong className="carl">Company</strong> 
+      </h6>
+
+      <p className="fot container">
+       HOME
+      </p>
+      <p className="fot container">
+       ABOUT
+      </p>
+      <p className="fot container">
+       SERVICES
+      </p>
+      <p className="fot container">
+       BLOG
+      </p>
+    </div>
+    <div className="col-sm-3">
+      <h6>
+        <strong className="carl">Let's Get in Touch</strong>
+        <p className="ca">
           Sign up to recieve our newsletter about industry trends
         </p>
         <div class="input-group mb-3">

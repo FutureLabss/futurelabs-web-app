@@ -52,6 +52,7 @@ export default function ToolBar(props){
          <Link to="/about"> ABOUT</Link>
          <Link to="/strategy"> STRATEGY</Link>
          <Link to="/modelling"> 3D-MODELLING</Link>
+         <Link to="/products">PRODUCTS</Link>
            <a href="https://futurelabs-agency.netlify.app/">bLOG</a>
          
         </Nav>

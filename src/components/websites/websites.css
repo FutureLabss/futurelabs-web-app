@@ -1,15 +1,15 @@
 
-.pictur7{
-    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1636722653/flying_car_2_u2erbx.png");
+.pictur{
+    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1637065176/Web_Mockup_25_ybfjys.png");
   width: 100%;
-    height: 120vh;
+    height: 100vh;
     
-              
+     
   }
-  .picturet7{
-    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1636723495/watch_xqhvph.png");
+  .picturet{
+    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1637078439/Web_Mockup_14_i7dzke.png");
   width: 100%;
-    height: 120vh;
+  height: 848px;
     
      
   }
@@ -165,7 +165,14 @@ color: #FFFFFF;
         /* background-color: blue; */
     }
 
-
+    .section45{
+        background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635338077/Web_Mockup_26_jwclbt.png');
+        height: 100vh;
+        
+        background-repeat: no-repeat;
+        background-size: 100%;
+       
+    }
     .mobile-no {
         display: none;
     }

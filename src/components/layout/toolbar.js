@@ -33,20 +33,20 @@ export default function ToolBar(props){
         {/* Dividing hr */}
       </div>
       <Navbar  bg="" expand={false}>
-  <div className="container-fluid ">
+  <div className="container-fluid text-decoration-none ">
   
 
-    <Navbar.Toggle aria-controls="offcanvasNavbar  " className="bg-white" /> 
+    <Navbar.Toggle aria-controls="offcanvasNavbar  " className="bg-white text-decoration-none" /> 
     <Navbar.Offcanvas
       id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel" className="bg-light"
+      aria-labelledby="offcanvasNavbarLabel" className="bg-light text-decoration-none"
       placement="end">
        <img  className="w-50 mt-5  container"src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt=""/> 
       <Offcanvas.Header closeButton>
         <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
-      </Offcanvas.Header>
+      </Offcanvas.Header> 
       <Offcanvas.Body>
-        <Nav className="justify-content-end flex-grow-1 pe-3 noise">
+        <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none">
          <Link to="/services"> SERVICES</Link>
          <Link to="/"> HOME</Link>
          <Link to="/about"> ABOUT</Link>
@@ -54,6 +54,8 @@ export default function ToolBar(props){
          <Link to="/modelling"> 3D-MODELLING</Link>
          <Link to="/products">PRODUCTS</Link>
            <a href="https://futurelabs-agency.netlify.app/">bLOG</a>
+         <Link to="/websites"> WEBSITES</Link>
+         
          
         </Nav>
       

@@ -6,7 +6,7 @@ export default function modelling () {
        <div>
            <ToolBar />
            <section>
-           <div className="pictur">
+           <div className="pictur7">
            <div className="punchbox2 text-white container">
 
 <h4 className="punchlines bottom-left veers">
@@ -23,20 +23,10 @@ What if a 12 year old genius reimagined the future of <br/> urban transportation
 
 
 </div>
-
-
-      
-    
-
-
-
-          
-
-
 </div>
            </section>
            <section>
-               <div className="picturet">
+               <div className="picturet7">
                <div className="punchbox2 text-white container">
 
 <h4 className="punchlines2 veer">

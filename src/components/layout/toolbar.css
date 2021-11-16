@@ -4,14 +4,17 @@
 
 body{
     overflow-x: hidden;
+    text-decoration: none;
 }
-
+      
 .horizontal {
     height: 23px;
     width: 2px;
     background-color: rgb(139, 139, 138);
 }
-
+div.container-fluid{
+    text-decoration: none;
+}
 
 .nav {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('');

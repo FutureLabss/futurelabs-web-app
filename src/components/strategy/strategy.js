@@ -6,9 +6,9 @@ export default function strategy () {
        <div>
            <ToolBar />
            <section>
-           <div className="picture">
+           <div className="pictures">
            <div className="punchbox2 text-white container">
-
+                        
 <h4 className="punchlines veers">
   Strategy
 </h4>
@@ -36,7 +36,7 @@ sets your apart.
 </div>
            </section>
            <section>
-               <div className="pictures">
+               <div className="picture">
                <div className="punchbox2 text-white container">
 
 <h4 className="punchlines2 veer">

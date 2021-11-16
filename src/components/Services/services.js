@@ -1,5 +1,6 @@
 import "./services.css"
 import ToolBar from "../layout/toolbar"
+import { Link } from "react-router-dom"
 
 export default function strategy () {
     return (
@@ -13,7 +14,7 @@ export default function strategy () {
   Strategy
 </h4>
 
-<button  className="but2 mb-5 mt-3">Learn more</button>
+<Link to="/strategy"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
   
 
 
@@ -42,7 +43,7 @@ Product
 Design
 </h5>
 
-<button  className="but2 mb-5 mt-3">Learn more</button>
+<Link to="/product-design"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
   
 
 
@@ -58,7 +59,7 @@ Design
 Websites
 </h4>
 
-<button  className="but2 mb-5 mt-3">Learn more</button>
+<Link to="/websites"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
   
 
 
@@ -74,7 +75,7 @@ Websites
 3D Modeling
 </h4>
 
-<button  className="but2 mb-5 mt-3">Learn more</button>
+<Link to="/modelling"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
   
 
 
@@ -90,7 +91,7 @@ Websites
 Digital Art
 </h4>
 
-<button  className="but2 mb-5 mt-3">Learn more</button>
+<Link to="/digital-art"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
   
 
 
@@ -110,7 +111,7 @@ Branding &
 Advertising
 </h5>
 
-<button  className="but2 mb-5 mt-3">Learn more</button>
+<Link to="/branding-&-advertising"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
   
 
 

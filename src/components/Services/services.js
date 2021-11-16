@@ -43,7 +43,7 @@ Product
 Design
 </h5>
 
-<Link to="/product-design"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
+<Link to="/products"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
   
 
 

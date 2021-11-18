@@ -36,25 +36,7 @@ World class digital products
 
 </div>
            </section>
-           <section>
-               <div className="picturet">
-               <div className="punchbox2 text-white container">
-
-<h4 className="punchlines2 veer">
-Access Your Computer <br/>Science Curriculum on the Go 
-</h4>
-
-<h5 className="sub-lines2">
-Re-defining The Science Of Computers
-</h5>
-
-<br />
-  
-
-
-</div>
-               </div>
-           </section>
+          
            <section>
                <div className="pictures5">
                <div className="punchbox2 text-white container " >

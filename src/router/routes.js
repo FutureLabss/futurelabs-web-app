@@ -11,7 +11,7 @@ const pageRoutes = [
     {path: '/services', element: Services },
     {path: '/strategy', element: strategy },
     {path: '/modelling', element: modelling },
-    {path: '/products', element: product},
+    {path: '/products', element: product },
     {path: '/websites', element: websites },
     {path: '/', element: Home },
 ]

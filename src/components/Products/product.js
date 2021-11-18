@@ -6,7 +6,7 @@ export default function product() {
         <div>
            <ToolBar />
            <section>
-           <div className="pictur">
+           <div className="pictur200">
            <div className="punchbox2 text-white container">
 
 <h4 className="punchlines bottom-left veers">
@@ -37,7 +37,7 @@ World class digital products
 </div>
            </section>
            <section>
-               <div className="picturet">
+               <div className="picturet200">
                <div className="punchbox2 text-white container">
 
 <h4 className="punchlines2 veer">
@@ -56,11 +56,11 @@ Re-defining The Science Of Computers
                </div>
            </section>
            <section>
-               <div className="pictures5">
+               <div className="pictures500">
                <div className="punchbox2 text-white container " >
 
 <h4 className="punchlines veer">
-How About A Seamless<br/> Driving Expeerience?
+How About A Seamless<br/> Driving Experience?
 </h4>
 
 <h5 className="sub-lines">
@@ -75,7 +75,7 @@ We partnered with Zuga to deliver <br/>effortless transportation
                </div>
            </section>
            <section>
-           <div className="picture44">
+           <div className="picture600">
            <div className="punchbox2 text-white container">
 
 <h4 className="punchlines veers">

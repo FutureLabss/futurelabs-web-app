@@ -78,12 +78,11 @@ This generation is only fascinated by results, let’s<br/> help you go from ide
            <div className="punchbox2 text-white container">
 
 <h4 className="punchlines veers">
-Bringing You Project 1000
+
 </h4>
 
 <h5 className="sub-lines">
-We develop corporate & brand strategies that <br/>
-sets your apart.   
+
 </h5>
 
 <br />

@@ -6,7 +6,7 @@ export default function modelling () {
        <div>
            <ToolBar />
            <section>
-           <div className="pictur7">
+           <div className="pictur70">
            <div className="punchbox2 text-white container">
 
 <h4 className="punchlines bottom-left veers">
@@ -15,7 +15,7 @@ export default function modelling () {
 </h4>
 
 <h5 className="sub-lines ">
-What if a 12 year old genius reimagined the future of <br/> urban transportation, flying cars and all?
+What if a 12 year old genius<br/> reimagined the future of <br/> urban transportation,<br/> flying cars and all?
 </h5>
 
 <br />
@@ -34,7 +34,7 @@ Precision
 </h4>
 
 <h5 className="sub-lines2">
-Watches are meant to tell more than time,  with <br/>future time pieces, we redefined luxury and<br/>  precision
+Watches are meant to tell<br/> more than time,  with <br/>future time pieces,<br/> we redefined luxury and<br/>  precision
 </h5>
 
 <br />
@@ -53,7 +53,7 @@ Imagination
 </h4>
 
 <h5 className="sub-lines">
-It’s easier to build if we help you picture what your<br/> product will look ike before you even get started
+It’s easier to build if we help<br/> you picture what your<br/> product will look ike before<br/> you even get started
 </h5>
 
 <br />

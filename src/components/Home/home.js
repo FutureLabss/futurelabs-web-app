@@ -129,7 +129,7 @@ digital experiences.
 
 <div className="section4">
 
-  <div className="punchbox4 text-white">
+  <div className="punchbox42 text-white">
 
     <h5 className="sub-line subline2">
     We Strategize <br className="no-break-mobile" />

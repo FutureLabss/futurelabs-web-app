@@ -4,13 +4,36 @@
 body{
     overflow-x: hidden;
 }
+.reed{
+    font-family: Roboto;
 
+font-weight: bold;
+font-size: 45px;
+line-height: 47px;
+
+color: #212121;
+
+}
+.red3{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 47px;
+
+color: #000000;
+
+}
 .horizontal {
     height: 23px;
     width: 2px;
     background-color: rgb(139, 139, 138);
 }
-
+.punchbox40{
+    position: absolute;
+    top: 640%;
+    
+}
 .section1 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png');
     height: 100vh;
@@ -23,6 +46,20 @@ body{
 
 .section4 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635175877/FUTURELABS_1_gl3n9e.png');
+    height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100vw; */
+    /* background-repeat: no-repeat; */
+
+}
+.subline2{
+    margin-top: 50px;
+}
+.section49 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622807/IMG_0107_2_cw1bts.png');
     height: 100vh;
     background-position: center;
     object-fit: cover;
@@ -105,8 +142,17 @@ body{
     height: 100vh;
 } */
 
-.image2 {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635168144/IMG_0106_1_aivo5q.png');
+.image234{
+    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622807/IMG_0107_2_cw1bts.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+}
+.image99{
+    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1637149802/IMG_0133_1_hysqkh.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -115,9 +161,9 @@ body{
     object-fit: cover;
 }
 
-.image3 {
+.image33 {
     
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169888/IMG_0114_2_bdbi34.png');
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1637149308/IMG_0114_2_rikb3d.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -162,6 +208,14 @@ body{
     left: 90%;
     top: 60% !important;
 }
+.mute55 {
+    height: 60px;
+    position: absolute;
+    left: 215%;
+    margin-top: -10%;
+}
+
+
 
 .text-box {
     height: 147px;
@@ -198,12 +252,14 @@ body{
 }
 
 .fonty {
-    font-family: Raleway !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    font-size: 24px !important;
-    line-height: 28px !important;
-    font-variant: small-caps !important;
+   font-family: Raleway; 
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #212121;
+
 
     /* color: #212121 !important; */
 }
@@ -241,10 +297,10 @@ body{
     /* text-align: center; */
 }
 
-.punchbox4 {
+.punchbox46 {
     /* background-color: red; */
     position: absolute;
-    top: 368%;
+    margin-top: 37%;
     left: 22%;
     transform: translate(-50%, -50%);
 }
@@ -368,6 +424,9 @@ color: #212121;
         line-height: 39px;
 
     }
+    .mute55{
+        display: none;
+    }
 
     .section2-mute {
         height: 30px;
@@ -428,6 +487,7 @@ color: #212121;
 
     .section2-box2 {
         height: 100vh;
+        
     }
 
     .section2-box1 {

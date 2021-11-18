@@ -26,10 +26,10 @@ div.container-fluid{
     position: fixed;
     width: 100%;
     z-index: 1;
+                                    
     
-    
-}
-
+}       
+   
 
 
 .sub-nav {
@@ -58,6 +58,7 @@ color: #FFFFFF;
 text-decoration: none;
 
 }
+
 .textd{
     text-decoration: none;
 }        

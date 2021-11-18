@@ -5,7 +5,6 @@ import strategy from '../components/strategy/strategy'
 import modelling from '../components/modelling/modelling'
 import product from '../components/Products/product'
 import websites from '../components/websites/websites'
-import digitalart from '../components/digitalart/digitalart'
 
 const pageRoutes = [
     {path: '/about', element: About },
@@ -14,7 +13,6 @@ const pageRoutes = [
     {path: '/modelling', element: modelling },
     {path: '/products', element: product },
     {path: '/websites', element: websites },
-    {path: '/digitalart', element: digitalart },
     {path: '/', element: Home },
 ]
 

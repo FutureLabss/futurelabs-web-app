@@ -1,0 +1,71 @@
+.pictur200{
+    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1636105459/Zuga_Mockup_2_ggtcvf.png");
+  width: 100%;
+    height: 120vh;
+    
+     
+  }
+
+  .picturet200{
+    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1637148019/IMG_0107_2_ludxht.png");
+  width: 100%;
+    height: 120vh;
+    
+     
+  }
+
+  .pictures500{
+    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1637148019/IMG_0107_2_ludxht.png");
+  width: 100%;
+    height: 120vh;
+    
+     
+  }
+
+
+  .pictures501{
+    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1637148019/IMG_0107_2_ludxht.png");
+  width: 100%;
+    height: 120vh;
+    
+     
+  }
+
+  .picture600{
+    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1637148015/IMG_0107_3_f5v7g0.png");
+  width: 100%;
+    height: 120vh;
+    
+     
+  }
+
+  .punchlines340{
+    font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 52px;
+line-height: 61px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+.punchbox270 {
+  position: relative;
+  top: 68%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+}
+
+.sub-lines140{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+
+}

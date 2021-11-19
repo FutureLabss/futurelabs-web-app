@@ -1,7 +1,8 @@
 import Navbar from 'react-bootstrap/Navbar'
 import { Nav } from 'react-bootstrap'
 import   { Offcanvas } from 'react-bootstrap'
-import { Link } from "react-router-dom"
+
+
 
 import './toolbar.js'
 
@@ -58,7 +59,7 @@ export default function ToolBar(props){
          <Link className="textd" to="/about2"> <strong>NEW ABOUT</strong> </Link>
          
         </Nav>
-      
+              
       </Offcanvas.Body>
     </Navbar.Offcanvas>
   </div>

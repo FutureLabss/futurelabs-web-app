@@ -65,12 +65,12 @@ export default function Footer(props) {
           Sign up to recieve our newsletter about industry trends
         </p>
         <div class="input-group mb-3">
-          <input type="text" class="form-control rounded" placeholder="Enter your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary text-white email rounded" type="button">Send</button>
-          </div>
+          <input type="text" class="form-control " placeholder="Enter your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+          
+            <button class="btn btn-outline-warning   " type="button">Send</button>
+         
         </div>
-
+            
       </h6>
 
     </div>

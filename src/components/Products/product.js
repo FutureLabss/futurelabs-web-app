@@ -6,15 +6,15 @@ export default function product() {
         <div>
            <ToolBar />
            <section>
-           <div className="pictur">
-           <div className="punchbox2 text-white container">
+           <div className="pictur200">
+           <div className="punchbox270 text-white container">
 
-<h4 className="punchlines bottom-left veers">
+<h4 className="punchlines340 bottom-left veers300">
 Product Design
 
 </h4>
 
-<h5 className="sub-lines ">
+<h5 className="sub-lines140 ">
 World class digital products
 <br/>that accelerate profit
 </h5>
@@ -36,16 +36,34 @@ World class digital products
 
 </div>
            </section>
-          
            <section>
-               <div className="pictures5">
-               <div className="punchbox2 text-white container " >
+               <div className="pictures501">
+               <div className="punchbox270 text-white container " >
 
-<h4 className="punchlines veer">
-How About A Seamless<br/> Driving Expeerience?
+<h4 className="punchlines340 veer150">
+Access Your Computer<br/>Science Curriculum on the Go
 </h4>
 
-<h5 className="sub-lines">
+<h5 className="sub-lines140">
+Re-defining The Science Of Computers
+</h5>
+
+<br />
+  
+
+
+</div>
+               </div>
+           </section>
+           <section>
+               <div className="pictures500">
+               <div className="punchbox270 text-white container " >
+
+<h4 className="punchlines340 veer150">
+How About A Seamless<br/> Driving Experience?
+</h4>
+
+<h5 className="sub-lines140">
 We partnered with Zuga to deliver <br/>effortless transportation
 </h5>
 
@@ -57,14 +75,14 @@ We partnered with Zuga to deliver <br/>effortless transportation
                </div>
            </section>
            <section>
-           <div className="picture44">
-           <div className="punchbox2 text-white container">
+           <div className="picture600">
+           <div className="punchbox270 text-white container">
 
-<h4 className="punchlines veers">
+<h4 className="punchlines340 veers20">
 Seamless Cross-border<br/> Payments and Currency<br/>Conversion
 </h4>
 
-<h5 className="sub-lines">
+<h5 className="sub-lines140">
 Securing Payments for Tomorrow
 </h5>
 

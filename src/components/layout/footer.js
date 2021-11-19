@@ -18,51 +18,51 @@ export default function Footer(props) {
         hello@futurelabs.agency
       </p>
       <div className="row ph-no">
-        <div className="col-sm-3">
+        <div className="col-3">
 <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png" alt="" />
         </div>
-        <div className="col-sm-3">
+        <div className="col-3">
         <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png" alt="" />
           </div>
-          <div className="col-sm-3">
+          <div className="col-3">
           <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png" alt="" />
           </div>
       </div>
       <div className="row ph-yes">
-        <div className="col-md-4">
+        <div className="col-4">
 <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png" alt="" />
         </div>
-        <div className="col-md-4">
+        <div className="col-4">
         <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png" alt="" />
           </div>
-          <div className="col-md-4">
+          <div className="col-4">
           <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png" alt="" />
           </div>
       </div>
     </div>
     <div className="col-sm-3">
       <h6>
-        <strong className="carl">Company</strong> 
+        <strong className="carl mt-xs-2">Company</strong> 
       </h6>
 
       <p className="fot container">
        HOME
       </p>
-      <p className="fot container">
+      <p className="fot container my-2">
        ABOUT
       </p>
-      <p className="fot container">
+      <p className="fot container my-2">
        SERVICES
       </p>
-      <p className="fot container">
+      <p className="fot container my-2">
        BLOG
       </p>
     </div>
     <div className="col-sm-3">
       <h6>
         <strong className="carl">Let's Get in Touch</strong>
-        <p className="ca">
-          Sign up to recieve our newsletter about industry trends
+        <p className="ca my-3">
+          Sign up to receive our newsletter about industry trends
         </p>
         <div class="input-group mb-3">
           <input type="text" class="form-control rounded" placeholder="Enter your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2" />

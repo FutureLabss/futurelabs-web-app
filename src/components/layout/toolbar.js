@@ -7,7 +7,7 @@ import './toolbar.js'
 
 export default function ToolBar(props){
     return (
-        <div className="nav text-white py-2">
+        <div className="nav text-white">
     <div className="logo">
       {/* Logo image is here */}
     </div>
@@ -47,7 +47,7 @@ export default function ToolBar(props){
       </Offcanvas.Header> 
       <Offcanvas.Body className="textd">
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
-         <Link className="textd" to="/"> HOME</Link>
+         <Link className="textd" to="/"> <strong>NEW HOME</strong> </Link>
          <Link className="textd" to="/about"> ABOUT</Link>
          <Link className="textd" to="/services"> SERVICES</Link>
          <Link className="textd" to="/strategy"> STRATEGY</Link>
@@ -55,6 +55,7 @@ export default function ToolBar(props){
          <Link className="textd" to="/products">PRODUCTS</Link>
          <Link className="textd" to="/websites"> WEBSITES</Link>
          <Link className="textd" to="/digitalart"> DIGITAL-ART</Link>
+         <Link className="textd" to="/about2"> <strong>NEW ABOUT</strong> </Link>
          
         </Nav>
       

@@ -52,7 +52,7 @@ export default function Footer(props) {
        ABOUT
       </p>
       <p className="fot container">
-       SERVICES
+       SERVICES    
       </p>
       <p className="fot container">
        BLOG

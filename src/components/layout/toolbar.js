@@ -50,12 +50,14 @@ export default function ToolBar(props){
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd container-fluid">
            <Nav.Link className="text-muted container-fluid" href="/services"><h3 className="text-dark">WHAT WE DO <br/>COMPANY<br/>CONTACT</h3></Nav.Link>
          <Nav.Link className="text-muted container-fluid" href="/">HOME</Nav.Link>
+         <Nav.Link className="text-muted container-fluid" href="/about"> ABOUT</Nav.Link>
           <Nav.Link className="text-muted container-fluid" href="/services">SERVICES</Nav.Link>
           <Nav.Link className="text-muted container-fluid" href="/strategy">STRATEGY</Nav.Link>
           <Nav.Link className="text-muted container-fluid" href="/modelling">3D-MODELLING</Nav.Link>
           <Nav.Link className="text-muted container-fluid" href="/products">PRODUCTS</Nav.Link>
           <Nav.Link className="text-muted container-fluid" href="/websites">WEBSITES</Nav.Link>
           <Nav.Link className="text-muted container-fluid" href="/digitalart"> DIGITAL-ART</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/branding">BRANDING AND ADS</Nav.Link>
            
         </Nav>
               

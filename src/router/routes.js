@@ -7,7 +7,11 @@ import product from '../components/Products/product'
 import websites from '../components/websites/websites'
 import branding from '../components/branding/branding'
 
+import About2 from '../components/About2/about2'
+
 const pageRoutes = [
+    {path: '/about2', element: About2 },
+
     {path: '/about', element: About },
     {path: '/services', element: Services },
     {path: '/strategy', element: strategy },

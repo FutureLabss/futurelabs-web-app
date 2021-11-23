@@ -61,9 +61,11 @@ return (
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
                     <h3 className="line4">
-                        <span className="italicize"> We enable you to
-                        <br />
-                        see beyond the now.</span>
+                        <span className="italicize"> 
+                          We enable you to
+                          <br />
+                          see beyond the now.
+                        </span>
                         <br />
                         You could either be
                         <br />
@@ -188,7 +190,7 @@ return (
 
 
     {/* *********************************************************************** */}
-    {/* END OF SEGMENT-ONE */}
+    {/* END OF SEGMENT ONE */}
     {/* *********************************************************************** */}
 
 

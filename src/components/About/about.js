@@ -160,7 +160,7 @@ return (
 
 <div className="section49">
 
-  <div className="punchbox46 text-white">
+  <div className="punchbox46  text-white">
 
     <h5 className="sub-line subline2 ">
       The future was created by <br className="no-break-mobile" />

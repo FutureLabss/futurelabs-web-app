@@ -1,5 +1,5 @@
-
 import "./home.css"
+import Contact from "../layout/contact"
 
 
 export default function Home() {
@@ -376,7 +376,7 @@ return (
 
 
 
-
+<Contact />
   </section>
 
     

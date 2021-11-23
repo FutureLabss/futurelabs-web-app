@@ -9,7 +9,7 @@ import './toolbar.js'
 
 export default function ToolBar(props){
     return (
-        <div className="nav text-white py-2">
+        <div className="nav text-white">
     <div className="logo">
       {/* Logo image is here */}
     </div>
@@ -48,6 +48,20 @@ export default function ToolBar(props){
         <Offcanvas.Title id="offcanvasNavbarLabel " className="textd"></Offcanvas.Title>
       </Offcanvas.Header> 
       <Offcanvas.Body className="textd">
+
+        <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd container-fluid">
+           <Nav.Link className="text-muted container-fluid" href="/services"><h3 className="text-dark">WHAT WE DO <br/>COMPANY<br/>CONTACT</h3></Nav.Link>
+         <Nav.Link className="text-muted container-fluid" href="/"><i class="fa fa fa-home" aria-hidden="true"></i>HOME</Nav.Link>
+         <Nav.Link className="text-muted container-fluid" href="/about"><i class="fa fa fa-user-circle" aria-hidden="true"></i> ABOUT</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/services"><i class="fa-brands fa-servicestack"></i>SERVICES</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/strategy"><i class="fa-duotone fa-chess"></i>STRATEGY</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/modelling"><i class="fa-solid fa-cubes"></i>3D-MODELLING</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/products"><i class="fa-brands fa-product-hunt"></i>PRODUCTS</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/websites"><i class="fa fa-safari" aria-hidden="true"></i>WEBSITES</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/digitalart"><i class="fa fa-picture-o" aria-hidden="true"></i> DIGITAL-ART</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/branding"><i class="fa-brands fa-figma"></i>BRANDING AND ADS</Nav.Link>
+           
+
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
          <Link className="textd my-2 text-muted" to="/"> <strong>NEW HOME</strong> </Link>
 
@@ -73,6 +87,7 @@ export default function ToolBar(props){
          <Link className="textd .my-2 text-muted" to="/digitalart2"> <strong>NEW DIGITAL ART</strong></Link>
          {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
          
+
         </Nav>
               
       </Offcanvas.Body>

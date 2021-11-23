@@ -1,6 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar'
 import { Nav } from 'react-bootstrap'
 import   { Offcanvas } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 
 
@@ -47,18 +48,31 @@ export default function ToolBar(props){
         <Offcanvas.Title id="offcanvasNavbarLabel " className="textd"></Offcanvas.Title>
       </Offcanvas.Header> 
       <Offcanvas.Body className="textd">
-        <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd container-fluid">
-           <Nav.Link className="text-muted container-fluid" href="/services"><h3 className="text-dark">WHAT WE DO <br/>COMPANY<br/>CONTACT</h3></Nav.Link>
-         <Nav.Link className="text-muted container-fluid" href="/">HOME</Nav.Link>
-         <Nav.Link className="text-muted container-fluid" href="/about"> ABOUT</Nav.Link>
-          <Nav.Link className="text-muted container-fluid" href="/services">SERVICES</Nav.Link>
-          <Nav.Link className="text-muted container-fluid" href="/strategy">STRATEGY</Nav.Link>
-          <Nav.Link className="text-muted container-fluid" href="/modelling">3D-MODELLING</Nav.Link>
-          <Nav.Link className="text-muted container-fluid" href="/products">PRODUCTS</Nav.Link>
-          <Nav.Link className="text-muted container-fluid" href="/websites">WEBSITES</Nav.Link>
-          <Nav.Link className="text-muted container-fluid" href="/digitalart"> DIGITAL-ART</Nav.Link>
-          <Nav.Link className="text-muted container-fluid" href="/branding">BRANDING AND ADS</Nav.Link>
-           
+        <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
+         <Link className="textd my-2 text-muted" to="/"> <strong>NEW HOME</strong> </Link>
+
+         <Link className="textd mt-2 text-muted" to="/about"> <strong>ABOUT</strong> </Link>
+         <Link className="textd .my-2 text-muted" to="/about2"> <strong>NEW ABOUT</strong></Link>
+
+         <Link className="textd mt-2 text-muted" to="/services"><strong>SERVICES</strong></Link>
+         <Link className="textd .my-2 text-muted" to="/services2"><strong>NEW SERVICES</strong></Link>
+
+         <Link className="textd mt-2 text-muted" to="/strategy"> <strong>STRATEGY</strong></Link>
+         <Link className="textd .my-2 text-muted" to="/strategy2"> <strong>NEW STRATEGY</strong></Link>
+
+         <Link className="textd mt-2 text-muted" to="/modelling"> <strong>3-D MODELLING</strong></Link>
+         <Link className="textd .my-2 text-muted" to="/modelling2"> <strong>NEW 3-D MODELLING</strong></Link>
+
+         <Link className="textd mt-2 text-muted" to="/products"><strong>PRODUCTS</strong></Link>
+         <Link className="textd .my-2 text-muted" to="/products2"><strong>NEW PRODUCTS</strong></Link>
+
+         <Link className="textd mt-2 text-muted" to="/websites"> <strong>WEBSITES</strong></Link>
+         <Link className="textd .my-2 text-muted" to="/websites2"> <strong>NEW WEBSITES</strong></Link>
+
+         <Link className="textd mt-2 text-muted" to="/digitalart"> <strong>DIGITAL ART</strong></Link>
+         <Link className="textd .my-2 text-muted" to="/digitalart2"> <strong>NEW DIGITAL ART</strong></Link>
+         {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
+         
         </Nav>
               
       </Offcanvas.Body>

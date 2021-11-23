@@ -79,13 +79,13 @@ return (
               </div>
           </div>
 
-          <div className="section2-image sm-2 .bg-warning"></div>
+          <div className="section2-image image2 sm-2 .bg-warning"></div>
 
       </div>
 
 
       {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-      <div className="mobile-yes section2-image-mobile .bg-primary text-white">
+      <div className="mobile-yes section2-image-mobile image2 .bg-primary text-white">
           <div className="vertical-centering">
 
               <div className=".bg-warning px-3">
@@ -123,7 +123,7 @@ return (
       {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
       <div className="mobile-no sm-divider">
 
-          <div className="section2-image sm-2 .bg-warning"></div>
+          <div className="section2-image image3 sm-2 .bg-warning"></div>
 
           <div className="sm-1 .bg-danger">
               <div className=".bg-warning vertical-centering horizontal-centering">
@@ -150,7 +150,7 @@ return (
       
 
       {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-      <div className="mobile-yes section2-image-mobile .bg-primary text-white">
+      <div className="mobile-yes section2-image-mobile image3 .bg-primary text-white">
           <div className="vertical-centering">
 
               <div className=".bg-warning px-3">
@@ -196,7 +196,7 @@ return (
 
 
   {/* Section-One begins here */}
-  <section className="section1">
+  <section className="section1 image4">
 
       <div className="container">
           <div className="row .bg-warning d-flex justify-space-between">
@@ -238,7 +238,7 @@ return (
 
 
   {/* Section-One begins here */}
-  <section className="section1">
+  <section className="section1 image5">
 
       <div className="container">
           <div className="row .bg-warning d-flex justify-space-between">
@@ -281,7 +281,7 @@ return (
 
       <div className="col-sm-4 py-sm-4">
         <div className="px-2 Thumbnail-parent .bg-danger">
-          <div className="Thumbnail bg-primary py-1">
+          <div className="Thumbnail bg-primary py-1 rounded">
             {/* photo here */}
           </div>
           <div>
@@ -298,7 +298,7 @@ return (
 
       <div className="col-sm-4 py-sm-4">
         <div className="px-2 Thumbnail-parent .bg-danger">
-          <div className="Thumbnail .bg-primary py-1">
+          <div className="Thumbnail .bg-primary py-1 rounded">
             {/* photo here */}
           </div>
           <div>
@@ -315,7 +315,7 @@ return (
 
       <div className="col-sm-4 py-sm-4">
         <div className="px-2 Thumbnail-parent .bg-danger">
-          <div className="Thumbnail bg-primary py-1">
+          <div className="Thumbnail bg-primary py-1 rounded">
             {/* photo here */}
           </div>
           <div>

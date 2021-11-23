@@ -15,7 +15,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1">
+    <section className="section1 image1">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -80,20 +80,22 @@ return (
                 </div>
             </div>
 
-            <div className="section2-image sm-2 .bg-warning"></div>
+            <div className="section2-image image2 sm-2 .bg-warning"></div>
 
         </div>
 
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile .bg-primary text-white">
+        <div className="mobile-yes section2-image-mobile image2 .bg-primary text-white">
             <div className="vertical-centering">
 
                 <div className=".bg-warning px-3">
                     <h3 className="line4">
-                        <span className="italicize"> We enable you to
-                        <br />
-                        see beyond the now.</span>
+                        <span className="italicize">
+                            We enable you to
+                            <br />
+                            see beyond the now.
+                        </span>
                         <br />
                         You could either be
                         <br />
@@ -115,6 +117,7 @@ return (
         
     </section>
     {/* Section-Two ends here */}
+    
 
 
 
@@ -127,7 +130,7 @@ return (
         {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
         <div className="mobile-no sm-divider">
 
-            <div className="section2-image sm-2 .bg-warning"></div>
+            <div className="section2-image image3 sm-2 .bg-warning"></div>
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
@@ -155,7 +158,7 @@ return (
         
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile .bg-primary text-white">
+        <div className="mobile-yes section2-image-mobile image3 .bg-primary text-white">
             <div className="vertical-centering">
 
                 <div className=".bg-warning px-3">
@@ -202,7 +205,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1">
+    <section className="section1 image4">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -266,14 +269,14 @@ return (
                 </div>
             </div>
 
-            <div className="section2-image sm-2 .bg-warning"></div>
+            <div className="section2-image image5 sm-2 .bg-warning"></div>
 
         </div>
 
 
         
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile .bg-primary text-white">
+        <div className="mobile-yes section2-image-mobile image5 .bg-primary text-white">
             <div className="vertical-centering">
 
                 <div className=".bg-warning px-3">
@@ -311,7 +314,7 @@ return (
         {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
         <div className="mobile-no sm-divider">
 
-            <div className="section2-image sm-2 .bg-warning"></div>
+            <div className="section2-image image6 sm-2 .bg-warning"></div>
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
@@ -337,7 +340,7 @@ return (
         
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile .bg-primary text-white">
+        <div className="mobile-yes section2-image-mobile image6 .bg-primary text-white">
             <div className="vertical-centering">
 
                 <div className=".bg-warning px-3">
@@ -366,7 +369,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1">
+    <section className="section1 image7">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">

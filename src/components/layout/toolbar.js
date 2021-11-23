@@ -8,7 +8,7 @@ import './toolbar.js'
 
 export default function ToolBar(props){
     return (
-        <div className="nav text-white">
+        <div className="nav text-white py-2">
     <div className="logo">
       {/* Logo image is here */}
     </div>
@@ -47,17 +47,18 @@ export default function ToolBar(props){
         <Offcanvas.Title id="offcanvasNavbarLabel " className="textd"></Offcanvas.Title>
       </Offcanvas.Header> 
       <Offcanvas.Body className="textd">
-        <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
-         <Link className="textd" to="/"> <strong>NEW HOME</strong> </Link>
-         <Link className="textd" to="/about"> ABOUT</Link>
-         <Link className="textd" to="/services"> SERVICES</Link>
-         <Link className="textd" to="/strategy"> STRATEGY</Link>
-         <Link className="textd" to="/modelling"> 3D-MODELLING</Link>
-         <Link className="textd" to="/products">PRODUCTS</Link>
-         <Link className="textd" to="/websites"> WEBSITES</Link>
-         <Link className="textd" to="/digitalart"> DIGITAL-ART</Link>
-         <Link className="textd" to="/about2"> <strong>NEW ABOUT</strong> </Link>
-         
+        <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd container-fluid">
+           <Nav.Link className="text-muted container-fluid" href="/services"><h3 className="text-dark">WHAT WE DO <br/>COMPANY<br/>CONTACT</h3></Nav.Link>
+         <Nav.Link className="text-muted container-fluid" href="/">HOME</Nav.Link>
+         <Nav.Link className="text-muted container-fluid" href="/about"> ABOUT</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/services">SERVICES</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/strategy">STRATEGY</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/modelling">3D-MODELLING</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/products">PRODUCTS</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/websites">WEBSITES</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/digitalart"> DIGITAL-ART</Nav.Link>
+          <Nav.Link className="text-muted container-fluid" href="/branding">BRANDING AND ADS</Nav.Link>
+           
         </Nav>
               
       </Offcanvas.Body>

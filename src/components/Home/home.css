@@ -301,6 +301,20 @@
 
 }
 
+.Thumbnail-image1 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635348411/priscilla-du-preez-XkKCui44iM0-unsplash_1_pd3v8t.png');
+}
+
+.Thumbnail-image2 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635349111/ben-white-4K2lIP0zc_k-unsplash_1_lew38n.png');
+
+}
+
+.Thumbnail-image3 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635349190/scott-graham-5fNmWej4tAA-unsplash_1_mcymci.png');
+
+}
+
 
 
 /* Extra small devices (phones, 600px and down) */

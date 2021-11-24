@@ -16,7 +16,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image1">
+    <section className="section1 strategy-image1">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -48,7 +48,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image2">
+    <section className="section1 strategy-image2">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -80,7 +80,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image3">
+    <section className="section1 strategy-image3">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -111,7 +111,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image4">
+    <section className="section1 strategy-image4">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">

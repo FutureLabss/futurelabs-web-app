@@ -14,33 +14,33 @@
 
 }
 
-.image1 {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png');
+.about-image1 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png') !important;
 
 
 }
 
-.image2 {
+.about-image2 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635168144/IMG_0106_1_aivo5q.png');
 }
 
-.image3 {
+.about-image3 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169888/IMG_0114_2_bdbi34.png');
 }
 
-.image4 {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635168144/IMG_0106_1_aivo5q.png');
+.about-image4 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622807/IMG_0107_2_cw1bts.png');
 }
 
-.image5 {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169430/IMG_0133_1_i0aqab.png');
-}
-
-.image6 {
+.about-image5 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169888/IMG_0114_2_bdbi34.png');
 }
 
-.image7 {
+.about-image6 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169888/IMG_0114_2_bdbi34.png');
+}
+
+.about-image7 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635175877/FUTURELABS_1_gl3n9e.png');
 }
 

@@ -16,18 +16,18 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image1">
+    <section className="section1 modelling-image1">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    <h5 className="line1">
-                        Strategy
-                    </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                  <h5 className="line1">
+                    3D Modeling
+                  </h5>
+                  {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> We develop corporate & brand strategies that <br className="mobile-no" /> set you apart</h6>
+                  <h6 className="line3"> What if a 12 year old genius reimagined the future of <br className="mobile-no" /> urban transportation, flying cars and all?</h6>
 
 
                 </div>
@@ -48,18 +48,18 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image2">
+    <section className="section1 modelling-image2">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                      Rapid Results Through Teamwork
+                      Precision
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Harnessing the power of a team of talented <br className="mobile-no" /> innovators to build usable products and services</h6>
+                    <h6 className="line3">Watches are meant to tell more than time,  with <br className="mobile-no" /> future time pieces, we redefined luxury and <br className="mobile-no" /> precision</h6>
 
 
                 </div>
@@ -80,18 +80,18 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image3">
+    <section className="section1 modelling-image3">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                      Ideas Aren’t Enough
+                      Imagination
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> This generation is only fascinated by results, let’s <br className="mobile-no" /> help you go from ideas to MVPs rapidly </h6>
+                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6>
 
 
                 </div>
@@ -111,18 +111,18 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image4">
+    <section className="section1 modelling-image4">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                      Bringing You Project 1000
+                      Imagination
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Our digital skills training to postion young minds <br className="mobile-no" /> for relevance, as an avenue for combating cyber fraud</h6>
+                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6>
 
 
                 </div>

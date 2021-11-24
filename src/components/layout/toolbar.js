@@ -9,7 +9,7 @@ import './toolbar.js'
 
 export default function ToolBar(props){
     return (
-        <div className="nav text-white py-2">
+        <div className="nav text-white">
     <div className="logo">
       {/* Logo image is here */}
     </div>

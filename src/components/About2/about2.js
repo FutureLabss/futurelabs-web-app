@@ -15,7 +15,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image1">
+    <section className="section1 about-image1">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -82,7 +82,7 @@ return (
                 </div>
             </div>
 
-            <div className="section2-image image2 sm-2 .bg-warning"></div>
+            <div className="section2-image about-image2 sm-2 .bg-warning"></div>
 
         </div>
 
@@ -132,7 +132,7 @@ return (
         {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
         <div className="mobile-no sm-divider">
 
-            <div className="section2-image image3 sm-2 .bg-warning"></div>
+            <div className="section2-image about-image3 sm-2 .bg-warning"></div>
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
@@ -160,7 +160,7 @@ return (
         
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile image3 .bg-primary text-white">
+        <div className="mobile-yes section2-image-mobile about-image3 .bg-primary text-white">
             <div className="vertical-centering">
 
                 <div className=".bg-warning px-3">
@@ -207,7 +207,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image4">
+    <section className="section1 about-image4">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -271,14 +271,14 @@ return (
                 </div>
             </div>
 
-            <div className="section2-image image5 sm-2 .bg-warning"></div>
+            <div className="section2-image about-image5 sm-2 .bg-warning"></div>
 
         </div>
 
 
         
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile image5 .bg-primary text-white">
+        <div className="mobile-yes section2-image-mobile about-image5 .bg-primary text-white">
             <div className="vertical-centering">
 
                 <div className=".bg-warning px-3">
@@ -316,7 +316,7 @@ return (
         {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
         <div className="mobile-no sm-divider">
 
-            <div className="section2-image image6 sm-2 .bg-warning"></div>
+            <div className="section2-image about-image6 sm-2 .bg-warning"></div>
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
@@ -342,7 +342,7 @@ return (
         
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile image6 .bg-primary text-white">
+        <div className="mobile-yes section2-image-mobile about-image6 .bg-primary text-white">
             <div className="vertical-centering">
 
                 <div className=".bg-warning px-3">
@@ -371,7 +371,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image7">
+    <section className="section1 about-image7">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">

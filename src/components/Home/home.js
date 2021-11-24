@@ -16,7 +16,7 @@ return (
 
 
   {/* Section-One begins here */}
-  <section className="section1">
+  <section className="section1 home-image1">
 
     <div className="container">
       <div className="row .bg-warning d-flex justify-space-between">
@@ -79,13 +79,13 @@ return (
         </div>
       </div>
 
-      <div className="section2-image image2 sm-2 .bg-warning"></div>
+      <div className="section2-image home-image2 sm-2 bg-warning"></div>
 
     </div>
 
 
     {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-    <div className="mobile-yes section2-image-mobile image2 .bg-primary text-white">
+    <div className="mobile-yes section2-image-mobile home-image2 .bg-warning text-white">
       <div className="vertical-centering">
 
         <div className=".bg-warning px-3">
@@ -123,7 +123,7 @@ return (
     {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
     <div className="mobile-no sm-divider">
 
-      <div className="section2-image image3 sm-2 .bg-warning"></div>
+      <div className="section2-image home-image3 sm-2 .bg-warning"></div>
 
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering">
@@ -150,7 +150,7 @@ return (
       
 
     {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-    <div className="mobile-yes section2-image-mobile image3 .bg-primary text-white">
+    <div className="mobile-yes section2-image-mobile home-image3 .bg-primary text-white">
       <div className="vertical-centering">
 
         <div className=".bg-warning px-3">
@@ -196,7 +196,7 @@ return (
 
 
   {/* Section-One begins here */}
-  <section className="section1 image4">
+  <section className="section1 home-image4">
 
     <div className="container">
       <div className="row .bg-warning d-flex justify-space-between">
@@ -236,11 +236,11 @@ return (
 
 
   {/* Section-One begins here */}
-  <section className="section1 image5">
+  <section className="section1 home-image5">
 
     <div className="container">
       <div className="row .bg-warning d-flex justify-space-between">
-        <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+        <div className="col-9 .bg-primary px-3 px-sm-1 text-white mobile-yes">
 
           <h5 className="line6">
             Seamless Cross-border <br className="mobile-no"/>

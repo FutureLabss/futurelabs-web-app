@@ -14,33 +14,34 @@
 
 }
 
-.image1 {
+.home-image1 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png');
 
 
 }
 
-.image2 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635262165/Futurelabs-logo_2_fsvqs9.png');
+.home-image2 {
+    /* background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635262165/Futurelabs-logo_2_fsvqs9.png'); */
+    background-color: #FF9000;
 }
 
-.image3 {
+.home-image3 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169888/IMG_0114_2_bdbi34.png');
 }
 
-.image4 {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635168144/IMG_0106_1_aivo5q.png');
+.home-image4 {
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
 }
 
-.image5 {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169430/IMG_0133_1_i0aqab.png');
+.home-image5 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635338077/Web_Mockup_26_jwclbt.png');
 }
 
-.image6 {
+.home-image6 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169888/IMG_0114_2_bdbi34.png');
 }
 
-.image7 {
+.home-image7 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635175877/FUTURELABS_1_gl3n9e.png');
 }
 

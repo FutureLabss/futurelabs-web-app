@@ -10,13 +10,13 @@ return (
   {/* *********************************************************************** */}
 
     {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}
-    {/* SEGMENT-ONE BEGINS HERE & IS REPEATED AS SEGMENT-TWO*/}
+    {/* SEGMENT-ONE BEGINS HERE & IS REPEATED AS SEGMENT-TWO */}
 
   {/* *********************************************************************** */}
 
 
     {/* Section-One begins here */}
-    <section className="section1 image1">
+    <section className="section1 websites-image1">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -49,7 +49,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image2">
+    <section className="section1 websites-image2">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -81,7 +81,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image3">
+    <section className="section1 websites-image3">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -112,7 +112,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 image4">
+    <section className="section1 websites-image4">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">

@@ -79,28 +79,28 @@
 }
 
 
-.image1 {
+.modelling-image1 {
     background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636722653/flying_car_2_u2erbx.png');
 
 
 }
 
-.image2 {
+.modelling-image2 {
     background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636723495/watch_xqhvph.png');
 }
 
-.image3 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636632997/matt-artz-dh3zAdGGOIY-unsplash_1_pys7au.png');
+.modelling-image3 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636723776/chairwhite_side_2_ko0iip.png');
 }
 
-.image4 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724129/untitled_2_qgblqy.png');
+.modelling-image4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724129/untitled_2_qgblqy.png');
 }
 
-.image5 {
+.modelling-image5 {
     background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636724667/1812217482_1_rl6j43.png');
 }
 
-.image6 {
+.modelling-image6 {
     background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
 }

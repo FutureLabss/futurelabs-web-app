@@ -79,28 +79,29 @@
 }
 
 
-.image1 {
+.strategy-image1 {
     background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622752/felix-mittermeier-nAjil1z3eLk-unsplash_1_kdoqjk.png');
 
 
 }
 
-.image2 {
+.strategy-image2 {
     background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622807/IMG_0107_2_cw1bts.png');
 }
 
-.image3 {
+.strategy-image3 {
     background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636632997/matt-artz-dh3zAdGGOIY-unsplash_1_pys7au.png');
 }
 
-.image4 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724512/Group_173_hxcxok.png');
+.strategy-image4 {
+    /* background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724512/Group_173_hxcxok.png'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724512/Group_173_hxcxok.png');
 }
 
-.image5 {
+.strategy-image5 {
     background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636724667/1812217482_1_rl6j43.png');
 }
 
-.image6 {
+.strategy-image6 {
     background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
 }

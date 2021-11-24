@@ -60,7 +60,9 @@ export default function ToolBar(props){
           <Nav.Link className="text-muted container-fluid" href="/websites"><i class="fa fa-safari" aria-hidden="true"></i>WEBSITES</Nav.Link>
           <Nav.Link className="text-muted container-fluid" href="/digitalart"><i class="fa fa-picture-o" aria-hidden="true"></i> DIGITAL-ART</Nav.Link>
           <Nav.Link className="text-muted container-fluid" href="/branding"><i class="fa-brands fa-figma"></i>BRANDING AND ADS</Nav.Link>
-        </Nav>  
+        </Nav> 
+        
+         
            
 
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">

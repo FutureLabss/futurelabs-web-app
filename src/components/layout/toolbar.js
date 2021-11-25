@@ -180,28 +180,28 @@ export default function ToolBar(props){
            
 
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
-         <Nav.Link className="textd my-2 text-muted" to="/"><i class="fa fa fa-home" aria-hidden="true"></i> <strong>HOME</strong> </Nav.Link>
+         <Nav.Link className="textd my-2 text-muted" to="/"><strong>HOME</strong> </Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/about"> <strong>ABOUT</strong> </Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/about2"><i class="fa fa fa-user" aria-hidden="true"></i><strong>ABOUT</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" to="/about2"><strong>ABOUT</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/services"><strong>SERVICES</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/services2"><i class="fa fa fa-superpowers" aria-hidden="true"></i><strong>SERVICES</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" to="/services2"><strong>SERVICES</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/strategy"> <strong>STRATEGY</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/strategy2"> <i class="fa fa fa-superpowers" aria-hidden="true"></i><strong>STRATEGY</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" to="/strategy2"><strong>STRATEGY</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/modelling"> <strong>3-D MODELLING</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/modelling2"><i class="fa fa fa-car" aria-hidden="true"></i> <strong>3-D MODELLING</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" to="/modelling2"><strong>3-D MODELLING</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/products"><strong>PRODUCTS</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/products2"><i class="fa fa fa-cart-plus" aria-hidden="true"></i><strong>PRODUCTS</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" to="/products2"><strong>PRODUCTS</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/websites"> <strong>WEBSITES</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/websites2"> <i class="fa fa fa-wikipedia-w" aria-hidden="true"></i><strong>WEBSITES</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" to="/websites2"><strong>WEBSITES</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/digitalart"> <strong>DIGITAL ART</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/digitalart2"><i class="fa fa-picture-o" aria-hidden="true"></i> <strong>DIGITAL ART</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" to="/digitalart2"><strong>DIGITAL ART</strong></Nav.Link>
          {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
          
 

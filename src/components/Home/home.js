@@ -240,15 +240,17 @@ return (
 
     <div className="container">
       <div className="row .bg-warning d-flex justify-space-between">
-        <div className="col-9 .bg-primary px-3 px-sm-1 text-white mobile-yes">
+        <div className="col-9 .bg-primary px-3 px-sm-1 text-white ungroup">
 
-          <h5 className="line6">
+          <h5 className="line6 ">
             Seamless Cross-border <br className="mobile-no"/>
-            Payments and Currency  <br className="mobile-no"/>
+            Payments and Currency <br className="mobile-no"/> 
             Conversion
           </h5>
-          <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6>
 
+          <h5 className="line5 ">
+            Securing Payments for Tomorrow on the Web
+          </h5>
 
         </div>
         

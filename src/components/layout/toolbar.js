@@ -74,7 +74,7 @@ export default function ToolBar(props){
          <Link className="textd .my-2 text-muted" to="/services2"><i class="fa fa fa-superpowers" aria-hidden="true"></i><strong>SERVICES</strong></Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/strategy"> <strong>STRATEGY</strong></Link> */}
-         <Link className="textd .my-2 text-muted" to="/strategy2"> <strong>STRATEGY</strong></Link>
+         <Link className="textd .my-2 text-muted" to="/strategy2"> <i class="fa fa fa-superpowers" aria-hidden="true"></i><strong>STRATEGY</strong></Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/modelling"> <strong>3-D MODELLING</strong></Link> */}
          <Link className="textd .my-2 text-muted" to="/modelling2"><i class="fa fa fa-car" aria-hidden="true"></i> <strong>3-D MODELLING</strong></Link>

@@ -33,6 +33,13 @@
 
     }
 
+    .button-text {
+        font-family: Roboto;
+        font-style: Medium;
+        font-size: 1.2rem;
+        
+    }
+
 
 }
 
@@ -40,7 +47,7 @@
 .button-text {
     font-family: Roboto;
     font-style: Medium;
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 

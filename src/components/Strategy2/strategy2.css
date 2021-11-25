@@ -43,6 +43,14 @@
 
     }
 
+    .button-text {
+        font-family: Roboto;
+        font-style: Medium;
+        font-size: 1.2rem;
+        
+    }
+    
+
 
 }
 
@@ -50,7 +58,8 @@
 .button-text {
     font-family: Roboto;
     font-style: Medium;
-    font-size: 30px;
+    font-size: 1.8rem;
+    
 }
 
 
@@ -94,8 +103,8 @@
 }
 
 .strategy-image4 {
-    /* background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724512/Group_173_hxcxok.png'); */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724512/Group_173_hxcxok.png');
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724512/Group_173_hxcxok.png');
+    /* background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724512/Group_173_hxcxok.png'); */
 }
 
 .strategy-image5 {

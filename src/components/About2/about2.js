@@ -88,7 +88,7 @@ return (
 
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile image2 .bg-primary text-white">
+        <div className="mobile-yes section2-image-mobile about-image2 .bg-primary text-white">
             <div className="vertical-centering">
 
                 <div className=".bg-warning px-3">

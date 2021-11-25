@@ -293,7 +293,11 @@ return (
               23 Sept, 2021
               <hr className="under bg-warning rounded " />
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+            <p>Coca-cola focuses on improving the community
+relationships and increasing thhier happiness,that
+positively reflects on thier public image, resulting
+in customer and revenue rise.
+</p>
           </div>
         </div>
       </div>
@@ -310,7 +314,11 @@ return (
               23 Sept, 2021
               <hr className="under .bg-warning rounded " />
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+            <p>Coca-cola focuses on improving the community
+relationships and increasing thhier happiness,that
+positively reflects on thier public image, resulting
+in customer and revenue rise.
+</p>
           </div>
         </div>
       </div>
@@ -327,7 +335,11 @@ return (
               23 Sept, 2021
               <hr className="under .bg-warning rounded " />
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+            <p>Coca-cola focuses on improving the community
+relationships and increasing thhier happiness,that
+positively reflects on thier public image, resulting
+in customer and revenue rise.
+</p>
           </div>
         </div>
       </div>

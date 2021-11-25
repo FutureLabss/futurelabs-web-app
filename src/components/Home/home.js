@@ -1,5 +1,5 @@
-
 import "./home.css"
+import Contact from "../layout/contact"
 
 
 export default function Home() {
@@ -351,6 +351,49 @@ in customer and revenue rise.
 
     </div>
 
+
+
+    {/* THESE PARENTS ONLY APPEAR ON MOBILE */}
+
+    {/* <div className="Thumbnail-parent bg-danger mobile-yes-thumb">
+      <div className="Thumbnail bg-primary py-1">
+        photo here
+      </div>
+      <div>
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+      </div>
+    </div>
+
+
+    <div className="Thumbnail-parent bg-warning">
+      <div className="Thumbnail bg-primary py-1">
+        photo here
+      </div>
+      <div>
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+      </div>
+    </div>
+
+
+    <div className="Thumbnail-parent bg-info">
+      <div className="Thumbnail bg-primary py-1">
+        photo here
+      </div>
+      <div>
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+      </div>
+    </div>
+ */}
+
+
+
+<Contact />
 
   </section>
 

@@ -25,7 +25,7 @@ return (
                     <h5 className="line1">
                         Strategy
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3"> We develop corporate & brand strategies that <br className="mobile-no" /> set you apart</h6>
 
@@ -57,7 +57,7 @@ return (
                     <h5 className="line1">
                       Rapid Results Through Teamwork
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3"> Harnessing the power of a team of talented <br className="mobile-no" /> innovators to build usable products and services</h6>
 
@@ -89,7 +89,7 @@ return (
                     <h5 className="line1">
                       Ideas Aren’t Enough
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3"> This generation is only fascinated by results, let’s <br className="mobile-no" /> help you go from ideas to MVPs rapidly </h6>
 
@@ -120,7 +120,7 @@ return (
                     <h5 className="line1">
                       Bringing You Project 1000
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3"> Our digital skills training to postion young minds <br className="mobile-no" /> for relevance, as an avenue for combating cyber fraud</h6>
 

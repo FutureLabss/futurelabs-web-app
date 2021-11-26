@@ -1,7 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar'
 import { Nav } from 'react-bootstrap'
 import   { Offcanvas } from 'react-bootstrap'
-// import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 
 
 
@@ -65,28 +65,28 @@ export default function ToolBar(props){
            
 
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
-         <Nav.Link className="textd my-2 text-muted" to="/"><strong>HOME</strong> </Nav.Link>
+         <Nav.Link className="textd my-2 text-muted" href="/"><strong>HOME</strong> </Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/about"> <strong>ABOUT</strong> </Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/about2"><strong>ABOUT</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/about2"><strong>ABOUT</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/services"><strong>SERVICES</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/services2"><strong>SERVICES</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/services2"><strong>SERVICES</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/strategy"> <strong>STRATEGY</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/strategy2"><strong>STRATEGY</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/strategy2"><strong>STRATEGY</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/modelling"> <strong>3-D MODELLING</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/modelling2"><strong>3-D MODELLING</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/modelling2"><strong>3-D MODELLING</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/products"><strong>PRODUCTS</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/products2"><strong>PRODUCTS</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/products2"><strong>PRODUCTS</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/websites"> <strong>WEBSITES</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/websites2"><strong>WEBSITES</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/websites2"><strong>WEBSITES</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/digitalart"> <strong>DIGITAL ART</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" to="/digitalart2"><strong>DIGITAL ART</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/digitalart2"><strong>DIGITAL ART</strong></Nav.Link>
          {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
          
 

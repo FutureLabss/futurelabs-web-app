@@ -68,7 +68,7 @@ return (
             <br />
             agency with global
             <br />
-            footprints
+            footprints.
           </h3>
 
           <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
@@ -79,7 +79,7 @@ return (
         </div>
       </div>
 
-      <div className="section2-image home-image2 sm-2 bg-warning"></div>
+      <div className="section2-image home-image2 sm-2 .bg-warning"></div>
 
     </div>
 
@@ -240,7 +240,7 @@ return (
 
     <div className="container">
       <div className="row .bg-warning d-flex justify-space-between">
-        <div className="col-9 .bg-primary px-3 px-sm-1 text-white mobile-yes">
+        <div className="col-9 .bg-primary px-3 px-sm-1 text-white mobile-yes-1">
 
           <h5 className="line6">
             Seamless Cross-border <br className="mobile-no"/>

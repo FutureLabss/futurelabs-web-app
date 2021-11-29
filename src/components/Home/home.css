@@ -84,9 +84,17 @@
     display: none;
 }
 
+.mobile-yes-1 {
+    visibility: hidden;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+    .mobile-yes-1 {
+        visibility: visible;
+    }
 
     .mobile-no {
         display: none;
@@ -155,6 +163,7 @@
         line-height: 40px !important;
     }
     
+
     .line6, .line4 {
         font-family: Roboto !important;
         font-style: Bold !important;
@@ -205,6 +214,8 @@
     font-style: Bold;
     font-size: 33px;
     line-height: 42px;
+
+    
 }
 
 .line3 {
@@ -219,6 +230,7 @@
     font-size: 40px;
     line-height: 47px;
 }
+
 
 .line5 {
     font-family: Raleway;
@@ -277,6 +289,8 @@
    
    
     line-height: 35px;
+    
+    border-color: #FF9000 !important;
 }
 
 
@@ -295,6 +309,10 @@
        
        
         line-height: 35px;
+
+        border-color: #FF9000 !important;
+
+
     }
 
 

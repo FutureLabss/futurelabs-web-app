@@ -60,7 +60,7 @@ return (
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
-                    <h3 className="line4">
+                    <h3 className="line2">
                         <span className="italicize"> 
                           We enable you to
                           <br />

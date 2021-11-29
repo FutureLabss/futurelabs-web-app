@@ -1,5 +1,5 @@
-
 import "./home.css"
+import Contact from "../layout/contact"
 
 
 export default function Home() {
@@ -242,13 +242,15 @@ return (
       <div className="row .bg-warning d-flex justify-space-between">
         <div className="col-9 .bg-primary px-3 px-sm-1 text-white mobile-yes-1">
 
-          <h5 className="line6">
+          <h5 className="line6 ">
             Seamless Cross-border <br className="mobile-no"/>
-            Payments and Currency  <br className="mobile-no"/>
+            Payments and Currency <br className="mobile-no"/> 
             Conversion
           </h5>
-          <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6>
 
+          <h5 className="line5 ">
+            Securing Payments for Tomorrow on the Web
+          </h5>
 
         </div>
         
@@ -293,7 +295,11 @@ return (
               23 Sept, 2021
               <hr className="under bg-warning rounded " />
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+            <p>Coca-cola focuses on improving the community
+relationships and increasing thhier happiness,that
+positively reflects on thier public image, resulting
+in customer and revenue rise.
+</p>
           </div>
         </div>
       </div>
@@ -310,7 +316,11 @@ return (
               23 Sept, 2021
               <hr className="under .bg-warning rounded " />
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+            <p>Coca-cola focuses on improving the community
+relationships and increasing thhier happiness,that
+positively reflects on thier public image, resulting
+in customer and revenue rise.
+</p>
           </div>
         </div>
       </div>
@@ -327,7 +337,11 @@ return (
               23 Sept, 2021
               <hr className="under .bg-warning rounded " />
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+            <p>Coca-cola focuses on improving the community
+relationships and increasing thhier happiness,that
+positively reflects on thier public image, resulting
+in customer and revenue rise.
+</p>
           </div>
         </div>
       </div>
@@ -337,6 +351,49 @@ return (
 
     </div>
 
+
+
+    {/* THESE PARENTS ONLY APPEAR ON MOBILE */}
+
+    {/* <div className="Thumbnail-parent bg-danger mobile-yes-thumb">
+      <div className="Thumbnail bg-primary py-1">
+        photo here
+      </div>
+      <div>
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+      </div>
+    </div>
+
+
+    <div className="Thumbnail-parent bg-warning">
+      <div className="Thumbnail bg-primary py-1">
+        photo here
+      </div>
+      <div>
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+      </div>
+    </div>
+
+
+    <div className="Thumbnail-parent bg-info">
+      <div className="Thumbnail bg-primary py-1">
+        photo here
+      </div>
+      <div>
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
+      </div>
+    </div>
+ */}
+
+
+
+<Contact />
 
   </section>
 

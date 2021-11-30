@@ -284,7 +284,7 @@ return (
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
 
-      <div className="col-sm-4 py-sm-4 py-5">
+      <div className="col-sm-4 py-sm-4 py-4">
         <div className="px-2 Thumbnail-parent .bg-danger">
           <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded">
             {/* photo here */}
@@ -306,7 +306,7 @@ return (
       </div>
 
 
-      <div className="col-sm-4 py-sm-4 py-5">
+      <div className="col-sm-4 py-sm-4 py-4">
         <div className="px-2 Thumbnail-parent .bg-danger">
           <div className="Thumbnail Thumbnail-image2 .bg-primary py-1 rounded">
             {/* photo here */}
@@ -328,7 +328,7 @@ return (
       </div>
 
 
-      <div className="col-sm-4 py-sm-4 py-5">
+      <div className="col-sm-4 py-sm-4 py-4">
         <div className="px-2 Thumbnail-parent .bg-danger">
           <div className="Thumbnail Thumbnail-image3 bg-primary py-1 rounded">
             {/* photo here */}

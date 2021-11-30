@@ -26,7 +26,7 @@ return (
                       Websites
 
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning websites-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3"> We are poised to help your enterprise gain <br className="mobile-no" /> the visibilty and engagements it needs</h6>
 
@@ -58,7 +58,7 @@ return (
                     <h5 className="line1">
                     Gospel Worship Has Never <br className="mobile-no" />  Been Better With Emmy Chris
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning websites-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3">Just another website we brought to life</h6>
 
@@ -90,7 +90,7 @@ return (
                     <h5 className="line1">
                     Nature At The Comfort of <br className="mobile-no" /> Your Home
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning websites-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3"> We built visibililty for Green to satisfy nature lovers</h6>
 
@@ -121,7 +121,7 @@ return (
                     <h5 className="line1">
                       Seamless Cross-border  <br className="mobile-no" /> Payments and Currency  <br className="mobile-no" /> Conversion
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning websites-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6>
 

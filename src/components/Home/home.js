@@ -68,18 +68,18 @@ return (
             <br />
             agency with global
             <br />
-            footprints
+            footprints.
           </h3>
 
           <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
 
-          <button type="button" class="btn btn-outline-warning button-text mt-4 text-dark">LEARN MORE</button>
+          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark">LEARN MORE</button>
 
 
         </div>
       </div>
 
-      <div className="section2-image home-image2 sm-2 bg-warning"></div>
+      <div className="section2-image home-image2 sm-2 .bg-warning"></div>
 
     </div>
 
@@ -101,7 +101,7 @@ return (
 
           <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
 
-          <button type="button" class="btn btn-outline-warning button-text mt-4 text-dark">LEARN MORE</button>
+          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark">LEARN MORE</button>
 
         </div>
 
@@ -139,7 +139,7 @@ return (
             audience finds relatable and actionable
           </h3>
 
-          <button type="button" class="btn btn-outline-warning button-text mt-4 text-dark">LEARN MORE</button>
+          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark">LEARN MORE</button>
 
         </div>
       </div>
@@ -166,7 +166,7 @@ return (
             audience finds relatable and actionable
           </h3>
 
-          <button type="button" class="btn btn-outline-warning button-text mt-4 text-dark">LEARN MORE</button>
+          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark">LEARN MORE</button>
 
         </div>
 
@@ -240,7 +240,7 @@ return (
 
     <div className="container">
       <div className="row .bg-warning d-flex justify-space-between">
-        <div className="col-9 .bg-primary px-3 px-sm-1 text-white ungroup">
+        <div className="col-9 .bg-primary px-3 px-sm-1 text-white mobile-yes-1">
 
           <h5 className="line6 ">
             Seamless Cross-border <br className="mobile-no"/>

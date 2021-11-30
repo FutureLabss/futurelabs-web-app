@@ -25,7 +25,7 @@ return (
                   <h5 className="line1">
                     3D Modeling
                   </h5>
-                  {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                  {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
                   <h6 className="line3"> What if a 12 year old genius reimagined the future of <br className="mobile-no" /> urban transportation, flying cars and all?</h6>
 
@@ -57,7 +57,7 @@ return (
                     <h5 className="line1">
                       Precision
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3">Watches are meant to tell more than time,  with <br className="mobile-no" /> future time pieces, we redefined luxury and <br className="mobile-no" /> precision</h6>
 
@@ -89,7 +89,7 @@ return (
                     <h5 className="line1">
                       Imagination
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6>
 
@@ -120,7 +120,7 @@ return (
                     <h5 className="line1">
                       Imagination
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
                     <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6>
 

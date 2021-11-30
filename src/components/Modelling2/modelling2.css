@@ -43,10 +43,10 @@
 
     }
 
-    .button-text {
+    .modelling-button-text {
         font-family: Roboto;
         font-style: Medium;
-        font-size: 1.2rem;
+        font-size: 9px;
         
     }
 
@@ -54,7 +54,7 @@
 }
 
 
-.button-text {
+.modelling-button-text {
     font-family: Roboto;
     font-style: Medium;
     font-size: 1.8rem;

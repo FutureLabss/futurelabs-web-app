@@ -50,7 +50,6 @@ export default function ToolBar(props){
       <Offcanvas.Body className="textd">
 
         {/* <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd container-fluid"> */}
-           <Nav.Link className="text-muted container-fluid" href="/services2"><h3 className="text-dark">WHAT WE DO <br/>COMPANY<br/>CONTACT</h3></Nav.Link>
          {/* <Nav.Link className="text-muted container-fluid" href="/"><i class="fa fa fa-home" aria-hidden="true"></i>HOME</Nav.Link> */}
          {/* <Nav.Link className="text-muted container-fluid" href="/about"><i class="fa fa fa-user-circle" aria-hidden="true"></i> ABOUT</Nav.Link> */}
           {/* <Nav.Link className="text-muted container-fluid" href="/services"><i class="fa-brands fa-servicestack"></i>SERVICES</Nav.Link> */}
@@ -65,6 +64,7 @@ export default function ToolBar(props){
            
 
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
+        <Nav.Link className="text-muted container-fluid" href="/services2"><h3 className="text-dark">WHAT WE DO <br/>COMPANY<br/>CONTACT</h3></Nav.Link>
          <Nav.Link className="textd my-2 text-muted" href="/"><strong>HOME</strong> </Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/about"> <strong>ABOUT</strong> </Link> */}

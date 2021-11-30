@@ -73,7 +73,7 @@ return (
 
           <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
 
-          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark">LEARN MORE</button>
+          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark p-1">Learn More</button>
 
 
         </div>
@@ -101,7 +101,7 @@ return (
 
           <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
 
-          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark">LEARN MORE</button>
+          <button type="button" class="btn btn-outline-light home-button-text1 mt-4 text-dark p-1">Learn More</button>
 
         </div>
 
@@ -139,7 +139,7 @@ return (
             audience finds relatable and actionable
           </h3>
 
-          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark">LEARN MORE</button>
+          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark p-1">Learn More</button>
 
         </div>
       </div>
@@ -166,7 +166,7 @@ return (
             audience finds relatable and actionable
           </h3>
 
-          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark">LEARN MORE</button>
+          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark p-1">Learn More</button>
 
         </div>
 
@@ -295,11 +295,12 @@ return (
               23 Sept, 2021
               <hr className="under bg-warning rounded " />
             </p>
-            <p>Coca-cola focuses on improving the community
-relationships and increasing thhier happiness,that
-positively reflects on thier public image, resulting
-in customer and revenue rise.
-</p>
+            <p>
+              Coca-cola focuses on improving the community
+              relationships and increasing thhier happiness,that
+              positively reflects on thier public image, resulting
+              in customer and revenue rise.
+            </p>
           </div>
         </div>
       </div>
@@ -316,11 +317,12 @@ in customer and revenue rise.
               23 Sept, 2021
               <hr className="under .bg-warning rounded " />
             </p>
-            <p>Coca-cola focuses on improving the community
-relationships and increasing thhier happiness,that
-positively reflects on thier public image, resulting
-in customer and revenue rise.
-</p>
+            <p>
+              Coca-cola focuses on improving the community
+              relationships and increasing thhier happiness,that
+              positively reflects on thier public image, resulting
+              in customer and revenue rise.
+            </p>
           </div>
         </div>
       </div>
@@ -337,11 +339,12 @@ in customer and revenue rise.
               23 Sept, 2021
               <hr className="under .bg-warning rounded " />
             </p>
-            <p>Coca-cola focuses on improving the community
-relationships and increasing thhier happiness,that
-positively reflects on thier public image, resulting
-in customer and revenue rise.
-</p>
+            <p>
+              Coca-cola focuses on improving the community
+              relationships and increasing thhier happiness,that
+              positively reflects on thier public image, resulting
+              in customer and revenue rise.
+            </p>
           </div>
         </div>
       </div>

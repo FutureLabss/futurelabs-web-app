@@ -308,12 +308,12 @@
     .home-button-text {
         font-family: Raleway;
         font-style: Medium;
-        font-size: 9px;
+        /* font-size: 4px; */
 
         color: white !important;
        
        
-        line-height: 35px;
+        /* line-height: 35px; */
 
         border-color: #FF9000 !important;
 

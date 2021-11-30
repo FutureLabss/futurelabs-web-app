@@ -1,5 +1,6 @@
 
 import "./services2.css"
+import { Link } from "react-router-dom"
 
 
 export default function Services2() {
@@ -25,7 +26,7 @@ return (
                     <h5 className="line1">
                         Strategy
                     </h5>
-                    <button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white p-1">Learn More</button>
+                     <Link to="/strategy2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white p-1">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 
@@ -57,7 +58,7 @@ return (
                     <h5 className="line1">
                        Product <br className="mobile-no" /> Design
                     </h5>
-                    <button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white p-1">Learn More</button>
+                    <Link to="/products2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white p-1">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 
@@ -89,7 +90,7 @@ return (
                     <h5 className="line1">
                         Websites
                     </h5>
-                    <button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white p-1">Learn More</button>
+                    <Link to="/websites2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white p-1">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 
@@ -120,7 +121,7 @@ return (
                     <h5 className="line1">
                         3D Modeling
                     </h5>
-                    <button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white p-1">Learn More</button>
+                    <Link to="/modelling2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white p-1">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 
@@ -151,7 +152,7 @@ return (
                     <h5 className="line1">
                         Digital Art
                     </h5>
-                    <button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white p-1">Learn More</button>
+                    <Link to="/digitalart2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white p-1">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 

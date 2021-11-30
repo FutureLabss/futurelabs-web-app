@@ -23,11 +23,11 @@ return (
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                        Strategy
+                        Digital Art
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> We develop corporate & brand strategies that <br className="mobile-no" /> set you apart</h6>
+                    <h6 className="line3">Art is no more just portraits. It’s digital now! </h6>
 
 
                 </div>

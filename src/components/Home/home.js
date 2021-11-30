@@ -101,7 +101,7 @@ return (
 
           <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
 
-          <button type="button" class="btn btn-outline-light home-button-text1 mt-4 text-dark p-1">Learn More</button>
+          <button type="button" class="btn btn-outline-light home-button-text1 mt-4 text-white p-1">Learn More</button>
 
         </div>
 
@@ -284,7 +284,7 @@ return (
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
 
-      <div className="col-sm-4 py-sm-4">
+      <div className="col-sm-4 py-sm-4 py-5">
         <div className="px-2 Thumbnail-parent .bg-danger">
           <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded">
             {/* photo here */}
@@ -306,7 +306,7 @@ return (
       </div>
 
 
-      <div className="col-sm-4 py-sm-4">
+      <div className="col-sm-4 py-sm-4 py-5">
         <div className="px-2 Thumbnail-parent .bg-danger">
           <div className="Thumbnail Thumbnail-image2 .bg-primary py-1 rounded">
             {/* photo here */}
@@ -328,7 +328,7 @@ return (
       </div>
 
 
-      <div className="col-sm-4 py-sm-4">
+      <div className="col-sm-4 py-sm-4 py-5">
         <div className="px-2 Thumbnail-parent .bg-danger">
           <div className="Thumbnail Thumbnail-image3 bg-primary py-1 rounded">
             {/* photo here */}

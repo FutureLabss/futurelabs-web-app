@@ -37,6 +37,8 @@
         font-family: Roboto;
         font-style: Medium;
         font-size: 10px !important;
+
+        border-color: #FF9000 !important;
         
     }
 
@@ -48,6 +50,8 @@
     font-family: Roboto;
     font-style: Medium;
     font-size: 17px;
+
+    border-color: #FF9000 !important;
 }
 
 

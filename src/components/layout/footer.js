@@ -1,10 +1,9 @@
-
 import './footer.css'
 
 export default function Footer(props) {
     return (
         <div>
-            <div className="container-fluid mt-5">
+            <div className="container mt-5">
   <div className="row mt-5 d-flex justify-content-around lastted mobile-nop3 ">
     
 
@@ -48,13 +47,13 @@ export default function Footer(props) {
       <p className="fot container">
        HOME
       </p>
-      <p className="fot container my-2">
+      <p className="fot container ">
        ABOUT
       </p>
-      <p className="fot container my-2">
+      <p className="fot container ">
        SERVICES
       </p>
-      <p className="fot container my-2">
+      <p className="fot container ">
        BLOG
       </p>
     </div>
@@ -85,7 +84,7 @@ export default function Footer(props) {
         <div class="input-group mb-3">
           <input type="text" class="form-control " placeholder="Enter your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2" />
           
-            <button class="btn bg-warning " type="button">Send</button>
+            <button class="btn colors " type="button">Send</button>
          
         </div>
             

@@ -79,7 +79,11 @@ return (
         </div>
       </div>
 
-      <div className="section2-image home-image2 sm-2 .bg-warning"></div>
+      <div className="section2-image home-image2 sm-2 .bg-warning">
+        <div class="vertical-centering text-center">
+          <img src="https://res.cloudinary.com/dremo/image/upload/v1638808890/Futurelabs-logo_2_sgxejz.svg" alt=""/>
+        </div>
+      </div>
 
     </div>
 
@@ -283,7 +287,7 @@ return (
   <section>
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
-
+      <h1 className="contact mb-5 text-center">Latest Stories</h1>
       <div className="col-sm-4 py-sm-4 py-4">
         <div className="px-2 Thumbnail-parent .bg-danger">
           <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded">

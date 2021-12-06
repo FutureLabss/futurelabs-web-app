@@ -15,6 +15,7 @@ import Modelling2 from '../components/Modelling2/modelling2'
 import Products2 from '../components/Products2/products2'
 import Websites2 from '../components/Websites2/websites2'
 import DigitalArt2 from '../components/DigitalArt2/digitalArt2'
+import singlepost from '../components/singlepost/singlepost'
 
 const pageRoutes = [
     {path: '/about2', element: About2 },
@@ -25,6 +26,7 @@ const pageRoutes = [
     {path: '/products2', element: Products2 },
     {path: '/websites2', element: Websites2 },
     {path: '/digitalArt2', element: DigitalArt2 },
+    {path: '/singlepost', element: singlepost },
 
 
     {path: '/about', element: About },

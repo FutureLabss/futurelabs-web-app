@@ -73,7 +73,7 @@ return (
 
           <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
 
-          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark p-1">Learn More</button>
+          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark">Learn More</button>
 
 
         </div>
@@ -101,7 +101,7 @@ return (
 
           <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
 
-          <button type="button" class="btn btn-outline-light home-button-text1 mt-4 text-white p-1">Learn More</button>
+          <button type="button" class="btn btn-outline-light home-button-text1 mt-4 text-white p-2 px-3">Learn More</button>
 
         </div>
 
@@ -139,7 +139,7 @@ return (
             audience finds relatable and actionable
           </h3>
 
-          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark p-1">Learn More</button>
+          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark p-2 px-3">Learn More</button>
 
         </div>
       </div>
@@ -166,7 +166,7 @@ return (
             audience finds relatable and actionable
           </h3>
 
-          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark p-1">Learn More</button>
+          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark p-2 px-3">Learn More</button>
 
         </div>
 

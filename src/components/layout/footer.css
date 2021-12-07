@@ -9,7 +9,7 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-   
+    
 }
 .colors{
     background-color: #FF9000;
@@ -57,9 +57,27 @@ color: #000000
 .mobile-nop{
     display: none;
 }
+
+.imgsss{
+    width: 70%;
+    height: 500px;
+}
+.view{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+}
 @media only screen and (max-width: 600px) {
     .ph-no{
-        display: block;
+        display: flex;
+        
+    }
+    .vid{
+        margin-left: -3px;
     }
     .mobile-yest{
         display: none;
@@ -78,7 +96,7 @@ color: #000000
             font-weight: normal;
             font-size: 18px;
             line-height: 21px;
-           
+           margin-right: 1.2rem;
        
     }
 }

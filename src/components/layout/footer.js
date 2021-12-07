@@ -1,4 +1,5 @@
 import './footer.css'
+import { Nav } from 'react-bootstrap'
 
 export default function Footer(props) {
     return (
@@ -44,17 +45,18 @@ export default function Footer(props) {
         <strong className="carl mt-xs-2">Company</strong> 
       </h6>
 
-      <p className="fot container">
-       HOME
+      <p className="fot ">
+      <Nav.Link className="  text-muted" href="/">HOME</Nav.Link>
+     
       </p>
-      <p className="fot container ">
-       ABOUT
+      <p className="fot  ">
+      <Nav.Link className="  text-muted" href="/about2"><strong>ABOUT</strong></Nav.Link>
       </p>
-      <p className="fot container ">
-       SERVICES
+      <p className="fot  ">
+      <Nav.Link className="  text-muted" href="/services2"><strong>SERVICES</strong></Nav.Link>
       </p>
-      <p className="fot container ">
-       BLOG
+      <p className="fot  ">
+      <Nav.Link className="  text-muted" href="/singlepost"><strong>BLOG</strong></Nav.Link>
       </p>
     </div>
     <div className="col-sm-3 mobile-nop">

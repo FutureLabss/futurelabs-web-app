@@ -3,7 +3,7 @@
     font-family: Raleway;
 font-style: normal;
 font-weight: bold;
-font-size: 25px;
+font-size: 20px;
 line-height: 35px;
 
 color: rgba(33, 33, 33, 0.22);
@@ -13,7 +13,7 @@ color: rgba(33, 33, 33, 0.22);
     font-family: Raleway;
 font-style: normal;
 font-weight: bold;
-font-size: 52px;
+font-size: 40px;
 line-height: 61px;
 /* identical to box height */
 
@@ -34,4 +34,8 @@ line-height: 42px;
 
 color: #000000;
 
+}
+.buttons:hover{
+    background-color: #FF9000;
+    color: white;
 }

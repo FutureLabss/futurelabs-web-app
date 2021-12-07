@@ -17,17 +17,17 @@ export default function Footer(props) {
         hello@futurelabs.agency
       </p>
       <div className="row ph-no">
-        <div className="col-3 mb-3">
+        <div className="col-3 mb-3 vid">
         <a href="https://twitter.com/FutureLabsNG"><img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png" alt="" /></a>
         </div>
-        <div className="col-3 mb-3">
+        <div className="col-3 mb-3 vid">
         <a href="https://www.facebook.com/FutureLabsNews"><img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png" alt="" /></a>
           </div>
-          <div className="col-3 mb-3">
+          <div className="col-3 mb-3 vid">
           <a href="https://www.instagram.com/futurelabshq/"><img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png" alt="" /></a>
           </div>
       </div>
-      <div className="row ph-yes mb-3">
+      <div className="row ph-yes mb-3 vid">
         <div className="col-4">
 <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png" alt="" />
         </div>

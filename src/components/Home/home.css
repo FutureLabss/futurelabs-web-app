@@ -312,6 +312,19 @@ color: #212121;
     border-color: #FF9000 !important;
 }
 
+.home-button-text:hover {
+    font-family: Raleway;
+    font-style: Medium;
+    font-size: 17px;
+   
+   
+    line-height: 35px;
+    color: white !important;
+    background-color: #FF9000 !important;
+    
+    border-color: #FF9000 !important;
+}
+
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -333,6 +346,33 @@ color: #212121;
 
 
     }
+
+    .home-button-text:hover {
+        font-family: Raleway;
+        font-style: Medium;
+        /* font-size: 4px; */
+
+
+        color: white !important;
+
+        background-color: #FF9000 !important;
+    
+        border-color: #FF9000 !important;
+        padding: 9px 24px;
+        font-size: 140px;
+
+
+        
+       
+       
+        /* line-height: 35px; */
+
+        border-color: #FF9000 !important;
+
+
+    }
+
+
 
 
 

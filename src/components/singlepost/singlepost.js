@@ -44,17 +44,17 @@ export default function Singlepost() {
     <Grid item xs={12} p={1} px={{md:25}}>
     <Stack direction="row" justifyContent="space-between "mb={5}>
         
-    <AvatarGroup max={4}>
-    <Avatar alt="Remy Sharp" src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1638887604/Ellipse_4_bvdgwu.png" />
+    <AvatarGroup max={4} >
+    <Avatar  sx={{ width: 56, height: 56 }} alt="Remy Sharp" src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1638887604/Ellipse_4_bvdgwu.png" />
      <h5>Ezekiel Simon</h5>
      
         
      </AvatarGroup >
-      <Avatar
-      alt="Remy Sharp"
-      src="/static/images/avatar/1.jpg"
-      sx={{ width: 56, height: 56 }}
-    />
+     <AvatarGroup max={4}>
+      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+      <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+      <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+      </AvatarGroup >
     </Stack>
         </Grid>
       <Grid className="text-center" item xs={12}>
@@ -123,8 +123,11 @@ export default function Singlepost() {
            
             </Box>
         </Grid>
+        <Box sx={{ textAlign: 'left', mx: 20 ,  fontStyle: 'italic', fontSize: 'h6.fontSize'}} >22 hours ago.</Box>
+        
        
       </Grid>
+      
     </>
   );
 }

@@ -11,7 +11,7 @@ export default function ToolBar(props){
     return (
         <div className="nav text-white">
     <div className="logo">
-      {/* Logo image is here */}
+      <Nav.Link href="/">{/* Logo image is here */}</Nav.Link>
     </div>
     
 
@@ -43,7 +43,7 @@ export default function ToolBar(props){
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel" className="bg-light text-decoration-none textd"
       placement="end">
-       <img  className="w-50 mt-5  container"src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt=""/> 
+      <Nav.Link href="/"> <img  className="w-50 mt-5  container"src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt=""/> </Nav.Link>
       <Offcanvas.Header closeButton>
         <Offcanvas.Title id="offcanvasNavbarLabel " className="textd"></Offcanvas.Title>
       </Offcanvas.Header> 
@@ -65,7 +65,7 @@ export default function ToolBar(props){
 
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
         <Nav.Link className="text-muted container-fluid" href="/services2"><h3 className="text-dark">WHAT WE DO <br/>COMPANY<br/>CONTACT</h3></Nav.Link>
-         <Nav.Link className="textd my-2 text-muted" href="/"><strong>HOME</strong> </Nav.Link>
+         {/* <Nav.Link className="textd my-2 text-muted" href="/"><strong>HOME</strong> </Nav.Link> */}
 
          {/* <Link className="textd mt-2 text-muted" to="/about"> <strong>ABOUT</strong> </Link> */}
          <Nav.Link className="textd .my-2 text-muted" href="/about2"><strong>ABOUT</strong></Nav.Link>

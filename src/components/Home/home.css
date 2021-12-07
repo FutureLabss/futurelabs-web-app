@@ -314,6 +314,7 @@ color: #212121;
 
 .home-button-text:hover {
     background-color: #FF9000 !important;
+    color: white !important;
     
 }
 
@@ -365,6 +366,7 @@ color: #212121;
     .home-button-text:hover {
         
         background-color: #FF9000 !important;
+        color: white !important;
     
         
     }

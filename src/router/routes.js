@@ -11,6 +11,8 @@ import About2 from '../components/About2/about2'
 import Services2 from '../components/Services2/services2'
 import Strategy2 from '../components/Strategy2/strategy2'
 
+import PersistentDrawerRight from '../Blog/Homepage'
+
 import Modelling2 from '../components/Modelling2/modelling2'
 import Products2 from '../components/Products2/products2'
 import Websites2 from '../components/Websites2/websites2'
@@ -28,6 +30,8 @@ const pageRoutes = [
     {path: '/digitalArt2', element: DigitalArt2 },
     {path: '/singlepost', element: singlepost },
 
+
+    {path: '/home', element: PersistentDrawerRight },
 
     {path: '/about', element: About },
     {path: '/services', element: Services },

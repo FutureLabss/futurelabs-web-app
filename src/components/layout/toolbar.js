@@ -88,6 +88,8 @@ export default function ToolBar(props){
          {/* <Link className="textd mt-2 text-muted" to="/digitalart"> <strong>DIGITAL ART</strong></Link> */}
          <Nav.Link className="textd .my-2 text-muted" href="/digitalart2"><strong>DIGITAL ART</strong></Nav.Link>
          {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
+
+         <Nav.Link className="textd .my-2 text-muted" href="/home"><strong>BLOG</strong></Nav.Link>
          
 
         </Nav>

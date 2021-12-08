@@ -208,3 +208,5 @@ around the globe</Box>
     </div>
   );
 }
+
+// export default Homepage

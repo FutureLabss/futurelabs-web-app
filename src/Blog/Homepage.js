@@ -20,6 +20,11 @@ import MailIcon from '@material-ui/icons/Mail';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 
+import Cardcomponent from './Cardcomponent';
+
+
+
+
 
 const drawerWidth = 240;
 
@@ -170,6 +175,8 @@ around the globe</Box>
       <Typography variant="h4" className={classes.blogTitle}>
             Latest Posts
           </Typography>
+      <Cardcomponent/>
+
       </Container>
       </main>
       <Drawer
@@ -205,8 +212,13 @@ around the globe</Box>
           ))}
         </List>
       </Drawer>
+
+      
+
+      
     </div>
   );
 }
 
 // export default Homepage
+

@@ -56,7 +56,7 @@ export default function Footer(props) {
       <Nav.Link className="  text-muted" href="/services2"><strong>SERVICES</strong></Nav.Link>
       </p>
       <p className="fot  ">
-      <Nav.Link className="  text-muted" href="/singlepost"><strong>BLOG</strong></Nav.Link>
+      <Nav.Link className="  text-muted" href="/post"><strong>BLOG</strong></Nav.Link>
       </p>
     </div>
     <div className="col-sm-3 mobile-nop">

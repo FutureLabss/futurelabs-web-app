@@ -66,7 +66,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-start',
 }));
 
-export default function PersistentDrawerRight() {
+export default function PersistentDrawer() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -218,7 +218,7 @@ export default function PersistentDrawerRight() {
         </Grid>
         <Grid item xs={12} sx={{ textAlign: 'center'}} >
           <h5 > Health</h5>
-        </Grid>git 
+        </Grid>
         <Grid item xs={12} sx={{ textAlign: 'center'}}>
           <h5> Business</h5>
         </Grid>

@@ -6,10 +6,12 @@ import modelling from '../components/modelling/modelling'
 import product from '../components/Products/product'
 import websites from '../components/websites/websites'
 import branding from '../components/branding/branding'
-import PersistentDrawerRight from '../Blog/Singlepost'
+import PersistentDrawer from '../Blog/Singlepost'
 import About2 from '../components/About2/about2'   
 import Services2 from '../components/Services2/services2'
 import Strategy2 from '../components/Strategy2/strategy2'
+
+import PersistentDrawerRight from '../Blog/Homepage'
 
 import Modelling2 from '../components/Modelling2/modelling2'
 import Products2 from '../components/Products2/products2'
@@ -27,9 +29,11 @@ const pageRoutes = [
     {path: '/products2', element: Products2 },
     {path: '/websites2', element: Websites2 },
     {path: '/digitalArt2', element: DigitalArt2 },
-   
-    {path: '/post', element: PersistentDrawerRight },
-    
+
+
+      {path: '/post', element: PersistentDrawer},
+    {path: '/home', element: PersistentDrawerRight },
+
     {path: '/about', element: About },
     {path: '/services', element: Services },
     {path: '/strategy', element: strategy },
@@ -38,6 +42,6 @@ const pageRoutes = [
     {path: '/websites', element: websites },
      {path: '/branding', element: branding },
     {path: '/', element: Home },
-]
+]        
 
 export default pageRoutes

@@ -18,8 +18,8 @@ export default function Contact(props) {
   <textarea className="form-control vred" placeholder="Leave a comment here" id="floatingTextarea2" style={{height: "263px"}}></textarea>
   <label for="floatingTextarea2 vred">Leave a comment here</label>
 </div>
-<button type="button" class=" buttons  text-center mt-5">Submit</button>
-    </div>
+<button type="button" class=" buttons  text-center mt-5">Submit</button>   
+    </div>        
     </div>
 </div>
 

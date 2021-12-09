@@ -13,6 +13,7 @@ function Cardcomponent() {
         setPosts((res.data).filter(item => {
             return item.id < 20
         }));
+        
       })
       .catch((err) => {
         console.log(err);

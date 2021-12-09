@@ -164,17 +164,16 @@ export default function PersistentDrawerRight() {
         })}
       >
         <div className={classes.drawerHeader} />
-        <Box px={2} className={classes.hero}>
+        <Box px={2} className={classes.hero} >
         <Box>Stories From The<br/> Best Curators</Box>
       </Box>
       <Box px={2} className={classes.heros}>
-        <Box>Read well-crafted articles from happenings<br/> 
-around the globe</Box>
+        <Box>Read well-crafted articles from happenings <br/> around the globe</Box>
       </Box>
       <Container maxWidth="lg" className={classes.blogContainer}>
       <Typography variant="h4" className={classes.blogTitle}>
-            Latest Posts
-          </Typography>
+        Latest Posts
+      </Typography>
       <Cardcomponent/>
 
       </Container>

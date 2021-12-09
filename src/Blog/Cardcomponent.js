@@ -38,7 +38,7 @@ function Cardcomponent() {
     )
 
 
-    
+
     const classes = useStyles()
     
 
@@ -50,10 +50,10 @@ function Cardcomponent() {
             <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card}>
               <CardContent sx={{height: '300px'}}>
               <Typography
-                  sx={{ fontSize: 14 }}
+                  sx={{ fontSize: 14, mb: 6  }}
                   color="white"
                   gutterBottom
-                  sx={{ mb: 6 }}
+                  
                 >
               
                   Feb {post.id}, 2022
@@ -85,10 +85,10 @@ function Cardcomponent() {
             <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card}>
               <CardContent sx={{height: '300px'}}>
               <Typography
-                  sx={{ fontSize: 14 }}
+                  sx={{ fontSize: 14, mb: 6  }}
                   color="white"
                   gutterBottom
-                  sx={{ mb: 6 }}
+                  
                 >
               
                   Feb {post.id}, 2022

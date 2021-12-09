@@ -98,7 +98,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "beginning",
     alignItems: "center",
     color: "#fff",
-    fontSize: "2.5rem"
+    fontSize: "2.5rem",
+    fontFamily: "Raleway",
+    fontStyle: "normal",
+    fontWeight: "bold"
   },
   heros: {
     position: "relative",
@@ -107,17 +110,21 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "beginning",
     alignItems: "center",
     color: "#fff",
-    fontSize: "1.4rem"
+    fontSize: "1.3rem",
+    fontFamily: "Roboto",
+    fontStyle: "normal",
+    fontWeight: "bold"
   },
   blogContainer: {
      paddingTop: theme.spacing(1)
   },
   blogTitle: {
-    fontWeight: "800",
+    fontWeight: "bold",
      paddingBottom: theme.spacing(1),
      position: "relative",
      display: "flex",
-     justifyContent: "center"
+     fontFamily: "Raleway",
+     fontStyle: "normal",
   }
 }));
 
@@ -173,7 +180,7 @@ around the globe</Box>
       </Box>
       <Container maxWidth="lg" className={classes.blogContainer}>
       <Typography variant="h4" className={classes.blogTitle}>
-            Latest Posts
+            Latest Stories
           </Typography>
       <Cardcomponent/>
 

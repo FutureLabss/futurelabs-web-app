@@ -11,7 +11,7 @@ import {
 //  Link
 } from "react-router-dom";
 import Footer from './components/layout/footer';
-import ToolBar from './components/layout/toolbar';
+// import ToolBar from './components/layout/toolbar';
 import Contact from './components/layout/contact';
 // import './index.css';
 // import App from './App';
@@ -20,7 +20,7 @@ import Contact from './components/layout/contact';
 
 ReactDOM.render(
   <BrowserRouter>
-  <ToolBar />
+  {/* <ToolBar /> */}
     <Routes>
       {
         pageRoutes.map((item)=>{

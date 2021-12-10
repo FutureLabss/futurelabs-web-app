@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
-    marginRight: 0,
+    marginRight: -drawerWidth,
   },
   hero: {
     backgroundImage: "url('https://res.cloudinary.com/dremo/image/upload/v1634903273/IMG_0107_1_a80rgw.png')",
@@ -110,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "beginning",
     alignItems: "center",
     color: "#fff",
-    fontSize: "1.3rem",
+    fontSize: "1.5rem",
     fontFamily: "Roboto",
     fontStyle: "normal",
     fontWeight: "bold"
@@ -133,14 +133,18 @@ export default function PersistentDrawerRight() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
-  const handleDrawerOpen = () => {
+   const handleDrawerOpen = () => {
     setOpen(true);
-  };
+   };
 
   const handleDrawerClose = () => {
     setOpen(false);
   };
-
+  // const handleDrawerToggle = () => {
+    // setMobileOpen(!mobileOpen);
+  // };
+  // const [mobileOpen, setMobileOpen] = React.useState(false)
+ 
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -159,6 +163,7 @@ export default function PersistentDrawerRight() {
             aria-label="open drawer"
             edge="end"
             onClick={handleDrawerOpen}
+            // onClick={handleDrawerToggle}
             className={clsx(open && classes.hide)}
           >
             <MenuIcon />

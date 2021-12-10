@@ -1,4 +1,4 @@
-
+import ToolBar from '../layout/toolbar';
 import "./websites2.css"
 
 
@@ -7,7 +7,7 @@ export default function Websites2() {
 return (
       
 <div>
-
+ <ToolBar /> 
   {/* *********************************************************************** */}
 
     {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}

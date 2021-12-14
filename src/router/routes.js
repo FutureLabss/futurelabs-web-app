@@ -14,7 +14,6 @@ import Services2 from '../components/Services2/services2'
 import Strategy2 from '../components/Strategy2/strategy2'
 
 
-
 import PersistentDrawerRight from '../Blog/Homepage'
 
 import Modelling2 from '../components/Modelling2/modelling2'

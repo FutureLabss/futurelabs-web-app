@@ -15,6 +15,7 @@ import Strategy2 from '../components/Strategy2/strategy2'
 import PersistentDrawerRight from '../Blog/Homepage'
 
 import Modelling2 from '../components/Modelling2/modelling2'
+
 import Products2 from '../components/Products2/products2'
 import Websites2 from '../components/Websites2/websites2'
 import DigitalArt2 from '../components/DigitalArt2/digitalArt2'

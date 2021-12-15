@@ -23,7 +23,7 @@ ReactDOM.render(
   <ToolBar />
     <Routes>
       {
-        pageRoutes.map((item)=>{
+        pageRoutes.map((item)=>{          
           return <Route path={item.path} element={<item.element />} />
         })
       }

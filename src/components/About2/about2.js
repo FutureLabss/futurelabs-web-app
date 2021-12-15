@@ -1,11 +1,11 @@
 import "./about2.css"
-
+import ToolBar from '../layout/toolbar';
 
 export default function About2() {
 return (
       
 <div>
-
+<ToolBar />
     {/* *********************************************************************** */}
 
         {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}
@@ -45,6 +45,8 @@ return (
 
     </section>
     {/* Section-One ends here */}
+
+    
 
 
 

@@ -1,12 +1,13 @@
 import "./home.css"
 import Contact from "../layout/contact"
+import ToolBar from '../layout/toolbar';
 
 
 export default function Home() {
 return (
       
 <div>
-
+<ToolBar />
   {/* *********************************************************************** */}
 
     {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}

@@ -5,20 +5,25 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import List from '@material-ui/core/List';
+// import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+// import ListItem from '@material-ui/core/ListItem';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
+// import ListItemText from '@material-ui/core/ListItemText';
+// import InboxIcon from '@material-ui/icons/MoveToInbox';
+// import MailIcon from '@material-ui/icons/Mail';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
+import { Nav } from 'react-bootstrap'
+import Cardcomponent from './Cardcomponent';
+
+
+
 
 
 const drawerWidth = 240;
@@ -80,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
-    marginRight: 0,
+    marginRight: -drawerWidth,
   },
   hero: {
     backgroundImage: "url('https://res.cloudinary.com/dremo/image/upload/v1634903273/IMG_0107_1_a80rgw.png')",
@@ -93,7 +98,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "beginning",
     alignItems: "center",
     color: "#fff",
-    fontSize: "2.5rem"
+    fontSize: "2.5rem",
+    fontFamily: "Raleway",
+    fontStyle: "normal",
+    fontWeight: "bold"
   },
   heros: {
     position: "relative",
@@ -102,17 +110,21 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "beginning",
     alignItems: "center",
     color: "#fff",
-    fontSize: "1.4rem"
+    fontSize: "1.5rem",
+    fontFamily: "Roboto",
+    fontStyle: "normal",
+    fontWeight: "bold"
   },
   blogContainer: {
      paddingTop: theme.spacing(1)
   },
   blogTitle: {
-    fontWeight: "800",
+    fontWeight: "bold",
      paddingBottom: theme.spacing(1),
      position: "relative",
      display: "flex",
-     justifyContent: "center"
+     fontFamily: "Raleway",
+     fontStyle: "normal",
   }
 }));
 
@@ -121,14 +133,18 @@ export default function PersistentDrawerRight() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
-  const handleDrawerOpen = () => {
+   const handleDrawerOpen = () => {
     setOpen(true);
-  };
+   };
 
   const handleDrawerClose = () => {
     setOpen(false);
   };
-
+  // const handleDrawerToggle = () => {
+    // setMobileOpen(!mobileOpen);
+  // };
+  // const [mobileOpen, setMobileOpen] = React.useState(false)
+ 
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -140,13 +156,14 @@ export default function PersistentDrawerRight() {
       >
         <Toolbar>
           <Typography variant="h6" noWrap className={classes.title}>
-            Future Labs
+            FutureLabs
           </Typography>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="end"
             onClick={handleDrawerOpen}
+            // onClick={handleDrawerToggle}
             className={clsx(open && classes.hide)}
           >
             <MenuIcon />
@@ -159,17 +176,18 @@ export default function PersistentDrawerRight() {
         })}
       >
         <div className={classes.drawerHeader} />
-        <Box px={2} className={classes.hero}>
+        <Box px={2} className={classes.hero} >
         <Box>Stories From The<br/> Best Curators</Box>
       </Box>
       <Box px={2} className={classes.heros}>
-        <Box>Read well-crafted articles from happenings<br/> 
-around the globe</Box>
+        <Box>Read well-crafted articles from happenings <br/> around the globe</Box>
       </Box>
       <Container maxWidth="lg" className={classes.blogContainer}>
       <Typography variant="h4" className={classes.blogTitle}>
-            Latest Posts
-          </Typography>
+        Latest Posts
+      </Typography>
+      <Cardcomponent/>
+
       </Container>
       </main>
       <Drawer
@@ -187,26 +205,15 @@ around the globe</Box>
           </IconButton>
         </div>
         <Divider />
-        <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
+        <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
       </Drawer>
+
+      
+
+      
     </div>
   );
 }
 
 // export default Homepage
+

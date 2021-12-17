@@ -3,8 +3,16 @@ import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import AvatarGroup from '@mui/material/AvatarGroup';
+
+import { useParams } from "react-router-dom";
+
   
-export default function Singlepost() {
+export default function Singlepost(props) {
+
+  const {id} = useParams()
+
+  console.log(id)
+
   return (
     <>
       <hr

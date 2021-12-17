@@ -31,7 +31,7 @@ const pageRoutes = [
     {path: '/products2', element: Products2 },
     {path: '/websites2', element: Websites2 },
     {path: '/digitalArt2', element: DigitalArt2 },
-    {path: '/singlepost', element: singlepost },
+    {path: '/singlepost/:id', element: singlepost },
 
 
     {path: '/home', element: PersistentDrawerRight },

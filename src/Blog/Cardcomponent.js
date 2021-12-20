@@ -2,10 +2,19 @@ import React, { useState, useEffect } from "react";
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import { makeStyles } from "@material-ui/core/styles";
 import axios from "axios";
-import "./Cardcomponent.css"
+// import App from "./cardToSinglepost.js"
+// import SinglePost from './Singlepost'
+
+import { useNavigate  } from "react-router-dom";
+
+
+
+
 
 function Cardcomponent() {
   const [posts, setPosts] = useState([]);
+
+  const history = useNavigate()
   
   useEffect(() => {
     axios
@@ -38,7 +47,6 @@ function Cardcomponent() {
     )
 
 
-
     const classes = useStyles()
     
 
@@ -47,8 +55,8 @@ function Cardcomponent() {
       {posts.map((post) => {
         return (
           <Grid item xs={12} sm={6}>
-            <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card}>
-              <CardContent sx={{height: '300px'}}>
+            <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card} onClick={()=> history(`/singlepost/${post.id}`)}>
+              <CardContent sx={{height: '300px'}} >
               <Typography
                   sx={{ fontSize: 14, mb: 6  }}
                   color="white"
@@ -72,6 +80,7 @@ function Cardcomponent() {
                   color="white"
                   gutterBottom
                 >
+
                   Title {post.id} of stories
                 </Typography>
 
@@ -82,7 +91,7 @@ function Cardcomponent() {
               </CardContent>
             </Card>
 
-            <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card}>
+            <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card} onClick={()=> history(`/singlepost/${post.id}`)}>
               <CardContent sx={{height: '300px'}}>
               <Typography
                   sx={{ fontSize: 14, mb: 6  }}
@@ -114,6 +123,8 @@ function Cardcomponent() {
                   {post.body}
                 </Typography>
                 <Typography variant="body2" sx={{ mt: 3, textAlign: 'center' }} >Read more &rarr; </Typography>
+
+                {/* <Button onClick={()=> history(`/singlepost/${post.id}`)}  > Click </Button> */}
               </CardContent>
             </Card>
 

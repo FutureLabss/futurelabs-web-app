@@ -1,4 +1,4 @@
-
+import ToolBar from '../layout/toolbar';
 import "./services2.css"
 import { Link } from "react-router-dom"
 
@@ -7,7 +7,7 @@ export default function Services2() {
 return (
       
 <div>
-
+<ToolBar />
   {/* *********************************************************************** */}
 
     {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}

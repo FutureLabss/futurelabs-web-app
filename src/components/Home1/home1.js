@@ -1,5 +1,5 @@
 import "./home.css"
-import ToolBar from "../layout/toolbar"
+import ToolBar from './layout/toolbar';
 
 
 export default function Home() {

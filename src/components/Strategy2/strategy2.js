@@ -1,4 +1,4 @@
-
+import ToolBar from '../layout/toolbar';
 import "./strategy2.css"
 
 
@@ -6,7 +6,7 @@ export default function Strategy2() {
 return (
       
 <div>
-
+<ToolBar />
   {/* *********************************************************************** */}
 
     {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}

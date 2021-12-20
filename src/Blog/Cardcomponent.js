@@ -80,6 +80,7 @@ function Cardcomponent() {
                   color="white"
                   gutterBottom
                 >
+                  
                   Title {post.id} of stories
                 </Typography>
 

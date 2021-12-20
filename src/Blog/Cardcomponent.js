@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Grid, Button,Card, CardContent, Typography } from "@mui/material";
+import { Grid, Card, CardContent, Typography } from "@mui/material";
 import { makeStyles } from "@material-ui/core/styles";
 import axios from "axios";
 // import App from "./cardToSinglepost.js"
-import SinglePost from './Singlepost'
+// import SinglePost from './Singlepost'
 
 import { useNavigate  } from "react-router-dom";
 
@@ -80,7 +80,7 @@ function Cardcomponent() {
                   color="white"
                   gutterBottom
                 >
-                  
+
                   Title {post.id} of stories
                 </Typography>
 

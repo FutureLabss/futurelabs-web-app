@@ -102,6 +102,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Raleway",
     fontStyle: "normal",
     fontWeight: "bold"
+    
   },
   heros: {
     position: "relative",

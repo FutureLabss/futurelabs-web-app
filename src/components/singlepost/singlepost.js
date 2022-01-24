@@ -3,8 +3,37 @@ import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import AvatarGroup from '@mui/material/AvatarGroup';
+import axios from "axios";
+
+import { useParams } from "react-router-dom";
+
+import  {useEffect, useState} from 'react'
+
   
-export default function Singlepost() {
+export default function Singlepost(props) {
+
+  const {id} = useParams()
+
+  const [post,setPost] = useState({})
+
+  useEffect(() => {
+    axios
+      .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+      .then((res) => {
+        console.log("single post data ==> ",res.data);
+        setPost(res.data)
+        // setPosts((res.data).filter(item => {
+        //     return item.id < 5
+        // }));
+        
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [id]);
+
+  console.log(id)
+
   return (
     <>
       <hr
@@ -38,7 +67,7 @@ export default function Singlepost() {
           <h5> Business</h5>
         </Grid>
         <Grid item xs={12} sx={{ textAlign: 'center'}} md={12} mt={5}>
-          <h1>The Coca-Cola Strategy</h1>
+          <h1> {post.title} </h1>
         </Grid>
       </Grid>
     <Grid item xs={12} p={1} px={{md:25}}>
@@ -46,7 +75,7 @@ export default function Singlepost() {
         
     <AvatarGroup max={4} >
     <Avatar  sx={{ width: 56, height: 56 }} alt="Remy Sharp" src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1638887604/Ellipse_4_bvdgwu.png" />
-     <h5>Ezekiel Simon</h5>
+     <h5> {post.body}</h5>
      
         
      </AvatarGroup >
@@ -65,61 +94,12 @@ export default function Singlepost() {
         />
         <Grid container-fluid item xs={12} mt={5} mb={5} >
         <Box sx={{ textAlign: 'center', m: 1 }}>
+          {post.body}
            
-            Coca-cola focuses on improving the community relationships and
-            increasing thhier happiness,that positively reflects on thier public
-            image,<br/> resulting in customer and revenue rise. Coca-cola focuses on
-            improving the community relationships and increasing thhier
-            happiness,that<br/> positively reflects on thier public image, resulting
-            in customer and revenue rise. Coca-cola focuses on improving the
-            community relationships and<br/> increasing thhier happiness,that
+            {/* Coca-cola focuses on improving the community relationships and
+            increasing thhier happiness,that
             positively reflects on thier public image, resulting in customer and
-            revenue rise.Coca-cola focuses on improving<br/> the community
-            Coca-cola focuses on improving the community relationships and
-            increasing thhier happiness,that positively reflects on thier public
-            image,<br/> resulting in customer and revenue rise. Coca-cola focuses on
-            improving the community relationships and increasing thhier
-            happiness,that<br/> positively reflects on thier public image, resulting
-            in customer and revenue rise. Coca-cola focuses on improving the
-            community relationships and<br/> increasing thhier happiness,that
-            positively reflects on thier public image, resulting in customer and
-            revenue rise.Coca-cola focuses on improving<br/> the community
-            Coca-cola focuses on improving the community relationships and
-            increasing thhier happiness,that positively reflects on thier public
-            image,<br/> resulting in customer and revenue rise. Coca-cola focuses on
-            improving the community relationships and increasing thhier
-            happiness,that<br/> positively reflects on thier public image, resulting
-            in customer and revenue rise. Coca-cola focuses on improving the
-            community relationships and<br/> increasing thhier happiness,that
-            positively reflects on thier public image, resulting in customer and
-            revenue rise.Coca-cola focuses on improving<br/>
-            Coca-cola focuses on improving the community relationships and
-            increasing thhier happiness,that positively reflects on thier public
-            image,<br/> resulting in customer and revenue rise. Coca-cola focuses on
-            improving the community relationships and increasing thhier
-            happiness,that<br/> positively reflects on thier public image, resulting
-            in customer and revenue rise. Coca-cola focuses on improving the
-            community relationships and<br/> increasing thhier happiness,that
-            positively reflects on thier public image, resulting in customer and
-            revenue rise.Coca-cola focuses on improving<br/> the community
-            Coca-cola focuses on improving the community relationships and
-            increasing thhier happiness,that positively reflects on thier public
-            image,<br/> resulting in customer and revenue rise. Coca-cola focuses on
-            improving the community relationships and increasing thhier
-            happiness,that<br/> positively reflects on thier public image, resulting
-            in customer and revenue rise. Coca-cola focuses on improving the
-            community relationships and<br/> increasing thhier happiness,that
-            positively reflects on thier public image, resulting in customer and
-            revenue rise.Coca-cola focuses on improving<br/> the community
-            Coca-cola focuses on improving the community relationships and
-            increasing thhier happiness,that positively reflects on thier public
-            image,<br/> resulting in customer and revenue rise. Coca-cola focuses on
-            improving the community relationships and increasing thhier
-            happiness,that<br/> positively reflects on thier public image, resulting
-            in customer and revenue rise. Coca-cola focuses on improving the
-            community relationships and<br/> increasing thhier happiness,that
-            positively reflects on thier public image, resulting in customer and
-            revenue rise.Coca-cola focuses on improving<br/>
+            revenue rise.Coca-cola focuses on improving<br/> */}
            
             </Box>
         </Grid>

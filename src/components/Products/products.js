@@ -1,12 +1,13 @@
+import ToolBar from '../layout/toolbar';
+import Contact from "../layout/contact"
+import "./products.css"
 
-import "./digitalArt2.css"
 
-
-export default function DigitalArt2() {
+export default function Products() {
 return (
       
 <div>
-
+<ToolBar />
   {/* *********************************************************************** */}
 
     {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}
@@ -16,18 +17,18 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 digital-image1">
+    <section className="section1 product-image1">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                        Digital Art
+                        Product Design
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning products-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3">Art is no more just portraits. It’s digital now! </h6>
+                    <h6 className="line3"> World class digital products that <br className="mobile-no" /> accelerate profit</h6>
 
 
                 </div>
@@ -48,18 +49,18 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 digital-image2">
+    <section className="section1 product-image2">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                      Rapid Results Through Teamwork
+                    Access Your Computer  <br className="mobile-no" />  Science Curriculum on the Go
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning products-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Harnessing the power of a team of talented <br className="mobile-no" /> innovators to build usable products and services</h6>
+                    <h6 className="line3"> Re-defining The Science Of Computers</h6>
 
 
                 </div>
@@ -80,18 +81,18 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 digital-image3">
+    <section className="section1 product-image3">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                      Ideas Aren’t Enough
+                    How About A Seamless <br className="mobile-no" /> Driving Expeerience?
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning products-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> This generation is only fascinated by results, let’s <br className="mobile-no" /> help you go from ideas to MVPs rapidly </h6>
+                    <h6 className="line3"> We partnered with Zuga to deliver <br className="mobile-no" /> effortless transportation</h6>
 
 
                 </div>
@@ -111,18 +112,18 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 digital-image4">
+    <section className="section1 product-image4">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                      Bringing You Project 1000
+                      Seamless Cross-border  <br className="mobile-no" /> Payments and Currency  <br className="mobile-no" /> Conversion
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning products-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Our digital skills training to postion young minds <br className="mobile-no" /> for relevance, as an avenue for combating cyber fraud</h6>
+                    <h6 className="line3"> Securing Payments for Tomorrow</h6>
 
 
                 </div>
@@ -138,6 +139,9 @@ return (
 
     </section>
     {/* Section-One ends here */}
+
+
+    <Contact />
 
 
 

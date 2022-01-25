@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
   },
   appBar: {
-    backgroundColor: '#FF9000',
+    backgroundColor: '#000000',
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
-    marginRight: 0,
+    marginRight: -drawerWidth,
   },
   hero: {
     backgroundImage: "url('https://res.cloudinary.com/dremo/image/upload/v1634903273/IMG_0107_1_a80rgw.png')",
@@ -98,7 +98,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "beginning",
     alignItems: "center",
     color: "#fff",
-    fontSize: "2.5rem"
+    fontSize: "2.5rem",
+    fontFamily: "Raleway",
+    fontStyle: "normal",
+    fontWeight: "bold"
+    
   },
   heros: {
     position: "relative",
@@ -107,17 +111,21 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "beginning",
     alignItems: "center",
     color: "#fff",
-    fontSize: "1.4rem"
+    fontSize: "1.5rem",
+    fontFamily: "Roboto",
+    fontStyle: "normal",
+    fontWeight: "bold"
   },
   blogContainer: {
      paddingTop: theme.spacing(1)
   },
   blogTitle: {
-    fontWeight: "800",
+    fontWeight: "bold",
      paddingBottom: theme.spacing(1),
      position: "relative",
      display: "flex",
-     justifyContent: "center"
+     fontFamily: "Raleway",
+     fontStyle: "normal",
   }
 }));
 
@@ -126,14 +134,18 @@ export default function PersistentDrawerRight() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
-  const handleDrawerOpen = () => {
+   const handleDrawerOpen = () => {
     setOpen(true);
-  };
+   };
 
   const handleDrawerClose = () => {
     setOpen(false);
   };
-
+  // const handleDrawerToggle = () => {
+    // setMobileOpen(!mobileOpen);
+  // };
+  // const [mobileOpen, setMobileOpen] = React.useState(false)
+ 
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -145,13 +157,15 @@ export default function PersistentDrawerRight() {
       >
         <Toolbar>
           <Typography variant="h6" noWrap className={classes.title}>
-            FutureLabs
+            {/* FutureLabs */}
+            <img  className=""src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt=""/>
           </Typography>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="end"
             onClick={handleDrawerOpen}
+            // onClick={handleDrawerToggle}
             className={clsx(open && classes.hide)}
           >
             <MenuIcon />
@@ -193,7 +207,7 @@ export default function PersistentDrawerRight() {
           </IconButton>
         </div>
         <Divider />
-        <Nav.Link href="https://futurelabs-agency1.netlify.app/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
+        <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
       </Drawer>
 
       

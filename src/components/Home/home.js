@@ -1,12 +1,13 @@
 import "./home.css"
 import Contact from "../layout/contact"
+import ToolBar from '../layout/toolbar';
 
 
 export default function Home() {
 return (
       
 <div>
-
+<ToolBar />
   {/* *********************************************************************** */}
 
     {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}
@@ -19,7 +20,7 @@ return (
   <section className="section1 home-image1">
 
     <div className="container">
-      <div className="row .bg-warning d-flex justify-space-between">
+      <div className="row .bg-warning d-flex justify-space-between  mt-sm-5 pt-sm-5">
         <div className="col-9 .bg-primary px-xs-4 px-sm-0 text-white">
 
           <h4 className="line1">WE ARE FUTURISTS!</h4>

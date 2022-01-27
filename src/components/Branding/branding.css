@@ -43,23 +43,21 @@
 
     }
 
-    .strategy-button-text {
+    .modelling-button-text {
         font-family: Roboto;
         font-style: Medium;
-        font-size: 11px;
+        font-size: 9px;
         
     }
-    
 
 
 }
 
 
-.strategy-button-text {
+.modelling-button-text {
     font-family: Roboto;
     font-style: Medium;
     font-size: 1.8rem;
-    
 }
 
 
@@ -88,29 +86,38 @@
 }
 
 
-.strategy-image1 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622752/felix-mittermeier-nAjil1z3eLk-unsplash_1_kdoqjk.png');
+.branding-image1 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643291597/the-blowup-rJeWeq9E2Dk-unsplash_1_u8gx07.png');
 
 
 }
 
-.strategy-image2 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622807/IMG_0107_2_cw1bts.png');
+.branding-image2 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643291616/alexander-shatov-mr4JG4SYOF8-unsplash_1_1_sptsfe.png');
 }
 
-.strategy-image3 {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643293097/Rectangle_192_1_bodbl8.png');
+.branding-image3 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643291462/shubham-dhage-fvfrHqt37eo-unsplash_1_omjwlp.png');
 }
 
-.strategy-image4 {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643290547/FUTURELABS_2_1_ra1ote.png');
-    /* background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724512/Group_173_hxcxok.png'); */
+.branding-image4 {
+    background: url('https://res.cloudinary.com/not-set/image/upload/v1643291447/alexander-shatov-71Qk8ODIBko-unsplash_1_z1n8d9.png');
 }
 
-.strategy-image5 {
+.branding-image5 {
     background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636724667/1812217482_1_rl6j43.png');
 }
 
-.strategy-image6 {
+/* .modelling-image6 {
     background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
+} */
+
+.visit {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 24px; */
+    line-height: 38px;
+
+    color: #FF9000;
 }

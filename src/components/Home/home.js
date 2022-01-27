@@ -3,6 +3,8 @@ import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
 
 
+
+
 export default function Home() {
 return (
       
@@ -37,7 +39,7 @@ return (
 
 
         {/* THE MUTE ICON IS HERE */}
-        <div className="col-3 .bg-info text-center">
+        <div className="col-3 .bg-info text-center pt-5">
           <img className=".img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
         </div>
 
@@ -284,11 +286,12 @@ return (
 
 
   {/* THE SECTION BELOW HOLDS THE THUMBNAILS */}
-
+  
   <section>
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
       <h1 className="contact mb-5 text-center">Latest Stories</h1>
+     
       <div className="col-sm-4 py-sm-4 py-4">
         <div className="px-2 Thumbnail-parent .bg-danger">
           <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded">
@@ -353,6 +356,7 @@ return (
           </div>
         </div>
       </div>
+     
 
       </div>
 

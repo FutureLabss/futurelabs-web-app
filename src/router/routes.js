@@ -3,6 +3,7 @@ import Home from '../components/Home/home'
 import About from '../components/About/about'   
 import Services from '../components/Services/services'
 import Strategy from '../components/Strategy/strategy'
+import Branding from '../components/Branding/branding'
 
 import PersistentDrawerRight from '../Blog/Homepage'
 import Modelling from '../components/Modelling/modelling'
@@ -17,6 +18,7 @@ const pageRoutes = [
     {path: '/about', element: About },
     {path: '/services', element: Services },
     {path: '/strategy', element: Strategy },
+    {path: '/branding', element: Branding },
 
     {path: '/modelling', element: Modelling },
     {path: '/products', element: Products },
@@ -25,7 +27,7 @@ const pageRoutes = [
     {path: '/singlepost/:id', element: singlepost },
 
 
-    {path: '/home', element: PersistentDrawerRight },
+    {path: '/blog', element: PersistentDrawerRight },
 
     // {path: '/about', element: About },
     // {path: '/services', element: Services },

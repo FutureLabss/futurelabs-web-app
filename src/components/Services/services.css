@@ -5,6 +5,7 @@
     background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622752/felix-mittermeier-nAjil1z3eLk-unsplash_1_kdoqjk.png");
   width: 100%;
     height: 100vh;
+    background-repeat: no-repeat;
 }
 
 .but2{
@@ -37,9 +38,9 @@ color: #FFFFFF;
 }
 
 .pictures12{
-    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1636105459/Zuga_Mockup_2_ggtcvf.png");
+    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1637661993/Zuga_Mockup_1_rae0hq.svg");
     width: 100%;
-      height: 100vh;
+      height: 120vh;
       
 }
 
@@ -66,7 +67,7 @@ color: #FFFFFF;
 .pictures13{
     background-image: url("https://res.cloudinary.com/dremo/image/upload/v1636105477/Web_Mockup_26_lly9h0.png");
     width: 100%;
-      height: 100vh;
+      height: 120vh;
       
 }
 
@@ -83,7 +84,7 @@ color: #FFFFFF;
 .pictures14{
     background-image: url("https://res.cloudinary.com/dremo/image/upload/v1636105484/flying_car_3_pdad4f.png");
     width: 100%;
-      height: 100vh;
+      height: 120vh;
       
 }
 
@@ -100,7 +101,7 @@ color: #FFFFFF;
 .pictures16{
     background-image: url("https://res.cloudinary.com/dremo/image/upload/v1636724667/1812217482_1_rl6j43.png");
     width: 100%;
-      height: 100vh;
+      height: 125vh;
       
 }
 
@@ -117,7 +118,7 @@ color: #FFFFFF;
 .pictures17{
     background-image: url("https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png");
     width: 100%;
-      height: 100vh;
+      height: 120vh;
       
 }
 

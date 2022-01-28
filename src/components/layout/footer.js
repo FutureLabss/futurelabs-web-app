@@ -50,10 +50,10 @@ export default function Footer(props) {
      
       </p>
       <p className="fot  ">
-      <Nav.Link className="  text-muted" href="/about2"><strong>ABOUT</strong></Nav.Link>
+      <Nav.Link className="  text-muted" href="/about"><strong>ABOUT</strong></Nav.Link>
       </p>
       <p className="fot  ">
-      <Nav.Link className="  text-muted" href="/services2"><strong>SERVICES</strong></Nav.Link>
+      <Nav.Link className="  text-muted" href="/services"><strong>SERVICES</strong></Nav.Link>
       </p>
       <p className="fot  ">
       <Nav.Link className="  text-muted" href="/singlepost"><strong>BLOG</strong></Nav.Link>
@@ -86,7 +86,7 @@ export default function Footer(props) {
         <div class="input-group mb-3">
           <input type="text" class="form-control " placeholder="Enter your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2" />
           
-            <button class="btn colors " type="button">Send</button>
+            <button class="btn colors text-white" type="button">Send</button>
          
         </div>
             

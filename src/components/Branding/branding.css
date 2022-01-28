@@ -86,28 +86,38 @@
 }
 
 
-.modelling-image1 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636722653/flying_car_2_u2erbx.png');
+.branding-image1 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643291597/the-blowup-rJeWeq9E2Dk-unsplash_1_u8gx07.png');
 
 
 }
 
-.modelling-image2 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636723495/watch_xqhvph.png');
+.branding-image2 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643291616/alexander-shatov-mr4JG4SYOF8-unsplash_1_1_sptsfe.png');
 }
 
-.modelling-image3 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636723776/chairwhite_side_2_ko0iip.png');
+.branding-image3 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643291462/shubham-dhage-fvfrHqt37eo-unsplash_1_omjwlp.png');
 }
 
-.modelling-image4 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724129/untitled_2_qgblqy.png');
+.branding-image4 {
+    background: url('https://res.cloudinary.com/not-set/image/upload/v1643291447/alexander-shatov-71Qk8ODIBko-unsplash_1_z1n8d9.png');
 }
 
-.modelling-image5 {
+.branding-image5 {
     background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636724667/1812217482_1_rl6j43.png');
 }
 
-.modelling-image6 {
+/* .modelling-image6 {
     background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
+} */
+
+.visit {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 24px; */
+    line-height: 38px;
+
+    color: #FF9000;
 }

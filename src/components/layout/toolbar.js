@@ -5,12 +5,12 @@ import   { Offcanvas } from 'react-bootstrap'
 
 
 
-import './toolbar.js'
+import './toolbar.css'
 
 export default function ToolBar(props){
     return (
         <div className="nav text-white">
-    <div className="logo">
+    <div className="picyture">
       <Nav.Link href="/">{/* Logo image is here */}</Nav.Link>
     </div>
     
@@ -49,47 +49,38 @@ export default function ToolBar(props){
       </Offcanvas.Header> 
       <Offcanvas.Body className="textd">
 
-        {/* <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd container-fluid"> */}
-         {/* <Nav.Link className="text-muted container-fluid" href="/"><i class="fa fa fa-home" aria-hidden="true"></i>HOME</Nav.Link> */}
-         {/* <Nav.Link className="text-muted container-fluid" href="/about"><i class="fa fa fa-user-circle" aria-hidden="true"></i> ABOUT</Nav.Link> */}
-          {/* <Nav.Link className="text-muted container-fluid" href="/services"><i class="fa-brands fa-servicestack"></i>SERVICES</Nav.Link> */}
-          {/* <Nav.Link className="text-muted container-fluid" href="/strategy"><i class="fa-duotone fa-chess"></i>STRATEGY</Nav.Link> */}
-          {/* <Nav.Link className="text-muted container-fluid" href="/modelling"><i class="fa-solid fa-cubes"></i>3D-MODELLING</Nav.Link> */}
-          {/* <Nav.Link className="text-muted container-fluid" href="/products"><i class="fa-brands fa-product-hunt"></i>PRODUCTS</Nav.Link> */}
-          {/* <Nav.Link className="text-muted container-fluid" href="/websites"><i class="fa fa-safari" aria-hidden="true"></i>WEBSITES</Nav.Link> */}
-          {/* <Nav.Link className="text-muted container-fluid" href="/digitalart"><i class="fa fa-picture-o" aria-hidden="true"></i> DIGITAL-ART</Nav.Link> */}
-          {/* <Nav.Link className="text-muted container-fluid" href="/branding"><i class="fa-brands fa-figma"></i>BRANDING AND ADS</Nav.Link> */}
-        {/* </Nav>   */}
+      
 
            
 
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
-        <Nav.Link className="text-muted container-fluid" href="/services2"><h3 className="text-dark">WHAT WE DO <br/>COMPANY<br/>CONTACT</h3></Nav.Link>
+        <Nav.Link className="text-muted container-fluid my-0 py-0" href="/about"><h4 className="text-dark">ABOUT</h4></Nav.Link>
+        <Nav.Link className="text-muted container-fluid my-0 py-0" href="/services"><h4 className="text-dark">SERVICES</h4></Nav.Link>
          {/* <Nav.Link className="textd my-2 text-muted" href="/"><strong>HOME</strong> </Nav.Link> */}
 
-         {/* <Link className="textd mt-2 text-muted" to="/about"> <strong>ABOUT</strong> </Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/about2"><strong>ABOUT</strong></Nav.Link>
-
-         {/* <Link className="textd mt-2 text-muted" to="/services"><strong>SERVICES</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/services2"><strong>SERVICES</strong></Nav.Link>
+  
+         {/* <Nav.Link className="textd .my-2 text-muted" href="/about2"><strong>ABOUT</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/services2"><strong>SERVICES</strong></Nav.Link> */}
 
          {/* <Link className="textd mt-2 text-muted" to="/strategy"> <strong>STRATEGY</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/strategy2"><strong>STRATEGY</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/strategy"><strong>STRATEGY</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/modelling"> <strong>3-D MODELLING</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/modelling2"><strong>3-D MODELLING</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/modelling"><strong>3-D MODELLING</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/products"><strong>PRODUCTS</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/products2"><strong>PRODUCTS</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/products"><strong>PRODUCTS</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/websites"> <strong>WEBSITES</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/websites2"><strong>WEBSITES</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/websites"><strong>WEBSITES</strong></Nav.Link>
 
          {/* <Link className="textd mt-2 text-muted" to="/digitalart"> <strong>DIGITAL ART</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/digitalart2"><strong>DIGITAL ART</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/digitalart"><strong>DIGITAL ARTS & NFTs</strong></Nav.Link>
          {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
 
-         <Nav.Link className="textd .my-2 text-muted" href="/home"><strong>BLOG</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/branding"><strong>BRANDING</strong></Nav.Link>
+
+         <Nav.Link className="textd .my-2 text-muted" href="/blog"><strong>BLOG</strong></Nav.Link>
          
 
         </Nav>

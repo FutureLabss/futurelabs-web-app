@@ -1,532 +1,429 @@
 import "./about.css"
-
+import Contact from "../layout/contact"
+import ToolBar from '../layout/toolbar';
 
 export default function About() {
 return (
       
 <div>
+<ToolBar />
+    {/* *********************************************************************** */}
+
+        {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}
+        {/* SEGMENT-ONE BEGINS HERE & IS REPEATED AS SEGMENT-TWO*/}
+
+    {/* *********************************************************************** */}
 
 
+    {/* Section-One begins here */}
+    <section className="section1 about-image1">
 
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between ">
+                <div className="col-9 .bg-primary px-xs-4 px-sm-0 text-white ">
 
-<div className="section1">
-
-  <div className="punchbox text-white">
-
-    <h4 className="punchline">
-      WE ARE FUTURISTS!
-    </h4>
-
-    <h5 className="sub-line">
-      We are a dedicated team <br />
-      of creative strategists, <br />
-      Designers & Developers.
-    </h5>
-
-    <br />
-      
-    <h6 className="down-line pb-3">
-      We will help you turn ideas into <br className="no-break-mobile" /> the reality you hope to create.
-    </h6>
-
-  </div>
-
-  <img className="img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-
-    
-</div>
-
-
-
-{/* Section 2 begins here */}
-<div className="container-fluid section2">
-  <div className="row">
-
-    <div className="col-sm-6 section2-box1">
-
-      <div className="section2-box1-inner">
-        <h3 className="reed">
-          We enable you to
-          <br />
-          see beyond the now.
-          <br />
-          You could either be
-          <br />
-          android or you go 
-          <br />
-          extinct like
-          <br />
-          Blackberry...” 
-        </h3>
-        <br />
-        <h5 className="fonty">WE ARE FUTURISTS!</h5>
-      </div>
-      
-    </div>
-
-    <div className="col-sm-6 p-0 section2-box2">
-      <div className="image234 ">
-       
-        
-        <div className="section2-mobile-yes">
-          <h3 className="section2-mobile-inner">
-            We enable you to
-            <br />
-            see beyond the now.
-            <br />
-            You could either be
-            <br />
-            android or you go 
-            <br />
-            extinct like
-            <br />
-            Blackberry...” 
-          </h3>
-          {/* <br /> */}
-        <h5 className="fonty">WE ARE FUTURISTS!</h5>
-        <img className="img-fluid mutty" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-        
-      </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-
-
-
-{/* Section 3 begins here */}
-<div className="container-fluid section2">
-  <div className="row">
-    <div className="col-sm-6 p-0 .section2-box2">
-      
-      <div className="image33 ">
+                    <h4 className="line1">WE ARE FUTURISTS!</h4>
                     
-                 
-        <div className="section3-mobile-yes">
-          <h3 className="section3-mobile-inner">
-            We combine a p2p
-            <br />
-            and deep learning 
-            <br />
-            model to deliver
-            <br />
-            impactful business solutionsa
+                    <h5 className="line2">
+                        We are a dedicated team <br  className="mobile-no" />
+                        of creative strategists, <br className="mobile-no" />
+                        Designers & Developers.
+                    </h5>
 
-          </h3>
-        {/* <br /> */}
-        <h5 className="fonty">THE BEST FUTURE IMAGINABLE!</h5>
-       
-        
-      </div>
-      </div>
-      
-    </div>
+                    <h6 className="line3"> We will help you turn ideas into the reality <br className="mobile-no" /> you hope to create.</h6>
 
-
-    <div className="col-sm-6 section2-box1">
-
-      <div className="section2-box1-inner">
-        <h3 className="red3">
-          We combine a p2p
-          <br />
-          and deep learning 
-          <br />
-          model to deliver
-          <br />
-          impactful business solutions
-
-        </h3>
-        <br />
-        <h5 className="fonty">THE BEST FUTURE IMAGINABLE!</h5>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-{/* Section 4 begins here */}
-{/* <div className="container-fluid section4 p-0">
-  <div className="row">
-    <div className="col-12">
-      <div className="image4"></div>
-    </div>
-  </div>
-
-</div> */}
-
-<div className="section49">
-
-  <div className="punchbox46  text-white">
-
-    <h5 className="sub-line subline2 ">
-      The future was created by <br className="no-break-mobile" />
-      men who dared to dream it <br className="no-break-mobile" />
-      better than they met it.
-    </h5>
-    <br />
-    <br />
-    
-    {/* <br /> */}
-    <img className="img-fluid mute55 " src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-        
-
-  </div>
-
-  {/* <img className="img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" /> */}
-
-    
-</div>
-{/* Section 2 begins here */}
-<div className="container-fluid section28">
-  <div className="row">
-
-    <div className="col-sm-6 section2-box1">
-
-      <div className="section2-box1-inner">
-        <h3 className="reed">
-        We effortlessly<br/> understand our client’s<br/> business language,<br/>
-enabling seamless<br/>
-collaboration 
-        </h3>
-        <br />
-        <h5 className="fonty">SEAMLESS COLLABORATION</h5>
-      </div>
-      
-    </div>
-
-    <div className="col-sm-6 p-0 section2-box2">
-      <div className="image99 ">
-       
-        
-        <div className="section2-mobile-yes">
-          <h3 className="section2-mobile-inner">
-            We enable you to
-            <br />
-            see beyond the now.
-            <br />
-            You could either be
-            <br />
-            android or you go 
-            <br />
-            extinct like
-            <br />
-            Blackberry...” 
-          </h3>
-          {/* <br /> */}
-        <h5 className="fonty">WE ARE FUTURISTS!</h5>
-        <img className="img-fluid mutty" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-        
-      </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-
-
-
-{/* Section 3 begins here */}
-<div className="container-fluid section2">
-  <div className="row">
-    <div className="col-sm-6 p-0 .section2-box2">
-      
-      <div className="image3 bg-danger">
-      
-        
-        <div className="section3-mobile-yes">
-          <h3 className="section3-mobile-inner">
-            We combine a p2p
-            <br />
-            and deep learning 
-            <br />
-            model to deliver
-            <br />
-            impactful business solutionsa
-
-          </h3>
-        {/* <br /> */}
-        <h5 className="fonty">THE BEST FUTURE IMAGINABLE!</h5>
-       
-        
-      </div>
-      </div>
-      
-    </div>
-
-
-    <div className="col-sm-6 section2-box1">
-
-      <div className="section2-box1-inner">
-        <h3 className="red3">
-        We will analyze your brand<br/> data and draw valuable<br/> insights
-to increase profit
-
-        </h3>
-        <br />
-        <h5 className="fonty">SEAMLESS COLLABORATION</h5>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-{/* Section 4 begins here */}
-{/* <div className="container-fluid section4 p-0">
-  <div className="row">
-    <div className="col-12">
-      <div className="image4"></div>
-    </div>
-  </div>
-            
-</div> */}
-
-<div className="section4">
-
-  <div className="punchbox40 text-white container">
-
-    <h5 className="sub-line subline28">
-    We draw from our deep<br className="no-break-mobile" /> 
-    skill sets across multiple <br className="no-break-mobile" />
-    domains to build the best<br className="no-break-mobile" />
-     future imaginable
-      
-    
-    </h5>
-    <br />
-    <br />
-    
-    {/* <br /> */}
-   
+                </div>
                 
 
-  </div>
 
-  {/* <img className="img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" /> */}
+                {/* THE MUTE ICON IS HERE */}
+                <div className="col-3 .bg-info text-center pt-sm-5 mt-sm-5">
+                    <img className=".img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    {/* Section-One ends here */}
 
     
-</div>
 
-<div className="container mb-5">
-  <div className="row pt-3">
-    <div className="">
-      <h5><strong className="contact container">Contact us</strong></h5>
-    </div>
-  </div>
-  <div className="row pt-3 px-2">
-    <div className="col-sm-6">
 
-      <div class="input-group mb-2  h-25">
-        <input type="text" class="form-control inputs  rounded" placeholder="Your name" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-        <div class="input-group-append">
-          {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
+
+
+
+
+
+
+    {/* Section-Two begins here*/}
+    <section className="section2">
+
+        <div className="mobile-no sm-divider">
+
+            <div className="sm-1 .bg-danger">
+                <div className=".bg-warning vertical-centering horizontal-centering">
+                    <h3 className="line2">
+                        <span className="italicize"> 
+                          We enable you to
+                          <br />
+                          see beyond the now.
+                        </span>
+                        <br />
+                        You could either be
+                        <br />
+                        android or you go 
+                        <br />
+                        extinct like
+                        <br />
+                        Blackberry...” 
+                    </h3>
+
+                    <h4 className="line5">
+                        WE ARE FUTURISTS!
+                    </h4>
+                </div>
+            </div>
+
+            <div className="section2-image about-image2 sm-2 .bg-warning"></div>
+
         </div>
-      </div>
 
-      <div class="input-group mb-3  h-25">
-        <input type="text" class="form-control inputs rounded" placeholder="Your phone number" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-        <div class="input-group-append">
-          {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
+
+        {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
+        <div className="mobile-yes section2-image-mobile about-image2 .bg-primary text-white">
+            <div className="vertical-centering">
+
+                <div className=".bg-warning px-3">
+                    <h3 className="line4">
+                        <span className="italicize">
+                            We enable you to
+                            <br />
+                            see beyond the now.
+                        </span>
+                        <br />
+                        You could either be
+                        <br />
+                        android or you go 
+                        <br />
+                        extinct like
+                        <br />
+                        Blackberry...” 
+                    </h3>
+
+                    <h4 className="line5">
+                        WE ARE FUTURISTS!
+                    </h4>
+                </div>
+
+            </div>
         </div>
-      </div>
 
-      <div class="input-group mb-4 h-25">
-        <input type="text" class="form-control inputs rounded" placeholder="Your company" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-        <div class="input-group-append">
-          {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
-        </div>
-      </div>
-
-      <div class="input-group mb-5 h-25">
-        <input type="text" class="form-control inputs rounded" placeholder="Your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-        <div class="input-group-append">
-          {/* <button class="btn btn-outline-secondary" type="button">Button</button> */}
-        </div>
-      </div>
-
-      
-    </div>  
-
-    <div className="col-sm-6">
-    <div class=" message">
-  <textarea class="form-control inputss rounded " placeholder="Leave a comment here" id="floatingTextarea2" ></textarea>
-                                 
-</div>
-   
-
-      <div className="d-flex sends ">
-        <button class="mx-auto  submit rounded "><strong>Submit</strong></button>
-      </div>
-
-      
-
-      
-    </div>
-
-
-  </div>
-</div>
-
-
-
-{/* <div className="container-fluid section2 bg-danger">
-<div className="row">
-  <div className="col-sm-6 text-black android pt-3 pt-sm-5 pl-sm-5 pl-4">
-    <h3 className="pt-5 talk">
-      We enable you to
-      <br />
-      see beyond the now.
-      <br />
-      You could either be
-      <br />
-      android or you go 
-      <br />
-      extinct like
-      <br />dd
-      Blackberry...” 
-
-    </h3>
-    <br />
-
-    <p className="below">WE ARE FUTURISTS!</p>
-  </div>
-  
-  <div className="col-sm-6 p-0 image2">
+        
+    </section>
+    {/* Section-Two ends here */}
     
-  </div>
-</div>
-</div>
 
-<div className="container-fluid section2">
-<div className="row">
-  <div className="col-sm-6 text-black android pt-3 pt-sm-5 pl-sm-5 pl-4">
-    <h3 className="pt-5 talk">
-      We combine a p2p
-      <br />
-      and deep learning 
-      <br />
-      model to deliver
-      <br />
-      impactful business solutions
 
-    </h3>
-    <br />
 
-    <p className="below">THE BEST FUTURE IMAGINABLE</p>
-  </div>
-  
-  <div className="col-sm-6 p-0 image3">
-    <img className="img-fluid mute-position mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" /> 
-  </div>
-</div>
-</div>
 
-<div className="container-fluid section2">
-<div className="row">
-  <div className="col-sm-6 text-black android pt-3 pt-sm-5 pl-sm-5 pl-4">
-    <h3 className="pt-5 talk">
-      We draw from our
-      <br />
-      deep skill sets across 
-      <br />
-      multiple domains to
-      <br />
-      build the best future imaginable
 
-    </h3>
-    <br />
 
-    <p className="below">THE BEST FUTURE IMAGINABLE</p>
+    {/* Section-Three begins here*/}
+    <section className="section2">
+        
+        {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
+        <div className="mobile-no sm-divider">
+
+            <div className="section2-image about-image3 sm-2 .bg-warning"></div>
+
+            <div className="sm-1 .bg-danger">
+                <div className=".bg-warning vertical-centering horizontal-centering">
+                    <h3 className="line4">
+                        We combine a p2p
+                        <br />
+                        and deep learning 
+                        <br />
+                        model to deliver
+                        <br />
+                        impactful business 
+                        <br />
+                        solutions
+                    </h3>
+
+                    <h4 className="line5">
+                        THE BEST FUTURE IMAGINABLE.
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+
+        {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
+        <div className="mobile-yes section2-image-mobile about-image3 .bg-primary text-white">
+            <div className="vertical-centering">
+
+                <div className=".bg-warning px-3">
+                    <h3 className="line4">
+                        We combine a p2p
+                        <br />
+                        and deep learning 
+                        <br />
+                        model to deliver
+                        <br />
+                        impactful business 
+                        <br />
+                        solutions
+                    </h3>
+
+                    <h4 className="line5">
+                        THE BEST FUTURE IMAGINABLE.
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    {/* Section-Three ends here */}
+
+
+    {/* *********************************************************************** */}
+    {/* END OF SEGMENT ONE */}
+    {/* *********************************************************************** */}
+
+
+
+
+
+
+
+
+
+    {/* *********************************************************************** */}
+    {/* SEGMENT-TWO BEGINS HERE. (A REPEAT OF SEGMENT ONE) */}
+    {/* *********************************************************************** */}
+
+
+    {/* Section-One begins here */}
+    <section className="section1 about-image4">
+
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+
+                    <h5 className="line6">
+                        We draw from our deep <br className="mobile-no"/>
+                        skillsets across multiple <br className="mobile-no"/>
+                        domains to build the best <br className="mobile-no"/>
+                        future imaginable
+                    </h5>
+                    <h5 className="line5">
+                        THE BEST FUTURE IMAGINABLE.
+                    </h5>
+
+                </div>
+                
+
+                {/* THE MUTE ICON IS HERE */}
+                <div className="col-3 .bg-info text-center">
+                    <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    {/* Section-One ends here */}
+
+
+
+
+
+
+
+
+    {/* Section-Two begins */}
+    <section className="section2">
+        
+
+        {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
+        <div className="mobile-no sm-divider">
+
+            <div className="sm-1 .bg-danger">
+                <div className=".bg-warning vertical-centering horizontal-centering">
+                    <h3 className="line4">
+                        We effortlessly
+                        <br />
+                        understand our client’s
+                        <br />
+                        business language
+                        <br />
+                        enabling seamless 
+                        <br />
+                        collaboration
+                    </h3>
+
+                    <h4 className="line5">
+                        SEAMLESS COLLABORATION
+                    </h4>
+                </div>
+            </div>
+
+            <div className="section2-image about-image5 sm-2 .bg-warning"></div>
+
+        </div>
+
+
+        
+        {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
+        <div className="mobile-yes section2-image-mobile about-image5 .bg-primary text-white">
+            <div className="vertical-centering">
+
+                <div className=".bg-warning px-3">
+                    <h3 className="line4">
+                        We effortlessly
+                        <br />
+                        understand our client’s
+                        <br />
+                        business language
+                        <br />
+                        enabling seamless 
+                        <br />
+                        collaboration
+                    </h3>
+
+                    <h4 className="line5">
+                        SEAMLESS COLLABORATION
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </section>
+    {/* Section-Two ends here */}
+
+
+
+    {/* Section-Three begins here*/}
+    <section className="section2">
+        
+        
+
+        {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
+        <div className="mobile-no sm-divider">
+
+            <div className="section2-image about-image6 sm-2 .bg-warning"></div>
+
+            <div className="sm-1 .bg-danger">
+                <div className=".bg-warning vertical-centering horizontal-centering">
+                    <h3 className="line4">
+                        We will analyze your
+                        <br />
+                        brand data and draw
+                        <br />
+                        valuable insights to
+                        <br />
+                        increase profit
+                    </h3>
+
+                    <h4 className="line5">
+                        SEAMLESS COLLABORATION
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+
+        {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
+        <div className="mobile-yes section2-image-mobile about-image6 .bg-primary text-white">
+            <div className="vertical-centering">
+
+                <div className=".bg-warning px-3">
+                    <h3 className="line4">
+                        We will analyze your
+                        <br />
+                        brand data and draw
+                        <br />
+                        valuable insights to
+                        <br />
+                        increase profit
+                    </h3>
+
+                    <h4 className="line5">
+                        SEAMLESS COLLABORATION
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    {/* Section-Three ends here */}
+
+
+
+    {/* Section-One begins here */}
+    <section className="section1 about-image7">
+
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+
+                    <h5 className="line6">
+                        The future was created by <br className="mobile-no" />
+                        men who dared to dream <br className="mobile-no" />
+                        it better than they met it.<br className="mobile-no" />
+                    </h5>
+                    <h5 className="line5">
+                        {/* THE BEST FUTURE IMAGINABLE. */}
+                    </h5>
+
+                </div>
+
+
+
+                
+                {/* THE MUTE ICON IS HERE */}
+                <div className="col-3 .bg-info text-center">
+                    <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />   
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <Contact />
+    {/* Section-One ends here */}
+
+    {/* *********************************************************************** */}
+    {/* END OF SEGMENT TWO */}
+    {/* *********************************************************************** */}
+
     
-  </div>
-  
-  <div className="col-sm-6 p-0 image4">
-    <img className="img-fluid mute-position mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" /> 
-  </div>
+
+
+
+
+
+
+
+
+
+
+
 </div>
-</div>
-
-<div className="container-fluid section2">
-<div className="row">
-  <div className="col-sm-6 text-black android pt-3 pt-sm-5 pl-sm-5 pl-4">
-    <h3 className="pt-5 talk">
-      We effortlessly understand 
-      <br /> 
-      our client's business
-      <br />
-      language enabling
-      <br />
-      seamless collaboration
-
-    </h3>
-    <br />
-
-    <p className="below">SEAMLESS COLLABORATION</p>
-  </div>
-  
-  <div className="col-sm-6 p-0 image5">
-    <img className="img-fluid mute-position mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" /> 
-  </div>
-</div>
-</div>
-
-<div className="container-fluid section3">
-<div className="row">
-  <div className="col-sm-12">
-
-  </div>
-</div>
-</div>
-
-<div className="container-fluid section2">
-<div className="row">
-  <div className="col-sm-6 text-black android pt-3 pt-sm-5 pl-sm-5 pl-4">
-    <h3 className="pt-5 talk">
-      We will analyze your 
-      <br /> 
-      brand data and draw 
-      <br />
-      valuable insights to
-      <br />
-      increase profit.
-
-    </h3>
-    <br />
-
-    <p className="below">SEAMLESS COLLABORATION</p>
-  </div>
-  
-  <div className="col-sm-6 p-0 image5">
-    <img className="img-fluid mute-position mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" /> 
-  </div>
-</div>
-</div>
-
-
-<div className="container-fluid">
-<div className="row">
-  <div className="col-sm-12 text-center">
-    Contact us
-  </div>
-  <div className="w-100"></div>
-  
-  <div className="col-sm-6">
-    <input className="mx-auto" type="text" /> 
-  </div>
-
-  <div className="col-sm-6">
-
-  </div>
-</div>
-</div> */}
-
-
-    </div>
-    )
+)
 }

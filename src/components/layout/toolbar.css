@@ -17,7 +17,7 @@ div.container-fluid{
 }
 
 .nav {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('');
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(''); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,11 +25,11 @@ div.container-fluid{
     padding-right: 34px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    /* z-index: 1; */
+                                    
     
-    
-}
-
+}       
+   
 
 
 .sub-nav {
@@ -58,6 +58,7 @@ color: #FFFFFF;
 text-decoration: none;
 
 }
+
 .textd{
     text-decoration: none;
 }        

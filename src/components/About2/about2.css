@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway:ital,wght@0,600;0,700;1,700&family=Roboto:wght@500;700&display=swap');
 
 
 .section1 {
@@ -15,34 +14,33 @@
 
 }
 
-.home-image1 {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png');
+.about-image1 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png') !important;
 
 
 }
 
-.home-image2 {
-    /* background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635262165/Futurelabs-logo_2_fsvqs9.png'); */
-    background-color: #FF9000;
+.about-image2 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635168144/IMG_0106_1_aivo5q.png');
 }
 
-.home-image3 {
+.about-image3 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169888/IMG_0114_2_bdbi34.png');
 }
 
-.home-image4 {
-    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
+.about-image4 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622807/IMG_0107_2_cw1bts.png');
 }
 
-.home-image5 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635338077/Web_Mockup_26_jwclbt.png');
-}
-
-.home-image6 {
+.about-image5 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169888/IMG_0114_2_bdbi34.png');
 }
 
-.home-image7 {
+.about-image6 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169888/IMG_0114_2_bdbi34.png');
+}
+
+.about-image7 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635175877/FUTURELABS_1_gl3n9e.png');
 }
 
@@ -54,19 +52,6 @@
 .sm-1, .sm-2 {
     width: 50vw;
     /* width: 100%; */
-}
-
-.contact{
-    font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 61px;
-/* identical to box height */
-
-
-color: #212121;
-
 }
 
 .sm-divider {
@@ -98,22 +83,9 @@ color: #212121;
     display: none;
 }
 
-.mobile-yes-1 {
-    visibility: hidden;
-}
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .ungroup {
-        visibility: visible;
-        
-    }
-
-
-    .mobile-yes-1 {
-        visibility: visible;
-    }
 
     .mobile-no {
         display: none;
@@ -182,7 +154,6 @@ color: #212121;
         line-height: 40px !important;
     }
     
-
     .line6, .line4 {
         font-family: Roboto !important;
         font-style: Bold !important;
@@ -233,8 +204,6 @@ color: #212121;
     font-style: Bold;
     font-size: 33px;
     line-height: 42px;
-
-    
 }
 
 .line3 {
@@ -250,7 +219,6 @@ color: #212121;
     line-height: 47px;
 }
 
-
 .line5 {
     font-family: Raleway;
     font-style: Medium;
@@ -264,183 +232,4 @@ color: #212121;
     font-size: 38px;
     line-height: 44px;
 }
-
-
-
-
-
-
-
-
-.Thumbnail-parent {
-    height: 100vh;
-}
-
-
-.Thumbnail {
-    height: 60%;
-    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1637149802/IMG_0133_1_hysqkh.png");
-    background-position: center;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.under {
-    height: 5px !important;
-    margin-top: -2px;
-    width: 70px;
-    background-color: #FF9000 !important;
-
-
-}
-
-.mobile-no-thumb {
-    display: none;
-
-}
-
-.home-button-text {
-    font-family: Raleway;
-    font-style: Medium;
-    font-size: 17px;
-   
-   
-    line-height: 35px;
-    
-    border-color: #FF9000 !important;
-}
-
-.home-button-text:hover {
-    background-color: #FF9000 !important;
-    color: white !important;
-    
-}
-
-::-webkit-scrollbar {
-   
-    width: 20px;
-    height: 20px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background-color: #FF9000;
-    border-radius: 5px;
-    height: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #FF9000;
-    height: 10px;
-  }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 767px) {
-    
-    
-
-    .home-button-text {
-        font-family: Raleway;
-        font-style: Medium;
-        /* font-size: 4px; */
-
-        color: white !important;
-       
-       
-        /* line-height: 35px; */
-
-        border-color: #FF9000 !important;
-
-
-    }
-
-    .home-button-text:hover {
-        
-        background-color: #FF9000 !important;
-        color: white !important;
-    
-        
-    }
-
-
-
-
-
-
-
-}
-
-.Thumbnail-image1 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635348411/priscilla-du-preez-XkKCui44iM0-unsplash_1_pd3v8t.png');
-}
-
-.Thumbnail-image2 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635349111/ben-white-4K2lIP0zc_k-unsplash_1_lew38n.png');
-
-}
-
-.Thumbnail-image3 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635349190/scott-graham-5fNmWej4tAA-unsplash_1_mcymci.png');
-
-}
-
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 450px) {
-
-
-    .Thumbnail-parent {
-        height: 75vh;
-    }
-    
-    
-    .Thumbnail {
-        height: 60%;
-        background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1637149802/IMG_0133_1_hysqkh.png");
-        background-position: center;
-        object-fit: cover;
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-    }
-
-
-
-
-
-
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 767px) {
-
-    .mobile-no-thumb {
-        display: none;
-    }
-
-
-
-
-
-
-}
- */
-
-
-
-
-
-
-
 

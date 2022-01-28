@@ -1,15 +1,17 @@
 import Navbar from 'react-bootstrap/Navbar'
 import { Nav } from 'react-bootstrap'
 import   { Offcanvas } from 'react-bootstrap'
-import { Link } from "react-router-dom"
+//import { Link } from 'react-router-dom'
+
+
 
 import './toolbar.js'
 
 export default function ToolBar(props){
     return (
-        <div className="nav text-white py-2">
+        <div className="nav text-white">
     <div className="logo">
-      {/* Logo image is here */}
+      <Nav.Link href="/">{/* Logo image is here */}</Nav.Link>
     </div>
     
 
@@ -41,23 +43,57 @@ export default function ToolBar(props){
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel" className="bg-light text-decoration-none textd"
       placement="end">
-       <img  className="w-50 mt-5  container"src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt=""/> 
+      <Nav.Link href="/"> <img  className="w-50 mt-5  container"src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt=""/> </Nav.Link>
       <Offcanvas.Header closeButton>
         <Offcanvas.Title id="offcanvasNavbarLabel " className="textd"></Offcanvas.Title>
       </Offcanvas.Header> 
       <Offcanvas.Body className="textd">
+
+        {/* <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd container-fluid"> */}
+         {/* <Nav.Link className="text-muted container-fluid" href="/"><i class="fa fa fa-home" aria-hidden="true"></i>HOME</Nav.Link> */}
+         {/* <Nav.Link className="text-muted container-fluid" href="/about"><i class="fa fa fa-user-circle" aria-hidden="true"></i> ABOUT</Nav.Link> */}
+          {/* <Nav.Link className="text-muted container-fluid" href="/services"><i class="fa-brands fa-servicestack"></i>SERVICES</Nav.Link> */}
+          {/* <Nav.Link className="text-muted container-fluid" href="/strategy"><i class="fa-duotone fa-chess"></i>STRATEGY</Nav.Link> */}
+          {/* <Nav.Link className="text-muted container-fluid" href="/modelling"><i class="fa-solid fa-cubes"></i>3D-MODELLING</Nav.Link> */}
+          {/* <Nav.Link className="text-muted container-fluid" href="/products"><i class="fa-brands fa-product-hunt"></i>PRODUCTS</Nav.Link> */}
+          {/* <Nav.Link className="text-muted container-fluid" href="/websites"><i class="fa fa-safari" aria-hidden="true"></i>WEBSITES</Nav.Link> */}
+          {/* <Nav.Link className="text-muted container-fluid" href="/digitalart"><i class="fa fa-picture-o" aria-hidden="true"></i> DIGITAL-ART</Nav.Link> */}
+          {/* <Nav.Link className="text-muted container-fluid" href="/branding"><i class="fa-brands fa-figma"></i>BRANDING AND ADS</Nav.Link> */}
+        {/* </Nav>   */}
+
+           
+
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
-         <Link className="textd" to="/"> HOME</Link>
-         <Link className="textd" to="/about"> ABOUT</Link>
-         <Link className="textd" to="/services"> SERVICES</Link>
-         <Link className="textd" to="/strategy"> STRATEGY</Link>
-         <Link className="textd" to="/modelling"> 3D-MODELLING</Link>
-         <Link className="textd" to="/products">PRODUCTS</Link>
-         <Link className="textd" to="/websites"> WEBSITES</Link>
-         <Link className="textd" to="/digitalart"> DIGITAL-ART</Link>
+        <Nav.Link className="text-muted container-fluid" href="/services2"><h3 className="text-dark">WHAT WE DO <br/>COMPANY<br/>CONTACT</h3></Nav.Link>
+         {/* <Nav.Link className="textd my-2 text-muted" href="/"><strong>HOME</strong> </Nav.Link> */}
+
+         {/* <Link className="textd mt-2 text-muted" to="/about"> <strong>ABOUT</strong> </Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="/about2"><strong>ABOUT</strong></Nav.Link>
+
+         {/* <Link className="textd mt-2 text-muted" to="/services"><strong>SERVICES</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="/services2"><strong>SERVICES</strong></Nav.Link>
+
+         {/* <Link className="textd mt-2 text-muted" to="/strategy"> <strong>STRATEGY</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="/strategy2"><strong>STRATEGY</strong></Nav.Link>
+
+         {/* <Link className="textd mt-2 text-muted" to="/modelling"> <strong>3-D MODELLING</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="/modelling2"><strong>3-D MODELLING</strong></Nav.Link>
+
+         {/* <Link className="textd mt-2 text-muted" to="/products"><strong>PRODUCTS</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="/products2"><strong>PRODUCTS</strong></Nav.Link>
+
+         {/* <Link className="textd mt-2 text-muted" to="/websites"> <strong>WEBSITES</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="/websites2"><strong>WEBSITES</strong></Nav.Link>
+
+         {/* <Link className="textd mt-2 text-muted" to="/digitalart"> <strong>DIGITAL ART</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="/digitalart2"><strong>DIGITAL ART</strong></Nav.Link>
+         {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
+
+         <Nav.Link className="textd .my-2 text-muted" href="/home"><strong>BLOG</strong></Nav.Link>
          
+
         </Nav>
-      
+              
       </Offcanvas.Body>
     </Navbar.Offcanvas>
   </div>

@@ -1,11 +1,11 @@
-
 import './footer.css'
+import { Nav } from 'react-bootstrap'
 
 export default function Footer(props) {
     return (
         <div>
             <div className="container mt-5">
-  <div className="row mt-5 d-flex justify-content-around last">
+  <div className="row mt-5 d-flex justify-content-around lastted mobile-nop3 ">
     
 
     <div className="col-sm-3">
@@ -18,59 +18,78 @@ export default function Footer(props) {
         hello@futurelabs.agency
       </p>
       <div className="row ph-no">
-        <div className="col-sm-3">
-<img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png" alt="" />
+        <div className="col-3 mb-3 vid">
+        <a href="https://twitter.com/FutureLabsNG"><img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png" alt="" /></a>
         </div>
-        <div className="col-sm-3">
-        <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png" alt="" />
+        <div className="col-3 mb-3 vid">
+        <a href="https://www.facebook.com/FutureLabsNews"><img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png" alt="" /></a>
           </div>
-          <div className="col-sm-3">
-          <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png" alt="" />
+          <div className="col-3 mb-3 vid">
+          <a href="https://www.instagram.com/futurelabshq/"><img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png" alt="" /></a>
           </div>
       </div>
-      <div className="row ph-yes">
-        <div className="col-md-4">
+      <div className="row ph-yes mb-3 vid">
+        <div className="col-4">
 <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png" alt="" />
         </div>
-        <div className="col-md-4">
+        <div className="col-4 mb-3">
         <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png" alt="" />
           </div>
-          <div className="col-md-4">
+          <div className="col-4 mb-3">
           <img src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png" alt="" />
           </div>
       </div>
     </div>
-    <div className="col-sm-3">
+    <div className="col-sm-3 mobile-yest">
       <h6>
-        <strong className="carl">Company</strong> 
+        <strong className="carl mt-xs-2">Company</strong> 
       </h6>
 
-      <p className="fot container">
+      <p className="fot ">
+      <Nav.Link className="  text-muted" href="/">HOME</Nav.Link>
+     
+      </p>
+      <p className="fot  ">
+      <Nav.Link className="  text-muted" href="/about2"><strong>ABOUT</strong></Nav.Link>
+      </p>
+      <p className="fot  ">
+      <Nav.Link className="  text-muted" href="/services2"><strong>SERVICES</strong></Nav.Link>
+      </p>
+      <p className="fot  ">
+      <Nav.Link className="  text-muted" href="/singlepost"><strong>BLOG</strong></Nav.Link>
+      </p>
+    </div>
+    <div className="col-sm-3 mobile-nop">
+      <h6>
+        <strong className="carl mt-xs-2">Company</strong> 
+      </h6>
+
+      <p className="fot ">
        HOME
       </p>
-      <p className="fot container">
+      <p className="fot  my-2">
        ABOUT
       </p>
-      <p className="fot container">
+      <p className="fot  my-2">
        SERVICES
       </p>
-      <p className="fot container">
+      <p className="fot  my-2 ">
        BLOG
       </p>
     </div>
     <div className="col-sm-3">
       <h6>
         <strong className="carl">Let's Get in Touch</strong>
-        <p className="ca">
-          Sign up to recieve our newsletter about industry trends
+        <p className="ca my-3">
+          Sign up to receive our newsletter about industry trends
         </p>
         <div class="input-group mb-3">
-          <input type="text" class="form-control rounded" placeholder="Enter your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary text-white email rounded" type="button">Send</button>
-          </div>
+          <input type="text" class="form-control " placeholder="Enter your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+          
+            <button class="btn colors " type="button">Send</button>
+         
         </div>
-
+            
       </h6>
 
     </div>

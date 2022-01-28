@@ -1,125 +1,221 @@
+import ToolBar from '../layout/toolbar';
+import Contact from "../layout/contact"
 import "./services.css"
-import ToolBar from "../layout/toolbar"
 import { Link } from "react-router-dom"
 
-export default function strategy () {
-    return (
-       <div>
-           <ToolBar />
-           <section>
-           <div className="picture2">
-           <div className="punchbox21 text-white container">
 
-<h4 className="punchlines1 veers">
-  Strategy
-</h4>
-
-<Link to="/strategy"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
-  
-
-
-</div>
-
-
+export default function Services() {
+return (
       
-    
+<div>
+<ToolBar />
+  {/* *********************************************************************** */}
+
+    {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}
+    {/* SEGMENT-ONE BEGINS HERE & IS REPEATED AS SEGMENT-TWO*/}
+
+  {/* *********************************************************************** */}
+
+
+    {/* Section-One begins here */}
+    <section className="section1 services-image1">
+
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+
+                    <h5 className="line1">
+                        Strategy
+                    </h5>
+                     <Link to="/strategy2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+
+                    {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
+
+
+                </div>
+                
+
+                {/* THE MUTE ICON IS HERE */}
+                <div className="col-3 .bg-danger text-center">
+                  <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    {/* Section-One ends here */}
 
 
 
-          
+
+    {/* Section-One begins here */}
+    <section className="section1 services-image2">
+
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+
+                    <h5 className="line1">
+                       Product <br className="mobile-no" /> Design
+                    </h5>
+                    <Link to="/products2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+
+                    {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
+
+
+                </div>
+                
+
+                {/* THE MUTE ICON IS HERE */}
+                <div className="col-3 .bg-danger text-center">
+                  <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    {/* Section-One ends here */}
+
+
+
+
+    {/* Section-One begins here */}
+    <section className="section1 services-image3">
+
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+
+                    <h5 className="line1">
+                        Websites
+                    </h5>
+                    <Link to="/websites2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+
+                    {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
+
+
+                </div>
+                
+
+                {/* THE MUTE ICON IS HERE */}
+                <div className="col-3 .bg-danger text-center">
+                  <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    {/* Section-One ends here */}
+
+
+
+    {/* Section-One begins here */}
+    <section className="section1 services-image4">
+
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+
+                    <h5 className="line1">
+                        3D Modeling
+                    </h5>
+                    <Link to="/modelling2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+
+                    {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
+
+
+                </div>
+                
+
+                {/* THE MUTE ICON IS HERE */}
+                <div className="col-3 .bg-danger text-center">
+                <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    {/* Section-One ends here */}
+
+
+
+    {/* Section-One begins here */}
+    <section className="section1 services-image5">
+
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+
+                    <h5 className="line1">
+                        Digital Art
+                    </h5>
+                    <Link to="/digitalart2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+
+                    {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
+
+
+                </div>
+                
+
+                {/* THE MUTE ICON IS HERE */}
+                <div className="col-3 .bg-danger text-center">
+                <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    {/* Section-One ends here */}
+
+
+
+    {/* Section-One begins here */}
+    <section className="section1 services-image6">
+
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+
+                    <h5 className="line6">
+                       Branding & <br className="mobile-no"/> Advertising
+                    </h5>
+                    <button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button>
+
+                    {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
+
+
+                </div>
+                
+
+                {/* THE MUTE ICON IS HERE */}
+                <div className="col-3 .bg-danger text-center">
+                <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    {/* Section-One ends here */}
+
+    <Contact />
+
+
+
+
+
+
+
+
+
+
 
 
 </div>
-           </section>
-           <section>
-               <div className="pictures12">
-               <div className="punchbox21 text-white container">
-
-<h4 className="punchlines20 veer">
-Product
-</h4>
-
-<h5 className="sub-lines20">
-Design
-</h5>
-
-<Link to="/products"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
-  
-
-
-</div>
-               </div>
-           </section>
-
-           <section>
-               <div className="pictures13">
-               <div className="punchbox22 text-white container">
-
-<h4 className="punchlines21 veer">
-Websites
-</h4>
-
-<Link to="/websites"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
-  
-
-
-</div>
-               </div>
-           </section>
-
-           <section>
-               <div className="pictures14">
-               <div className="punchbox22 text-white container">
-
-<h4 className="punchlines22 veer">
-3D Modeling
-</h4>
-
-<Link to="/modelling"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
-  
-
-
-</div>
-               </div>
-           </section>
-
-           <section>
-               <div className="pictures16">
-               <div className="punchbox22 text-white container">
-
-<h4 className="punchlines23 veer">
-Digital Art
-</h4>
-
-<Link to="/digital-art"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
-  
-
-
-</div>
-               </div>
-           </section>    
-
-           <section>
-               <div className="pictures17">
-               <div className="punchbox22 text-white container">
-
-<h4 className="punchlines24 veer">
-Branding &
-</h4>
-
-<h5 className="sub-lines21">
-Advertising
-</h5>
-
-<Link to="/branding-&-advertising"><button  className="but2 mb-5 mt-3">Learn more</button></Link>
-  
-
-
-</div>
-               </div>
-           </section>    
-
-</div>
-
-   )
+)
 }

@@ -1,143 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway:wght@600;700&family=Roboto:wght@500;700&display=swap');
 
 
-.picture2{
-    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622752/felix-mittermeier-nAjil1z3eLk-unsplash_1_kdoqjk.png");
-  width: 100%;
+.section1 {
+    /* background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png'); */
     height: 100vh;
+    width: 100vw;
+    background-position: center;
+    object-fit: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 54vh;
+
 }
 
-.but2{
-    width: 200px;
-height: 69px;
-background: rgba(0, 0, 0, 0.1);
-border: 4px solid #FF9000;
-box-sizing: border-box;
-border-radius: 8px;
-font-family: Raleway;
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 35px;
-font-variant: small-caps;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 
-color: #FFFFFF;
+    .mobile-no {
+        display: none;
+    }
+
+    .mute {
+        height: 26px !important;
+        margin-top: 175px !important;
+    }
+
+    .mute-mobile-yes {
+        height: 26px !important;
+        margin-top: 240px !important;
+
+    }
+
+    .services-button-text {
+        font-family: Roboto;
+        font-style: Medium;
+        font-size: 15px !important;
+
+        border-color: #FF9000 !important;
+        
+    }
+
+    .services-button-text:hover {
+    
+        background-color: #FF9000 !important;
+    }
+    
+
+
 }
 
-.punchlines1{
+
+.services-button-text {
+    font-family: Roboto;
+    font-style: Medium;
+    font-size: 17px;
+
+    border-color: #FF9000 !important;
+}
+
+.services-button-text:hover {
+    
+    background-color: #FF9000 !important;
+}
+
+
+
+
+
+
+
+.mute2 {
+    height: 33px;
+    margin-top: 74%;
+    float: right;
+}
+
+.mute {
+    height: 33px;
+    margin-top: 13%;
+}
+
+
+.line1 {
     font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 52px;
-line-height: 61px;
-/* identical to box height */
-
-
-color: #FFFFFF;
-}
-
-.pictures12{
-    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1637661993/Zuga_Mockup_1_rae0hq.svg");
-    width: 100%;
-      height: 120vh;
-      
-}
-
-.punchlines20{
-    font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 52px;
-line-height: 61px;
-
-color: #FFFFFF;
-}
-
-.sub-lines20{
-    font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 52px;
-line-height: 61px;
-
-color: #FFFFFF;
-}
-
-.pictures13{
-    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1636105477/Web_Mockup_26_lly9h0.png");
-    width: 100%;
-      height: 120vh;
-      
-}
-
-.punchlines21{
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
+    font-style: Bold;
     font-size: 52px;
     line-height: 61px;
-    
-    color: #FFFFFF;
 }
 
-.pictures14{
-    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1636105484/flying_car_3_pdad4f.png");
-    width: 100%;
-      height: 120vh;
-      
+
+.services-image1 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622752/felix-mittermeier-nAjil1z3eLk-unsplash_1_kdoqjk.png');
+
+
 }
 
-.punchlines22{
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 52px;
-    line-height: 61px;
-    
-    color: #FFFFFF;
+.services-image2 {
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636105459/Zuga_Mockup_2_ggtcvf.png');
 }
 
-.pictures16{
-    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1636724667/1812217482_1_rl6j43.png");
-    width: 100%;
-      height: 125vh;
-      
+.services-image3 {
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636105477/Web_Mockup_26_lly9h0.png');
 }
 
-.punchlines23{
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 52px;
-    line-height: 61px;
-    
-    color: #FFFFFF;
+.services-image4 {
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636105484/flying_car_3_pdad4f.png');
 }
 
-.pictures17{
-    background-image: url("https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png");
-    width: 100%;
-      height: 120vh;
-      
+.services-image5 {
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636724667/1812217482_1_rl6j43.png');
 }
 
-.punchlines24{
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 52px;
-    line-height: 61px;
-    
-    color: #FFFFFF;
-}
-
-.sub-lines21{
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 52px;
-    line-height: 61px;
-    
-    color: #FFFFFF;
+.services-image6 {
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
 }

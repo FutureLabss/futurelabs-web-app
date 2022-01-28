@@ -1,296 +1,113 @@
 
-.pictur{
-    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1637065176/Web_Mockup_25_ybfjys.png");
-  width: 100%;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.section1 {
+    /* background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png'); */
     height: 100vh;
-    
-     
-  }
-  .picturet9{
-    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1637152915/1812217481_tqzug6.png");
-  width: 100%;
-  height: 130vh;
-    
-     
-  }
-  .pictures5{
-    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1636723776/chairwhite_side_2_ko0iip.png");
-  width: 100%;
-    height: 125vh;
-    background-repeat: no-repeat;     
-    
-     
-  }
-  .picture44{
-    background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1636724129/untitled_2_qgblqy.png");
-  width: 100%;
-    height: 125vh;
-    background-repeat: no-repeat;     
-    
-     
-  }
- 
-.punchlines {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 56px;
-    
-    color: #FFFFFF; 
+    width: 100vw;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 54vh;
 
 }
-.sub-lines {
+
+.line3 {
     font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 28px;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 28px;
+}
 
-color: #FFFFFF;
-} 
-.punchbox2 {
-   
-    top: 170%;
-   
-   
-    /* text-align: center; */
-}
-.punchlines2 {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 56px;
-    
-    color: #FFFFFF; 
 
-}
-.sub-lines2 {
-    font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 28px;
-
-color: #FFFFFF;
-} 
-.veer{
-    padding-top: 35%;
-}
-.veers{
-    padding-top: 35%;
-}
-.stoped21{
-    position: absolute;
-    left: 90%;
-    margin-top: -25px;
-   }
-   .stoped2{
-    position: absolute;
-    left: 90%;
-    margin-top: -25px;
-   }
-   .stoped{
-    position: absolute;
-    left: 90%;
-    margin-top: -25px;
-   }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
 
-    .section2-mobile-yes {
-        display: block;
-        color: white;
-        position: absolute;
-        bottom: -110%;
-        left: 7%;
-        /* line-height: 3px; */
-        font-size: 138px;
-    }
-    .veer{
-        padding-top: 90%;
-    }
-    .veers{
-        padding-top: 100%;
-        font-size: 60px;
-    }
-    .section2-mobile-inner {
-        font-size: 24px;
-        margin-bottom: 34px;
-        line-height: 39px;
-
-    }
-
-    .subline2 {
-        line-height: 39px;
-    }
-
-    .section3-mobile-yes {
-        /* background-color: red; */
-        display: block;
-        color: white;
-        position: absolute;
-        bottom: -207%;
-        left: 7%;
-        /* line-height: 3px; */
-        font-size: 138px;
-    }
-
-    .section3-mobile-inner {
-        font-size: 24px;
-        margin-bottom: 34px;
-        line-height: 39px;
-
-    }
-
-
-   
-    .section2-box1-inner {
-        margin-top: 30%;
-        margin-left: 10%;
-        color: white;
-    
-    }
-   
-    .mobile-yes {
-        display: block;
-    }
-
-    .yes {
-        font-size: 30px;
-        display: flex;
-        align-items: center;
-        /* background-color: blue; */
-    }
-
-    .section45{
-        background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635338077/Web_Mockup_26_jwclbt.png');
-        height: 100vh;
-        
-        background-repeat: no-repeat;
-        background-size: 100%;
-       
-    }
     .mobile-no {
         display: none;
     }
 
-    .punchbox {
-        position: absolute;
-        top: 70%;
-        left: 20%;
-        transform: translate(-15%, -50%);
-        /* text-align: center; */
-    }
-
-    .punchbox4 {
-        /* background-color: red; */
-        position: absolute;
-        top: 378%;
-        left: 20%;
-        transform: translate(-15%, -50%);
-        /* text-align: center; */
-    }
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-      }
-      
-      .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-      }
-      
-      .sidenav a:hover {
-        color: #f1f1f1;
-      }
-      
-      .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-      }
-      
-      #main {
-        transition: margin-right .5s;
-        padding: 16px;
-      }
-      
-      @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
-      }
-      .xl{
-          cursor: pointer;
-      }
-
     .mute {
-        height: 30px;
-        position: absolute;
-        left: 86%;
-        top: 89%;
-    }
-    .stoped21{
-        height: 30px;
-        position: absolute;
-        left: 86%;
-        top: 197%;
-    }
-    .stoped2{
-        height: 30px;
-        position: absolute;
-        left: 86%;
-        top: 295%;
-    }   
-    .stoped{
-        height: 30px;
-        position: absolute;
-        left: 86%;
-        top: 395%;
-    }
-    .mute123 {
-        height: 30px;
-        position: absolute;
-        left: 86%;
-        top: 92%;
+        height: 26px !important;
+        margin-top: 175px !important;
     }
 
-    .no-break-mobile {
-        display: none;
+    .mute-mobile-yes {
+        height: 26px !important;
+        margin-top: 240px !important;
+
     }
 
-    .section2-box2 {
-        height: 100vh;
+    .websites-button-text {
+        font-family: Roboto;
+        font-style: Medium;
+        font-size: 9px;
+        
     }
 
-    .section2-box1 {
-        display: none;
-        /* height: 50vh; */
-        /* background: linear-gradient(rgba(73, 73, 73, 0.5), rgba(73, 73, 73, 0.5)), url(''); */
-    }
 
-    
+}
 
-    
+
+.websites-button-text {
+    font-family: Roboto;
+    font-style: Medium;
+    font-size: 1.8rem;
 }
 
 
 
 
 
+
+.mute2 {
+    height: 33px;
+    margin-top: 74%;
+    float: right;
+}
+
+.mute {
+    height: 33px;
+    margin-top: 13%;
+}
+
+
+.line1 {
+    font-family: Raleway;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 42px;
+
+}
+
+
+.websites-image1 {
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636105477/Web_Mockup_26_lly9h0.png');
+
+
+}
+
+.websites-image2 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636622807/IMG_0107_2_cw1bts.png');
+}
+
+.websites-image3 {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636632997/matt-artz-dh3zAdGGOIY-unsplash_1_pys7au.png');
+}
+
+.websites-image4 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169430/IMG_0133_1_i0aqab.png');
+}
+
+.websites-image5 {
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1636724667/1812217482_1_rl6j43.png');
+}
+
+.websites-image6 {
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
+}

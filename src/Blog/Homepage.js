@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
   },
   appBar: {
-    backgroundColor: '#FF9000',
+    backgroundColor: '#000000',
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
+    // necessary for content to be below app baryggy
     ...theme.mixins.toolbar,
     justifyContent: 'flex-start',
     backgroundPosition: "center",
@@ -102,6 +102,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Raleway",
     fontStyle: "normal",
     fontWeight: "bold"
+    
   },
   heros: {
     position: "relative",
@@ -156,7 +157,8 @@ export default function PersistentDrawerRight() {
       >
         <Toolbar>
           <Typography variant="h6" noWrap className={classes.title}>
-            FutureLabs
+            {/* FutureLabs */}
+            <img  className=""src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt=""/>
           </Typography>
           <IconButton
             color="inherit"

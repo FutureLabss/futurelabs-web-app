@@ -1,35 +1,34 @@
 import ToolBar from '../layout/toolbar';
-import "./websites2.css"
+import Contact from "../layout/contact"
+import "./branding.css"
 
 
-
-export default function Websites2() {
+export default function Branding() {
 return (
       
 <div>
- <ToolBar /> 
+<ToolBar />
   {/* *********************************************************************** */}
 
     {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}
-    {/* SEGMENT-ONE BEGINS HERE & IS REPEATED AS SEGMENT-TWO */}
+    {/* SEGMENT-ONE BEGINS HERE & IS REPEATED AS SEGMENT-TWO*/}
 
   {/* *********************************************************************** */}
 
 
     {/* Section-One begins here */}
-    <section className="section1 websites-image1">
+    <section className="section1 branding-image1">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    <h5 className="line1">
-                      Websites
+                  <h5 className="line1">
+                    Branding & Advertising
+                  </h5>
+                  {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    </h5>
-                    {/* <button type="button" class="btn btn-outline-warning websites-button-text mt-4 text-white">LEARN MORE</button> */}
-
-                    <h6 className="line3"> We are poised to help your enterprise gain <br className="mobile-no" /> the visibilty and engagements it needs</h6>
+                  <h6 className="line3"> Brand visibility is one of our core values</h6>
 
 
                 </div>
@@ -50,18 +49,18 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 websites-image2">
+    <section className="section1 branding-image2">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                    Gospel Worship Has Never <br className="mobile-no" />  Been Better With Emmy Chris
+                      Community & Connectivity
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning websites-button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3">Just another website we brought to life</h6>
+                    <h6 className="line3">We leverage on social media to reach and create <br className="mobile-no" /> bonds with the larger audience outside our locality</h6>
 
 
                 </div>
@@ -82,18 +81,18 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 websites-image3">
+    <section className="section1 branding-image3">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                    Nature At The Comfort of <br className="mobile-no" /> Your Home
+                      Connect with us on Facebook
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning websites-button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> We built visibililty for Green to satisfy nature lovers</h6>
+                    <h6 className="line3"> Checkout our latest activities on Facebook <br /> <span className="visit">Visit page &#x2192; </span>  </h6>
 
 
                 </div>
@@ -113,18 +112,19 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 websites-image4">
+    <section className="section1 branding-image4">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                      Seamless Cross-border  <br className="mobile-no" /> Payments and Currency  <br className="mobile-no" /> Conversion
+                      We are on Instagram
                     </h5>
-                    {/* <button type="button" class="btn btn-outline-warning websites-button-text mt-4 text-white">LEARN MORE</button> */}
+                    {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6>
+                    <h6 className="line3"> Visit our Instagram page to see what we do <br /> <span className="visit">Visit page &#x2192; </span> </h6>
+
 
                 </div>
                 
@@ -139,6 +139,9 @@ return (
 
     </section>
     {/* Section-One ends here */}
+
+
+    <Contact />
 
 
 

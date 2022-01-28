@@ -11,7 +11,7 @@ import Modelling from '../components/modelling/modelling'
 import Products from '../components/Products/products'
 
 import Websites from '../components/websites/websites'
-import DigitalArt from '../components/digitalArt/digitalArt'
+import DigitalArt from '../components/digitalArt/digitalart'
 import singlepost from '../components/singlepost/singlepost'
 import PersistentDrawerRight from '../Blog/Homepage'
 

@@ -1,6 +1,6 @@
 import ToolBar from '../layout/toolbar';
 import Contact from "../layout/contact"
-import "./digitalArt.css"
+import "./digitalart.css"
 
 
 export default function DigitalArt() {

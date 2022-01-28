@@ -2,16 +2,16 @@ import Home from '../components/Home/home'
 
 import About from '../components/About/about'   
 import Services from '../components/Services/services'
-import Strategy from '../components/Strategy/strategy'
+import Strategy from '../components/strategy/strategy'
 import Branding from '../components/Branding/branding'
 
 
-import Modelling from '../components/Modelling/modelling'
+import Modelling from '../components/modelling/modelling'
 
 import Products from '../components/Products/products'
 
-import Websites from '../components/Websites/websites'
-import DigitalArt from '../components/DigitalArt/digitalArt'
+import Websites from '../components/websites/websites'
+import DigitalArt from '../components/digitalArt/digitalArt'
 import singlepost from '../components/singlepost/singlepost'
 import PersistentDrawerRight from '../Blog/Homepage'
 

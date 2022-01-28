@@ -2,7 +2,7 @@ import Home from '../components/Home/home'
 
 import About from '../components/About/about'   
 import Services from '../components/Services/services'
-import Strategy from '../components/Strategy/strategy'
+// import Strategy from '../components/Strategy/strategy'
 import Branding from '../components/Branding/branding'
 
 import PersistentDrawerRight from '../Blog/Homepage'
@@ -17,7 +17,7 @@ import singlepost from '../components/singlepost/singlepost'
 const pageRoutes = [
     {path: '/about', element: About },
     {path: '/services', element: Services },
-    {path: '/strategy', element: Strategy },
+    // {path: '/strategy', element: Strategy },
     {path: '/branding', element: Branding },
 
     {path: '/modelling', element: Modelling },

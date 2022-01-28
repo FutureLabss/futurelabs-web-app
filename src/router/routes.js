@@ -5,7 +5,7 @@ import Services from '../components/Services/services'
 import Strategy from '../components/Strategy/strategy'
 import Branding from '../components/Branding/branding'
 
-import PersistentDrawerRight from '../Blog/Homepage'
+
 import Modelling from '../components/Modelling/modelling'
 
 import Products from '../components/Products/products'
@@ -13,6 +13,7 @@ import Products from '../components/Products/products'
 import Websites from '../components/Websites/websites'
 import DigitalArt from '../components/DigitalArt/digitalArt'
 import singlepost from '../components/singlepost/singlepost'
+import PersistentDrawerRight from '../Blog/Homepage'
 
 const pageRoutes = [
     {path: '/', element: Home },

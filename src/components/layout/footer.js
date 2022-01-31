@@ -93,7 +93,7 @@ export default function Footer(props) {
               </Nav.Link>
             </p>
             <p className="fot  ">
-              <Nav.Link className="  text-muted" href="/singlepost">
+              <Nav.Link className="  text-muted" href="/blog">
                 <strong>BLOG</strong>
               </Nav.Link>
             </p>

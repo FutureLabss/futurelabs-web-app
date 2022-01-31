@@ -76,6 +76,19 @@ line-height: 28px;
 
 color: #000000;
 }
+
+.copyright{
+    background-color: rgba(39, 38, 36, 0.3);
+    text-align: center;
+    font-weight: 500;
+    word-spacing: .6rem;
+}
+.copyright img{
+    height: 3vh;
+}
+#copyright_date{
+    margin-left: .2rem;
+}
 @media only screen and (max-width: 600px) {
     .ph-no{
         display: flex;

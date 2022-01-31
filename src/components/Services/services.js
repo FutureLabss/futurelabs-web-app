@@ -27,7 +27,7 @@ return (
                     <h5 className="line1">
                         Strategy
                     </h5>
-                     <Link to="/strategy2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+                     <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 
@@ -59,7 +59,7 @@ return (
                     <h5 className="line1">
                        Product <br className="mobile-no" /> Design
                     </h5>
-                    <Link to="/products2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+                    <Link to="/products"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 
@@ -91,7 +91,7 @@ return (
                     <h5 className="line1">
                         Websites
                     </h5>
-                    <Link to="/websites2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+                    <Link to="/websites"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 
@@ -122,7 +122,7 @@ return (
                     <h5 className="line1">
                         3D Modeling
                     </h5>
-                    <Link to="/modelling2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+                    <Link to="/modelling"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 
@@ -153,7 +153,7 @@ return (
                     <h5 className="line1">
                         Digital Art
                     </h5>
-                    <Link to="/digitalart2"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+                    <Link to="/digitalart"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 
@@ -184,7 +184,7 @@ return (
                     <h5 className="line6">
                        Branding & <br className="mobile-no"/> Advertising
                     </h5>
-                    <button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button>
+                    <Link to="/branding"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
 
                     {/* <h6 className="line3"> Securing Payments for Tomorrow on the Web</h6> */}
 

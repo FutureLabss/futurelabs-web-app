@@ -45,18 +45,18 @@ export default function Footer(props) {
         <strong className="carl mt-xs-2">Company</strong> 
       </h6>
 
-      <p className="fot ">
-      <Nav.Link className="  text-muted" href="/">HOME</Nav.Link>
+      <p className="fot down">
+      <Nav.Link className="  text-muted" href="/"><strong>HOME</strong></Nav.Link>
      
       </p>
-      <p className="fot  ">
-      <Nav.Link className="  text-muted" href="/about"><strong>ABOUT</strong></Nav.Link>
+      <p className="fot  down">
+      <Nav.Link className=" text-muted" href="/about"><strong>ABOUT</strong></Nav.Link>
       </p>
-      <p className="fot  ">
+      <p className="fot  down">
       <Nav.Link className="  text-muted" href="/services"><strong>SERVICES</strong></Nav.Link>
       </p>
-      <p className="fot  ">
-      <Nav.Link className="  text-muted" href="/singlepost"><strong>BLOG</strong></Nav.Link>
+      <p className="fot  down">
+      <Nav.Link className="  text-muted" href="/blog"><strong>BLOG</strong></Nav.Link>
       </p>
     </div>
     <div className="col-sm-3 mobile-nop">
@@ -64,17 +64,17 @@ export default function Footer(props) {
         <strong className="carl mt-xs-2">Company</strong> 
       </h6>
 
-      <p className="fot ">
-       HOME
+      <p className="fot down">
+      <Nav.Link className="  text-muted" href="/"><strong>HOME</strong></Nav.Link>
       </p>
-      <p className="fot  my-2">
-       ABOUT
+      <p className="fot  my-2 down">
+      <Nav.Link className="  text-muted" href="/about"><strong>ABOUT</strong></Nav.Link>
       </p>
-      <p className="fot  my-2">
-       SERVICES
+      <p className="fot  my-2 down">
+      <Nav.Link className="  text-muted" href="/services"><strong>SERVICES</strong></Nav.Link>
       </p>
-      <p className="fot  my-2 ">
-       BLOG
+      <p className="fot  my-2 down">
+      <Nav.Link className="  text-muted" href="/blog"><strong>BLOG</strong></Nav.Link>
       </p>
     </div>
     <div className="col-sm-3">

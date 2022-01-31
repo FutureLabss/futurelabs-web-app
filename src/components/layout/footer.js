@@ -77,22 +77,22 @@ export default function Footer(props) {
               <strong className="carl mt-xs-2">Company</strong>
             </h6>
 
-            <p className="fot ">
+            <p className="fot down">
               <Nav.Link className="  text-muted" href="/">
-                HOME
+              <strong>HOME</strong>
               </Nav.Link>
             </p>
-            <p className="fot  ">
+            <p className="fot  down">
               <Nav.Link className="  text-muted" href="/about">
                 <strong>ABOUT</strong>
               </Nav.Link>
             </p>
-            <p className="fot  ">
+            <p className="fot  down">
               <Nav.Link className="  text-muted" href="/services">
                 <strong>SERVICES</strong>
               </Nav.Link>
             </p>
-            <p className="fot  ">
+            <p className="fot  down">
               <Nav.Link className="  text-muted" href="/blog">
                 <strong>BLOG</strong>
               </Nav.Link>

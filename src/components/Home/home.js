@@ -21,7 +21,7 @@ return (
   {/* Section-One begins here */}
   <section className="section1 home-image1">
 
-    <div className="container">
+    <div className="container .bg-primary">
       <div className="row .bg-warning d-flex justify-space-between  mt-sm-5 pt-sm-5">
         <div className="col-9 .bg-primary px-xs-4 px-sm-0 text-white">
 

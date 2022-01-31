@@ -1,7 +1,14 @@
+import React, { useState, useEffect } from "react";
 import "./footer.css";
 import { Nav } from "react-bootstrap";
 
 export default function Footer(props) {
+  const [date, setDate] = useState();
+
+  useEffect(() => {
+    setDate(new Date().getFullYear());
+  }, []);
+
   return (
     <div>
       <div className="container mt-5">
@@ -129,7 +136,13 @@ export default function Footer(props) {
           <div className="col-12 foot"></div>
         </div>
       </div>
-      <div>Hello</div>
+      <div className="copyright">
+        &copy;<span id="copyright_date">{date}</span>{" "}
+        <img
+          src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png"
+          alt="logo"
+        />
+      </div>
     </div>
   );
 }

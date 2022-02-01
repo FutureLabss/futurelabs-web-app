@@ -1,5 +1,5 @@
 import About from '../components/About/about'
-import Home from '../components/Home/home'
+// import Home from '../components/Home/home'
 import Services from '../components/Services/services'
 import strategy from '../components/strategy/strategy'
 import modelling from '../components/modelling/modelling'
@@ -43,7 +43,7 @@ const pageRoutes = [
     {path: '/products', element: product },
     {path: '/websites', element: websites },
      {path: '/branding', element: branding },
-    {path: '/', element: Home },
+    {path: '/', element: PersistentDrawerRight },
 ]
 
 export default pageRoutes

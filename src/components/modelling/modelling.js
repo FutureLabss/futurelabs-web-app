@@ -60,7 +60,7 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3">Watches are meant to tell more than time,  with <br className="mobile-no" /> future time pieces, we redefined luxury and <br className="mobile-no" /> precision</h6>
+                    <h6 className="line3">Watches are meant to tell more than time,  with <br className="mobile-no" /> future time pieces, we redefined luxury and <br className="mobile-no" /> precision.</h6>
 
 
                 </div>
@@ -92,7 +92,7 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look like before you even get started </h6>
+                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look like before you even get started. </h6>
 
 
                 </div>
@@ -123,7 +123,7 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Our team effortlessly achieves masterpieces on all commissions</h6>
+                    <h6 className="line3"> Our team effortlessly achieves masterpieces on all commissions.</h6>
 
 
                 </div>
@@ -153,7 +153,7 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Our deep understanding of curves, tones <br className="mobile-no" /> & texture affords us flawless execution</h6>
+                    <h6 className="line3"> Our deep understanding of curves, tones <br className="mobile-no" /> & texture affords us flawless execution.</h6>
 
 
                 </div>
@@ -180,7 +180,7 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> We always set out to create what stands apart & <br className="mobile-no" /> makes its own statement from day one </h6>
+                    <h6 className="line3"> We always set out to create what stands apart & <br className="mobile-no" /> makes its own statement from day one. </h6>
 
 
                 </div>

@@ -180,7 +180,7 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> We always set to create what stands apart & <br className="mobile-no" /> makes its own statement from day one </h6>
+                    <h6 className="line3"> We always set out to create what stands apart & <br className="mobile-no" /> makes its own statement from day one </h6>
 
 
                 </div>

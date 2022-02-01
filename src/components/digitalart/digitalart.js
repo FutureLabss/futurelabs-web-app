@@ -60,7 +60,7 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Harnessing the power of team, <br className="mobile-no" /> we create bodies of art that stand apart</h6>
+                    <h6 className="line3"> Harnessing the power of team, we create <br className="mobile-no" />bodies of art that our clients find relatable.</h6>
 
 
                 </div>
@@ -88,11 +88,11 @@ return (
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                      Attention to detail
+                      Attention to details
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> We remake scenes, people and places<br className="mobile-no" /> that are no different from their original</h6>
+                    <h6 className="line3"> The scenes, people and places we <br className="mobile-no" />remake on digital canvas, come alive. </h6>
 
 
                 </div>

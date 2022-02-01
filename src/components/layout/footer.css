@@ -73,17 +73,17 @@ color: #000000;
 }
 
 .copyright{
-    background-color: rgba(39, 38, 36, 0.3);
+    background-color:#FF9000;
     text-align: center;
     font-weight: 500;
     word-spacing: .6rem;
+    color: white;
 }
-.copyright img{
-    height: 3vh;
+
+.copyright_spacing{
+    margin-left: .24rem;
 }
-#copyright_date{
-    margin-left: .2rem;
-}
+
 @media only screen and (max-width: 600px) {
     .ph-no{
         display: flex;
@@ -96,7 +96,7 @@ color: #000000;
         display: none;
     }
     .mobile-nop{
-        display: inline;
+        display: none;
     }
     .monile-nop3{
         display: none;

@@ -28,7 +28,11 @@ div.container-fluid{
     z-index: 1;
                                     
     
-}       
+}
+
+.down:hover {
+    font-weight: 300;
+}
    
 
 

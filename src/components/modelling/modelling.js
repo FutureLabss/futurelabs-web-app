@@ -92,7 +92,7 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6>
+                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look like before you even get started </h6>
 
 
                 </div>
@@ -153,7 +153,7 @@ return (
                     </h5> */}
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    {/* <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6> */}
+                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6>
 
 
                 </div>
@@ -180,7 +180,7 @@ return (
                     </h5> */}
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    {/* <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6> */}
+                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6>
 
 
                 </div>

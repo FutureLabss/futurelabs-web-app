@@ -77,37 +77,28 @@ export default function Footer(props) {
               <strong className="carl mt-xs-2">Company</strong>
             </h6>
 
-            <p className="fot ">
+            <p className="fot down">
               <Nav.Link className="  text-muted" href="/">
-                HOME
+              <strong>HOME</strong>
               </Nav.Link>
             </p>
-            <p className="fot  ">
+            <p className="fot  down">
               <Nav.Link className="  text-muted" href="/about">
                 <strong>ABOUT</strong>
               </Nav.Link>
             </p>
-            <p className="fot  ">
+            <p className="fot  down">
               <Nav.Link className="  text-muted" href="/services">
                 <strong>SERVICES</strong>
               </Nav.Link>
             </p>
-            <p className="fot  ">
-              <Nav.Link className="  text-muted" href="/singlepost">
+            <p className="fot  down">
+              <Nav.Link className="  text-muted" href="/blog">
                 <strong>BLOG</strong>
               </Nav.Link>
             </p>
           </div>
-          <div className="col-sm-3 mobile-nop">
-            <h6>
-              <strong className="carl mt-xs-2">Company</strong>
-            </h6>
-
-            <p className="fot ">HOME</p>
-            <p className="fot  my-2">ABOUT</p>
-            <p className="fot  my-2">SERVICES</p>
-            <p className="fot  my-2 ">BLOG</p>
-          </div>
+          
           <div className="col-sm-3">
             <h6>
               <strong className="carl">Let's Get in Touch</strong>

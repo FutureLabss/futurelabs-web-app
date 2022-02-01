@@ -24,11 +24,11 @@ return (
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                        Product Design
+                      Seamless Cross-border <br className="mobile-no" /> Payments and Currency  <br className="mobile-no" /> Conversion
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning products-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> World class digital products that <br className="mobile-no" /> accelerate profit</h6>
+                    <h6 className="line3"> Securing Payments for Tomorrow</h6>
 
 
                 </div>
@@ -56,11 +56,12 @@ return (
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                    Access Your Computer  <br className="mobile-no" />  Science Curriculum on the Go
+                    {/* Access Your Computer  <br className="mobile-no" />  Science Curriculum on the Go */}
+                    Shop for your feet
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning products-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Re-defining The Science Of Computers</h6>
+                    <h6 className="line3"> We partnered wuth Zuga to deliver <br className="mobile-no" /> effortless transportation</h6>
 
 
                 </div>
@@ -88,11 +89,11 @@ return (
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                    How About A Seamless <br className="mobile-no" /> Driving Expeerience?
+                    Access Your Computer<br className="mobile-no" /> Science Curriculum on the Go
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning products-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> We partnered with Zuga to deliver <br className="mobile-no" /> effortless transportation</h6>
+                    <h6 className="line3">Redefining the science of computers</h6>
 
 
                 </div>
@@ -119,7 +120,7 @@ return (
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                      Seamless Cross-border  <br className="mobile-no" /> Payments and Currency  <br className="mobile-no" /> Conversion
+                      Seamless Cross-border <br className="mobile-no" /> Payments and Currency  <br className="mobile-no" /> Conversion
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning products-button-text mt-4 text-white">LEARN MORE</button> */}
 

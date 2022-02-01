@@ -119,11 +119,11 @@ return (
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
-                      Imagination
+                      Fine Craftmanship
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6>
+                    <h6 className="line3"> Our team effortlessly achieves masterpieces on all commissions</h6>
 
 
                 </div>
@@ -148,12 +148,12 @@ return (
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    {/* <h5 className="line1">
-                      Imagination
-                    </h5> */}
+                    <h5 className="line1">
+                      Noiseless Design
+                    </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6>
+                    <h6 className="line3"> Our deep understanding of curves, tones <br className="mobile-no" /> & texture affords us flawless execution</h6>
 
 
                 </div>
@@ -175,12 +175,12 @@ return (
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    {/* <h5 className="line1">
-                      Imagination
-                    </h5> */}
+                    <h5 className="line1">
+                      Non-conforming
+                    </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> It’s easier to build if we help you picture what your <br className="mobile-no" /> product will look ike before you even get started </h6>
+                    <h6 className="line3"> We always set to create what stands apart & <br className="mobile-no" /> makes its own statement from day one </h6>
 
 
                 </div>

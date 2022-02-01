@@ -86,18 +86,24 @@
 }
 
 
-.product-image1 {
+/* .product-image1 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643293111/Rectangle_194_ihhyb6.png');
+
+
+} */
+
+.product-image1 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643720296/IMG_0107_3_btoi46.png');
 
 
 }
 
 .product-image2 {
-    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1637148019/IMG_0107_2_ludxht.png');
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643720087/Desktop_-_1_12_1_1_r018nx.png');
 }
 
 .product-image3 {
-    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1636632997/matt-artz-dh3zAdGGOIY-unsplash_1_pys7au.png');
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643645580/Rectangle_195_jnyk86.png');
 }
 
 .product-image4 {

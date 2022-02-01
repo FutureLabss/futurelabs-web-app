@@ -123,7 +123,7 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Our team effortlessly achieves masterpieces on all commissions.</h6>
+                    <h6 className="line3"> Our team effortlessly achieves masterpieces <br className="mobile-no" />on all commissions.</h6>
 
 
                 </div>

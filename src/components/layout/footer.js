@@ -128,11 +128,8 @@ export default function Footer(props) {
         </div>
       </div>
       <div className="copyright">
-        &copy;<span id="copyright_date">{date}</span>{" "}
-        <img
-          src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png"
-          alt="logo"
-        />
+        &copy;<span class="copyright_spacing">{date}</span>
+        <span class="copyright_spacing">FUTURELABS</span>
       </div>
     </div>
   );

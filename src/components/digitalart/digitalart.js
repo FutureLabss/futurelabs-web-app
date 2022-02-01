@@ -118,12 +118,12 @@ return (
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    {/* <h5 className="line1">
-                      Bringing You Project 1000
-                    </h5> */}
+                    <h5 className="line1">
+                      Future Technologies
+                    </h5>
                     {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    {/* <h6 className="line3"> Our digital skills training to postion young minds <br className="mobile-no" /> for relevance, as an avenue for combating cyber fraud</h6> */}
+                    <h6 className="line3"> Our expert artists access best-in-class  <br className="mobile-no" />technologies to deliver unmatchable excellence.</h6>
 
 
                 </div>
@@ -148,12 +148,12 @@ return (
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    {/* <h5 className="line1">
-                      Bringing You Project 1000
-                    </h5> */}
+                    <h5 className="line1">
+                      Collaboration
+                    </h5>
                     {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    {/* <h6 className="line3"> Our digital skills training to postion young minds <br className="mobile-no" /> for relevance, as an avenue for combating cyber fraud</h6> */}
+                    <h6 className="line3"> We work closely with our clientelle & <br className="mobile-no" />keep them posted on every step of execution. </h6>
 
 
                 </div>
@@ -178,12 +178,12 @@ return (
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    {/* <h5 className="line1">
-                      Bringing You Project 1000
-                    </h5> */}
+                    <h5 className="line1">
+                      Love & Friendship
+                    </h5>
                     {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    {/* <h6 className="line3"> Our digital skills training to postion young minds <br className="mobile-no" /> for relevance, as an avenue for combating cyber fraud</h6> */}
+                    <h6 className="line3"> We are humans too. We understand<br className="mobile-no" /> the value of family, the place of humanity <br className="mobile-no" />& personal aspirations in all we do. </h6>
 
 
                 </div>

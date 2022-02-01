@@ -17,14 +17,9 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 // import ListItemText from '@material-ui/core/ListItemText';
 // import InboxIcon from '@material-ui/icons/MoveToInbox';
 // import MailIcon from '@material-ui/icons/Mail';
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
+// import Box from '@material-ui/core/Box';
+// import Container from '@material-ui/core/Container';
 import { Nav } from 'react-bootstrap'
-import Cardcomponent from './Cardcomponent';
-
-
-
-
 
 const drawerWidth = 240;
 
@@ -130,92 +125,69 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function PersistentDrawerRight() {
-  const classes = useStyles();
-  const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
-
-   const handleDrawerOpen = () => {
-    setOpen(true);
-   };
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
-  // const handleDrawerToggle = () => {
-    // setMobileOpen(!mobileOpen);
-  // };
-  // const [mobileOpen, setMobileOpen] = React.useState(false)
- 
-  return (
-    <div className={classes.root}>
-    
-      <CssBaseline />
-      {/* <AppBar
-        position="fixed"
-        className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
-        })}
-      >
-        <Toolbar>
-          <Typography variant="h6" noWrap className={classes.title}>
-            FutureLabs
-          </Typography>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerOpen}
-            // onClick={handleDrawerToggle}
-            className={clsx(open && classes.hide)}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Toolbar>
-      </AppBar> */}
-      <main
-        className={clsx(classes.content, {
-          [classes.contentShift]: open,
-        })}
-      >
-        <div className={classes.drawerHeader} />
-        <Box px={2} className={classes.hero} >
-        <Box>Stories From The<br/> Best Curators</Box>
-      </Box>
-      <Box px={2} className={classes.heros}>
-        <Box>Read well-crafted articles from happenings <br/> around the globe</Box>
-      </Box>
-      <Container maxWidth="lg" className={classes.blogContainer}>
-      <Typography variant="h4" className={classes.blogTitle}>
-        Latest Posts
-      </Typography>
-      <Cardcomponent/>
-
-      </Container>
-      </main>
-      <Drawer
-        className={classes.drawer}
-        variant="persistent"
-        anchor="right"
-        open={open}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-        <div className={classes.drawerHeader}>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
-        </div>
-        <Divider />
-        <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
-      </Drawer>
-
-      
-
-      
-    </div>
-  );
-}
-
-// export default Homepage
-
+    const classes = useStyles();
+    const theme = useTheme();
+    const [open, setOpen] = React.useState(false);
+  
+     const handleDrawerOpen = () => {
+      setOpen(true);
+     };
+  
+    const handleDrawerClose = () => {
+      setOpen(false);
+    };
+    // const handleDrawerToggle = () => {
+      // setMobileOpen(!mobileOpen);
+    // };
+    // const [mobileOpen, setMobileOpen] = React.useState(false)
+   
+    return (
+      <div className={classes.root}>
+        <CssBaseline />
+        <AppBar
+          position="fixed"
+          className={clsx(classes.appBar, {
+            [classes.appBarShift]: open,
+          })}
+        >
+          <Toolbar>
+            <Typography variant="h6" noWrap className={classes.title}>
+              FutureLabs
+            </Typography>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="end"
+              onClick={handleDrawerOpen}
+              // onClick={handleDrawerToggle}
+              className={clsx(open && classes.hide)}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+       
+        <Drawer
+          className={classes.drawer}
+          variant="persistent"
+          anchor="right"
+          open={open}
+          classes={{
+            paper: classes.drawerPaper,
+          }}
+        >
+          <div className={classes.drawerHeader}>
+            <IconButton onClick={handleDrawerClose}>
+              {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            </IconButton>
+          </div>
+          <Divider />
+          <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
+        </Drawer>
+  
+        
+  
+        
+      </div>
+    );
+  }

@@ -11,6 +11,8 @@ import {
   Route
 }from "react-router-dom";
 import Contact from './components/layout/contact'; 
+// import { AppBar, Toolbar} from '@mui/material';
+import PersistentDrawerRight from './Blog/Header';
 //import Blog from './Blog/Homepage'
 // import './index.css';
 // import App from './App';
@@ -19,6 +21,10 @@ import Contact from './components/layout/contact';
 
 ReactDOM.render(
   <BrowserRouter>
+  {/* <AppBar position="fixed" sx={{bgColor:'red'}}>
+    <Toolbar> gjutgkjgkgkjgkgj</Toolbar>
+  </AppBar> */}
+  <PersistentDrawerRight />
     <Routes>
       {
         pageRoutes.map((item)=>{

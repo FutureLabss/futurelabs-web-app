@@ -183,11 +183,8 @@ export default function PersistentDrawerRight() {
           </div>
           <Divider />
           <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
+          <Nav.Link href="/signin">Login</Nav.Link>
         </Drawer>
-  
-        
-  
-        
-      </div>
+     </div>
     );
   }

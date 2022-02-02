@@ -27,6 +27,11 @@ margin-bottom: 5px;
 
 }
 
+.down:hover {
+    font-weight: 300;
+
+}
+
 .carl{
     font-family: Raleway;
 font-style: normal;
@@ -71,6 +76,19 @@ line-height: 28px;
 
 color: #000000;
 }
+
+.copyright{
+    background-color:#FF9000;
+    text-align: center;
+    font-weight: 500;
+    word-spacing: .6rem;
+    color: white;
+}
+
+.copyright_spacing{
+    margin-left: .24rem;
+}
+
 @media only screen and (max-width: 600px) {
     .ph-no{
         display: flex;
@@ -83,7 +101,7 @@ color: #000000;
         display: none;
     }
     .mobile-nop{
-        display: inline;
+        display: none;
     }
     .monile-nop3{
         display: none;

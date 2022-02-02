@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import { useAuth } from "../../../contexts/AuthContext";
-import { Link, useHistory } from "react-router-dom";
+import { useAuth } from "./contexts/AuthContext";
+import { Link, useNavigate } from "react-router-dom";
 import { TextField, Button, Container, IconButton, InputAdornment, Grid, Stack, Box, FormControlLabel, Checkbox, Alert, CircularProgress } from "@mui/material";
 import { Close,  Visibility, VisibilityOff } from "@mui/icons-material";
 
@@ -10,7 +10,7 @@ function Login() {
   const { login } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const history = useHistory();
+  const history = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -49,7 +49,7 @@ function Login() {
 
           <Box my={4} px={4} justifyContent="center" textAlign="center">
             <Link to="/">
-              <div className="logo" style={{ justifyContent: 'center', }}>Future Pay<div></div></div>
+              <div className="logo" style={{ justifyContent: 'center', }}>Future Blog<div></div></div>
             </Link>
           </Box>
 

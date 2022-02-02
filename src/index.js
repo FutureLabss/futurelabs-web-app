@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 //import About from './components/About/about';
 //import Home from './components/Home/home';
 import Footer from './components/layout/footer';
+import Login from './Blog/Login';
 import pageRoutes from './router/routes';
 import {
   BrowserRouter ,
@@ -12,7 +13,7 @@ import {
 }from "react-router-dom";
 import Contact from './components/layout/contact'; 
 // import { AppBar, Toolbar} from '@mui/material';
-import PersistentDrawerRight from './Blog/Header';
+import Header from './Blog/Header';
 //import Blog from './Blog/Homepage'
 // import './index.css';
 // import App from './App';
@@ -21,11 +22,9 @@ import PersistentDrawerRight from './Blog/Header';
 
 ReactDOM.render(
   <BrowserRouter>
-  {/* <AppBar position="fixed" sx={{bgColor:'red'}}>
-    <Toolbar> gjutgkjgkgkjgkgj</Toolbar>
-  </AppBar> */}
-  <PersistentDrawerRight />
+  <Header />
     <Routes>
+    <Route path="/signin" component={Login} />
       {
         pageRoutes.map((item)=>{
           return <Route path={item.path} element={<item.element />} />

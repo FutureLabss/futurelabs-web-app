@@ -72,7 +72,7 @@ const storage = {
 
   clearData: function () {
     sessionStorage.clear()
-    axios.defaults.headers.common['x-access-token'] = ''
+    axios.defaults.headers.common['accessToken'] = ''
   },
 
   writeData: function (data) {
@@ -85,7 +85,7 @@ const storage = {
   setToken: function () {
     const accessToken = this.getToken()
     const value = accessToken ? `${accessToken}` : ''
-    axios.defaults.headers.common['x-access-token'] = value
+    axios.defaults.headers.common['accessToken'] = value
   },
 
   getData: function () {

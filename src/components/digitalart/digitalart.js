@@ -208,12 +208,12 @@ return (
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    {/* <h5 className="line1">
-                      Bringing You Project 1000
-                    </h5> */}
+                    <h5 className="line1">
+                      Surfaces
+                    </h5>
                     {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    {/* <h6 className="line3"> Our digital skills training to postion young minds <br className="mobile-no" /> for relevance, as an avenue for combating cyber fraud</h6> */}
+                    <h6 className="line3"> Let's impress art on the digital surfaces<br className="mobile-no" /> around you, making each one of it<br className="mobile-no" /> a conversation starter.</h6>
 
 
                 </div>
@@ -238,12 +238,12 @@ return (
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    {/* <h5 className="line1">
-                      Bringing You Project 1000
-                    </h5> */}
+                    <h5 className="line1">
+                      Valuable
+                    </h5>
                     {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    {/* <h6 className="line3"> Our digital skills training to postion young minds <br className="mobile-no" /> for relevance, as an avenue for combating cyber fraud</h6> */}
+                    <h6 className="line3"> Our pieces sell & outcompete <br className="mobile-no" />contemporaries.</h6>
 
 
                 </div>

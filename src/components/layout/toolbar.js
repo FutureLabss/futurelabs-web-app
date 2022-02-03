@@ -25,7 +25,7 @@ export default function ToolBar(props){
 
         <div className="mobile-no my-auto">
           <h6 className="text-white noise">
-            All categories
+            {/* All categories */}
           </h6>
         </div>
 
@@ -65,20 +65,26 @@ export default function ToolBar(props){
          {/* <Link className="textd mt-2 text-muted" to="/strategy"> <strong>STRATEGY</strong></Link> */}
          <Nav.Link className="textd .my-2 text-muted" href="/strategy"><strong>STRATEGY</strong></Nav.Link>
 
+          {/* <Link className="textd mt-2 text-muted" to="/products"><strong>PRODUCTS</strong></Link> */}
+          <Nav.Link className="textd .my-2 text-muted" href="/products"><strong>PRODUCTS</strong></Nav.Link>
+
+          {/* <Link className="textd mt-2 text-muted" to="/websites"> <strong>WEBSITES</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="/websites"><strong>WEBSITES</strong></Nav.Link>
+
+         <Nav.Link className="textd .my-2 text-muted" href="/branding"><strong>BRANDING</strong></Nav.Link>
+
          {/* <Link className="textd mt-2 text-muted" to="/modelling"> <strong>3-D MODELLING</strong></Link> */}
          <Nav.Link className="textd .my-2 text-muted" href="/modelling"><strong>3-D MODELLING</strong></Nav.Link>
 
-         {/* <Link className="textd mt-2 text-muted" to="/products"><strong>PRODUCTS</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/products"><strong>PRODUCTS</strong></Nav.Link>
+        
 
-         {/* <Link className="textd mt-2 text-muted" to="/websites"> <strong>WEBSITES</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/websites"><strong>WEBSITES</strong></Nav.Link>
+        
 
          {/* <Link className="textd mt-2 text-muted" to="/digitalart"> <strong>DIGITAL ART</strong></Link> */}
          <Nav.Link className="textd .my-2 text-muted" href="/digitalart"><strong>DIGITAL ARTS & NFTs</strong></Nav.Link>
          {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
 
-         <Nav.Link className="textd .my-2 text-muted" href="/branding"><strong>BRANDING</strong></Nav.Link>
+         
 
          <Nav.Link className="textd .my-2 text-muted" href="/blog"><strong>BLOG</strong></Nav.Link>
          

@@ -18,7 +18,7 @@ return (
 
 
   {/* Section-One begins here */}
-  <div className="video-container .text-danger">
+  <div className="video-container .text-danger .bg-danger">
         <video autoPlay muted loop className="">
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
@@ -62,7 +62,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 websites-image2">
+    <section className="section1 websites-image2 bg-warning">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">

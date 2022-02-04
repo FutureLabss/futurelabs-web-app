@@ -7,43 +7,38 @@ video{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    z-index: -1;
+    /* background-size: 100%; */
     /* position: fixed; */
     /* top: 0;
     left: 0; */
-}
-
-.upon {
-    z-index: -1 !important;
-}
-
-.onftop {
-    z-index: 1 !important;
-    position: relative;
-    /* left: 5%; */
-    bottom: 150px;
-
-    /* top: 50%; */
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    
 }
 
 
 
 .parent-box1 {
     width: 100vw;
-    z-index: 1 !important;
+    /* z-index: 1 !important; */
     position: absolute;
     bottom: 1%;
   
     /* top: 500%; */
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+}
+
+.video-container {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1 !important;
+
 }
 
 .parent-box2 {
     width: 100vw;
-    z-index: 1 !important;
+    /* z-index: -1 !important; */
     position: absolute;
    
     bottom: -101%;
@@ -70,6 +65,10 @@ video{
 .text-box {
     width: 75vw;
 }
+
+
+
+
 
 
 

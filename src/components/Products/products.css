@@ -13,20 +13,8 @@ video{
     left: 0; */
 }
 
-.upon {
-    z-index: -1 !important;
-}
-
-.onftop {
-    z-index: 1 !important;
-    position: relative;
-    /* left: 5%; */
-    bottom: 150px;
-
-    /* top: 50%; */
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    
+.video-container {
+    height: 100vh;
 }
 
 
@@ -53,6 +41,7 @@ video{
 
     
 }
+
 
 .mute-box {
     width: 25vw;

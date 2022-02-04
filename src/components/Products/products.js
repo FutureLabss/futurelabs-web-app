@@ -17,11 +17,11 @@ return (
 
 
     {/* Section-One begins here */}
-    <div className="video-container .text-danger">
-        <video autoPlay muted loop className="">
+    <div className="video-container .text-danger no-pad">
+        <video autoPlay muted loop className="no-pad">
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
-              src="https://res.cloudinary.com/not-set/video/upload/v1640267570/around_main_comp_d1x979.mp4" type="video/mp4" 
+              src="https://res.cloudinary.com/not-set/video/upload/v1643984600/Rude_Ui_animation_co2vvu.mp4" type="video/mp4" 
             /> 
             
           

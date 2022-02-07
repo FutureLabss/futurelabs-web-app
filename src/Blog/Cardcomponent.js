@@ -59,8 +59,7 @@ function Cardcomponent() {
                   gutterBottom
                   
                 >
-              
-                  Feb {post._id}, 2022
+                {new Date(post.createdAt).toLocaleString()}
                 </Typography>
 
                 <Typography
@@ -77,11 +76,11 @@ function Cardcomponent() {
                   gutterBottom
                 >
 
-                  Title {post._id} of stories
+                  {post.title}
                 </Typography>
 
                 <Typography variant="p" component="div">
-                  {post.content}
+                  {/* {post.content} */}
                 </Typography>
                 <Typography variant="body2" sx={{ mt: 3, textAlign: 'center' }} >Read more &rarr; </Typography>
               </CardContent>

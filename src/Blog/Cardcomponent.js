@@ -17,7 +17,7 @@ function Cardcomponent() {
   
   useEffect(() => {
     axios
-      .get("http://localhost:5000/")
+      .get("https://futurelabs-blog.herokuapp.com/")
       .then((res) => {
         console.log(res.data.articles);
         setPosts(res.data.articles);

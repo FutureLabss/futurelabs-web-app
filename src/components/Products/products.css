@@ -15,6 +15,7 @@ video{
 
 .video-container {
     height: 100vh;
+   
 }
 
 
@@ -39,6 +40,11 @@ video{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
+    
+}
+
+.opacity{
+    
     
 }
 

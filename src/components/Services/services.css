@@ -7,31 +7,26 @@ video{
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    /* background-size: 100%; */
-    /* position: fixed; */
-    /* top: 0;
-    left: 0; */
+    
 }
 
 
 
 .parent-box1 {
     width: 100vw;
-    /* z-index: 1 !important; */
+    
     position: absolute;
     bottom: 1%;
-  
-    /* top: 500%; */
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
 }
+
+.overall {}
 
 .video-container {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    z-index: 1 ;
+    z-index: 1;
 
 }
 
@@ -242,5 +237,5 @@ video{
 }
 
 .services-image6 {
-    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1643814014/untitled_4_myrrpp.png');
 }

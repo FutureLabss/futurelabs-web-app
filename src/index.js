@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 //import About from './components/About/about';
 //import Home from './components/Home/home';
+import { AuthProvider } from './Blog/contexts/AuthContext'
 import Footer from './components/layout/footer';
-import Login from './Blog/Login';
 import pageRoutes from './router/routes';
 import {
   BrowserRouter ,
@@ -23,15 +23,16 @@ import Header from './Blog/Header';
 ReactDOM.render(
   <BrowserRouter>
   <Header />
-    <Routes>
-    <Route path="/signin" component={Login} />
-      {
-        pageRoutes.map((item)=>{
-          return <Route path={item.path} element={<item.element />} />
-        })
-      }
-      <Contact />
-    </Routes>
+  <AuthProvider>
+      <Routes>
+        {
+          pageRoutes.map((item)=>{
+            return <Route path={item.path} element={<item.element />} />
+          })
+        }
+        <Contact />
+      </Routes>
+    </AuthProvider>
     <Footer />
   </BrowserRouter>,
   document.getElementById('root')

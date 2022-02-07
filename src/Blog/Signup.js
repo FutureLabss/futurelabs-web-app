@@ -1,13 +1,15 @@
 import React, { useRef, useState } from "react";
 import { useAuth } from "./contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
-import { TextField, Button, Container, IconButton, InputAdornment, Grid, Stack, Box, FormControlLabel, Checkbox, Alert, CircularProgress } from "@mui/material";
-import { Close,  Visibility, VisibilityOff } from "@mui/icons-material";
+import { Button, Container, IconButton, InputAdornment, Grid, Stack, FormControlLabel, Checkbox, Alert, TextField, CircularProgress } from "@mui/material";
+import { Close,   Visibility, VisibilityOff } from "@mui/icons-material";
+import { Box } from "@mui/system";
 
-function Login() {
+function Signup() {
   const emailRef = useRef();
   const passwordRef = useRef();
-  const { login } = useAuth();
+  const fullnameRef = useRef();
+  const { signup } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const history = useNavigate();
@@ -18,10 +20,10 @@ function Login() {
     try {
       setError("");
       setLoading(true);
-      await login(emailRef.current.value, passwordRef.current.value);
-      history.replace("/create");
+      await signup(fullnameRef.current.value, emailRef.current.value, passwordRef.current.value);
+      history.push("/login");
     } catch (e) {
-      setError(e.message)
+      setError(e.message);
     }
     setLoading(false);
   }
@@ -39,31 +41,44 @@ function Login() {
           </IconButton>
         </Link>
       </Box>
-      
 
       <Grid sx={{ minHeight: '100vh' }} justifyContent="center" alignItems="center" container>
-        <Grid item xs={12} sm={8} md={6} lg={4} >
+        <Grid item xs={12} py={10} sm={8} md={6} lg={4} >
 
-          <Box my={4} px={4} justifyContent="center" textAlign="center">
+          <Box my={3} px={4} justifyContent="center" textAlign="center">
             <Link to="/">
-              <div className="logo" style={{ justifyContent: 'center', }}>Futurelabs Blog<div></div></div>
+              <div  style={{ justifyContent: 'center', }}><div></div></div>
             </Link>
+
+            <h4 style={{ color: 'black', paddingTop: '20px' }}>
+              Registering to this website, you accept our Terms & Conditions and our
+              Privacy Policy
+            </h4>
           </Box>
 
           <Box sx={{ backgroundColor: '#DADFF7' }} px={2} py={4} >
             <form onSubmit={handleSubmit}>
 
-              <Stack spacing={4}>
+              <Stack spacing={3}>
                 {error && (
                   <Alert severity="error">
                     {error}
                   </Alert>
                 )}
-                  <span>Email</span>
-                <TextField  type="email" variant="outlined" inputRef={emailRef} InputProps={{
+
+                  <span>Full Name</span>
+                <TextField  variant="outlined"  inputRef={fullnameRef} InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
-
+                      {/* <Person /> */}
+                    </InputAdornment>
+                  ),
+                }} />
+                <span>Email</span>
+                <TextField type="email" variant="outlined" inputRef={emailRef} InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      {/* <Mail /> */}
                     </InputAdornment>
                   ),
                 }} />
@@ -83,21 +98,22 @@ function Login() {
                   ),
                 }} />
 
-                <FormControlLabel label="Keep me signed in" control={<Checkbox />} />
+                <p className='text-center'>  Your password must be at least 6 characters long and must contain
+                  letters, numbers and special characters. Cannot contain
+                  whitespace.</p>
 
-                {loading ? <div className="text-center"> <CircularProgress size={30} /></div> : <Button type="submit" fullWidth disableElevation sx={{backgroundColor: '#FF9000'}} variant="contained">Login</Button>}
+                <FormControlLabel label="Receive News From Future Blog By Email" control={<Checkbox />} />
 
-                <Stack direction={{ xs: 'column', sm: 'row' }} justifyContent="space-between">
-                  <p className="mem-tag">Not a member? <Link to="signup">Sign up</Link></p>
-                  <p className="mem-tag"><Link to="reset">Forgot Password?</Link></p>
-                </Stack>
+                {loading ? <div className="text-center"> <CircularProgress size={30} /></div> : <Button type="submit" fullWidth disableElevation variant="contained">Sign Up</Button>}
+
+                <p className="mem-tag">Already a member? <Link to="login">Login</Link></p>
               </Stack>
             </form>
           </Box>
         </Grid>
       </Grid>
     </Container>
-  )
+  );
 }
 
-export default Login;
+export default Signup;

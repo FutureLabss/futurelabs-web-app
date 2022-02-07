@@ -20,9 +20,16 @@ import Modelling2 from '../components/Modelling2/modelling2'
 import Products2 from '../components/Products2/products2'
 import Websites2 from '../components/Websites2/websites2'
 import DigitalArt2 from '../components/DigitalArt2/digitalArt2'
-import singlepost from '../components/singlepost/singlepost'
+import singlepost from '../Blog/Singlepost'
+import Login from '../Blog/Login'
+import Article from '../Blog/Article'
+import Signup from '../Blog/Signup'
+
 
 const pageRoutes = [
+    {path: '/signin', element: Login },
+    {path: '/signup', element: Signup },
+    {path: '/create', element: Article },
     {path: '/about2', element: About2 },
     {path: '/services2', element: Services2 },
     {path: '/strategy2', element: Strategy2 },

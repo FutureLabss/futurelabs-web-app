@@ -17,13 +17,10 @@ function Cardcomponent() {
   
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/posts/1/comments")
+      .get("http://localhost:5000/")
       .then((res) => {
-        console.log(res.data);
-        setPosts((res.data).filter(item => {
-            return item.id < 5
-        }));
-        
+        console.log(res.data.articles);
+        setPosts(res.data.articles);
       })
       .catch((err) => {
         console.log(err);
@@ -54,7 +51,7 @@ function Cardcomponent() {
       {posts.map((post) => {
         return (
           <Grid item xs={12} sm={6}>
-            <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card} onClick={()=> history(`/singlepost/${post.id}`)}>
+            <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card} onClick={()=> history(`/singlepost/${post._id}`)}>
               <CardContent sx={{height: '300px'}} >
               <Typography
                   sx={{ fontSize: 14, mb: 6  }}
@@ -63,7 +60,7 @@ function Cardcomponent() {
                   
                 >
               
-                  Feb {post.id}, 2022
+                  Feb {post._id}, 2022
                 </Typography>
 
                 <Typography
@@ -71,7 +68,7 @@ function Cardcomponent() {
                   color="white"
                   gutterBottom
                 >
-                  {post.email}
+                  {post.description}
                 </Typography>
 
                 <Typography
@@ -80,52 +77,17 @@ function Cardcomponent() {
                   gutterBottom
                 >
 
-                  Title {post.id} of stories
+                  Title {post._id} of stories
                 </Typography>
 
                 <Typography variant="p" component="div">
-                  {post.body}
+                  {post.content}
                 </Typography>
                 <Typography variant="body2" sx={{ mt: 3, textAlign: 'center' }} >Read more &rarr; </Typography>
               </CardContent>
             </Card>
 
-            <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card} onClick={()=> history(`/singlepost/${post.id}`)}>
-              <CardContent sx={{height: '300px'}}>
-              <Typography
-                  sx={{ fontSize: 14, mb: 6  }}
-                  color="white"
-                  gutterBottom
-                  
-                >
-              
-                  Feb {post.id}, 2022
-                </Typography>
-
-                <Typography
-                  sx={{ fontSize: 14 }}
-                  color="white"
-                  gutterBottom
-                >
-                  {post.email}
-                </Typography>
-
-                <Typography
-                  sx={{ fontSize: 23 }}
-                  color="white"
-                  gutterBottom
-                >
-                  Title {post.id} of stories
-                </Typography>
-
-                <Typography variant="p" component="div">
-                  {post.body}
-                </Typography>
-                <Typography variant="body2" sx={{ mt: 3, textAlign: 'center' }} >Read more &rarr; </Typography>
-
-                {/* <Button onClick={()=> history(`/singlepost/${post.id}`)}  > Click </Button> */}
-              </CardContent>
-            </Card>
+            
 
 
           </Grid>

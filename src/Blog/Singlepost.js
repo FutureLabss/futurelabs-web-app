@@ -4,6 +4,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import AvatarGroup from '@mui/material/AvatarGroup';
+import SendIcon from '@mui/icons-material/Send';
 import DeleteIcon from '@mui/icons-material/Delete';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -42,10 +43,6 @@ export default function Singlepost(props) {
       .then((res) => {
         console.log("single post data ==> ",res.data);
         setPost(res.data.article)
-        // setPosts((res.data).filter(item => {
-        //     return item.id < 5
-        // }));
-        
       })
       .catch((err) => {
         console.log(err);
@@ -107,11 +104,16 @@ export default function Singlepost(props) {
     </Stack>
         </Grid>
       <Grid className="text-center" item xs={12}>
-      <Stack sx={{width: '5rem', display: 'inline-block', textAlign: 'right'}}>
+      <Stack sx={{width: '5rem', display: 'block', textAlign: 'right'}}>
                 <Button variant="contained" onClick={(e) => handleDelete(post._id, e)} startIcon={<DeleteIcon />}>
                   Delete
                 </Button>
         </Stack>
+        <Stack sx={{width: '5rem', display: 'block', textAlign: 'right'}}>
+                <Button onClick={() => history(`/updatepost/${post._id}`)} variant="contained" startIcon={<SendIcon />}>
+                  Update
+                </Button>
+              </Stack>
         <Stack>
           <img
             className="imgsss"

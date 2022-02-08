@@ -24,6 +24,7 @@ import singlepost from '../Blog/Singlepost'
 import Login from '../Blog/Login'
 import Article from '../Blog/Article'
 import Signup from '../Blog/Signup'
+import UpdateArticle from '../Blog/UpdateArticle'
 
 
 const pageRoutes = [
@@ -39,6 +40,7 @@ const pageRoutes = [
     {path: '/websites2', element: Websites2 },
     {path: '/digitalArt2', element: DigitalArt2 },
     {path: '/singlepost/:id', element: singlepost },
+    {path: '/updatepost/:id', element: UpdateArticle},
 
 
     {path: '/home', element: PersistentDrawerRight },

@@ -18,7 +18,7 @@ return (
 
     {/* Section-One begins here */}
   <div className="video-container .text-danger .bg-danger">
-        <video autoPlay muted loop className="">
+        <video autoPlay muted loop className="overall">
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/not-set/video/upload/v1644321263/Military_Drone_Animation_by_Maverick_for_FutureLABS_jm6vgp.mp4" type="video/mp4" 

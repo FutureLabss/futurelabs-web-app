@@ -1,9 +1,12 @@
 import Grid from "@mui/material/Grid";
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
+import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import AvatarGroup from '@mui/material/AvatarGroup';
+import DeleteIcon from '@mui/icons-material/Delete';
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 import { useParams } from "react-router-dom";
 
@@ -12,9 +15,26 @@ import  {useEffect, useState} from 'react'
   
 export default function Singlepost(props) {
 
+  const history = useNavigate();
+
   const {id} = useParams()
 
   const [post,setPost] = useState({})
+
+  async function handleDelete(id, e) {
+    console.log(id)
+    try{
+      axios
+        .delete(`https://futurelabs-blog.herokuapp.com/${id}`)
+        .then(() => console.log('blog deleted'))
+        .catch((err) => {
+          console.log(err);
+        });
+        history("/")
+    } catch(e){
+      console.log(e.message)
+    }
+  }
 
   useEffect(() => {
     axios
@@ -67,7 +87,7 @@ export default function Singlepost(props) {
           <h5> Business</h5>
         </Grid>
         <Grid item xs={12} sx={{ textAlign: 'center'}} md={12} mt={5}>
-          <h1> {post.content} </h1>
+          <h1> {post.title} </h1>
         </Grid>
       </Grid>
     <Grid item xs={12} p={1} px={{md:25}}>
@@ -75,7 +95,7 @@ export default function Singlepost(props) {
         
     <AvatarGroup max={4} >
     <Avatar  sx={{ width: 56, height: 56 }} alt="Remy Sharp" src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1638887604/Ellipse_4_bvdgwu.png" />
-     <h5> {post.content}</h5>
+     <h5> {post.description}</h5>
      
         
      </AvatarGroup >
@@ -87,11 +107,18 @@ export default function Singlepost(props) {
     </Stack>
         </Grid>
       <Grid className="text-center" item xs={12}>
-        <img
-          className="imgsss"
-          src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1635348411/priscilla-du-preez-XkKCui44iM0-unsplash_1_pd3v8t.png"
-          alt=""
-        />
+      <Stack sx={{width: '5rem', display: 'inline-block', textAlign: 'right'}}>
+                <Button variant="contained" onClick={(e) => handleDelete(post._id, e)} startIcon={<DeleteIcon />}>
+                  Delete
+                </Button>
+        </Stack>
+        <Stack>
+          <img
+            className="imgsss"
+            src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1635348411/priscilla-du-preez-XkKCui44iM0-unsplash_1_pd3v8t.png"
+            alt=""
+          />
+        </Stack>
         <Grid container-fluid item xs={12} mt={5} mb={5} >
         <Box sx={{ textAlign: 'center', m: 1 }}>
           {post.content}

@@ -45,6 +45,7 @@ video{
 .parent-box3 {
     width: 100vw;
     /* z-index: -1 !important; */
+    z-index: 4 !important;
     position: absolute;
    
     bottom: -201%;
@@ -57,7 +58,7 @@ video{
 
 .parent-box4 {
     width: 100vw;
-    /* z-index: -1 !important; */
+    z-index: 4 !important;
     position: absolute;
    
     bottom: -301%;
@@ -69,7 +70,7 @@ video{
 
 .parent-box5 {
     width: 100vw;
-    /* z-index: -1 !important; */
+    z-index: 4 !important;
     position: absolute;
    
     bottom: -401%;
@@ -81,7 +82,7 @@ video{
 
 .parent-box6 {
     width: 100vw;
-    /* z-index: -1 !important; */
+    z-index: 4 !important;
     position: absolute;
    
     bottom: -501%;
@@ -93,7 +94,7 @@ video{
 
 .parent-box7 {
     width: 100vw;
-    /* z-index: -1 !important; */
+    z-index: 4 !important;
     position: absolute;
    
     bottom: -601%;

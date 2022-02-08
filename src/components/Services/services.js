@@ -19,7 +19,7 @@ return (
 
    {/* Section-One begins here */}
    <div className="video-container .text-danger .bg-danger">
-        <video autoPlay muted loop >
+        <video autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/eacademy/video/upload/v1643989706/Agency/Strategy.mp4" type="video/mp4" 

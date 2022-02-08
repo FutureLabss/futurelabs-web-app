@@ -19,7 +19,7 @@ return (
 
   {/* Section-One begins here */}
   <div className="video-container .text-danger .bg-danger">
-        <video autoPlay muted loop className="overall">
+        <video autoPlay muted loop className="">
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/not-set/video/upload/v1640267570/around_main_comp_d1x979.mp4" type="video/mp4" 

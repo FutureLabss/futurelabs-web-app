@@ -9,6 +9,7 @@ function Signup() {
   const emailRef = useRef();
   const passwordRef = useRef();
   const fullnameRef = useRef();
+  const usernameRef = useRef();
   const { signup } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -20,8 +21,8 @@ function Signup() {
     try {
       setError("");
       setLoading(true);
-      await signup(fullnameRef.current.value, emailRef.current.value, passwordRef.current.value);
-      history.push("/login");
+      await signup(fullnameRef.current.value, usernameRef.current.value, emailRef.current.value, passwordRef.current.value);
+      history("/signin");
     } catch (e) {
       setError(e.message);
     }
@@ -68,6 +69,14 @@ function Signup() {
 
                   <span>Full Name</span>
                 <TextField  variant="outlined"  inputRef={fullnameRef} InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      {/* <Person /> */}
+                    </InputAdornment>
+                  ),
+                }} />
+                  <span>Username</span>
+                <TextField  variant="outlined"  inputRef={usernameRef} InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
                       {/* <Person /> */}

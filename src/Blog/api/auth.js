@@ -23,8 +23,8 @@ export const loginApi = async (data) => {
 
 export const registerApi = async (data) => {
   try {
-    const response = await axios.post(URL + '/signup', data)
-    if (response.status === 200) {
+    const response = await axios.post(URL + '/', data)
+    if (response.status === 201) {
       //storage.writeData(response.data)
       //return storage.getUser()
       return true

@@ -4,7 +4,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import AvatarGroup from '@mui/material/AvatarGroup';
-import SendIcon from '@mui/icons-material/Send';
+import UpdateIcon from '@mui/icons-material/Update';
 import DeleteIcon from '@mui/icons-material/Delete';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -110,7 +110,7 @@ export default function Singlepost(props) {
                 </Button>
         </Stack>
         <Stack sx={{width: '5rem', display: 'block', textAlign: 'right'}}>
-                <Button onClick={() => history(`/updatepost/${post._id}`)} variant="contained" startIcon={<SendIcon />}>
+                <Button onClick={() => history(`/updatepost/${post._id}`)} variant="contained" startIcon={<UpdateIcon />}>
                   Update
                 </Button>
               </Stack>

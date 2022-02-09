@@ -18,7 +18,7 @@ return (
 
 
   {/* Section-One begins here */}
-  <div className="video-container .text-danger .bg-danger">
+    <div className="video-container .text-danger .bg-danger">
         <video autoPlay muted loop className='overall' >
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 

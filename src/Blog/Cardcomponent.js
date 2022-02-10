@@ -28,7 +28,7 @@ function Cardcomponent() {
   const useStyles = makeStyles((theme) => ({
       card: {
         backgroundPosition: "cover",
-        backgroundImage: `url("${SERVER_URL}${posts[15]?.image}")`,
+        backgroundImage: `url("${SERVER_URL}${posts[0]?.image}")`,
         '&:hover': {
           boxShadow: "6px 6px 6px #000000"
        },

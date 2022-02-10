@@ -5,21 +5,14 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import CssBaseline from '@material-ui/core/CssBaseline';
-// import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-// import ListItem from '@material-ui/core/ListItem';
-// import ListItemIcon from '@material-ui/core/ListItemIcon';
-// import ListItemText from '@material-ui/core/ListItemText';
-// import InboxIcon from '@material-ui/icons/MoveToInbox';
-// import MailIcon from '@material-ui/icons/Mail';
-// import Box from '@material-ui/core/Box';
-// import Container from '@material-ui/core/Container';
 import { Nav } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const drawerWidth = 240;
 
@@ -183,9 +176,9 @@ export default function PersistentDrawerRight() {
           </div>
           <Divider />
           <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
-          <Nav.Link href="/signin">Login</Nav.Link>
-          <Nav.Link href="/signup">signup</Nav.Link>
-          <Nav.Link href="/create">Write</Nav.Link>
+          <Link to="/signin">Login</Link>
+          <Link to="/signup">signup</Link>
+          <Link to="/create">Write</Link>
         </Drawer>
      </div>
     );

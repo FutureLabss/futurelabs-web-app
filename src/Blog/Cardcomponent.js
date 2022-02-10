@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import { makeStyles } from "@material-ui/core/styles";
 import axios from "axios";
-// import App from "./cardToSinglepost.js"
-// import SinglePost from './Singlepost'
-
+import { SERVER_URL } from "./api/config"
 import { useNavigate  } from "react-router-dom";
 
 
@@ -17,7 +15,7 @@ function Cardcomponent() {
   
   useEffect(() => {
     axios
-      .get("https://futurelabs-blog.herokuapp.com/")
+      .get("")
       .then((res) => {
         console.log(res.data.articles);
         setPosts(res.data.articles);
@@ -26,24 +24,18 @@ function Cardcomponent() {
         console.log(err);
       });
   }, []);
-    const useStyles = makeStyles((theme) => ({
 
-
+  const useStyles = makeStyles((theme) => ({
       card: {
-
         backgroundPosition: "cover",
-        backgroundImage: "url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1635348411/priscilla-du-preez-XkKCui44iM0-unsplash_1_pd3v8t.png')",
+        backgroundImage: `url("${SERVER_URL}${posts[15]?.image}")`,
         '&:hover': {
           boxShadow: "6px 6px 6px #000000"
        },
-    
-      }
-    }) 
-    
-    )
+  }}))
 
 
-    const classes = useStyles()
+  const classes = useStyles()
     
 
   return (
@@ -52,6 +44,7 @@ function Cardcomponent() {
         return (
           <Grid item xs={12} sm={6}>
             <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card} onClick={()=> history(`/singlepost/${post._id}`)}>
+
               <CardContent sx={{height: '300px'}} >
               <Typography
                   sx={{ fontSize: 14, mb: 6  }}

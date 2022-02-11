@@ -13,7 +13,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { useAuth } from './contexts/AuthContext'
+// import { useAuth } from './contexts/AuthContext'
 
 const drawerWidth = 240;
 
@@ -119,7 +119,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function PersistentDrawerRight() {
-    const { currentUser } = useAuth();
+    // const { currentUser } = useAuth();
     const classes = useStyles();
     const theme = useTheme();
 
@@ -180,8 +180,9 @@ export default function PersistentDrawerRight() {
           </div>
           <Divider />
           <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
-          {currentUser ? <Link to="/create">Write</Link> : <Link to="/create">Write</Link>}
+          <Link to="/signin">Login</Link>
           <Link to="/signup">signup</Link>
+          <Link to="/create">Write</Link>
         </Drawer>
      </div>
     );

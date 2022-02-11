@@ -40,7 +40,8 @@ export default function Singlepost(props) {
     axios
       .get(`${SERVER_URL}/${id}`)
       .then((res) => {
-        console.log("single post data ==> ", res.data);
+        // console.log("single post data ==> ", res.data);
+        // console.log("writer's username ==> ", res.data.article.user.fullname)
         setPost(res.data.article);
       })
       .catch((err) => {
@@ -94,7 +95,7 @@ export default function Singlepost(props) {
               alt="Remy Sharp"
               src={`${SERVER_URL}${post.image}`}
             />
-            <h5> {post.description}</h5>
+            <h5> {post.user.fullname}</h5>
           </AvatarGroup>
           <AvatarGroup max={4}>
             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />

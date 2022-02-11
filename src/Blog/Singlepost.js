@@ -92,7 +92,7 @@ export default function Singlepost(props) {
             <Avatar
               sx={{ width: 56, height: 56 }}
               alt="Remy Sharp"
-              src={`http://localhost:5000${post.image}`}
+              src={`${SERVER_URL}${post.image}`}
             />
             <h5> {post.description}</h5>
           </AvatarGroup>
@@ -125,7 +125,7 @@ export default function Singlepost(props) {
         <Stack>
           <img
             className="imgsss"
-            src={`http://localhost:5000${post.image}`}
+            src={`${SERVER_URL}${post.image}`}
             alt=""
           />
         </Stack>

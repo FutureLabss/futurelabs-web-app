@@ -41,12 +41,10 @@ export default function Singlepost(props) {
     }
   }
 
-  console.log("current User ===> ", currentUser )
   useEffect(() => {
     axios
       .get(`${SERVER_URL}/${id}`)
       .then((res) => {
-        console.log(res.data.article)
         setName(res.data.article.user);
         setPost(res.data.article);
       })
@@ -60,8 +58,6 @@ export default function Singlepost(props) {
       setDisplay(true)
     }
   },[currentUser.id, name._id])
-
-  console.log(id);
 
   return (
     <>

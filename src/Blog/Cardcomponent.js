@@ -28,7 +28,7 @@ function Cardcomponent() {
   const useStyles = makeStyles((theme) => ({
       card: {
         backgroundPosition: "cover",
-        backgroundImage: `url("${SERVER_URL}${posts[0]?.image}")`,
+        // backgroundImage: `url("${SERVER_URL}${posts[0]?.image}")`,
         '&:hover': {
           boxShadow: "6px 6px 6px #000000"
        },
@@ -43,7 +43,7 @@ function Cardcomponent() {
       {posts.map((post) => {
         return (
           <Grid item xs={12} sm={6}>
-            <Card sx={{ minWidth: 275, my: 3, color: 'white' }} className={classes.card} onClick={()=> history(`/singlepost/${post._id}`)}>
+            <Card sx={{ minWidth: 275, my: 3, color: 'white', backgroundImage: `url("${SERVER_URL}${post.image}")`  }} className={classes.card} onClick={()=> history(`/singlepost/${post._id}`)}>
 
               <CardContent sx={{height: '300px'}} >
               <Typography

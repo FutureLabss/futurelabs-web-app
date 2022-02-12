@@ -43,12 +43,12 @@ function Cardcomponent() {
       {posts.map((post) => {
         return (
           <Grid item xs={12} sm={6}>
-            <Card sx={{ minWidth: 275, my: 3, color: 'white', backgroundImage: `url("${SERVER_URL}${post.image}")`  }} className={classes.card} onClick={()=> history(`/singlepost/${post._id}`)}>
+            <Card sx={{ minWidth: 275, my: 3, color: 'black', backgroundImage: `url("${SERVER_URL}${post.image}")`  }} className={classes.card} onClick={()=> history(`/singlepost/${post._id}`)}>
 
               <CardContent sx={{height: '300px'}} >
               <Typography
                   sx={{ fontSize: 14, mb: 6  }}
-                  color="white"
+                  color="black"
                   gutterBottom
                   
                 >
@@ -57,7 +57,7 @@ function Cardcomponent() {
 
                 <Typography
                   sx={{ fontSize: 14 }}
-                  color="white"
+                  color="black"
                   gutterBottom
                 >
                   {post.description}
@@ -65,7 +65,7 @@ function Cardcomponent() {
 
                 <Typography
                   sx={{ fontSize: 23 }}
-                  color="white"
+                  color="black"
                   gutterBottom
                 >
 

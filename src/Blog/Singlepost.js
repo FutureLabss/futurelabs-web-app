@@ -13,14 +13,18 @@ import { useParams } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 import { SERVER_URL } from "./api/config"
+import { useAuth } from "./contexts/AuthContext"
 
 export default function Singlepost(props) {
   const history = useNavigate();
 
+  const { currentUser } = useAuth()
+
   const { id } = useParams();
 
   const [post, setPost] = useState({});
-  const [name, setName] = useState({})
+  const [name, setName] = useState({});
+  const [display, setDisplay] = useState(false)
 
   async function handleDelete(id, e) {
     console.log(id);
@@ -37,10 +41,12 @@ export default function Singlepost(props) {
     }
   }
 
+  console.log("current User ===> ", currentUser )
   useEffect(() => {
     axios
       .get(`${SERVER_URL}/${id}`)
       .then((res) => {
+        console.log(res.data.article)
         setName(res.data.article.user);
         setPost(res.data.article);
       })
@@ -48,6 +54,12 @@ export default function Singlepost(props) {
         console.log(err);
       });
   }, [id]);
+
+  useEffect(() => {
+    if(currentUser.id === name._id){
+      setDisplay(true)
+    }
+  },[currentUser.id, name._id])
 
   console.log(id);
 
@@ -105,24 +117,30 @@ export default function Singlepost(props) {
         </Stack>
       </Grid>
       <Grid className="text-center" item xs={12}>
-        <Stack sx={{ width: "5rem", display: "block", textAlign: "right" }}>
-          <Button
-            variant="contained"
-            onClick={(e) => handleDelete(post._id, e)}
-            startIcon={<DeleteIcon />}
-          >
-            Delete
-          </Button>
-        </Stack>
-        <Stack sx={{ width: "5rem", display: "block", textAlign: "right" }}>
-          <Button
-            onClick={() => history(`/updatepost/${post._id}`)}
-            variant="contained"
-            startIcon={<UpdateIcon />}
-          >
-            Update
-          </Button>
-        </Stack>
+        {
+          display && (
+          <>
+            <Stack sx={{ width: "5rem", display: "block", textAlign: "right" }}>
+              <Button
+                variant="contained"
+                onClick={(e) => handleDelete(post._id, e)}
+                startIcon={<DeleteIcon />}
+              >
+                Delete
+              </Button>
+            </Stack>
+            <Stack sx={{ width: "5rem", display: "block", textAlign: "right" }}>
+              <Button
+                onClick={() => history(`/updatepost/${post._id}`)}
+                variant="contained"
+                startIcon={<UpdateIcon />}
+              >
+                Update
+              </Button>
+            </Stack>
+          </>
+          )
+        }
         <Stack>
           <img
             className="imgsss"

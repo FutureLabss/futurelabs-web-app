@@ -1,5 +1,5 @@
-import React, {useState}  from "react";
-import {TextField,Button,Container,Grid,Stack,Box,Typography} from "@mui/material";
+import React, {useState, useEffect}  from "react";
+import {TextField,Button,Container,Grid,Stack,Box} from "@mui/material";
 import SendIcon from '@mui/icons-material/Send';
 import { Nav } from 'react-bootstrap'
 import { useAuth } from './contexts/AuthContext'
@@ -16,6 +16,7 @@ const blogManager = new BlogManager()
 export default function Article() {
   const history = useNavigate()
   const { currentUser } = useAuth()
+  // let usernameRef = useRef(currentUser.username)
 
   const [editorState, setEditorState] = useState(() => EditorState.createEmpty())
   const [convertedContent, setConvertedContent] = useState(null)
@@ -28,6 +29,13 @@ export default function Article() {
   } else {
     select = <p style={{color: "red"}}>File Not Selected</p>
   }
+
+  // var username;
+  useEffect(()=>{
+    if(!currentUser){
+      history('/signin')
+    }
+  },[history, currentUser])
 
   const handleEditorChange = (state) => {
     const contentValue = {value: convertedContent}
@@ -50,7 +58,7 @@ export default function Article() {
     
     const {name,value} = e.target
     setValues({...values, [name]:value})
-    console.log(values)
+    // console.log(values)
   }
 
   const handleSubmit = async(e) => {
@@ -65,6 +73,7 @@ export default function Article() {
 
   return (
     <Container sx={{ backgroundColor: "white", height: '100vh', width: '100vw', marginTop: '4rem' }} maxWidth={{}}>
+    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
       <Stack sx={{ maxWidth: '30%', display: 'flex', alignItems: 'flex-end',}}>
         <Nav.Link href="/"><Button variant="contained">GO BACK</Button></Nav.Link>
       </Stack>
@@ -80,9 +89,9 @@ export default function Article() {
                   <input type="file" onChange={handleFile} required></input>
                 </label>
                 <Stack>{select}</Stack>
-                <Stack>
-                  <Typography>Welcome {currentUser.username}</Typography>
-                </Stack>
+                {/* <Stack>
+                  <Typography>Welcome {usernameRef.current.value}</Typography>
+                </Stack> */}
             </label>
             </Stack>
           </Grid>
@@ -106,6 +115,7 @@ export default function Article() {
         </Grid>
         </form>
       </Box>
+      </Grid>
     </Container>
   );
 }

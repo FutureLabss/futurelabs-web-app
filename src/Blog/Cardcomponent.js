@@ -89,10 +89,6 @@ function Cardcomponent() {
                 <Typography variant="body2" sx={{ mt: 3, textAlign: 'center' }} >Read more &rarr; </Typography>
               </CardContent>
             </Card>
-
-            
-
-
           </Grid>
         );
       })}

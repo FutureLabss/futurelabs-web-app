@@ -22,8 +22,8 @@ import Header from './Blog/Header';
 
 ReactDOM.render(
   <BrowserRouter>
-    <Header />
   <AuthProvider>
+    <Header />
       <Routes>
         {
           pageRoutes.map((item)=>{

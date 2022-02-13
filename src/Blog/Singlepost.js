@@ -8,12 +8,11 @@ import UpdateIcon from "@mui/icons-material/Update";
 import DeleteIcon from "@mui/icons-material/Delete";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
 import { useParams } from "react-router-dom";
-
 import { useEffect, useState } from "react";
 import { SERVER_URL } from "./api/config"
 import { useAuth } from "./contexts/AuthContext"
+import DOMPurify from 'dompurify'
 
 export default function Singlepost(props) {
   const history = useNavigate();
@@ -38,6 +37,12 @@ export default function Singlepost(props) {
       history("/");
     } catch (e) {
       console.log(e.message);
+    }
+  }
+
+  const createMarkup = (html) => {
+    return {
+      __html: DOMPurify.sanitize(html)
     }
   }
 
@@ -146,12 +151,7 @@ export default function Singlepost(props) {
         </Stack>
         <Grid container-fluid item xs={12} mt={5} mb={5}>
           <Box sx={{ textAlign: "center", m: 1 }}>
-            {post.content}
-
-            {/* Coca-cola focuses on improving the community relationships and
-            increasing thhier happiness,that
-            positively reflects on thier public image, resulting in customer and
-            revenue rise.Coca-cola focuses on improving<br/> */}
+            <div dangerouslySetInnerHTML={createMarkup(post.content)}></div>
           </Box>
         </Grid>
         <Box

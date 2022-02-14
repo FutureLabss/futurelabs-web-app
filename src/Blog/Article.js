@@ -1,5 +1,5 @@
 import React, {useState, useEffect}  from "react";
-import {TextField,Button,Container,Grid,Stack,Box} from "@mui/material";
+import {TextField,Button,Grid,Stack} from "@mui/material";
 import SendIcon from '@mui/icons-material/Send';
 import { Nav } from 'react-bootstrap'
 import { useAuth } from './contexts/AuthContext'
@@ -8,8 +8,8 @@ import { useNavigate } from 'react-router-dom'
 import { EditorState} from 'draft-js'
 import { Editor } from 'react-draft-wysiwyg'
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-
 import { convertToHTML } from 'draft-convert'
+import './Article.css'
 
 const blogManager = new BlogManager()
 
@@ -72,15 +72,14 @@ export default function Article() {
   }
 
   return (
-    <Container sx={{ backgroundColor: "white", height: '100vh', width: '100vw', marginTop: '4rem' }} maxWidth={{}}>
-    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-      <Stack sx={{ maxWidth: '30%', display: 'flex', alignItems: 'flex-end',}}>
+    <Grid sx={{marginTop: '7rem'}} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} maxWidth={{}}>
+      <Stack sx={{ maxWidth: '30%'}}>
         <Nav.Link href="/"><Button variant="contained">GO BACK</Button></Nav.Link>
       </Stack>
-      <Box sx={{ width: "100%" }}>
+     
       <form onSubmit={handleSubmit}>
-        <Grid rowSpacing={1} columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
-          <Grid item xs={6}>
+        <Grid sx={{display: 'flex', flexDirection: 'column', alignItems:'center'}} rowSpacing={1} columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
+          <Grid item xs={10}>
             <Stack spacing={2} component="form" sx={{ width: 500, maxWidth: '100%',}} noValidate autoComplete="off">
               <TextField hiddenLabel placeholder="Title" variant="filled"  size="small" name="title" onChange={handleChange}  />
               <TextField hiddenLabel id="filled-hidden-label-small" placeholder="Description" name="description" onChange={handleChange} variant="filled" size="small" />
@@ -89,15 +88,11 @@ export default function Article() {
                   <input type="file" onChange={handleFile} required></input>
                 </label>
                 <Stack>{select}</Stack>
-                {/* <Stack>
-                  <Typography>Welcome {usernameRef.current.value}</Typography>
-                </Stack> */}
             </label>
             </Stack>
           </Grid>
-          <Grid item sx={{ marginTop: '5rem'}} xs={6} rowSpacing={2} columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
-              <Stack sx={{ width: '70vw', maxWidth: '100%',}}>
-                {/* <textarea  style={{height: '55vh'}} name="content" onChange={handleChange}></textarea> */}
+          <Grid item sx={{ marginTop: '5rem'}} xs={10} rowSpacing={2} columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
+              <Stack sx={{ width: '90vw', maxWidth: '100%',}}>
                 <Editor 
                   editorState={editorState}
                   onEditorStateChange={handleEditorChange}
@@ -108,14 +103,13 @@ export default function Article() {
               </Stack>
               <Stack>
                 <Button type="submit" variant="contained" startIcon={<SendIcon />}>
-                  Create
+                  PUBLISH
                 </Button>
               </Stack>
           </Grid>
         </Grid>
         </form>
-      </Box>
+      
       </Grid>
-    </Container>
   );
 }

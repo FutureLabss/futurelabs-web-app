@@ -6,6 +6,7 @@
     background-color:lightgray;
     padding: 1rem;
     border: 1px solid #ccc;
+    height: 70vh;
   }
   .toolbar-class {
     border: 1px solid #ccc;
@@ -14,4 +15,8 @@
   .preview {
     padding: 1rem;
     margin-top: 1rem;
+  }
+
+  .check {
+    border: solid red;
   }

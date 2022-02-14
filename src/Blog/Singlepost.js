@@ -4,8 +4,8 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import AvatarGroup from "@mui/material/AvatarGroup";
-import UpdateIcon from "@mui/icons-material/Update";
 import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from '@mui/icons-material/Edit';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
@@ -130,14 +130,12 @@ export default function Singlepost(props) {
                 onClick={(e) => handleDelete(post._id, e)}
                 startIcon={<DeleteIcon />}
               >
-                Delete
               </Button>
               <Button
                 onClick={() => history(`/updatepost/${post._id}`)}
                 variant="contained"
-                startIcon={<UpdateIcon />}
+                startIcon={<EditIcon />}
               >
-                Update
               </Button>
             </Stack>
           </>

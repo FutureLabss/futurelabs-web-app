@@ -1,6 +1,7 @@
 import React, {useState, useEffect}  from "react";
 import {TextField,Button,Grid,Stack} from "@mui/material";
-import SendIcon from '@mui/icons-material/Send';
+import BackspaceIcon from '@mui/icons-material/Backspace';
+import PublishIcon from '@mui/icons-material/Publish';
 import { Nav } from 'react-bootstrap'
 import { useAuth } from './contexts/AuthContext'
 import { BlogManager } from "./services/blog"
@@ -74,7 +75,7 @@ export default function Article() {
   return (
     <Grid sx={{marginTop: '7rem'}} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} maxWidth={{}}>
       <Stack sx={{ maxWidth: '30%'}}>
-        <Nav.Link href="/"><Button variant="contained">GO BACK</Button></Nav.Link>
+        <Nav.Link href="/"><Button variant="contained"  startIcon={<BackspaceIcon />}></Button></Nav.Link>
       </Stack>
      
       <form onSubmit={handleSubmit}>
@@ -102,7 +103,7 @@ export default function Article() {
                 />
               </Stack>
               <Stack>
-                <Button type="submit" variant="contained" startIcon={<SendIcon />}>
+                <Button type="submit" variant="contained" startIcon={<PublishIcon />}>
                   PUBLISH
                 </Button>
               </Stack>

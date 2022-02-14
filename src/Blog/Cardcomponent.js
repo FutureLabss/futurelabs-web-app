@@ -4,12 +4,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import axios from "axios";
 import { SERVER_URL } from "./api/config"
 import { useNavigate  } from "react-router-dom";
-
-
+import { useAuth } from  './contexts/AuthContext'
 
 
 function Cardcomponent() {
   const [posts, setPosts] = useState([]);
+  const { currentUser } = useAuth()
   const history = useNavigate()
  
   useEffect(() => {
@@ -23,6 +23,12 @@ function Cardcomponent() {
         console.log(err);
       });
     }, []);
+
+    const handleClick = () => {
+      if(!currentUser){
+        history('/signin')
+      }
+    }
     
 
   const useStyles = makeStyles((theme) => ({
@@ -43,15 +49,16 @@ function Cardcomponent() {
       {posts.map((post) => {
         return (
           <Grid item xs={12} sm={6}>
-            <Card sx={{ minWidth: 275, my: 3, color: 'black', backgroundImage: `url("${SERVER_URL}${post.image}")`  }} className={classes.card} 
+            <Card sx={{ minWidth: 275, my: 3, color: 'white', backgroundImage: `url("${SERVER_URL}${post.image}")`  }} className={classes.card} 
             onClick={()=> {
               history(`/singlepost/${post._id}`)
+              handleClick()
               }}>
 
-              <CardContent sx={{height: '300px'}} >
+              <CardContent sx={{height: '300px',  backgroundColor: 'rgba(17, 16, 16, 0.6)'}} >
               <Typography
                   sx={{ fontSize: 14, mb: 6  }}
-                  color="black"
+                  color="white"
                   gutterBottom
                   
                 >
@@ -60,7 +67,7 @@ function Cardcomponent() {
 
                 <Typography
                   sx={{ fontSize: 14 }}
-                  color="black"
+                  color="white"
                   gutterBottom
                 >
                   {post.description}
@@ -68,7 +75,7 @@ function Cardcomponent() {
 
                 <Typography
                   sx={{ fontSize: 23 }}
-                  color="black"
+                  color="white"
                   gutterBottom
                 >
 

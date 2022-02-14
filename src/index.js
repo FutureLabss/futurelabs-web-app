@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import { AuthProvider } from './Blog/contexts/AuthContext'
+// import Article from './Blog/Article'
+// import PrivateRoute from './router/PrivateRoute'
 import Footer from './components/layout/footer';
 import pageRoutes from './router/routes';
 import {
@@ -18,6 +20,7 @@ ReactDOM.render(
   <AuthProvider>
     <Header />
       <Routes>
+        {/* <PrivateRoute path="/create" element={Article}/> */}
         {
           pageRoutes.map((item)=>{
             return <Route path={item.path} element={<item.element />} />

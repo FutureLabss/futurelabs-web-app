@@ -92,7 +92,7 @@ export default function Article() {
             </Stack>
           </Grid>
           <Grid item sx={{ marginTop: '5rem'}} xs={10} rowSpacing={2} columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
-              <Stack sx={{ width: '90vw', maxWidth: '100%',}}>
+              <Stack sx={{ width: '90vw', maxWidth: '100%'}}>
                 <Editor 
                   editorState={editorState}
                   onEditorStateChange={handleEditorChange}

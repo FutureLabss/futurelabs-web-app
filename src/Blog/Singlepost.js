@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { SERVER_URL } from "./api/config"
 import { useAuth } from "./contexts/AuthContext"
 import DOMPurify from 'dompurify'
+import './Article.css'
 
 export default function Singlepost(props) {
   const history = useNavigate();
@@ -80,6 +81,7 @@ export default function Singlepost(props) {
         justifyContent="center"
         alignItems="center"
         md={{ p: 10 }}
+        sx={{marginTop: '4rem'}}
       >
         <Grid item xs={6} sx={{ textAlign: "center" }} md={2}>
           <h5>Technology</h5>
@@ -121,16 +123,15 @@ export default function Singlepost(props) {
         {
           display && (
           <>
-            <Stack sx={{ width: "5rem", display: "block", textAlign: "right" }}>
+            <Stack sx={{ width: "90%", display: "block", textAlign: "right" }}>
               <Button
+                sx={{marginRight: '1.5rem', backgroundColor: 'red'}}
                 variant="contained"
                 onClick={(e) => handleDelete(post._id, e)}
                 startIcon={<DeleteIcon />}
               >
                 Delete
               </Button>
-            </Stack>
-            <Stack sx={{ width: "5rem", display: "block", textAlign: "right" }}>
               <Button
                 onClick={() => history(`/updatepost/${post._id}`)}
                 variant="contained"
@@ -142,15 +143,15 @@ export default function Singlepost(props) {
           </>
           )
         }
-        <Stack>
+        <Stack sx={{ display: "block",textAlign: "center", marginTop: '.5rem'}}>
           <img
-            className="imgsss"
+            className="singlepost__cover-image"
             src={`${SERVER_URL}${post.image}`}
             alt=""
           />
         </Stack>
-        <Grid container-fluid item xs={12} mt={5} mb={5}>
-          <Box sx={{ textAlign: "center", m: 1 }}>
+        <Grid container-fluid item xs={12} mt={5} mb={5} sx={{display: "flex", justifyContent: 'center'}}>
+          <Box className="singlepost__content-area" sx={{ textAlign: "justify", width: '60%', fontSize: '1.8rem' }}>
             <div dangerouslySetInnerHTML={createMarkup(post.content)}></div>
           </Box>
         </Grid>

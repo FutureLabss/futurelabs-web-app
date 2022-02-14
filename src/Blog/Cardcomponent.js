@@ -13,7 +13,7 @@ function Cardcomponent() {
   const [posts, setPosts] = useState([]);
   const {currentUser} = useAuth()
   const history = useNavigate()
-  
+ 
   useEffect(() => {
     axios
       .get("")
@@ -24,7 +24,8 @@ function Cardcomponent() {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+    }, []);
+    
 
   const handleClick = () => {
     if(!currentUser){

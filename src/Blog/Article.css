@@ -6,7 +6,7 @@
     background-color:lightgray;
     padding: 1rem;
     border: 1px solid #ccc;
-    height: 70vh;
+    height: 80vh;
   }
   .toolbar-class {
     border: 1px solid #ccc;
@@ -19,4 +19,16 @@
 
   .check {
     border: solid red;
+  }
+
+  .singlepost__cover-image{
+    width: 50%;
+    height: 35vh;
+  }
+
+  .singlepost__content-area{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: beige;
+    padding: 1rem;
   }

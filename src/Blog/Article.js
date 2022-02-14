@@ -1,5 +1,5 @@
 import React, {useState, useEffect}  from "react";
-import {TextField,Button,Grid,Stack} from "@mui/material";
+import { TextField, Button, Grid, Stack, CircularProgress, } from "@mui/material";
 import BackspaceIcon from '@mui/icons-material/Backspace';
 import PublishIcon from '@mui/icons-material/Publish';
 import { Nav } from 'react-bootstrap'
@@ -17,8 +17,7 @@ const blogManager = new BlogManager()
 export default function Article() {
   const history = useNavigate()
   const { currentUser } = useAuth()
-  // let usernameRef = useRef(currentUser.username)
-
+  const [loading, setLoading] = useState(false)
   const [editorState, setEditorState] = useState(() => EditorState.createEmpty())
   const [convertedContent, setConvertedContent] = useState(null)
   const [values, setValues] = useState({});
@@ -64,6 +63,7 @@ export default function Article() {
 
   const handleSubmit = async(e) => {
     e.preventDefault()
+    setLoading(true)
     setValues({...values})
     await blogManager.addBlog(values, file).catch(error => {
       console.log(error);
@@ -103,9 +103,10 @@ export default function Article() {
                 />
               </Stack>
               <Stack>
+                {loading ? <div className="text-center"><CircularProgress size={30} /></div> : 
                 <Button type="submit" variant="contained" startIcon={<PublishIcon />}>
                   PUBLISH
-                </Button>
+                </Button>}
               </Stack>
           </Grid>
         </Grid>

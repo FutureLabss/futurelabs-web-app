@@ -4,14 +4,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import axios from "axios";
 import { SERVER_URL } from "./api/config"
 import { useNavigate  } from "react-router-dom";
-import {useAuth} from './contexts/AuthContext'
 
 
 
 
 function Cardcomponent() {
   const [posts, setPosts] = useState([]);
-  const {currentUser} = useAuth()
   const history = useNavigate()
  
   useEffect(() => {
@@ -26,12 +24,6 @@ function Cardcomponent() {
       });
     }, []);
     
-
-  const handleClick = () => {
-    if(!currentUser){
-      history('/signin')
-    }
-  }
 
   const useStyles = makeStyles((theme) => ({
       card: {
@@ -54,7 +46,6 @@ function Cardcomponent() {
             <Card sx={{ minWidth: 275, my: 3, color: 'black', backgroundImage: `url("${SERVER_URL}${post.image}")`  }} className={classes.card} 
             onClick={()=> {
               history(`/singlepost/${post._id}`)
-              handleClick()
               }}>
 
               <CardContent sx={{height: '300px'}} >

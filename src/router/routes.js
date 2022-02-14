@@ -51,7 +51,7 @@ const pageRoutes = [
     {path: '/modelling', element: modelling },
     {path: '/products', element: product },
     {path: '/websites', element: websites },
-     {path: '/branding', element: branding },
+    {path: '/branding', element: branding },
     {path: '/', element: PersistentDrawerRight },
 ]
 

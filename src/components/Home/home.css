@@ -3,6 +3,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway:ital,wght@0,600;0,700;1,700&family=Roboto:wght@500;700&display=swap');
 
 
+
+.overall-half{
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+    /* z-index: -1; */
+    
+
+}
+
+
+
+
+
+.parent-box3-half {
+    width: 50vw;
+    /* z-index: 1000; */
+    position: absolute;
+    bottom: -201%;
+  
+    /* top: 500%; */
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+}
+
+.video-container-half {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    /* opacity: 100%; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+}
+
+
+
+.mute-box-half {
+    width: 25%;
+    display: flex;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+.mute-img {
+ 
+    align-self: flex-end;
+    /* float: right !important; */
+    
+    
+    
+}
+
+.text-box-half {
+    visibility: hidden;
+    width: 75%;
+    color: white;
+    /* z-index: 1000 !important; */
+    filter: brightness(100%);
+}
+
+
+
+
+
+
+
+
+
 .section1 {
     /* background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png'); */
     height: 100vh;
@@ -88,10 +158,10 @@ color: #212121;
     /* background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1637149802/IMG_0133_1_hysqkh.png"); */
     height: 100vh;
     width: 50vw;
-    background-position: center;
+    /* background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .mobile-yes {

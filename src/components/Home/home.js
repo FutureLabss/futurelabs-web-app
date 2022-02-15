@@ -5,6 +5,8 @@ import ToolBar from '../layout/toolbar';
 
 
 
+
+
 export default function Home() {
 return (
       
@@ -123,14 +125,46 @@ return (
 
 
 
-  {/* Section-Three begins here*/}
+  {/* HALF-VIDEO FOR DESKTOP HERE */}
   <section className="section2">
       
     {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
-    <div className="mobile-no sm-divider">
+    <div className="mobile-no half sm-divider">
 
-      <div className="section2-image home-image3 sm-2 .bg-warning"></div>
+      <div className="half sm-2 .bg-warning">
 
+
+      <div className="video-container-half .text-danger .bg-danger">
+        <video autoPlay muted loop className="overall-half">
+          {/* <Transformation endOffset="30" videoCodec="auto" /> */}
+          <source 
+            src="https://res.cloudinary.com/not-set/video/upload/v1644576276/FutureLabs.agency1_3_izapfv.mp4" type="video/mp4" 
+          /> 
+            
+          
+        </video> 
+
+        <div className="parent-box3-half d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+          <div className="text-box-half .bg-danger"></div>
+
+
+          {/* THE MUTE ICON IS HERE */}
+          <div className="mute-box-half text-center .bg-info">
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+         
+      </div>
+
+
+
+      {/* HALF-TEXT FOR DESKTOP HERE */}
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering">
           <h4 className="line1">We tell stories</h4>
@@ -156,25 +190,39 @@ return (
       
 
     {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-    <div className="mobile-yes section2-image-mobile home-image3 .bg-primary text-white">
-      <div className="vertical-centering">
+    <div className="mobile-yes text-white">
+         
+      <div className="video-container .text-danger .bg-danger">
+        <video autoPlay muted loop className="overall">
+          {/* <Transformation endOffset="30" videoCodec="auto" /> */}
+          <source 
+            src="https://res.cloudinary.com/not-set/video/upload/v1644576276/FutureLabs.agency1_3_izapfv.mp4" type="video/mp4" 
+          /> 
+            
+          
+        </video> 
 
-        <div className=".bg-warning px-3">
-          <h4 className="line1">We tell stories</h4>
+        <div className="parent-box3 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+          <div className="text-box .bg-danger">
+            <h4 className="line1">We tell stories</h4>
 
-          <h3 className="line4">
-            We craft User centric
-            <br />
-            stories about products and
-            <br />
-            services that our target
-            <br />
-            audience finds relatable and actionable
-          </h3>
+            <h3 className="line4">
+              We craft User centric <br className="mobile-no" />stories about products and<br className="mobile-no" /> services that our target<br className="mobile-no" /> audience finds relatable and actionable
+           
+            </h3>
 
-          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button>
+            <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button>
+
+          </div>
+
+
+          {/* THE MUTE ICON IS HERE */}
+          <div className="mute-box-half text-center .bg-info">
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+          </div>
 
         </div>
+
 
       </div>
     </div>
@@ -201,76 +249,95 @@ return (
   {/* *********************************************************************** */}
 
 
-  {/* Section-One begins here */}
-  <section className="section1 home-image4">
-
-    <div className="container">
-      <div className="row .bg-warning d-flex justify-space-between">
-        <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
-
-          <h5 className="line6">
-            <span className="italicize">We Strategize.</span>
-            <br />
-            We take our time <br className="mobile-no"/>
-            sifting through Data <br className="mobile-no"/> 
-            and building models
-          </h5>
-
-          <h5 className="line5">
-            {/* THE BEST FUTURE IMAGINABLE. */}
-          </h5>
-
-        </div>
-        
-
-        {/* THE MUTE ICON IS HERE */}
-        <div className="col-3 .bg-info text-center">
-          <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-        </div>
-
-      </div>
-    </div>
-
-  </section>
-  {/* Section-One ends here */}
-
-
-
-
-
-
-
 
   {/* Section-One begins here */}
-  <section className="section1 home-image5">
-
-    <div className="container">
-      <div className="row .bg-warning d-flex justify-space-between">
-        <div className="col-9 .bg-primary px-3 px-sm-1 text-white mobile-yes-1">
-
-          <h5 className="line6 ">
-            Seamless Cross-border <br className="mobile-no"/>
-            Payments and Currency <br className="mobile-no"/> 
-            Conversion
-          </h5>
-
-          <h5 className="line5 ">
-            Securing Payments for Tomorrow on the Web
-          </h5>
-
-        </div>
+  <div className="video-container .text-danger .bg-danger">
+    <video autoPlay muted loop className="overall">
+      {/* <Transformation endOffset="30" videoCodec="auto" /> */}
+      <source 
+        src="https://res.cloudinary.com/not-set/video/upload/v1644590584/FutureLabs.agency1_4_mqq6ds.mp4" type="video/mp4" 
+      /> 
         
+      
+    </video> 
 
-        {/* THE MUTE ICON IS HERE */}
-        <div className="col-3 .bg-info text-center">
-          <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-        </div>
+    <div className="parent-box4 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+      <div className="text-box .bg-danger">
+        <h5 className="line6">
+          <span className="italicize">We Strategize.</span>
+          <br />
+          We take our time <br className="mobile-no"/>
+          sifting through Data <br className="mobile-no"/>
+          and building models
+        </h5>
+
+        {/* <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link> */}
+
 
       </div>
+
+
+      {/* THE MUTE ICON IS HERE */}
+      <div className="mute-box text-center .bg-info">
+          <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+      </div>
+
     </div>
 
-  </section>
-  {/* Section-One ends here */}
+
+  </div>
+
+
+
+
+
+
+
+
+
+  {/* Section-One begins here */}
+  <div className="video-container .text-danger .bg-danger">
+    <video autoPlay muted loop className="overall">
+      {/* <Transformation endOffset="30" videoCodec="auto" /> */}
+      <source 
+        src="https://res.cloudinary.com/not-set/video/upload/v1644591166/Comp_1_2_1_ezhho4.mp4" type="video/mp4" 
+      /> 
+        
+      
+    </video> 
+
+    <div className="parent-box5 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+      <div className="text-box .bg-danger">
+        <h5 className="line6 ">
+          Seamless Cross-border <br className="mobile-no"/>
+          Payments and Currency <br className="mobile-no"/> 
+          Conversion
+        </h5>
+
+        <h5 className="line5 ">
+          Securing Payments for Tomorrow on the Web
+        </h5>
+        {/* <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link> */}
+
+
+      </div>
+
+
+      {/* THE MUTE ICON IS HERE */}
+      <div className="mute-box text-center .bg-info">
+          <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  {/* mmmmmmmm */}
+
+
+  
 
 
 

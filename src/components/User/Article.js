@@ -3,14 +3,14 @@ import { TextField, Button, Grid, Stack, CircularProgress, } from "@mui/material
 import BackspaceIcon from '@mui/icons-material/Backspace';
 import PublishIcon from '@mui/icons-material/Publish';
 import { Nav } from 'react-bootstrap'
-import { useAuth } from './contexts/AuthContext'
-import { BlogManager } from "./services/blog"
+import { useAuth } from '../../contexts/AuthContext'
+import { BlogManager } from "../../services/blog"
 import { useNavigate } from 'react-router-dom'
 import { EditorState} from 'draft-js'
 import { Editor } from 'react-draft-wysiwyg'
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import { convertToHTML } from 'draft-convert'
-import './Article.css'
+import '../styles/article.css'
 
 const blogManager = new BlogManager()
 

@@ -10,10 +10,10 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { SERVER_URL } from "./api/config"
-import { useAuth } from "./contexts/AuthContext"
+import { SERVER_URL } from "../../api/config"
+import { useAuth } from "../../contexts/AuthContext"
 import DOMPurify from 'dompurify'
-import './Article.css'
+import '../styles/article.css'
 
 export default function Singlepost(props) {
   const history = useNavigate();

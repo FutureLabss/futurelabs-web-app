@@ -1,4 +1,4 @@
-import "./contact.css";
+import "../styles/contact.css";
 
 export default function Contact(props) {
     return (
@@ -8,10 +8,10 @@ export default function Contact(props) {
 <h1 className="contact mb-5">Contact Us</h1>
 <div className="row">
 <div className="col-sm-6">
-<input className="form-control vred form-control-lg mb-5" type="text" placeholder="Your name "></input>
-<input className="form-control vred form-control-lg mb-5" type="text" placeholder="Your phone number"></input>
-<input className="form-control vred form-control-lg mb-5" type="text" placeholder="Your company"></input>
-<input className="form-control vred form-control-lg mb-5" type="text" placeholder="Your@email.com"></input>
+<input className="form-control vred form-control-lg mb-5" type="text" name placeholder="Your name "></input>
+<input className="form-control vred form-control-lg mb-5" type="text" phone placeholder="Your phone number"></input>
+<input className="form-control vred form-control-lg mb-5" type="text" company placeholder="Your company"></input>
+<input className="form-control vred form-control-lg mb-5" type="text" email placeholder="Your@email.com"></input>
     </div>
     <div className="col-sm-6 text-center">
     <div className="form-floating vred">

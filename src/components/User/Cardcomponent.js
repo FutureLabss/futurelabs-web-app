@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import { makeStyles } from "@material-ui/core/styles";
 import axios from "axios";
-import { SERVER_URL } from "./api/config"
+import { SERVER_URL } from "../../api/config"
 import { useNavigate  } from "react-router-dom";
-import { useAuth } from  './contexts/AuthContext'
+import { useAuth } from  '../../contexts/AuthContext'
 
 
 function Cardcomponent() {

@@ -224,7 +224,7 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> From flat screens, we create bodies <br className="mobile-no" /> that appear to pop out of it. </h6>
+                    <h6 className="line3"> On flat screens, we create bodies <br className="mobile-no" /> that appear to pop out of it. </h6>
 
 
                 </div>

@@ -18,6 +18,7 @@
 
 
 
+
 .parent-box3-half {
     width: 50vw;
     /* z-index: 1000; */
@@ -82,8 +83,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 54vh;
+   
+    
 
 }
+
+
+
 
 .home-image1 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png');

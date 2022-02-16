@@ -1,128 +1,105 @@
-import React, { useRef, useState } from "react";
-import { useAuth } from "../../contexts/AuthContext";
+import React, {useState, useRef} from 'react'
 import { Link, useNavigate } from "react-router-dom";
-import { Button, Container, IconButton, InputAdornment, Grid, Stack, FormControlLabel, Checkbox, Alert, TextField, CircularProgress } from "@mui/material";
-import { Close,   Visibility, VisibilityOff } from "@mui/icons-material";
-import { Box } from "@mui/system";
+import { useAuth } from "../../contexts/AuthContext";
+import { TextField,Card,CardContent, Button,Typography, Container, IconButton, InputAdornment, Grid, Stack, Box,  Alert, CircularProgress } from "@mui/material";
+import { Close, VisibilityOff, Visibility } from "@mui/icons-material";
 
 function Signup() {
   const emailRef = useRef();
   const passwordRef = useRef();
-  const fullnameRef = useRef();
   const usernameRef = useRef();
   const { signup } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const history = useNavigate();
 
-  async function handleSubmit(e) {
-    e.preventDefault();
+     async function handleSubmit(e) {
+      e.preventDefault();
 
-    try {
-      setError("");
-      setLoading(true);
-      await signup(fullnameRef.current.value, usernameRef.current.value, emailRef.current.value, passwordRef.current.value);
-      history("/signin");
-    } catch (e) {
-      setError(e.message);
+      try {
+        setError("");
+        setLoading(true);
+        await signup(usernameRef.current.value, emailRef.current.value, passwordRef.current.value);
+        history("/signin");
+      } catch (e) {
+        setError(e.message);
+      }
+      setLoading(false);
     }
-    setLoading(false);
-  }
-
+    
   const [isRevealPwd, setIsRevealPwd] = useState(false);
-
   return (
-    <Container sx={{ backgroundColor: 'white' }} maxWidth={{}} >
-
-      <Box sx={{ position: 'fixed', top: "20px", right: "20px" }} position={{ top: '4px', right: '4px' }}>
+    <Container sx={{backgroundColor: 'white'}} maxWidth={{}}>
+    <Box sx={{ position: 'fixed', top: "90px", right: "100px" }} position={{ top: '4px', right: '4px' }}>
         <Link to="/">
-
           <IconButton color="primary">
             <Close />
           </IconButton>
         </Link>
       </Box>
+       <Grid sx={{ minHeight: '100vh'}} justifyContent="center" alignItems="center" container>
+            <Card sx={{ height: 380, minWidth: 700, display: 'flex'}}>
+                <CardContent  sx={{ height: '380px', width: '50%',backgroundSize: "cover",  backgroundImage: `url("https://res.cloudinary.com/usenmfon/image/upload/v1644929098/FutureLabs/future4_3_1_otjupv.png")`}}>
+                  <Grid sx={{height: '100%'}} container rowSpacing={1} direction="column" justifyContent="space-around" alignItems="center" >
+                    <Stack>
+                      <Typography color="white">WE ARE FUTURISTS!</Typography>
+                      <Typography color="white" fontWeight="600" mt={3}>We create indelible <br /> digital experiences.</Typography>
+                    </Stack>
+                    <img style={{width: '12vw'}} src="https://res.cloudinary.com/usenmfon/image/upload/v1644928834/FutureLabs/LOGO_FUTURE_3_uek81j.png" alt="futurelabs logo" />
+                  </Grid>
+                </CardContent>
+                <CardContent sx={{width: '50%'}}>
+                    <Grid container rowSpacing={1} direction="column" >
+                        <Typography sx={{fontSize: 15, fontWeight: 600, textAlign: 'center'}}>Create Account</Typography>
+                        <p className="mem-tag" style={{textAlign: 'center'}}>Already a member? <Link to="login" style={{color: '#FF9000', textDecoration: 'none'}}>Login</Link></p>
+                        <form onSubmit={handleSubmit}>
+                                <Stack spacing={4}>
+                        {error && (
+                        <Alert severity="error">
+                            {error}
+                        </Alert>
+                        )}
+                        <TextField placeholder='Username'  variant="outlined"  inputRef={usernameRef} InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              {/* <Person /> */}
+                            </InputAdornment>
+                          ),
+                        }} />
+                        <TextField placeholder='Email' type="email" variant="outlined" inputRef={emailRef} InputProps={{
+                        startAdornment: (
+                            <InputAdornment position="start">
 
-      <Grid sx={{ minHeight: '100vh' }} justifyContent="center" alignItems="center" container>
-        <Grid item xs={12} py={10} sm={8} md={6} lg={4} >
+                            </InputAdornment>
+                        ),
+                        }} />
+                        <TextField placeholder='Password' type={isRevealPwd ? 'text' : 'password'} variant="outlined" inputRef={passwordRef} InputProps={{
+                        startAdornment: (
+                            <InputAdornment position="start">
+                            {/* <Lock /> */}
+                            </InputAdornment>
+                        ),
+                        endAdornment: (
+                            <InputAdornment position="end">
+                            <IconButton onClick={() => { setIsRevealPwd(!isRevealPwd) }}>
+                                {isRevealPwd ? <VisibilityOff /> : <Visibility />}
+                            </IconButton>
+                            </InputAdornment>
+                        ),
+                        }} />
 
-          <Box my={3} px={4} justifyContent="center" textAlign="center">
-            <Link to="/">
-              <div  style={{ justifyContent: 'center', }}><div></div></div>
-            </Link>
+                          {/* <FormControlLabel label="I agree to the Terms and Privacy Policy." control={<Checkbox />} /> */}
 
-            <h4 style={{ color: 'black', paddingTop: '20px' }}>
-              Registering to this website, you accept our Terms & Conditions and our
-              Privacy Policy
-            </h4>
-          </Box>
+                          {loading ? <div className="text-center"> <CircularProgress size={30} /></div> : <Button type="submit" fullWidth disableElevation sx={{backgroundColor: '#FF9000'}} variant="contained">Sign Up</Button>}
+                        </Stack>
+                        </form>
+                    </Grid>
+                </CardContent>
+            </Card>
+       </Grid>
 
-          <Box sx={{ backgroundColor: '#DADFF7' }} px={2} py={4} >
-            <form onSubmit={handleSubmit}>
-
-              <Stack spacing={3}>
-                {error && (
-                  <Alert severity="error">
-                    {error}
-                  </Alert>
-                )}
-
-                  <span>Full Name</span>
-                <TextField  variant="outlined"  inputRef={fullnameRef} InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      {/* <Person /> */}
-                    </InputAdornment>
-                  ),
-                }} />
-                  <span>Username</span>
-                <TextField  variant="outlined"  inputRef={usernameRef} InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      {/* <Person /> */}
-                    </InputAdornment>
-                  ),
-                }} />
-                <span>Email</span>
-                <TextField type="email" variant="outlined" inputRef={emailRef} InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      {/* <Mail /> */}
-                    </InputAdornment>
-                  ),
-                }} />
-                <span>Password</span>
-                <TextField  type={isRevealPwd ? 'text' : 'password'} variant="outlined" inputRef={passwordRef} InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      {/* <Lock /> */}
-                    </InputAdornment>
-                  ),
-                  endAdornment: (
-                    <InputAdornment position="end">
-                      <IconButton onClick={() => { setIsRevealPwd(!isRevealPwd) }}>
-                        {isRevealPwd ? <VisibilityOff /> : <Visibility />}
-                      </IconButton>
-                    </InputAdornment>
-                  ),
-                }} />
-
-                <p className='text-center'>  Your password must be at least 6 characters long and must contain
-                  letters, numbers and special characters. Cannot contain
-                  whitespace.</p>
-
-                <FormControlLabel label="Receive News From Future Blog By Email" control={<Checkbox />} />
-
-                {loading ? <div className="text-center"> <CircularProgress size={30} /></div> : <Button type="submit" fullWidth disableElevation variant="contained">Sign Up</Button>}
-
-                <p className="mem-tag">Already a member? <Link to="login">Login</Link></p>
-              </Stack>
-            </form>
-          </Box>
-        </Grid>
-      </Grid>
     </Container>
-  );
+  )
 }
 
-export default Signup;
+export default Signup

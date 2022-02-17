@@ -11,8 +11,8 @@ export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState('kingpush')
   const [loading, setLoading] = useState(true)
 
-  async function signup(fullname, username, email, password) {
-    const response = await registerApi({fullname, username, email, password})
+  async function signup(username, email, password) {
+    const response = await registerApi({ username, email, password})
     if (response.error) {
       throw new Error(response.error.error)
     }

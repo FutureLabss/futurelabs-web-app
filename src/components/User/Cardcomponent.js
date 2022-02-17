@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Grid, Card, CardContent, Typography, Stack } from "@mui/material";
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import { makeStyles } from "@material-ui/core/styles";
 import axios from "axios";
 import { SERVER_URL } from "../../api/config"
 import { useNavigate  } from "react-router-dom";
 import { useAuth } from  '../../contexts/AuthContext'
 import { icons } from '../assets'
-
+import '../styles/cardcomponent.css'
 
 function Cardcomponent() {
   const [posts, setPosts] = useState([]);
@@ -19,7 +21,6 @@ function Cardcomponent() {
     axios
       .get("")
       .then((res) => {
-        // console.log(res.data.articles);
         setPosts(res.data.articles);
       })
       .catch((err) => {
@@ -78,13 +79,22 @@ function Cardcomponent() {
                   sx={{ fontSize: 14}}
                   color="white"
                   gutterBottom
+                  className="raleway__font"
                 >
                   {new Date(post.createdAt).toLocaleDateString('en-us', { year: "numeric", day: "numeric",month: "short"})}
                 </Typography>
-                <Grid direction="row" spacing={2} container sx={{width: '10rem', cursor: 'pointer'  }}>
-                  <Grid item onClick={() => handleColor('bookmark')}><img  style={{backgroundColor: bookmarkColorValue,}} src={icons.bookmark} alt="bookmark icon" /></Grid>
-                  <Grid item onClick={() => handleColor('favourite')}><img style={{backgroundColor: colorValue,}} src={icons.favouriteSVG} alt="favourite icon" /></Grid>
-                  <Grid item ><img src={icons.comment} alt="comment icon" /></Grid>
+                <Grid direction="row" spacing={2} container sx={{width: '10rem', cursor: 'pointer'}}>
+                  <Grid item onClick={() => handleColor('bookmark')}>
+                    <BookmarkBorderOutlinedIcon style={{fill: bookmarkColorValue,marginTop:'.3rem'}}/>
+                  </Grid>
+                  <Grid item style={{ paddingTop: 0 }} onClick={() => handleColor('favourite')}>
+                    <p className="count">0</p>
+                    <FavoriteBorderOutlinedIcon style={{fill: colorValue,margin: 0, }} />
+                  </Grid>
+                  <Grid item style={{ paddingTop: 0 }}>
+                    <p className="count">0</p>
+                    <img className="comment__icon" src={icons.comment} alt="comment icon" />
+                  </Grid>
                 </Grid>
               </Stack>
 
@@ -92,14 +102,16 @@ function Cardcomponent() {
                   sx={{ fontSize: 14 }}
                   color="white"
                   gutterBottom
+                  className="roboto__font"
                 >
-                  {post.description}
+                  {post.user.username}
                 </Typography>
 
                 <Typography
                   sx={{ fontSize: 23 }}
                   color="white"
                   gutterBottom
+                  className="raleway__font"
                 >
 
                   {post.title}
@@ -111,7 +123,9 @@ function Cardcomponent() {
                 <Typography variant="body2" sx={{ mt: 3, textAlign: 'center', cursor: 'pointer' }} onClick={()=> {
                   history(`/singlepost/${post._id}`)
                   handleClick()
-                }}>
+                }}
+                className="raleway__font"
+                >
                   Read more &rarr; </Typography>
               </CardContent>
             </Card>

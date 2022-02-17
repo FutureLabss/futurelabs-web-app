@@ -1,9 +1,4 @@
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-import AvatarGroup from "@mui/material/AvatarGroup";
+import {Typography, Box, Grid, Avatar, Button, Stack, AvatarGroup,  } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from '@mui/icons-material/Edit';
 import axios from "axios";
@@ -12,6 +7,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { SERVER_URL } from "../../api/config"
 import { useAuth } from "../../contexts/AuthContext"
+import { icons } from '../assets'
 import DOMPurify from 'dompurify'
 import '../styles/article.css'
 
@@ -51,6 +47,7 @@ export default function Singlepost(props) {
     axios
       .get(`${SERVER_URL}/${id}`)
       .then((res) => {
+        console.log("db data ==> ",res.data)
         setName(res.data.article.user);
         setPost(res.data.article);
       })
@@ -110,13 +107,8 @@ export default function Singlepost(props) {
               alt="Remy Sharp"
               src={`${SERVER_URL}${post.image}`}
             />
-            <h5> {name.fullname}</h5>
-          </AvatarGroup>
-          <AvatarGroup max={4}>
-            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-            <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-            <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
-          </AvatarGroup>
+            <h5 style={{paddingTop: '.8rem'}}> {name.username}</h5>
+          </AvatarGroup>          
         </Stack>
       </Grid>
       <Grid className="text-center" item xs={12}>
@@ -141,7 +133,7 @@ export default function Singlepost(props) {
           </>
           )
         }
-        <Stack sx={{ display: "block",textAlign: "center", marginTop: '.5rem'}}>
+        <Stack sx={{ display: "inline-block", textAlign: 'center', width: '68%', marginTop: '.5rem'}}>
           <img
             className="singlepost__cover-image"
             src={`${SERVER_URL}${post.image}`}
@@ -149,20 +141,36 @@ export default function Singlepost(props) {
           />
         </Stack>
         <Grid container-fluid item xs={12} mt={5} mb={5} sx={{display: "flex", justifyContent: 'center'}}>
-          <Box className="singlepost__content-area" sx={{ textAlign: "justify", width: '60%', fontSize: '1.8rem' }}>
+          <Box className="singlepost__content-area" sx={{ textAlign: "justify", width: '70%', fontSize: '1.8rem' }}>
             <div dangerouslySetInnerHTML={createMarkup(post.content)}></div>
           </Box>
         </Grid>
-        <Box
+        <Grid display="flex" direction="row" justifyContent="space-between" marginBottom="10rem" marginTop="5rem">
+        <Grid item
           sx={{
-            textAlign: "left",
+            display: 'flex',
             mx: 20,
-            fontStyle: "italic",
-            fontSize: "h6.fontSize",
           }}
         >
-          {new Date(post.createdAt).toLocaleString()}
-        </Box>
+        <AvatarGroup max={4}>
+            <Avatar
+              sx={{ width: 56, height: 56 }}
+              alt="Remy Sharp"
+              src={`${SERVER_URL}${post.image}`}
+            />
+          </AvatarGroup> 
+        <Stack sx={{textAlign: 'left'}}>
+          <Typography style={{fontWeight: 'bold'}}> {name.username}</Typography>
+          <Typography>occupation</Typography>
+          <Typography>{new Date(post.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}</Typography>
+        </Stack>
+        </Grid>
+        <Grid item columnSpacing={2} sx={{mx: 20, cursor: 'pointer'}}>
+          <img style={{margin: '0 .3rem'}} src={icons.twitter} alt="twitter icon" />
+          <img style={{margin: '0 .3rem'}} src={icons.facebook} alt="facebook icon" />
+          <img style={{margin: '0 .3rem'}} src={icons.linkedin} alt="linkedin icon" />
+        </Grid>
+        </Grid>
       </Grid>
     </>
   );

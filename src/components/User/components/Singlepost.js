@@ -5,11 +5,12 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { SERVER_URL } from "../../api/config"
-import { useAuth } from "../../contexts/AuthContext"
-import { icons } from '../assets'
+import { SERVER_URL } from "../../../api/config"
+import { useAuth } from "../../../contexts/AuthContext"
+import { icons } from '../../assets'
 import DOMPurify from 'dompurify'
-import '../styles/article.css'
+import '../../styles/article.css'
+import Footer from '../../layouts/Footer'
 
 export default function Singlepost(props) {
   const history = useNavigate();
@@ -64,22 +65,10 @@ export default function Singlepost(props) {
 
   return (
     <>
-      <hr
-        style={{
-          color: "#000000",
-          backgroundColor: "#000000",
-          height: "10px",
-          borderColor: "#000000",
+      <hr style={{ color: "#000000", backgroundColor: "#000000", height: "10px", borderColor: "#000000",
         }}
       />
-      <Grid
-        container
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        md={{ p: 10 }}
-        sx={{marginTop: '4rem'}}
-      >
+      <Grid container direction="row" justifyContent="center" alignItems="center" md={{ p: 10 }} sx={{marginTop: '4rem'}}>
         <Grid item xs={6} sx={{ textAlign: "center" }} md={2}>
           <h5>Technology</h5>
         </Grid>
@@ -102,10 +91,7 @@ export default function Singlepost(props) {
       <Grid item xs={12} p={1} px={{ md: 25 }}>
         <Stack direction="row" justifyContent="space-between " mb={5}>
           <AvatarGroup max={4}>
-            <Avatar
-              sx={{ width: 56, height: 56 }}
-              alt="Remy Sharp"
-              src={`${SERVER_URL}${post.image}`}
+            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src={`${SERVER_URL}${post.image}`}
             />
             <h5 style={{paddingTop: '.8rem'}}> {name.username}</h5>
           </AvatarGroup>          
@@ -116,18 +102,9 @@ export default function Singlepost(props) {
           display && (
           <>
             <Stack sx={{ width: "90%", display: "block", textAlign: "right" }}>
-              <Button
-                sx={{marginRight: '1.5rem', backgroundColor: 'red'}}
-                variant="contained"
-                onClick={(e) => handleDelete(post._id, e)}
-                startIcon={<DeleteIcon />}
-              >
+              <Button sx={{marginRight: '1.5rem', backgroundColor: 'red'}} variant="contained" onClick={(e) => handleDelete(post._id, e)} startIcon={<DeleteIcon />}>
               </Button>
-              <Button
-                onClick={() => history(`/updatepost/${post._id}`)}
-                variant="contained"
-                startIcon={<EditIcon />}
-              >
+              <Button onClick={() => history(`/updatepost/${post._id}`)} variant="contained" startIcon={<EditIcon />}>
               </Button>
             </Stack>
           </>
@@ -172,6 +149,7 @@ export default function Singlepost(props) {
         </Grid>
         </Grid>
       </Grid>
+      <Footer />
     </>
   );
 }

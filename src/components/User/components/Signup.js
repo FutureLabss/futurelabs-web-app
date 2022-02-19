@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../../contexts/AuthContext";
+import { useAuth } from "../../../contexts/AuthContext";
 import { TextField,Card,CardContent, Button,Typography, Container, IconButton, InputAdornment, Grid, Stack, Box,  Alert, CircularProgress } from "@mui/material";
 import { Close, VisibilityOff, Visibility } from "@mui/icons-material";
 
@@ -59,7 +59,7 @@ function Signup() {
                             {error}
                         </Alert>
                         )}
-                        <TextField placeholder='Username'  variant="outlined"  inputRef={usernameRef} InputProps={{
+                        <TextField placeholder='Username' type="text" variant="outlined"  inputRef={usernameRef} InputProps={{
                           startAdornment: (
                             <InputAdornment position="start">
                               {/* <Person /> */}

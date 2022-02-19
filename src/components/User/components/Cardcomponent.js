@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate  } from "react-router-dom";
-import { useAuth } from  '../../contexts/AuthContext'
-import '../styles/cardcomponent.css'
-import Articles from '../layouts/Skeleton'
+import { useAuth } from  '../../../contexts/AuthContext'
+import '../../styles/cardcomponent.css'
+import Articles from '../../layouts/Skeleton'
 
 function Cardcomponent() {
   const [posts, setPosts] = useState([]);

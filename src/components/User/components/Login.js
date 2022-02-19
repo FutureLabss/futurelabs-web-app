@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../../contexts/AuthContext";
+import { useAuth } from "../../../contexts/AuthContext";
 import { TextField,Card,CardContent, Button,Typography, Container, IconButton, InputAdornment, Grid, Stack, Box,  Alert, CircularProgress } from "@mui/material";
 import { Close, VisibilityOff, Visibility } from "@mui/icons-material";
 
@@ -20,7 +20,7 @@ function Login() {
           setLoading(true);
           // console.log(emailRef.current.value, passwordRef.current.value)
           await login(emailRef.current.value, passwordRef.current.value);
-          history("/create");
+          history("user");
         } catch (e) {
           setError(e.message)
         }

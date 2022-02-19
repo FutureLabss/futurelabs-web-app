@@ -188,7 +188,7 @@ export default function PersistentDrawerRight() {
           <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
           <Link to="/signin" className={classes.link}>Login</Link>
           <Link to="/signup" className={classes.link}>Signup</Link>
-          <Link to="/create" className={classes.link}>Write</Link>
+          <Link to="/user" className={classes.link}>Dashboard</Link>
         </Drawer>
      </div>
     );

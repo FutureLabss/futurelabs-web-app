@@ -12,7 +12,7 @@ import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 import { Nav } from 'react-bootstrap'
 import Cardcomponent from './Cardcomponent';
-
+import Footer from '../../layouts/Footer'
 
 
 
@@ -130,8 +130,8 @@ export default function PersistentDrawerRight() {
   };
  
   return (
+    <>
     <div className={classes.root}>
-    
       <CssBaseline />
       <main
         className={clsx(classes.content, {
@@ -171,5 +171,7 @@ export default function PersistentDrawerRight() {
         <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
       </Drawer>  
     </div>
+    <Footer />
+    </>
   );
 }

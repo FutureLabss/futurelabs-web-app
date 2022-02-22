@@ -21,7 +21,7 @@ return (
         <video autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
-              src="https://res.cloudinary.com/not-set/video/upload/v1643984600/Rude_Ui_animation_co2vvu.mp4" type="video/mp4" 
+              src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 
             /> 
             
           
@@ -115,6 +115,11 @@ return (
 
     </section>
     {/* Section-One ends here */}
+
+
+
+   
+   
 
 
 

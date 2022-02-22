@@ -1,42 +1,42 @@
-import {Typography, Box, Grid, Avatar, Button, Stack, AvatarGroup,  } from "@mui/material";
-import DeleteIcon from "@mui/icons-material/Delete";
-import EditIcon from '@mui/icons-material/Edit';
+import {Typography, Box, Grid, Avatar, Stack, AvatarGroup,  } from "@mui/material";
+// import DeleteIcon from "@mui/icons-material/Delete";
+// import EditIcon from '@mui/icons-material/Edit';
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { SERVER_URL } from "../../../api/config"
-import { useAuth } from "../../../contexts/AuthContext"
+// import { useAuth } from "../../../contexts/AuthContext"
 import { icons } from '../../assets'
 import DOMPurify from 'dompurify'
 import '../../styles/article.css'
 import Footer from '../../layouts/Footer'
 
 export default function Singlepost(props) {
-  const history = useNavigate();
+  // const history = useNavigate();
 
-  const { currentUser } = useAuth()
+  // const { currentUser } = useAuth()
 
   const { id } = useParams();
 
   const [post, setPost] = useState({});
   const [name, setName] = useState({});
-  const [display, setDisplay] = useState(false)
+  // const [display, setDisplay] = useState(false)
 
-  async function handleDelete(id, e) {
-    console.log(id);
-    try {
-      axios
-        .delete(`https://futurelabs-blog.herokuapp.com/${id}`)
-        .then(() => console.log("blog deleted"))
-        .catch((err) => {
-          console.log(err);
-        });
-      history("/");
-    } catch (e) {
-      console.log(e.message);
-    }
-  }
+  // async function handleDelete(id, e) {
+  //   console.log(id);
+  //   try {
+  //     axios
+  //       .delete(`https://futurelabs-blog.herokuapp.com/${id}`)
+  //       .then(() => console.log("blog deleted"))
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
+  //     history("/");
+  //   } catch (e) {
+  //     console.log(e.message);
+  //   }
+  // }
 
   const createMarkup = (html) => {
     return {
@@ -57,11 +57,11 @@ export default function Singlepost(props) {
       });
   }, [id]);
 
-  useEffect(() => {
-    if(currentUser.id === name._id){
-      setDisplay(true)
-    }
-  },[currentUser.id, name._id])
+  // useEffect(() => {
+  //   if(currentUser.id === name._id){
+  //     setDisplay(true)
+  //   }
+  // },[currentUser.id, name._id])
 
   return (
     <>
@@ -98,7 +98,7 @@ export default function Singlepost(props) {
         </Stack>
       </Grid>
       <Grid className="text-center" item xs={12}>
-        {
+        {/* {
           display && (
           <>
             <Stack sx={{ width: "90%", display: "block", textAlign: "right" }}>
@@ -109,7 +109,7 @@ export default function Singlepost(props) {
             </Stack>
           </>
           )
-        }
+        } */}
         <Stack sx={{ display: "inline-block", textAlign: 'center', width: '68%', marginTop: '.5rem'}}>
           <img
             className="singlepost__cover-image"

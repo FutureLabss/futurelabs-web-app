@@ -20,7 +20,7 @@ function Login() {
           setLoading(true);
           // console.log(emailRef.current.value, passwordRef.current.value)
           await login(emailRef.current.value, passwordRef.current.value);
-          history("user");
+          history("/user");
         } catch (e) {
           setError(e.message)
         }

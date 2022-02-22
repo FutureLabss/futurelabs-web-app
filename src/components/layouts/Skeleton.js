@@ -9,7 +9,8 @@ import { SERVER_URL } from '../../api/config'
 
 
 export default function Media(props) {
-  const { loading , posts, page, setPage, handleClick, pages } = props;
+  const { loading , posts, page, setPage,  pages } = props;
+  // handleClick,
   // console.log("posts => ",loading)
   const history = useNavigate()
 
@@ -114,7 +115,7 @@ const classes = useStyles()
                 </Typography>
                 <Typography variant="body2" sx={{ mt: 3, textAlign: 'center', cursor: 'pointer' }} onClick={()=> {
                   history(`/singlepost/${item._id}`)
-                  handleClick()
+                  // handleClick()
                 }} className="raleway__font">
                   Read more &rarr; 
                 </Typography>

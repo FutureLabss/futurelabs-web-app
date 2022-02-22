@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -13,7 +13,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-// import { useAuth } from './contexts/AuthContext'
+import { useAuth } from '../../contexts/AuthContext'
 
 const drawerWidth = 240;
 
@@ -125,7 +125,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function PersistentDrawerRight() {
-    // const { currentUser } = useAuth();
+    const { currentUser } = useAuth();
+    const [display, setDisplay] = useState(false)
     const classes = useStyles();
     const theme = useTheme();
 
@@ -139,6 +140,15 @@ export default function PersistentDrawerRight() {
     const handleDrawerClose = () => {
       setOpen(false);
     };
+
+    useEffect(() => {
+      if(currentUser === null){
+        setDisplay(false)
+      }else {
+        setDisplay(true)
+      }
+    },[currentUser])
+
     // const handleDrawerToggle = () => {
       // setMobileOpen(!mobileOpen);
     // };
@@ -187,8 +197,8 @@ export default function PersistentDrawerRight() {
           <Divider />
           <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
           <Link to="/signin" className={classes.link}>Login</Link>
-          <Link to="/signup" className={classes.link}>Signup</Link>
-          <Link to="/user" className={classes.link}>Dashboard</Link>
+          {/* <Link to="/signup" className={classes.link}>Signup</Link> */}
+          {display && (<Link to="/user" className={classes.link}>Dashboard</Link>)}
         </Drawer>
      </div>
     );

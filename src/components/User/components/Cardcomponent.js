@@ -21,7 +21,16 @@ function Cardcomponent() {
     blogManager.getAll(page)
     .then(data => {
       const {count, limit } = data.pagination
-      setPagination(count / limit)
+      let pages;
+      let pageCount = count / limit
+      
+      if(pageCount <= 0){
+        pages = 1;
+      } else {
+        pages = pageCount
+      }
+
+      setPagination(pages)
 
       setPosts(data.data);
     })

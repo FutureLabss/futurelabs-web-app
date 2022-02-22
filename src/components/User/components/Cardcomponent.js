@@ -1,27 +1,35 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { useNavigate  } from "react-router-dom";
 import { useAuth } from  '../../../contexts/AuthContext'
 import '../../styles/cardcomponent.css'
 import Articles from '../../layouts/Skeleton'
+import { BlogManager } from '../../../services/blog'
+
+const blogManager = new BlogManager()
 
 function Cardcomponent() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true)
+  const [pagination, setPagination] = useState(undefined)
+  const [page, setPage] = useState(1)
   const { currentUser } = useAuth()
   const history = useNavigate()
  
   useEffect(() => {
-    axios
-      .get("")
-      .then((res) => {
-        setPosts(res.data.articles.data);
-        setLoading(false)
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    }, []);
+
+
+    blogManager.getAll(page)
+    .then(data => {
+      console.log(data)
+      const {count, limit } = data.pagination
+      setPagination(count / limit)
+
+      setPosts(data.data);
+    })
+    .finally(() => {
+      setLoading(false)
+    })    
+  }, [page]);
 
     const handleClick = () => {
       if(!currentUser){
@@ -30,7 +38,7 @@ function Cardcomponent() {
     }
 
   return (
-    <Articles posts={posts} handleClick={handleClick} loading={loading}/>
+    <Articles posts={posts} page={page} setPage={setPage} pages={pagination} handleClick={handleClick} loading={loading}/>
   );
 }
 

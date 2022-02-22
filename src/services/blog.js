@@ -1,4 +1,4 @@
-import { createBlogAPI } from '../api/blog'
+import { createBlogAPI, getBlogAPI } from '../api/blog'
 import { parseResponse, parseFormData } from './mixin'
 
 class BlogManager {
@@ -10,7 +10,10 @@ class BlogManager {
         return parseResponse(response)
     }
 
-    
+    getAll = async (data) => {
+        const response = await getBlogAPI(data)
+        return parseResponse(response)
+    }
 }
 
 export { BlogManager }

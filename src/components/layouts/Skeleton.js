@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Grid,Stack, Pagination, Typography, Skeleton, Card, CardContent } from '@mui/material';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
@@ -9,30 +9,36 @@ import { SERVER_URL } from '../../api/config'
 
 
 export default function Media(props) {
-  const { loading , posts, handleClick } = props;
-    console.log("posts => ",loading)
+  const { loading , posts, page, setPage, handleClick, pages } = props;
+  // console.log("posts => ",loading)
   const history = useNavigate()
 
+  // const [page, setPage] = useState(1)
 
-  const [colorFavourite, setColorFavourite] = useState(false)
-  const [colorBookmark, setColorBookmark] = useState(false)
 
-  const handleColor = (value) => {
-    console.log(value)
-    if(value === "favourite"){
-      setColorFavourite(!colorFavourite)
-    }
-    if(value === "bookmark"){
-      setColorBookmark(!colorBookmark)
-    }
-  }
-  let colorValue;
-  if(colorFavourite){
-    colorValue = 'red'
-  }
-  let bookmarkColorValue;
-  if(colorBookmark){
-    bookmarkColorValue= 'blue'
+  // const [colorFavourite, setColorFavourite] = useState(false)
+  // const [colorBookmark, setColorBookmark] = useState(false)
+
+  // const handleColor = (value) => {
+  //   console.log(value)
+  //   if(value === "favourite"){
+  //     setColorFavourite(!colorFavourite)
+  //   }
+  //   if(value === "bookmark"){
+  //     setColorBookmark(!colorBookmark)
+  //   }
+  // }
+  // let colorValue;
+  // if(colorFavourite){
+  //   colorValue = 'red'
+  // }
+  // let bookmarkColorValue;
+  // if(colorBookmark){
+  //   bookmarkColorValue= 'blue'
+  // }
+  const handleChangePage = (event, value) => {
+    console.log("page no. ===>", value)
+    setPage(value)
   }
 
   const useStyles = makeStyles((theme) => ({
@@ -68,6 +74,19 @@ const classes = useStyles()
                   {new Date(item.createdAt).toLocaleDateString('en-us', { year: "numeric", day: "numeric",month: "short"})}
                 </Typography>
                 <Grid direction="row" spacing={2} container sx={{width: '10rem', cursor: 'pointer'}}>
+                  <Grid item >
+                    <BookmarkBorderOutlinedIcon style={{marginTop:'.3rem'}}/>
+                  </Grid>
+                  <Grid item style={{ paddingTop: 0 }}>
+                    <p className="count">0</p>
+                    <FavoriteBorderOutlinedIcon style={{margin: 0, }} />
+                  </Grid>
+                  <Grid item style={{ paddingTop: 0 }}>
+                    <p className="count">0</p>
+                    <img className="comment__icon" src={icons.comment} alt="comment icon" />
+                  </Grid>
+                </Grid>
+                {/* <Grid direction="row" spacing={2} container sx={{width: '10rem', cursor: 'pointer'}}>
                   <Grid item onClick={() => handleColor('bookmark')}>
                     <BookmarkBorderOutlinedIcon style={{fill: bookmarkColorValue,marginTop:'.3rem'}}/>
                   </Grid>
@@ -79,7 +98,7 @@ const classes = useStyles()
                     <p className="count">0</p>
                     <img className="comment__icon" src={icons.comment} alt="comment icon" />
                   </Grid>
-                </Grid>
+                </Grid> */}
               </Stack>
 
                 <Typography sx={{ fontSize: 14 }} color="white" gutterBottom className="roboto__font">
@@ -108,7 +127,7 @@ const classes = useStyles()
       ))}
     </Grid>
     <Stack sx={{display: 'flex', alignItems: 'center'}}>
-      <Pagination  count={10} shape="rounded" />
+      <Pagination page={page} onChange={handleChangePage} count={pages} shape="rounded" />
     </Stack>
   </>
   );

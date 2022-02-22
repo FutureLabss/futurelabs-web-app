@@ -15,3 +15,15 @@ export const createBlogAPI = async (data) => {
         return parseError(error)
     }
 }
+
+export const getBlogAPI = async (data) => {
+    try{
+        const response = await axios.get(`${URL}?page=${data}`)
+        if(response.status === 200){
+            return response.data.articles
+        }
+        return parseError(response)
+    } catch(error){
+        return parseError(error)
+    }
+}

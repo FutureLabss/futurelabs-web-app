@@ -5,6 +5,7 @@ import Signup from '../components/User/components/Signup'
 import UpdateArticle from '../components/User/components/UpdateArticle'
 import UserDashboard from '../components/User/pages/Drawer'
 // import {userRoutes} from './UserRoutes'
+// import PrivateRoute from './PrivateRoute'
 
 
 const pageRoutes = [

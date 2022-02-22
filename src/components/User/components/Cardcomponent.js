@@ -15,7 +15,7 @@ function Cardcomponent() {
     axios
       .get("")
       .then((res) => {
-        setPosts(res.data.articles);
+        setPosts(res.data.articles.data);
         setLoading(false)
       })
       .catch((err) => {

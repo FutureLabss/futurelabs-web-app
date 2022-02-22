@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Grid,Stack, Typography, Skeleton, Card, CardContent } from '@mui/material';
+import {Grid,Stack, Pagination, Typography, Skeleton, Card, CardContent } from '@mui/material';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import { makeStyles } from "@material-ui/core/styles";
@@ -46,6 +46,7 @@ export default function Media(props) {
 const classes = useStyles()
 
   return (
+  <>
     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
       {(loading ? Array.from(new Array(8)) : posts).map((item, index) => (
         <Grid key={index} item xs={12} sm={6}>
@@ -106,5 +107,9 @@ const classes = useStyles()
         </Grid>
       ))}
     </Grid>
+    <Stack sx={{display: 'flex', alignItems: 'center'}}>
+      <Pagination  count={10} shape="rounded" />
+    </Stack>
+  </>
   );
 }

@@ -22,7 +22,7 @@ function Cardcomponent() {
     .then(data => {
       const {count, limit } = data.pagination
       let pages;
-      let pageCount = count / limit
+      let pageCount = Math.floor(count / limit)
       
       if(pageCount <= 0){
         pages = 1;

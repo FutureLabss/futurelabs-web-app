@@ -300,7 +300,7 @@ return (
     <video autoPlay muted loop className="overall">
       {/* <Transformation endOffset="30" videoCodec="auto" /> */}
       <source 
-        src="https://res.cloudinary.com/not-set/video/upload/v1644591166/Comp_1_2_1_ezhho4.mp4" type="video/mp4" 
+        src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 
       /> 
         
       

@@ -138,7 +138,7 @@ export default function Singlepost(props) {
           </AvatarGroup> 
         <Stack sx={{textAlign: 'left'}}>
           <Typography style={{fontWeight: 'bold'}}> {name.username}</Typography>
-          <Typography>occupation</Typography>
+          <Typography>CEO & Lead Strategist Futurelabs</Typography>
           <Typography>{new Date(post.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}</Typography>
         </Stack>
         </Grid>

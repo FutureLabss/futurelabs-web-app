@@ -7,43 +7,46 @@ video{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    /* position: fixed; */
-    /* top: 0;
-    left: 0; */
-}
-
-.upon {
-    z-index: -1 !important;
-}
-
-.onftop {
-    z-index: 1 !important;
-    position: relative;
-    /* left: 5%; */
-    bottom: 150px;
-
-    /* top: 50%; */
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    /* z-index: -1; */
     
+
 }
+
+.overall {
+    
+    
+   filter: brightness(50%);
+   /* z-index: -10; */
+       
+}
+
 
 
 
 .parent-box1 {
     width: 100vw;
-    z-index: 1 !important;
+    /* z-index: 1000; */
     position: absolute;
     bottom: 1%;
   
     /* top: 500%; */
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+}
+
+.video-container {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    /* opacity: 100%; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
 }
 
 .parent-box2 {
     width: 100vw;
-    z-index: 1 !important;
+    /* z-index: -1 !important; */
     position: absolute;
    
     bottom: -101%;
@@ -69,7 +72,14 @@ video{
 
 .text-box {
     width: 75vw;
+    color: white;
+    /* z-index: 1000 !important; */
+    filter: brightness(100%);
 }
+
+
+
+
 
 
 
@@ -174,7 +184,7 @@ video{
 }
 
 .websites-image4 {
-    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635169430/IMG_0133_1_i0aqab.png');
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1644424536/Rectangle_72_l1d1mj.png');
 }
 
 .websites-image5 {

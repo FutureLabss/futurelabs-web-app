@@ -13,27 +13,16 @@ video{
     left: 0; */
 }
 
-.upon {
-    z-index: -1 !important;
-}
-
-.onftop {
-    z-index: 1 !important;
-    position: relative;
-    /* left: 5%; */
-    bottom: 150px;
-
-    /* top: 50%; */
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    
+.video-container {
+    height: 100vh;
+   
 }
 
 
 
 .parent-box1 {
     width: 100vw;
-    z-index: 1 !important;
+    /* z-index: 1 !important; */
     position: absolute;
     bottom: 1%;
   
@@ -44,7 +33,7 @@ video{
 
 .parent-box2 {
     width: 100vw;
-    z-index: 1 !important;
+    /* z-index: 1 !important; */
     position: absolute;
    
     bottom: -101%;
@@ -53,6 +42,7 @@ video{
 
     
 }
+
 
 .mute-box {
     width: 25vw;
@@ -81,7 +71,7 @@ video{
 } */
 
 .trial {
-    z-index: 1 !important;
+    /* z-index: 1 !important; */
     position: absolute;
 }
 

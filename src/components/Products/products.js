@@ -17,11 +17,11 @@ return (
 
 
     {/* Section-One begins here */}
-    <div className="video-container .text-danger">
-        <video autoPlay muted loop className="">
+    <div className="video-container .text-danger no-pad">
+        <video autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
-              src="https://res.cloudinary.com/not-set/video/upload/v1640267570/around_main_comp_d1x979.mp4" type="video/mp4" 
+              src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 
             /> 
             
           
@@ -115,6 +115,11 @@ return (
 
     </section>
     {/* Section-One ends here */}
+
+
+
+   
+   
 
 
 

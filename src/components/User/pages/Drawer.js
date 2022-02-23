@@ -26,7 +26,7 @@ function ResponsiveDrawer(props) {
   const { window } = props;
   let element = useRoutes(userRoutes)
     
-  console.log("location ===> ", location)
+  // console.log("location ===> ", location)
   const { currentUser } = useAuth()
 
   const [mobileOpen, setMobileOpen] = useState(false)

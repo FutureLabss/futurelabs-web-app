@@ -30,10 +30,10 @@ export default function UpdateArticle() {
             console.log(err)
         })
   },[id])
-console.log(post.title)
+// console.log(post.title)
   const handleUpdate = (e) => {
     e.preventDefault()
-    console.log(values)
+    // console.log(values)
     axios.put(`https://futurelabs-blog.herokuapp.com/${id}`, values)
   }
   return (

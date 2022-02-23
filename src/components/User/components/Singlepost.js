@@ -48,7 +48,7 @@ export default function Singlepost(props) {
     axios
       .get(`${SERVER_URL}/${id}`)
       .then((res) => {
-        console.log("db data ==> ",res.data)
+        // console.log("db data ==> ",res.data)
         setName(res.data.article.user);
         setPost(res.data.article);
       })

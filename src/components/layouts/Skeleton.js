@@ -39,7 +39,7 @@ export default function Media(props) {
   // }
   
   const handleChangePage = (event, value) => {
-    console.log("page no. ===>", value)
+    // console.log("page no. ===>", value)
     setPage(value)
   }
 

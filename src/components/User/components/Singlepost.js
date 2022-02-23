@@ -118,16 +118,13 @@ export default function Singlepost(props) {
           />
         </Stack>
         <Grid container-fluid item xs={12} mt={5} mb={5} sx={{display: "flex", justifyContent: 'center'}}>
-          <Box className="singlepost__content-area" sx={{ textAlign: "justify", width: '70%', fontSize: '1.8rem' }}>
+          <Box className="singlepost__content-area" sx={{ textAlign: "justify", width: '70%', }}>
             <div dangerouslySetInnerHTML={createMarkup(post.content)}></div>
           </Box>
         </Grid>
         <Grid display="flex" direction="row" justifyContent="space-between" marginBottom="10rem" marginTop="5rem">
         <Grid item
-          sx={{
-            display: 'flex',
-            mx: 20,
-          }}
+          sx={{display: 'flex', }}
         >
         <AvatarGroup max={4}>
             <Avatar
@@ -136,16 +133,16 @@ export default function Singlepost(props) {
               src={`${SERVER_URL}${post.image}`}
             />
           </AvatarGroup> 
-        <Stack sx={{textAlign: 'left'}}>
+        <Stack sx={{textAlign: 'left', width: 'max-content'}}>
           <Typography style={{fontWeight: 'bold'}}> {name.username}</Typography>
           <Typography>CEO & Lead Strategist Futurelabs</Typography>
           <Typography>{new Date(post.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}</Typography>
         </Stack>
         </Grid>
-        <Grid item columnSpacing={2} sx={{mx: 20, cursor: 'pointer'}}>
-          <img style={{margin: '0 .3rem'}} src={icons.twitter} alt="twitter icon" />
-          <img style={{margin: '0 .3rem'}} src={icons.facebook} alt="facebook icon" />
-          <img style={{margin: '0 .3rem'}} src={icons.linkedin} alt="linkedin icon" />
+        <Grid item columnSpacing={2} sx={{ margin: {md: '0 6rem'}, cursor: 'pointer'}} >
+          <img style={{margin: '.2rem .3rem'}} src={icons.twitter} alt="twitter icon" />
+          <img style={{margin: '.2rem .3rem'}} src={icons.facebook} alt="facebook icon" />
+          <img style={{margin: '.2rem .3rem'}} src={icons.linkedin} alt="linkedin icon" />
         </Grid>
         </Grid>
       </Grid>

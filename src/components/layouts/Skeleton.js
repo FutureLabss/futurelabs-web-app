@@ -37,6 +37,7 @@ export default function Media(props) {
   // if(colorBookmark){
   //   bookmarkColorValue= 'blue'
   // }
+  
   const handleChangePage = (event, value) => {
     console.log("page no. ===>", value)
     setPage(value)
@@ -63,8 +64,9 @@ const classes = useStyles()
 
           {item ? (
             <Card sx={{ minWidth: 275, my: 3, color: 'white', backgroundImage: `url("${SERVER_URL}${item.image}")`  }} className={classes.card} 
+            
             >
-              <CardContent sx={{height: '300px',  backgroundColor: 'rgba(17, 16, 16, 0.6)'}} >
+              <CardContent sx={{height: '300px',  backgroundColor: 'rgba(17, 16, 16, 0.6)'}}>
               <Stack sx={{ mb: 6, display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                 <Typography
                   sx={{ fontSize: 14}}
@@ -113,12 +115,17 @@ const classes = useStyles()
                 <Typography variant="p" component="div">
                   {/* {post.content} */}
                 </Typography>
-                <Typography variant="body2" sx={{ mt: 3, textAlign: 'center', cursor: 'pointer' }} onClick={()=> {
-                  history(`/singlepost/${item._id}`)
-                  // handleClick()
-                }} className="raleway__font">
-                  Read more &rarr; 
-                </Typography>
+                
+                  <Typography variant="body2" sx={{ mt: 3,cursor: 'pointer', width:{md: '100%'}, textAlign:{md:  'center'} }} 
+                  onClick={()=> {
+                    history(`/singlepost/${item._id}`)
+                    // handleClick()
+                  }} 
+                  
+                  className="raleway__font" >
+                    Read more &rarr; 
+                  </Typography>
+                
               </CardContent>
             </Card>
           ) : (

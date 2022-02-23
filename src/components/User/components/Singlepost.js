@@ -69,7 +69,7 @@ export default function Singlepost(props) {
         }}
       />
       <Grid container direction="row" justifyContent="center" alignItems="center" md={{ p: 10 }} sx={{marginTop: '4rem'}}>
-        <Grid item xs={6} sx={{ textAlign: "center" }} md={2}>
+        {/* <Grid item xs={6} sx={{ textAlign: "center" }} md={2}>
           <h5>Technology</h5>
         </Grid>
         <Grid item xs={6} sx={{ textAlign: "center" }} md={2}>
@@ -83,7 +83,7 @@ export default function Singlepost(props) {
         </Grid>
         <Grid item xs={4} sx={{ textAlign: "center" }} md={2}>
           <h5> Business</h5>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} sx={{ textAlign: "center" }} md={12} mt={5}>
           <h1> {post.title} </h1>
         </Grid>
@@ -124,7 +124,7 @@ export default function Singlepost(props) {
         </Grid>
         <Grid display="flex" direction="row" justifyContent="space-between" marginBottom="10rem" marginTop="5rem">
         <Grid item
-          sx={{display: 'flex', }}
+          sx={{display: 'flex', margin: {md: '0 8rem'} }}
         >
         <AvatarGroup max={4}>
             <Avatar
@@ -140,9 +140,9 @@ export default function Singlepost(props) {
         </Stack>
         </Grid>
         <Grid item columnSpacing={2} sx={{ margin: {md: '0 6rem'}, cursor: 'pointer'}} >
-          <img style={{margin: '.2rem .3rem'}} src={icons.twitter} alt="twitter icon" />
-          <img style={{margin: '.2rem .3rem'}} src={icons.facebook} alt="facebook icon" />
-          <img style={{margin: '.2rem .3rem'}} src={icons.linkedin} alt="linkedin icon" />
+          <img style={{margin: '.2rem .4rem'}} src={icons.twitter} alt="twitter icon" />
+          <img style={{margin: '.2rem .4rem'}} src={icons.facebook} alt="facebook icon" />
+          <img style={{margin: '.2rem .4rem'}} src={icons.linkedin} alt="linkedin icon" />
         </Grid>
         </Grid>
       </Grid>

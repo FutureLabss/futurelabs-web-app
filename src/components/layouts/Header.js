@@ -165,7 +165,7 @@ export default function PersistentDrawerRight() {
         >
           <Toolbar>
             <Typography variant="h6" noWrap className={classes.title}>
-              FutureLabs
+            <Link to="/" style={{textDecoration: 'none', color: 'white'}}>FutureLabs</Link>  
             </Typography>
             <IconButton
               color="inherit"

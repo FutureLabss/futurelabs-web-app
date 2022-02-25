@@ -1,13 +1,30 @@
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 import "./home.css"
 import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
 
 
-
+const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
 
 
 
 export default function Home() {
+const [posts, setPosts] = useState([])
+
+useEffect(() => {
+  axios.get(`${SERVER_URL}/?limit=3`)
+  .then(data => {
+    // console.log(data.data.articles)
+    console.log("image url ==>", data.data.articles.data[0].image)
+    setPosts(data.data.articles.data)
+    
+  })
+  .catch(error => console.log(error))
+},[])
+
+console.log("post ==>", posts)
+
 return (
       
 <div>
@@ -357,72 +374,34 @@ return (
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
       <h1 className="contact mb-5 text-center">Latest Stories</h1>
+
+      {
+        posts.map(post => {
+        return(
+        <div className="col-sm-4 py-sm-4 py-4">
+          <div className="px-2 Thumbnail-parent .bg-danger">
+            <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded" style={{backgroundImage: `url("${post.image}")`}}>
+              {/* photo here */}
+            </div>
+            <div>
+              <h4 className="mt-2">{post.title}</h4>
+              <p>
+              {new Date(post.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}
+                <hr className="under bg-warning rounded " />
+              </p>
+              <p>
+                {post.description}
+              </p>
+            </div>
+          </div>
+        </div>
+        )
+      })}
      
-      <div className="col-sm-4 py-sm-4 py-4">
-        <div className="px-2 Thumbnail-parent .bg-danger">
-          <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded">
-            {/* photo here */}
-          </div>
-          <div>
-            <h4 className="mt-2">The Coca-cola Strategy</h4>
-            <p>
-              23 Sept, 2021
-              <hr className="under bg-warning rounded " />
-            </p>
-            <p>
-              Coca-cola focuses on improving the community
-              relationships and increasing thhier happiness,that
-              positively reflects on thier public image, resulting
-              in customer and revenue rise.
-            </p>
-          </div>
-        </div>
-      </div>
+      
 
 
-      <div className="col-sm-4 py-sm-4 py-4">
-        <div className="px-2 Thumbnail-parent .bg-danger">
-          <div className="Thumbnail Thumbnail-image2 .bg-primary py-1 rounded">
-            {/* photo here */}
-          </div>
-          <div>
-            <h4 className="mt-2">The Coca-cola Strategy</h4>
-            <p>
-              23 Sept, 2021
-              <hr className="under .bg-warning rounded " />
-            </p>
-            <p>
-              Coca-cola focuses on improving the community
-              relationships and increasing thhier happiness,that
-              positively reflects on thier public image, resulting
-              in customer and revenue rise.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="col-sm-4 py-sm-4 py-4">
-        <div className="px-2 Thumbnail-parent .bg-danger">
-          <div className="Thumbnail Thumbnail-image3 bg-primary py-1 rounded">
-            {/* photo here */}
-          </div>
-          <div>
-            <h4 className="mt-2">The Coca-cola Strategy</h4>
-            <p>
-              23 Sept, 2021
-              <hr className="under .bg-warning rounded " />
-            </p>
-            <p>
-              Coca-cola focuses on improving the community
-              relationships and increasing thhier happiness,that
-              positively reflects on thier public image, resulting
-              in customer and revenue rise.
-            </p>
-          </div>
-        </div>
-      </div>
-     
+          
 
       </div>
 

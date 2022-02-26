@@ -5,7 +5,6 @@ import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlin
 import { makeStyles } from "@material-ui/core/styles";
 import { icons } from '../assets'
 import { useNavigate  } from "react-router-dom";
-import { SERVER_URL } from '../../api/config'
 
 
 export default function Media(props) {
@@ -63,7 +62,7 @@ const classes = useStyles()
         )}
 
           {item ? (
-            <Card sx={{ minWidth: 275, my: 3, color: 'white', backgroundImage: `url("${SERVER_URL}${item.image}")`  }} className={classes.card} 
+            <Card sx={{ minWidth: 275, my: 3, color: 'white', backgroundImage: `url("${item.image}")`  }} className={classes.card} 
             
             >
               <CardContent sx={{height: '300px',  backgroundColor: 'rgba(17, 16, 16, 0.6)'}}>

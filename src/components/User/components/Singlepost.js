@@ -91,7 +91,7 @@ export default function Singlepost(props) {
       <Grid item xs={12} p={1} px={{ md: 25 }}>
         <Stack direction="row" justifyContent="space-between " mb={5}>
           <AvatarGroup max={4}>
-            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src={`${SERVER_URL}${post.image}`}
+            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src={`${post.image}`}
             />
             <h5 style={{paddingTop: '.8rem'}}> {name.username}</h5>
           </AvatarGroup>          

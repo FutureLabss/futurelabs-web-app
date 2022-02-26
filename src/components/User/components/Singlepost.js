@@ -1,4 +1,4 @@
-import {Typography, Box, Grid, Avatar, Stack, AvatarGroup,  } from "@mui/material";
+import {Typography, Box, Grid, Avatar, Stack, AvatarGroup, Skeleton  } from "@mui/material";
 // import DeleteIcon from "@mui/icons-material/Delete";
 // import EditIcon from '@mui/icons-material/Edit';
 import axios from "axios";
@@ -21,6 +21,7 @@ export default function Singlepost(props) {
 
   const [post, setPost] = useState({});
   const [name, setName] = useState({});
+  const [loading, setLoading] = useState(false);
   // const [display, setDisplay] = useState(false)
 
   // async function handleDelete(id, e) {
@@ -38,6 +39,8 @@ export default function Singlepost(props) {
   //   }
   // }
 
+  const data = [{text: 'dummy'},{text: 'dummy'},{text: 'dummy'},{text: 'dummy'}]
+
   const createMarkup = (html) => {
     return {
       __html: DOMPurify.sanitize(html)
@@ -51,6 +54,7 @@ export default function Singlepost(props) {
         // console.log("db data ==> ",res.data)
         setName(res.data.article.user);
         setPost(res.data.article);
+        setLoading(true);
       })
       .catch((err) => {
         console.log(err);
@@ -84,17 +88,20 @@ export default function Singlepost(props) {
         <Grid item xs={4} sx={{ textAlign: "center" }} md={2}>
           <h5> Business</h5>
         </Grid> */}
-        <Grid item xs={12} sx={{ textAlign: "center" }} md={12} mt={5}>
-          <h1> {post.title} </h1>
+        <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }} md={12} mt={5}>
+          {loading ? <h1> {post.title} </h1> : <Skeleton variant="text" width={210} height={40} />}
         </Grid>
       </Grid>
       <Grid item xs={12} p={1} px={{ md: 25 }}>
         <Stack direction="row" justifyContent="space-between " mb={5}>
+        {loading ? (
           <AvatarGroup max={4}>
-            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src={`${post.image}`}
+            <Avatar sx={{ width: 56, height: 56 }} alt="profile picture" src={`${post.image}`}
             />
             <h5 style={{paddingTop: '.8rem'}}> {name.username}</h5>
-          </AvatarGroup>          
+          </AvatarGroup> 
+        ): <Skeleton variant="circular" width={56} height={56} />}
+                   
         </Stack>
       </Grid>
       <Grid className="text-center" item xs={12}>
@@ -111,32 +118,46 @@ export default function Singlepost(props) {
           )
         } */}
         <Stack sx={{ display: "inline-block", textAlign: 'center', width: '68%', marginTop: '.5rem'}}>
+        {loading ? (
           <img
             className="singlepost__cover-image"
             src={`${post.image}`}
             alt=""
           />
+        ): <Skeleton variant="rectangular" animation="wave" width="100%" height="60vh" />}
+          
         </Stack>
         <Grid container-fluid item xs={12} mt={5} mb={5} sx={{display: "flex", justifyContent: 'center'}}>
           <Box className="singlepost__content-area" sx={{ textAlign: "justify", width: '70%', }}>
-            <div dangerouslySetInnerHTML={createMarkup(post.content)}></div>
+            {(loading ? Array.from(new Array(2)) : data).map((item, index) => (
+              <Grid key={index} item xs={12} sm={12}>
+                {item ? <Skeleton  width="100%" /> : ""}
+              </Grid>
+                
+            ))}
+            {loading ? (
+              <div dangerouslySetInnerHTML={createMarkup(post.content)}></div>
+            ): <Skeleton  width="60%" />}
           </Box>
         </Grid>
         <Grid display="flex" direction="row" justifyContent="space-between" marginBottom="10rem" marginTop="5rem">
         <Grid item
           sx={{display: 'flex', margin: {md: '0 8rem'} }}
         >
-        <AvatarGroup max={4}>
-            <Avatar
-              sx={{ width: 56, height: 56 }}
-              alt="Remy Sharp"
-              src={`${post.image}`}
+        {loading ? (
+          <AvatarGroup max={4}>
+            <Avatar sx={{ width: 56, height: 56 }} alt="profile picture" src={`${post.image}`}
             />
           </AvatarGroup> 
+        ): <Skeleton variant="circular" width={56} height={56} />}
         <Stack sx={{textAlign: 'left', width: 'max-content'}}>
-          <Typography style={{fontWeight: 'bold'}}> {name.username}</Typography>
+        {loading ? <Typography style={{fontWeight: 'bold'}}> {name.username}</Typography> : <Skeleton variant="text" width={210} />}
+          
           <Typography>CEO & Lead Strategist Futurelabs</Typography>
+        {loading ? (
           <Typography>{new Date(post.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}</Typography>
+        ) : <Skeleton variant="text" width={210} />}
+          
         </Stack>
         </Grid>
         <Grid item columnSpacing={2} sx={{ margin: {md: '0 6rem'}, cursor: 'pointer'}} >

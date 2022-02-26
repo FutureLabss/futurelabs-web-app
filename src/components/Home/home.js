@@ -16,7 +16,7 @@ useEffect(() => {
   axios.get(`${SERVER_URL}/?limit=3`)
   .then(data => {
     // console.log(data.data.articles)
-    console.log("image url ==>", data.data.articles.data[0].image)
+    // console.log("image url ==>", data.data.articles.data[0].image)
     setPosts(data.data.articles.data)
     
   })

@@ -113,7 +113,7 @@ export default function Singlepost(props) {
         <Stack sx={{ display: "inline-block", textAlign: 'center', width: '68%', marginTop: '.5rem'}}>
           <img
             className="singlepost__cover-image"
-            src={`${SERVER_URL}${post.image}`}
+            src={`${post.image}`}
             alt=""
           />
         </Stack>
@@ -130,7 +130,7 @@ export default function Singlepost(props) {
             <Avatar
               sx={{ width: 56, height: 56 }}
               alt="Remy Sharp"
-              src={`${SERVER_URL}${post.image}`}
+              src={`${post.image}`}
             />
           </AvatarGroup> 
         <Stack sx={{textAlign: 'left', width: 'max-content'}}>

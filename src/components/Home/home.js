@@ -23,7 +23,7 @@ useEffect(() => {
   .catch(error => console.log(error))
 },[])
 
-console.log("post ==>", posts)
+// console.log("post ==>", posts)
 
 return (
       

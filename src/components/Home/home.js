@@ -373,8 +373,8 @@ return (
   {/* THE SECTION BELOW HOLDS THE THUMBNAILS */}
   
   <section>
-    <div className="container-fluid" style={{border: 'solid red'}}>
-      <div className="row px-2 px-sm-3 pt-4" style={{border: 'solid black'}}>
+    <div className="container-fluid">
+      <div className="row px-2 px-sm-3 pt-4">
       <h1 className="contact mb-5 text-center">Latest Stories</h1>
       {(loading ? Array.from(new Array(3)) : posts).map((item, index) => (
         <div className="col-sm-4 py-sm-4 py-4">

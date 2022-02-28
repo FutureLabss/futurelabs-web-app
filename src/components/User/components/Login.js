@@ -83,8 +83,8 @@ function Login() {
                           {loading ? <div className="text-center"> <CircularProgress size={30} /></div> : <Button type="submit" fullWidth disableElevation sx={{backgroundColor: '#FF9000'}} variant="contained">Login</Button>}
 
                           <Stack direction={{ xs: 'column', sm: 'row' }} justifyContent="space-between">
-                            <p className="mem-tag">Not a member? <Link to="/signup">Sign up</Link></p>
-                            <p className="mem-tag"><Link to="/reset">Forgot Password?</Link></p>
+                            {/* <p className="mem-tag">Not a member? <Link to="/signup">Sign up</Link></p>
+                            <p className="mem-tag"><Link to="/reset">Forgot Password?</Link></p> */}
                           </Stack>
                         </Stack>
                         </form>

@@ -3,6 +3,7 @@ import axios from 'axios'
 import "./home.css"
 import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
+import {Skeleton} from '@mui/material';
 
 
 const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
@@ -11,6 +12,7 @@ const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
 
 export default function Home() {
 const [posts, setPosts] = useState([])
+const [loading, setLoading] = useState(true)
 
 useEffect(() => {
   axios.get(`${SERVER_URL}/?limit=3`)
@@ -18,7 +20,7 @@ useEffect(() => {
     // console.log(data.data.articles)
     // console.log("image url ==>", data.data.articles.data[0].image)
     setPosts(data.data.articles.data)
-    
+    setLoading(false)    
   })
   .catch(error => console.log(error))
 },[])
@@ -371,41 +373,43 @@ return (
   {/* THE SECTION BELOW HOLDS THE THUMBNAILS */}
   
   <section>
-    <div className="container-fluid">
-      <div className="row px-2 px-sm-3 pt-4">
+    <div className="container-fluid" style={{border: 'solid red'}}>
+      <div className="row px-2 px-sm-3 pt-4" style={{border: 'solid black'}}>
       <h1 className="contact mb-5 text-center">Latest Stories</h1>
-
-      {
-        posts.map(post => {
-        return(
+      {(loading ? Array.from(new Array(3)) : posts).map((item, index) => (
         <div className="col-sm-4 py-sm-4 py-4">
           <div className="px-2 Thumbnail-parent .bg-danger">
-            <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded" style={{backgroundImage: `url("${post.image}")`}}>
-              {/* photo here */}
-            </div>
-            <div>
-              <h4 className="mt-2">{post.title}</h4>
-              <p>
-              {new Date(post.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}
-                <hr className="under bg-warning rounded " />
+        {
+          item ? (
+            <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded" style={{backgroundImage: `url("${item.image}")`}}></div>
+          ) : <Skeleton variant="rectangular" minWidth={200} height={270}/>
+        }
+        <div>
+        {
+          item ? (
+            <h4 className="mt-2">{item.title}</h4>
+          ) : <Skeleton variant="text" />
+        }
+        {
+          item ? (
+            <p>
+              {new Date(item.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}
+              <hr className="under bg-warning rounded " />
+            </p>
+          ) : <Skeleton variant="text" width={200}/>
+        }
+        {
+          item ? (
+            <p>
+                {item.description}
               </p>
-              <p>
-                {post.description}
-              </p>
-            </div>
-          </div>
+          ) : (<Skeleton />)
+        }
         </div>
-        )
-      })}
-     
-      
-
-
-          
-
+        </div>
+        </div>
+      ))}
       </div>
-
-
     </div>
 
 

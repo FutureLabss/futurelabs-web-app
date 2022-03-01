@@ -4,6 +4,7 @@ import "./home.css"
 import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
 import {Skeleton} from '@mui/material';
+import { Nav } from 'react-bootstrap'
 
 
 const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
@@ -17,15 +18,15 @@ const [loading, setLoading] = useState(true)
 useEffect(() => {
   axios.get(`${SERVER_URL}/?limit=3`)
   .then(data => {
-    // console.log(data.data.articles)
-    // console.log("image url ==>", data.data.articles.data[0].image)
+    console.log(data.data.articles.data)
     setPosts(data.data.articles.data)
     setLoading(false)    
   })
   .catch(error => console.log(error))
 },[])
 
-// console.log("post ==>", posts)
+
+console.log("post ==>", posts)
 
 return (
       
@@ -377,7 +378,8 @@ return (
       <div className="row px-2 px-sm-3 pt-4">
       <h1 className="contact mb-5 text-center">Latest Stories</h1>
       {(loading ? Array.from(new Array(3)) : posts).map((item, index) => (
-        <div className="col-sm-4 py-sm-4 py-4">
+        <div className="col-sm-4 py-sm-4 py-4" >
+        <Nav.Link href={`https://futurelabs-blog.netlify.app/singlepost/${item ? item._id : ""}`} style={{color: 'black'}}>
           <div className="px-2 Thumbnail-parent .bg-danger">
         {
           item ? (
@@ -407,6 +409,7 @@ return (
         }
         </div>
         </div>
+        </Nav.Link>
         </div>
       ))}
       </div>

@@ -1,11 +1,18 @@
+// import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 import "./home.css"
 // import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
-// import React from 'react';
-import React,{Suspense} from 'react';
 
-const Contact = React.lazy(() => import("../layout/contact"));
+import React, {Suspense, useState, useEffect} from 'react';
+import {Skeleton} from '@mui/material';
+import { Nav } from 'react-bootstrap';
 
+
+
+const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
+
+const Contact = React.lazy(() => import('../layout/contact'));
 
 
 // import ScrollableContainer from "react-full-page-scroll";
@@ -18,9 +25,25 @@ const Contact = React.lazy(() => import("../layout/contact"));
 
 
 export default function Home() {
+const [posts, setPosts] = useState([])
+const [loading, setLoading] = useState(true)
+
+useEffect(() => {
+  axios.get(`${SERVER_URL}/?limit=3`)
+  .then(data => {
+    console.log(data.data.articles.data)
+    setPosts(data.data.articles.data)
+    setLoading(false)    
+  })
+  .catch(error => console.log(error))
+},[])
+
+
+console.log("post ==>", posts)
+
 return (
       
-<div className="full-body">
+<div>
 
 <ToolBar />
   {/* *********************************************************************** */}
@@ -401,76 +424,42 @@ return (
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
       <h1 className="contact mb-5 text-center">Latest Stories</h1>
-     
-      <div className="col-sm-4 py-sm-4 py-4">
-        <div className="px-2 Thumbnail-parent .bg-danger">
-          <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded">
-            {/* photo here */}
-          </div>
-          <div>
-            <h4 className="mt-2">The Coca-cola Strategy</h4>
+      {(loading ? Array.from(new Array(3)) : posts).map((item, index) => (
+        <div className="col-sm-4 py-sm-4 py-4" >
+        <Nav.Link href={`https://futurelabs-blog.netlify.app/singlepost/${item ? item._id : ""}`} style={{color: 'black'}}>
+          <div className="px-2 Thumbnail-parent .bg-danger">
+        {
+          item ? (
+            <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded" style={{backgroundImage: `url("${item.image}")`}}></div>
+          ) : <Skeleton variant="rectangular" minWidth={200} height={270}/>
+        }
+        <div>
+        {
+          item ? (
+            <h4 className="mt-2">{item.title}</h4>
+          ) : <Skeleton variant="text" />
+        }
+        {
+          item ? (
             <p>
-              23 Sept, 2021
+              {new Date(item.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}
               <hr className="under bg-warning rounded " />
             </p>
+          ) : <Skeleton variant="text" width={200}/>
+        }
+        {
+          item ? (
             <p>
-              Coca-cola focuses on improving the community
-              relationships and increasing thhier happiness,that
-              positively reflects on thier public image, resulting
-              in customer and revenue rise.
-            </p>
-          </div>
+                {item.description}
+              </p>
+          ) : (<Skeleton />)
+        }
         </div>
-      </div>
-
-
-      <div className="col-sm-4 py-sm-4 py-4">
-        <div className="px-2 Thumbnail-parent .bg-danger">
-          <div className="Thumbnail Thumbnail-image2 .bg-primary py-1 rounded">
-            {/* photo here */}
-          </div>
-          <div>
-            <h4 className="mt-2">The Coca-cola Strategy</h4>
-            <p>
-              23 Sept, 2021
-              <hr className="under .bg-warning rounded " />
-            </p>
-            <p>
-              Coca-cola focuses on improving the community
-              relationships and increasing thhier happiness,that
-              positively reflects on thier public image, resulting
-              in customer and revenue rise.
-            </p>
-          </div>
         </div>
-      </div>
-
-
-      <div className="col-sm-4 py-sm-4 py-4">
-        <div className="px-2 Thumbnail-parent .bg-danger">
-          <div className="Thumbnail Thumbnail-image3 bg-primary py-1 rounded">
-            {/* photo here */}
-          </div>
-          <div>
-            <h4 className="mt-2">The Coca-cola Strategy</h4>
-            <p>
-              23 Sept, 2021
-              <hr className="under .bg-warning rounded " />
-            </p>
-            <p>
-              Coca-cola focuses on improving the community
-              relationships and increasing thhier happiness,that
-              positively reflects on thier public image, resulting
-              in customer and revenue rise.
-            </p>
-          </div>
+        </Nav.Link>
         </div>
+      ))}
       </div>
-     
-
-      </div>
-
-
     </div>
 
 

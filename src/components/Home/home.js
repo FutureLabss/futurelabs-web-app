@@ -1,8 +1,18 @@
 import "./home.css"
-import Contact from "../layout/contact"
+// import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
+// import React from 'react';
+import React,{Suspense} from 'react';
+
+const Contact = React.lazy(() => import("../layout/contact"));
 
 
+
+// import ScrollableContainer from "react-full-page-scroll";
+
+// import React,{Suspense} from "react";
+// const ToolBar = React.lazy(() => import('./components/layout/toolbar'));
+// <Suspense fallback={<div>Loading …</div>}><ToolBar /></Suspense>
 
 
 
@@ -10,7 +20,8 @@ import ToolBar from '../layout/toolbar';
 export default function Home() {
 return (
       
-<div>
+<div className="full-body">
+
 <ToolBar />
   {/* *********************************************************************** */}
 
@@ -19,8 +30,11 @@ return (
 
   {/* *********************************************************************** */}
 
-
+  
   {/* Section-One begins here */}
+  
+  <Suspense fallback={<div>Loading …</div>}>
+
   <section className="section1 home-image1">
 
     <div className="container .bg-primary">
@@ -48,7 +62,11 @@ return (
     </div>
 
   </section>
+ 
   {/* Section-One ends here */}
+  </Suspense>
+  
+
 
 
 
@@ -58,6 +76,8 @@ return (
 
 
   {/* Section-Two begins here*/}
+  <Suspense fallback={<div>Loading …</div>}>
+
   <section className="section2">
 
     <div className="mobile-no sm-divider">
@@ -118,6 +138,13 @@ return (
 
       
   </section>
+  </Suspense>
+  {/* </PageComponent> */}
+
+
+
+
+  
   {/* Section-Two ends here */}
 
 
@@ -126,6 +153,8 @@ return (
 
 
   {/* HALF-VIDEO FOR DESKTOP HERE */}
+  
+  <Suspense fallback={<div>Loading …</div>}>
   <section className="section2">
       
     {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
@@ -141,7 +170,7 @@ return (
             src="https://res.cloudinary.com/not-set/video/upload/v1644576276/FutureLabs.agency1_3_izapfv.mp4" type="video/mp4" 
           /> 
             
-          
+        
         </video> 
 
         <div className="parent-box3-half d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
@@ -185,13 +214,14 @@ return (
       </div>
 
     </div>
+    
 
 
       
-
+    
     {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
     <div className="mobile-yes text-white">
-         
+    
       <div className="video-container .text-danger .bg-danger">
         <video autoPlay muted loop className="overall">
           {/* <Transformation endOffset="30" videoCodec="auto" /> */}
@@ -226,9 +256,16 @@ return (
 
       </div>
     </div>
+    
+
 
 
   </section>
+  </Suspense>
+  
+
+
+  
   {/* Section-Three ends here */}
 
 
@@ -249,8 +286,9 @@ return (
   {/* *********************************************************************** */}
 
 
-
+  <Suspense fallback={<div>Loading …</div>}>
   {/* Section-One begins here */}
+
   <div className="video-container .text-danger .bg-danger">
     <video autoPlay muted loop className="overall">
       {/* <Transformation endOffset="30" videoCodec="auto" /> */}
@@ -286,6 +324,8 @@ return (
 
 
   </div>
+  </Suspense>
+ 
 
 
 
@@ -296,6 +336,8 @@ return (
 
 
   {/* Section-One begins here */}
+  <Suspense fallback={<div>Loading …</div>}>
+
   <div className="video-container .text-danger .bg-danger">
     <video autoPlay muted loop className="overall">
       {/* <Transformation endOffset="30" videoCodec="auto" /> */}
@@ -332,7 +374,7 @@ return (
 
 
   </div>
-
+  </Suspense>
 
   {/* mmmmmmmm */}
 
@@ -352,7 +394,9 @@ return (
 
 
   {/* THE SECTION BELOW HOLDS THE THUMBNAILS */}
+
   
+  <Suspense fallback={<div>Loading …</div>}>
   <section>
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
@@ -431,53 +475,22 @@ return (
 
 
 
-    {/* THESE PARENTS ONLY APPEAR ON MOBILE */}
+    
+    <Suspense fallback={<div>Loading …</div>}><Contact /></Suspense>
 
-    {/* <div className="Thumbnail-parent bg-danger mobile-yes-thumb">
-      <div className="Thumbnail bg-primary py-1">
-        photo here
-      </div>
-      <div>
-        <h4>Lorem, ipsum.</h4>
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
-      </div>
-    </div>
+  {/* <Contact /> */}
 
-
-    <div className="Thumbnail-parent bg-warning">
-      <div className="Thumbnail bg-primary py-1">
-        photo here
-      </div>
-      <div>
-        <h4>Lorem, ipsum.</h4>
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
-      </div>
-    </div>
-
-
-    <div className="Thumbnail-parent bg-info">
-      <div className="Thumbnail bg-primary py-1">
-        photo here
-      </div>
-      <div>
-        <h4>Lorem, ipsum.</h4>
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quis sapiente dignissimos velit ducimus eligendi.</p>
-      </div>
-    </div>
- */}
-
-
-
-<Contact />
 
   </section>
+  </Suspense>
+
+  {/* </ScrollableContainer> */}
+ 
+  
 
     
 
-
+  
 
 
 

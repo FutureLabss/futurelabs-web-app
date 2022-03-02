@@ -7,6 +7,7 @@ import   { Offcanvas } from 'react-bootstrap'
 
 import './toolbar.css'
 
+
 export default function ToolBar(props){
     return (
         <div className="nav text-white">

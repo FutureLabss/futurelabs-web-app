@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -16,7 +16,7 @@ import { userRoutes } from "../../../router/UserRoutes";
 import Close from "@mui/icons-material/Close";
 import { useAuth } from "../../../contexts/AuthContext";
 import { useNavigate, useLocation, useRoutes } from "react-router-dom";
-
+import '../../styles/drawer.css'
 
 const drawerWidth = 240;
 
@@ -53,9 +53,9 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <Toolbar>
-        <NavLink to={`/`} exact >
+        <NavLink to={`/`} exact style={{textDecoration: 'none'}} >
           <Typography variant="h5" sx={{ color: 'rgb(108, 117, 125)', flexGrow: 1, textAlign: 'center', fontWeight: 700 }}>
-            FutureLabs <sup>&#8226;</sup>
+            Home <sup>&#8226;</sup>
           </Typography>
         </NavLink>
         
@@ -74,14 +74,14 @@ function ResponsiveDrawer(props) {
       {
         userRoutes.map((item, index) => {
           return (
-            <NavLink to={`/user/${item.path}`}   exact key={index}>
-              <ListItem sx={{ pl: '30px', my: '10px' }} className="hov"  >
+            <NavLink to={`/user/${item.path}`} exact key={index} style={{textDecoration: 'none'}} >
+              <ListItem sx={{ pl: '30px', my: '10px' }} className="title"  >
                 <ListItemAvatar>
-                  <img src={item.icon} alt={`${item.title}_icon`} />
+                  <img src={item.icon} width="20px" height="20px" alt={`${item.title}_icon`} />
                 </ListItemAvatar>
                 <ListItemText 
                   disableTypography 
-                  className="hov"
+                  className="title--effect"
                   style={{fontWeight:'bold'}}
                   primary={item.title} sx={{ color: 'rgb(108, 117, 125)', fontWeight: 700 }} />
               </ListItem>

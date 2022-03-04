@@ -8,6 +8,10 @@ import twitter from './images/twitter.png'
 import logout from './images/logout.png'
 import profile from './images/profile.png'
 import settings from './images/settings.png'
+import create from './svg/create.svg'
+import dashboard from './svg/dashboard.svg'
+import library from './svg/library.svg'
+import trash from './svg/trash.svg'
 
 
 export const icons = {
@@ -21,4 +25,8 @@ export const icons = {
     logout,
     profile,
     settings,
+    create,
+    dashboard,
+    library,
+    trash,
 }

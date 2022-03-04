@@ -165,7 +165,7 @@ export default function PersistentDrawerRight() {
         >
           <Toolbar>
             <Typography variant="h6" noWrap className={classes.title}>
-            <Link to="/" style={{textDecoration: 'none', color: 'white'}}>FutureLabs</Link>  
+            <Nav.Link href="https://futurelabs-agency1.netlify.app/" style={{textDecoration: 'none', color: 'white'}}>FutureLabs</Nav.Link>  
             </Typography>
             <IconButton
               color="inherit"
@@ -195,7 +195,8 @@ export default function PersistentDrawerRight() {
             </IconButton>
           </div>
           <Divider />
-          <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
+          {/* <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link> */}
+          {/* <Link to="/" className={classes.link}>Home</Link> */}
           <Link to="/signin" className={classes.link}>Login</Link>
           {/* <Link to="/signup" className={classes.link}>Signup</Link> */}
           {display && (<Link to="/user" className={classes.link}>Dashboard</Link>)}

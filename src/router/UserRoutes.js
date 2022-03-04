@@ -9,10 +9,10 @@ import Trash from '../components/User/pages/Trash'
 
 
 export const userRoutes = [
-    {path: '/', icon: icons.bookmark, title: 'Dashboard', element: <Dashboard />},
-    {path: 'create', icon: icons.bookmark, title: 'Create', element: <Create />},
-    {path: 'library', icon: icons.bookmark, title: 'Library', element: <Library />},
-    {path: 'trash', icon: icons.bookmark, title: 'Trash', element: <Trash />},
+    {path: '', icon: icons.dashboard, title: 'Dashboard', element: <Dashboard />},
+    {path: 'create', icon: icons.create, title: 'Create', element: <Create />},
+    {path: 'library', icon: icons.library, title: 'Library', element: <Library />},
+    {path: 'trash', icon: icons.trash, title: 'Trash', element: <Trash />},
     {path: 'profile', icon: icons.profile, title: 'Profile', element: <Profile />},
     {path: 'settings', icon: icons.settings, title: 'Settings', element: <Settings />},
     {path: 'logout', icon: icons.logout, title: 'Logout', element: <Logout />},

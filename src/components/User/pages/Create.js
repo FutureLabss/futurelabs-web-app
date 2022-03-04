@@ -71,7 +71,7 @@ export default function Article() {
   }
 
   return (
-    <Grid sx={{marginTop: '1rem'}} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} maxWidth={{}}>
+    <Grid sx={{marginTop: '1rem', }} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} maxWidth={{}}>
         
       <form onSubmit={handleSubmit}>
         <Grid sx={{display: 'flex', flexDirection: 'column', alignItems:'center'}} rowSpacing={1} columnSpacing={{ xs: 1, sm: 1, md: 1 }}>

@@ -12,6 +12,7 @@ import create from './svg/create.svg'
 import dashboard from './svg/dashboard.svg'
 import library from './svg/library.svg'
 import trash from './svg/trash.svg'
+import exclamation from './svg/exclamation.svg'
 
 
 export const icons = {
@@ -29,4 +30,5 @@ export const icons = {
     dashboard,
     library,
     trash,
+    exclamation,
 }

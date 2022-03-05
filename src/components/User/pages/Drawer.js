@@ -75,7 +75,7 @@ function ResponsiveDrawer(props) {
         userRoutes.map((item, index) => {
           return (
             <NavLink to={`/user/${item.path}`} exact key={index} style={{textDecoration: 'none'}} >
-              <ListItem sx={{ pl: '30px', my: '10px' }} className="title"  >
+              <ListItem sx={{ pl: '30px', my: '10px' }} className={`${item.path === "Dashboard" ? "dashboard" : "title"}`}  >
                 <ListItemAvatar>
                   <img src={item.icon} width="20px" height="20px" alt={`${item.title}_icon`} />
                 </ListItemAvatar>

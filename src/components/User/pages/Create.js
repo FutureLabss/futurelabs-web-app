@@ -80,7 +80,7 @@ export default function Article() {
               <TextField hiddenLabel placeholder="Title" variant="filled"  size="small" name="title" onChange={handleChange} required />
               <Grid item sx={{display: 'flex', justifyContent: 'space-between'}}>
                 <TextField sx={{ width: 800, maxWidth: '100%',}} hiddenLabel id="filled-hidden-label-small" placeholder="Description" name="description" onChange={handleChange} variant="filled" size="small" required/>
-                <label htmlFor="contained-button-file">
+                <label htmlFor="contained-button-file" style={{display: 'flex', alignItems: 'center'}}>
                   <input type="file" onChange={handleFile} required></input>
                 </label>
               </Grid>

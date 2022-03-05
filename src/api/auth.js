@@ -36,8 +36,11 @@ export const registerApi = async (data) => {
 }
 
 export const logoutApi = async () => {
-
-  storage.clearData()
+  try{
+    storage.clearData()
+  } catch(error) {
+    return parseError(error)
+  }
 }
 
 export const initApi = (callback) => {

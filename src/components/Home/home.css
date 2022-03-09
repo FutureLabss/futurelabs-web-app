@@ -9,7 +9,7 @@
     height: 100vh;
     object-fit: cover;
     filter: brightness(50%);
-    /* z-index: -1; */
+  
     
 
 }
@@ -21,7 +21,7 @@
 
 .parent-box3-half {
     width: 50vw;
-    /* z-index: 1000; */
+   
     position: absolute;
     bottom: -201%;
   
@@ -62,7 +62,7 @@
     visibility: hidden;
     width: 75%;
     color: white;
-    /* z-index: 1000 !important; */
+    
     filter: brightness(100%);
 }
 

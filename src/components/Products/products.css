@@ -22,7 +22,7 @@ video{
 
 .parent-box1 {
     width: 100vw;
-    /* z-index: 1 !important; */
+    
     position: absolute;
     bottom: 1%;
   
@@ -33,7 +33,7 @@ video{
 
 .parent-box2 {
     width: 100vw;
-    /* z-index: 1 !important; */
+    
     position: absolute;
    
     bottom: -101%;
@@ -71,7 +71,7 @@ video{
 } */
 
 .trial {
-    /* z-index: 1 !important; */
+  
     position: absolute;
 }
 

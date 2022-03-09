@@ -7,7 +7,7 @@ video{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    /* z-index: -1; */
+    
     
 
 }
@@ -16,7 +16,7 @@ video{
     
     
    filter: brightness(50%);
-   /* z-index: -10; */
+   
        
 }
 
@@ -25,7 +25,7 @@ video{
 
 .parent-box1 {
     width: 100vw;
-    /* z-index: 1000; */
+    
     position: absolute;
     bottom: 1%;
   
@@ -46,7 +46,7 @@ video{
 
 .parent-box2 {
     width: 100vw;
-    /* z-index: -1 !important; */
+    
     position: absolute;
    
     bottom: -101%;
@@ -73,7 +73,7 @@ video{
 .text-box {
     width: 75vw;
     color: white;
-    /* z-index: 1000 !important; */
+    
     filter: brightness(100%);
 }
 

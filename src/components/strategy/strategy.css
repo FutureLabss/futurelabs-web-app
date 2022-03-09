@@ -9,7 +9,7 @@ video{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    /* z-index: -1; */
+    
     
 }
 
@@ -17,7 +17,7 @@ video{
 
 .parent-box1 {
     width: 100vw;
-    /* z-index: 1 !important; */
+    
     position: absolute;
     bottom: 1%;
   
@@ -31,13 +31,13 @@ video{
 .video-container {
     height: 100vh;
     
-    /* z-index: 1 ; */
+    
 
 }
 
 .parent-box2 {
     width: 100vw;
-    /* z-index: -1 !important; */
+   
     position: absolute;
    
     bottom: -101%;

@@ -4,9 +4,13 @@ import "./home.css"
 // import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
 
+
 import React, {Suspense, useState, useEffect} from 'react';
+// import React, { Suspense } from 'react';
+// import ScrollableContainer from "react-full-page-scroll";
 import {Skeleton} from '@mui/material';
 import { Nav } from 'react-bootstrap';
+
 
 
 
@@ -15,11 +19,6 @@ const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
 const Contact = React.lazy(() => import('../layout/contact'));
 
 
-// import ScrollableContainer from "react-full-page-scroll";
-
-// import React,{Suspense} from "react";
-// const ToolBar = React.lazy(() => import('./components/layout/toolbar'));
-// <Suspense fallback={<div>Loading …</div>}><ToolBar /></Suspense>
 
 
 
@@ -56,8 +55,12 @@ return (
   
   {/* Section-One begins here */}
   
-  <Suspense fallback={<div>Loading …</div>}>
+  
 
+  {/* <ScrollableContainer animationTime={2000}> */}
+
+  <Suspense fallback={<div className="text-danger">Loading …</div>}>
+  {/* <PageComponent> */}
   <section className="section1 home-image1">
 
     <div className="container .bg-primary">
@@ -87,6 +90,7 @@ return (
   </section>
  
   {/* Section-One ends here */}
+  {/* </PageComponent> */}
   </Suspense>
   
 
@@ -99,7 +103,8 @@ return (
 
 
   {/* Section-Two begins here*/}
-  <Suspense fallback={<div>Loading …</div>}>
+  <Suspense fallback={<div className="text-danger">Loading …</div>}>
+  {/* <PageComponent>  */}
 
   <section className="section2">
 
@@ -161,8 +166,9 @@ return (
 
       
   </section>
-  </Suspense>
   {/* </PageComponent> */}
+  </Suspense>
+ 
 
 
 
@@ -177,7 +183,8 @@ return (
 
   {/* HALF-VIDEO FOR DESKTOP HERE */}
   
-  <Suspense fallback={<div>Loading …</div>}>
+  <Suspense fallback={<div className="text-danger">Loading …</div>}>
+  {/* <PageComponent>  */}
   <section className="section2">
       
     {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
@@ -284,6 +291,7 @@ return (
 
 
   </section>
+  {/* </PageComponent> */}
   </Suspense>
   
 
@@ -310,6 +318,7 @@ return (
 
 
   <Suspense fallback={<div>Loading …</div>}>
+  {/* <PageComponent> */}
   {/* Section-One begins here */}
 
   <div className="video-container .text-danger .bg-danger">
@@ -347,6 +356,7 @@ return (
 
 
   </div>
+  {/* </PageComponent> */}
   </Suspense>
  
 
@@ -360,6 +370,7 @@ return (
 
   {/* Section-One begins here */}
   <Suspense fallback={<div>Loading …</div>}>
+  {/* <PageComponent> */}
 
   <div className="video-container .text-danger .bg-danger">
     <video autoPlay muted loop className="overall">
@@ -397,6 +408,7 @@ return (
 
 
   </div>
+  {/* </PageComponent> */}
   </Suspense>
 
   {/* mmmmmmmm */}
@@ -420,6 +432,7 @@ return (
 
   
   <Suspense fallback={<div>Loading …</div>}>
+  {/* <PageComponent> */}
   <section>
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
@@ -466,14 +479,19 @@ return (
 
     
     <Suspense fallback={<div>Loading …</div>}><Contact /></Suspense>
+    {/* <PageComponent><Contact /></PageComponent> */}
 
-  {/* <Contact /> */}
+  
 
 
   </section>
+  {/* </PageComponent> */}
+  
   </Suspense>
 
   {/* </ScrollableContainer> */}
+
+  
  
   
 

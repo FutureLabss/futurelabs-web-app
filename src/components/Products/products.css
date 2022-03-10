@@ -207,3 +207,45 @@ video{
 .product-image6 {
     background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903253/future4_2_l9rqpc.png');
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .parent-box1 {
+        position: absolute;
+        bottom: 12%;
+
+    }
+
+    .parent-box2 {
+        position: absolute;
+        bottom: -112%;
+
+    }
+
+    .parent-box3 {
+        position: absolute;
+        bottom: -212%;
+
+    }
+
+    .parent-box4 {
+        position: absolute;
+        bottom: -312%;
+
+    }
+
+    .parent-box5 {
+        position: absolute;
+        bottom: -412%;
+
+    }
+
+    .parent-box6 {
+        position: absolute;
+        bottom: -512%;
+
+    }
+     
+}

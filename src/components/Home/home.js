@@ -59,7 +59,7 @@ return (
 
   {/* <ScrollableContainer animationTime={2000}> */}
 
-  <Suspense fallback={<div className="text-danger">Loading …</div>}>
+  {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent> */}
   <section className="section1 home-image1">
 
@@ -91,7 +91,7 @@ return (
  
   {/* Section-One ends here */}
   {/* </PageComponent> */}
-  </Suspense>
+  {/* </Suspense> */}
   
 
 
@@ -103,7 +103,7 @@ return (
 
 
   {/* Section-Two begins here*/}
-  <Suspense fallback={<div className="text-danger">Loading …</div>}>
+  {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent>  */}
 
   <section className="section2">
@@ -167,7 +167,7 @@ return (
       
   </section>
   {/* </PageComponent> */}
-  </Suspense>
+  {/* </Suspense> */}
  
 
 
@@ -183,7 +183,7 @@ return (
 
   {/* HALF-VIDEO FOR DESKTOP HERE */}
   
-  <Suspense fallback={<div className="text-danger">Loading …</div>}>
+  {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent>  */}
   <section className="section2">
       
@@ -292,7 +292,7 @@ return (
 
   </section>
   {/* </PageComponent> */}
-  </Suspense>
+  {/* </Suspense> */}
   
 
 
@@ -317,7 +317,7 @@ return (
   {/* *********************************************************************** */}
 
 
-  <Suspense fallback={<div>Loading …</div>}>
+  {/* <Suspense fallback={<div>Loading …</div>}> */}
   {/* <PageComponent> */}
   {/* Section-One begins here */}
 
@@ -357,7 +357,7 @@ return (
 
   </div>
   {/* </PageComponent> */}
-  </Suspense>
+  {/* </Suspense> */}
  
 
 
@@ -369,7 +369,7 @@ return (
 
 
   {/* Section-One begins here */}
-  <Suspense fallback={<div>Loading …</div>}>
+  {/* <Suspense fallback={<div>Loading …</div>}> */}
   {/* <PageComponent> */}
 
   <div className="video-container .text-danger .bg-danger">
@@ -409,7 +409,7 @@ return (
 
   </div>
   {/* </PageComponent> */}
-  </Suspense>
+  {/* </Suspense> */}
 
   {/* mmmmmmmm */}
 
@@ -431,7 +431,7 @@ return (
   {/* THE SECTION BELOW HOLDS THE THUMBNAILS */}
 
   
-  <Suspense fallback={<div>Loading …</div>}>
+  {/* <Suspense fallback={<div>Loading …</div>}> */}
   {/* <PageComponent> */}
   <section>
     <div className="container-fluid">
@@ -478,7 +478,7 @@ return (
 
 
     
-    <Suspense fallback={<div>Loading …</div>}><Contact /></Suspense>
+    {/* <Suspense fallback={<div>Loading …</div>}><Contact /></Suspense> */}
     {/* <PageComponent><Contact /></PageComponent> */}
 
   
@@ -487,7 +487,7 @@ return (
   </section>
   {/* </PageComponent> */}
   
-  </Suspense>
+  {/* </Suspense> */}
 
   {/* </ScrollableContainer> */}
 

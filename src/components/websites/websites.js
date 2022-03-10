@@ -42,8 +42,8 @@ return (
 
 
             {/* THE MUTE ICON IS HERE */}
-            <div className="mute-box text-center .bg-info">
-                <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+            <div className="mute-box re text-center .bg-info">
+                <img className=".img-fluid mute-img mute-mobile-yes remute .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
             </div>
 
         </div>

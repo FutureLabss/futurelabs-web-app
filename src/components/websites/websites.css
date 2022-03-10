@@ -117,14 +117,16 @@ video{
 
     .mute {
         height: 26px !important;
-        margin-top: 175px !important;
+        margin-top: 167px !important;
     }
 
-    .mute-mobile-yes {
+    .remute {
         height: 26px !important;
-        margin-top: 240px !important;
+        margin-top: 230px !important;
 
     }
+
+    
 
     .websites-button-text {
         font-family: Roboto;

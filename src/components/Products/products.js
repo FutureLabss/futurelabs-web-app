@@ -5,8 +5,12 @@ import "./products.css"
 
 export default function Products() {
 return (
+
+
+
+    
       
-<div>
+<div className="bod">
 <ToolBar />
   {/* *********************************************************************** */}
 
@@ -17,7 +21,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <div className="video-container .text-danger no-pad">
+    <div className="video-container .text-danger no-pad one">
         <video autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
@@ -55,7 +59,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 product-image2">
+    <section className="section1 product-image2 one">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -88,7 +92,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 product-image3">
+    <section className="section1 product-image3 one">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -124,7 +128,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 product-image4">
+    <section className="section1 product-image4 one">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">

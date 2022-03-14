@@ -1,19 +1,20 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
+// import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles} from '@material-ui/core/styles';
+// import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+// import Divider from '@material-ui/core/Divider';
+// import IconButton from '@material-ui/core/IconButton';
+// import MenuIcon from '@material-ui/icons/Menu';
+// import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+// import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { Nav } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import { useAuth } from '../../contexts/AuthContext'
+// import { Link } from 'react-router-dom'
+// import { useAuth } from '../../contexts/AuthContext'
 
 const drawerWidth = 240;
 
@@ -125,29 +126,29 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function PersistentDrawerRight() {
-    const { currentUser } = useAuth();
-    const [display, setDisplay] = useState(false)
+    // const { currentUser } = useAuth();
+    // const [display, setDisplay] = useState(false)
     const classes = useStyles();
-    const theme = useTheme();
+    // const theme = useTheme();
 
-    const [open, setOpen] = React.useState(false);
+    // const [open, setOpen] = React.useState(false);
     // const [display, setDisplay] = useState(true)
   
-     const handleDrawerOpen = () => {
-      setOpen(true);
-     };
+    //  const handleDrawerOpen = () => {
+    //   setOpen(true);
+    //  };
   
-    const handleDrawerClose = () => {
-      setOpen(false);
-    };
+    // const handleDrawerClose = () => {
+    //   setOpen(false);
+    // };
 
-    useEffect(() => {
-      if(currentUser === null){
-        setDisplay(false)
-      }else {
-        setDisplay(true)
-      }
-    },[currentUser])
+    // useEffect(() => {
+    //   if(currentUser === null){
+    //     setDisplay(false)
+    //   }else {
+    //     setDisplay(true)
+    //   }
+    // },[currentUser])
 
     // const handleDrawerToggle = () => {
       // setMobileOpen(!mobileOpen);
@@ -160,14 +161,14 @@ export default function PersistentDrawerRight() {
         <AppBar
           position="fixed"
           className={clsx(classes.appBar, {
-            [classes.appBarShift]: open,
+            // [classes.appBarShift]: open,
           })}
         >
           <Toolbar>
             <Typography variant="h6" noWrap className={classes.title}>
             <Nav.Link href="https://futurelabs-agency1.netlify.app/" style={{textDecoration: 'none', color: 'white'}}>FutureLabs</Nav.Link>  
             </Typography>
-            <IconButton
+            {/* <IconButton
               color="inherit"
               aria-label="open drawer"
               edge="end"
@@ -176,11 +177,11 @@ export default function PersistentDrawerRight() {
               className={clsx(open && classes.hide)}
             >
               <MenuIcon />
-            </IconButton>
+            </IconButton> */}
           </Toolbar>
         </AppBar>
        
-        <Drawer
+        {/* <Drawer
           className={classes.drawer}
           variant="persistent"
           anchor="right"
@@ -195,12 +196,12 @@ export default function PersistentDrawerRight() {
             </IconButton>
           </div>
           <Divider />
-          {/* <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link> */}
-          {/* <Link to="/" className={classes.link}>Home</Link> */}
+          <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
+          <Link to="/" className={classes.link}>Home</Link>
           <Link to="/signin" className={classes.link}>Login</Link>
-          {/* <Link to="/signup" className={classes.link}>Signup</Link> */}
+          <Link to="/signup" className={classes.link}>Signup</Link>
           {display && (<Link to="/user" className={classes.link}>Dashboard</Link>)}
-        </Drawer>
+        </Drawer> */}
      </div>
     );
   }

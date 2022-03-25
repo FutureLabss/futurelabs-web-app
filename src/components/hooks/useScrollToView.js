@@ -6,7 +6,6 @@ function useScrollToView(count,sectionZeroRef,sectionOneRef,sectionTwoRef,sectio
             if(e.key === "ArrowDown" && count <= 4){
               e.preventDefault()
               count++
-              console.log(count)
               if(count === 0){
                 sectionZeroRef.current.scrollIntoView()
               }

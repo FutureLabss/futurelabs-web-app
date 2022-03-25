@@ -6,6 +6,7 @@ import ToolBar from '../layout/toolbar';
 
 
 import React, {useState, useEffect, useRef} from 'react';
+import useScrollToView from '../hooks/useScrollToView'
 // import React, {Suspense, useState, useEffect} from 'react';
 // import React, { Suspense } from 'react';
 // import ScrollableContainer from "react-full-page-scroll";
@@ -32,57 +33,7 @@ const sectionFourRef = useRef()
 const sectionFiveRef = useRef()
 let [count] = useState(0)
 
-useEffect(() => {
-  document.addEventListener('keydown', function(e){
-      if(e.key === "ArrowDown" && count <= 4){
-        e.preventDefault()
-        count++
-        if(count === 0){
-          sectionZeroRef.current.scrollIntoView()
-        }
-        if(count === 1){
-          sectionOneRef.current.scrollIntoView()
-        }
-        if(count === 2){
-          sectionTwoRef.current.scrollIntoView()
-        }
-        if(count === 3){
-          sectionThreeRef.current.scrollIntoView()
-        }
-        if(count === 4){
-          sectionFourRef.current.scrollIntoView()
-        }
-        if(count === 5){
-          sectionFiveRef.current.scrollIntoView()
-        }
-      }
-
-      if(e.key === "ArrowUp" && count !== 0){
-        e.preventDefault()
-        --count
-       
-        if(count === 0){
-          sectionZeroRef.current.scrollIntoView()
-        }
-        if(count === 1){
-          sectionOneRef.current.scrollIntoView()
-        }
-        if(count === 2){
-          sectionTwoRef.current.scrollIntoView()
-        }
-        if(count === 3){
-          sectionThreeRef.current.scrollIntoView()
-        }
-        if(count === 4){
-          sectionFourRef.current.scrollIntoView()
-        }
-        if(count === 5){
-          sectionFiveRef.current.scrollIntoView()
-        }
-      }
-  })
-  
-},[count])
+useScrollToView(count,sectionZeroRef,sectionOneRef,sectionTwoRef,sectionThreeRef,sectionFourRef,sectionFiveRef);
 
 useEffect(() => {
   axios.get(`${SERVER_URL}/?limit=3`)

@@ -5,18 +5,16 @@ import "./home.css"
 import ToolBar from '../layout/toolbar';
 
 
-import React, {Suspense, useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
+// import React, {Suspense, useState, useEffect} from 'react';
 // import React, { Suspense } from 'react';
 // import ScrollableContainer from "react-full-page-scroll";
 import {Skeleton} from '@mui/material';
 import { Nav } from 'react-bootstrap';
 
-
-
-
 const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
 
-const Contact = React.lazy(() => import('../layout/contact'));
+// const Contact = React.lazy(() => import('../layout/contact'));
 
 
 
@@ -26,6 +24,65 @@ const Contact = React.lazy(() => import('../layout/contact'));
 export default function Home() {
 const [posts, setPosts] = useState([])
 const [loading, setLoading] = useState(true)
+const sectionZeroRef = useRef()
+const sectionOneRef = useRef()
+const sectionTwoRef = useRef()
+const sectionThreeRef = useRef()
+const sectionFourRef = useRef()
+const sectionFiveRef = useRef()
+let [count] = useState(0)
+
+useEffect(() => {
+  document.addEventListener('keydown', function(e){
+      if(e.key === "ArrowDown" && count <= 4){
+        e.preventDefault()
+        count++
+        if(count === 0){
+          sectionZeroRef.current.scrollIntoView()
+        }
+        if(count === 1){
+          sectionOneRef.current.scrollIntoView()
+        }
+        if(count === 2){
+          sectionTwoRef.current.scrollIntoView()
+        }
+        if(count === 3){
+          sectionThreeRef.current.scrollIntoView()
+        }
+        if(count === 4){
+          sectionFourRef.current.scrollIntoView()
+        }
+        if(count === 5){
+          sectionFiveRef.current.scrollIntoView()
+        }
+      }
+
+      if(e.key === "ArrowUp" && count !== 0){
+        e.preventDefault()
+        --count
+       
+        if(count === 0){
+          sectionZeroRef.current.scrollIntoView()
+        }
+        if(count === 1){
+          sectionOneRef.current.scrollIntoView()
+        }
+        if(count === 2){
+          sectionTwoRef.current.scrollIntoView()
+        }
+        if(count === 3){
+          sectionThreeRef.current.scrollIntoView()
+        }
+        if(count === 4){
+          sectionFourRef.current.scrollIntoView()
+        }
+        if(count === 5){
+          sectionFiveRef.current.scrollIntoView()
+        }
+      }
+  })
+  
+},[count])
 
 useEffect(() => {
   axios.get(`${SERVER_URL}/?limit=3`)
@@ -61,7 +118,7 @@ return (
 
   {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent> */}
-  <section className="section1 home-image1">
+  <section ref={sectionZeroRef} className="section1 home-image1">
 
     <div className="container .bg-primary">
       <div className="row .bg-warning d-flex justify-space-between  mt-sm-5 pt-sm-5">
@@ -106,7 +163,7 @@ return (
   {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent>  */}
 
-  <section className="section2">
+  <section ref={sectionOneRef} className="section2">
 
     <div className="mobile-no sm-divider">
 
@@ -185,7 +242,7 @@ return (
   
   {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent>  */}
-  <section className="section2">
+  <section ref={sectionTwoRef} className="section2">
       
     {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
     <div className="mobile-no half sm-divider">
@@ -321,7 +378,7 @@ return (
   {/* <PageComponent> */}
   {/* Section-One begins here */}
 
-  <div className="video-container .text-danger .bg-danger">
+  <div ref={sectionThreeRef} className="video-container .text-danger .bg-danger">
     <video autoPlay muted loop className="overall">
       {/* <Transformation endOffset="30" videoCodec="auto" /> */}
       <source 
@@ -372,7 +429,7 @@ return (
   {/* <Suspense fallback={<div>Loading …</div>}> */}
   {/* <PageComponent> */}
 
-  <div className="video-container .text-danger .bg-danger">
+  <div ref={sectionFourRef} className="video-container .text-danger .bg-danger">
     <video autoPlay muted loop className="overall">
       {/* <Transformation endOffset="30" videoCodec="auto" /> */}
       <source 
@@ -433,7 +490,7 @@ return (
   
   {/* <Suspense fallback={<div>Loading …</div>}> */}
   {/* <PageComponent> */}
-  <section>
+  <section ref={sectionFiveRef}>
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
       <h1 className="contact mb-5 text-center">Latest Stories</h1>

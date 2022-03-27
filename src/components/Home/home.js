@@ -7,6 +7,7 @@ import ToolBar from '../layout/toolbar';
 
 import React, {useState, useEffect, useRef} from 'react';
 import useScrollToView from '../hooks/useScrollToView'
+import useElementOnScreen from '../hooks/useElementOnScreen';
 // import React, {Suspense, useState, useEffect} from 'react';
 // import React, { Suspense } from 'react';
 // import ScrollableContainer from "react-full-page-scroll";
@@ -35,6 +36,14 @@ let [count] = useState(0)
 
 useScrollToView(count,sectionZeroRef,sectionOneRef,sectionTwoRef,sectionThreeRef,sectionFourRef,sectionFiveRef);
 
+const [ containerRef, isVisible ] = useElementOnScreen({
+  root: null,
+  rootMargin: "0px",
+  threshold: 1.0
+})
+
+let visible = isVisible
+
 useEffect(() => {
   axios.get(`${SERVER_URL}/?limit=3`)
   .then(data => {
@@ -46,7 +55,7 @@ useEffect(() => {
 },[])
 
 
-console.log("post ==>", posts)
+// console.log("post ==>", posts)
 
 return (
       
@@ -198,11 +207,11 @@ return (
     {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
     <div className="mobile-no half sm-divider">
 
-      <div className="half sm-2 .bg-warning">
+      <div  className="half sm-2 .bg-warning">
 
 
-      <div className="video-container-half .text-danger .bg-danger">
-        <video autoPlay muted loop className="overall-half">
+      <div ref={containerRef} className="video-container-half .text-danger .bg-danger">
+        <video autoPlay="false" muted loop className="overall-half">
           {/* <Transformation endOffset="30" videoCodec="auto" /> */}
           <source 
             src="https://res.cloudinary.com/not-set/video/upload/v1644576276/FutureLabs.agency1_3_izapfv.mp4" type="video/mp4" 

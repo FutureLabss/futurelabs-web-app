@@ -1,32 +1,32 @@
 import { useEffect, useRef } from 'react'
 
 function useElementOnScreen(options){
-    const containerRef = useRef(null)
-    const videoRef = useRef(null)
+    const containerRef3 = useRef(null)
+    const videoRef3 = useRef(null)
 
     const callbackFunction = (entries) => {
-        const [entry] = entries
+        const [entry] = entries;
 
         if(entry.isIntersecting){
-            videoRef.current.play()
+            videoRef3.current.play()
         } else {
-            videoRef.current.pause()
+            videoRef3.current.pause()
         }
 
     }
 
     useEffect(() => {
         const observer = new IntersectionObserver(callbackFunction, options)
-        if(containerRef.current) observer.observe(containerRef.current)
+        if(containerRef3.current) observer.observe(containerRef3.current)
        
         console.log("IT's working")
-        let newRef = containerRef.current
+        let newRef = containerRef3.current
         return () => {
             if(newRef) observer.unobserve(newRef)
         }
-    }, [containerRef, options])
+    }, [containerRef3, options])
 
-    return [containerRef, videoRef]
+    return [containerRef3, videoRef3]
 }
 
 export default useElementOnScreen

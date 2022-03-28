@@ -8,6 +8,9 @@ import ToolBar from '../layout/toolbar';
 import React, {useState, useEffect, useRef} from 'react';
 import useScrollToView from '../hooks/useScrollToView'
 import useElementOnScreen from '../hooks/useElementOnScreen';
+import useElementOnScreen1 from '../hooks/useElementOnScreen1';
+import useElementOnScreen2 from '../hooks/useElementOnScreen2';
+import useElementOnScreen3 from '../hooks/useElementOnScreen3';
 // import React, {Suspense, useState, useEffect} from 'react';
 // import React, { Suspense } from 'react';
 // import ScrollableContainer from "react-full-page-scroll";
@@ -36,13 +39,29 @@ let [count] = useState(0)
 
 useScrollToView(count,sectionZeroRef,sectionOneRef,sectionTwoRef,sectionThreeRef,sectionFourRef,sectionFiveRef);
 
-const [ containerRef, isVisible ] = useElementOnScreen({
+const [ containerRef, videoRef ] = useElementOnScreen({
   root: null,
   rootMargin: "0px",
-  threshold: 1.0
+  threshold: 0.9
 })
 
-let visible = isVisible
+const [ containerRef1, videoRef1 ] = useElementOnScreen1({
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.9
+})
+
+const [ containerRef2, videoRef2 ] = useElementOnScreen2({
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.9
+})
+
+const [ containerRef3, videoRef3] = useElementOnScreen3({
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.9
+})
 
 useEffect(() => {
   axios.get(`${SERVER_URL}/?limit=3`)
@@ -53,7 +72,6 @@ useEffect(() => {
   })
   .catch(error => console.log(error))
 },[])
-
 
 // console.log("post ==>", posts)
 
@@ -211,7 +229,7 @@ return (
 
 
       <div ref={containerRef} className="video-container-half .text-danger .bg-danger">
-        <video autoPlay="false" muted loop className="overall-half">
+        <video autoPlay="true" muted loop ref={videoRef} className="overall-half">
           {/* <Transformation endOffset="30" videoCodec="auto" /> */}
           <source 
             src="https://res.cloudinary.com/not-set/video/upload/v1644576276/FutureLabs.agency1_3_izapfv.mp4" type="video/mp4" 
@@ -269,8 +287,8 @@ return (
     {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
     <div className="mobile-yes text-white">
     
-      <div className="video-container .text-danger .bg-danger">
-        <video autoPlay muted loop className="overall">
+      <div ref={containerRef3} className="video-container .text-danger .bg-danger">
+        <video autoPlay muted loop ref={videoRef3} className="overall">
           {/* <Transformation endOffset="30" videoCodec="auto" /> */}
           <source 
             src="https://res.cloudinary.com/not-set/video/upload/v1644576276/FutureLabs.agency1_3_izapfv.mp4" type="video/mp4" 
@@ -339,7 +357,8 @@ return (
   {/* Section-One begins here */}
 
   <div ref={sectionThreeRef} className="video-container .text-danger .bg-danger">
-    <video autoPlay muted loop className="overall">
+  <span ref={containerRef2}>
+    <video autoPlay muted loop ref={videoRef2} className="overall">
       {/* <Transformation endOffset="30" videoCodec="auto" /> */}
       <source 
         src="https://res.cloudinary.com/not-set/video/upload/v1644590584/FutureLabs.agency1_4_mqq6ds.mp4" type="video/mp4" 
@@ -347,7 +366,7 @@ return (
         
       
     </video> 
-
+  </span>
     <div className="parent-box4 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
       <div className="text-box .bg-danger">
         <h5 className="line6">
@@ -390,7 +409,9 @@ return (
   {/* <PageComponent> */}
 
   <div ref={sectionFourRef} className="video-container .text-danger .bg-danger">
-    <video autoPlay muted loop className="overall">
+  <span ref={containerRef1}>
+
+    <video autoPlay muted loop ref={videoRef1} className="overall">
       {/* <Transformation endOffset="30" videoCodec="auto" /> */}
       <source 
         src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 
@@ -398,6 +419,7 @@ return (
         
       
     </video> 
+  </span>
 
     <div className="parent-box5 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
       <div className="text-box .bg-danger">

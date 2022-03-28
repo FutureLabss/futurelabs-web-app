@@ -19,7 +19,6 @@ function useElementOnScreen(options){
         const observer = new IntersectionObserver(callbackFunction, options)
         if(containerRef.current) observer.observe(containerRef.current)
        
-        console.log("IT's working")
         let newRef = containerRef.current
         return () => {
             if(newRef) observer.unobserve(newRef)

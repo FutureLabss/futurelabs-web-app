@@ -50,7 +50,6 @@ function useScrollToView(count,sectionZeroRef,sectionOneRef,sectionTwoRef,sectio
               }
             }
         })
-        
       },[count,sectionZeroRef,sectionOneRef,sectionTwoRef,sectionThreeRef,sectionFourRef,sectionFiveRef])
 }
 

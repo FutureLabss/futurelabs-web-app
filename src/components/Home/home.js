@@ -42,25 +42,25 @@ useScrollToView(count,sectionZeroRef,sectionOneRef,sectionTwoRef,sectionThreeRef
 const [ containerRef, videoRef ] = useElementOnScreen({
   root: null,
   rootMargin: "0px",
-  threshold: 0.9
+  threshold: 1
 })
 
 const [ containerRef1, videoRef1 ] = useElementOnScreen1({
   root: null,
   rootMargin: "0px",
-  threshold: 0.9
+  threshold: 0.5
 })
 
 const [ containerRef2, videoRef2 ] = useElementOnScreen2({
   root: null,
   rootMargin: "0px",
-  threshold: 0.9
+  threshold: 0.5
 })
 
 const [ containerRef3, videoRef3] = useElementOnScreen3({
   root: null,
   rootMargin: "0px",
-  threshold: 0.9
+  threshold: 0.5
 })
 
 useEffect(() => {

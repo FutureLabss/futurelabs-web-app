@@ -5,12 +5,14 @@ import "./home.css"
 import ToolBar from '../layout/toolbar';
 
 
-import React, {useState, useEffect, useRef} from 'react';
-import useScrollToView from '../hooks/useScrollToView'
+import React, {useState, useEffect} from 'react';
+// import useScrollToView from '../hooks/useScrollToView'
 import useElementOnScreen from '../hooks/useElementOnScreen';
 import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';
 import useElementOnScreen3 from '../hooks/useElementOnScreen3';
+import ReactPageScroller from 'react-page-scroller';
+import Footer from '../layout/footer';
 // import React, {Suspense, useState, useEffect} from 'react';
 // import React, { Suspense } from 'react';
 // import ScrollableContainer from "react-full-page-scroll";
@@ -29,15 +31,15 @@ const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
 export default function Home() {
 const [posts, setPosts] = useState([])
 const [loading, setLoading] = useState(true)
-const sectionZeroRef = useRef()
-const sectionOneRef = useRef()
-const sectionTwoRef = useRef()
-const sectionThreeRef = useRef()
-const sectionFourRef = useRef()
-const sectionFiveRef = useRef()
-let [count] = useState(0)
+// const sectionZeroRef = useRef()
+// const sectionOneRef = useRef()
+// const sectionTwoRef = useRef()
+// const sectionThreeRef = useRef()
+// const sectionFourRef = useRef()
+// const sectionFiveRef = useRef()
+// let [count] = useState(0)
 
-useScrollToView(count,sectionZeroRef,sectionOneRef,sectionTwoRef,sectionThreeRef,sectionFourRef,sectionFiveRef);
+// useScrollToView(count,sectionZeroRef,sectionOneRef,sectionTwoRef,sectionThreeRef,sectionFourRef,sectionFiveRef);
 
 const [ containerRef, videoRef ] = useElementOnScreen({
   root: null,
@@ -79,7 +81,7 @@ return (
       
 <div>
 
-<ToolBar />
+  <ToolBar />
   {/* *********************************************************************** */}
 
     {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}
@@ -96,20 +98,26 @@ return (
 
   {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent> */}
-  <section ref={sectionZeroRef} className="section1 home-image1">
+  <ReactPageScroller>
+  <section  className="section1 home-image1">
 
     <div className="container .bg-primary">
       <div className="row .bg-warning d-flex justify-space-between  mt-sm-5 pt-sm-5">
         <div className="col-9 .bg-primary px-xs-4 px-sm-0 text-white">
 
           <h4 className="line1">WE ARE FUTURISTS!</h4>
-          
+          <span>
           <h5 className="line2">
-            We create indelible <br  className="mobile-no" />
-            digital experiences.
+            We are a dedicated team<br  className="mobile-no" />
+            of creative strategists,<br  className="mobile-no" />
+            Designers & Developers.<br  className="mobile-no" />
           </h5>
           {/* <h6 className="line3"> We will help you turn ideas into the reality <br className="mobile-no" /> you hope to create.</h6> */}
-
+          <p className="line3">
+            We will help you turn ideas into<br  className="mobile-no" />
+            the reality you hope to create...
+          </p>
+          </span>
         </div>
         
 
@@ -141,7 +149,7 @@ return (
   {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent>  */}
 
-  <section ref={sectionOneRef} className="section2">
+  <section className="section2">
 
     <div className="mobile-no sm-divider">
 
@@ -220,7 +228,7 @@ return (
   
   {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent>  */}
-  <section ref={sectionTwoRef} className="section2">
+  <section className="section2">
       
     {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
     <div className="mobile-no half sm-divider">
@@ -356,7 +364,7 @@ return (
   {/* <PageComponent> */}
   {/* Section-One begins here */}
 
-  <div ref={sectionThreeRef} className="video-container .text-danger .bg-danger">
+  <div className="video-container .text-danger .bg-danger">
   <span ref={containerRef2}>
     <video autoPlay muted loop ref={videoRef2} className="overall">
       {/* <Transformation endOffset="30" videoCodec="auto" /> */}
@@ -408,7 +416,7 @@ return (
   {/* <Suspense fallback={<div>Loading …</div>}> */}
   {/* <PageComponent> */}
 
-  <div ref={sectionFourRef} className="video-container .text-danger .bg-danger">
+  <div className="video-container .text-danger .bg-danger">
   <span ref={containerRef1}>
 
     <video autoPlay muted loop ref={videoRef1} className="overall">
@@ -472,10 +480,10 @@ return (
   
   {/* <Suspense fallback={<div>Loading …</div>}> */}
   {/* <PageComponent> */}
-  <section ref={sectionFiveRef}>
+  <section className="blog_section">
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
-      <h1 className="contact mb-5 text-center">Latest Stories</h1>
+      <h1 className="contact mb-3 text-center">Latest Stories</h1>
       {(loading ? Array.from(new Array(3)) : posts).map((item, index) => (
         <div className="col-sm-4 py-sm-4 py-4" >
         <Nav.Link href={`https://futurelabs-blog.netlify.app/singlepost/${item ? item._id : ""}`} style={{color: 'black'}}>
@@ -524,28 +532,15 @@ return (
 
 
   </section>
+  {/* <span className="footer"> */}
+    <Footer/>
+  {/* </span> */}
+  </ReactPageScroller>
   {/* </PageComponent> */}
   
   {/* </Suspense> */}
 
   {/* </ScrollableContainer> */}
 
-  
- 
-  
-
-    
-
-  
-
-
-
-
-
-
-
-
-
-</div>
-)
-}
+ </div>
+)}

@@ -10,7 +10,7 @@ export default function Footer(props) {
   }, []);
 
   return (
-    <div>
+    <div className="footer">
       <div className="container mt-5">
         <div className="row mt-5 d-flex justify-content-around lastted mobile-nop3 ">
           <div className="col-sm-3">

@@ -8,7 +8,9 @@ function useElementOnScreen(options) {
     const [entry] = entries;
 
     if (entry.isIntersecting) {
-      videoRef2.current.play();
+      setTimeout(function(){
+        videoRef2.current.play();
+      }, 1000)
     } else {
       videoRef2.current.pause();
     }

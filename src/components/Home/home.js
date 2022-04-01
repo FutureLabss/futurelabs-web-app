@@ -13,6 +13,7 @@ import useElementOnScreen2 from '../hooks/useElementOnScreen2';
 import useElementOnScreen3 from '../hooks/useElementOnScreen3';
 import ReactPageScroller from 'react-page-scroller';
 import Footer from '../layout/footer';
+import Contact from '../layout/contact'
 // import React, {Suspense, useState, useEffect} from 'react';
 // import React, { Suspense } from 'react';
 // import ScrollableContainer from "react-full-page-scroll";
@@ -68,7 +69,6 @@ const [ containerRef3, videoRef3] = useElementOnScreen3({
 useEffect(() => {
   axios.get(`${SERVER_URL}/?limit=3`)
   .then(data => {
-    console.log(data.data.articles.data)
     setPosts(data.data.articles.data)
     setLoading(false)    
   })
@@ -532,9 +532,8 @@ return (
 
 
   </section>
-  {/* <span className="footer"> */}
+    <Contact />
     <Footer/>
-  {/* </span> */}
   </ReactPageScroller>
   {/* </PageComponent> */}
   

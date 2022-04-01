@@ -20,6 +20,7 @@ function Cardcomponent() {
 
     blogManager.getAll(page)
     .then(data => {
+      
       const {count, limit } = data.pagination
       let pages;
       let pageCount = Math.ceil(count / limit)

@@ -1,9 +1,12 @@
 import ToolBar from '../layout/toolbar';
 import Contact from "../layout/contact"
+import Footer from "../layout/footer"
+import ReactPageScroller from 'react-page-scroller';
 import "./products.css"
 
 
 export default function Products() {
+    let width = window.screen.width;
 return (
 
 
@@ -21,6 +24,7 @@ return (
 
 
     {/* Section-One begins here */}
+    <ReactPageScroller>
     <div className="video-container .text-danger no-pad one">
         <video autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
@@ -157,23 +161,9 @@ return (
     {/* Section-One ends here */}
 
 
-    <Contact />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <Contact isMobile={width} />
+    <Footer />
+    </ReactPageScroller>
 </div>
 )
 }

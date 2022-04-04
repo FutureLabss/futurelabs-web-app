@@ -1,10 +1,13 @@
-import ToolBar from '../layout/toolbar';
+import ToolBar from "../layout/toolbar";
 import Contact from "../layout/contact"
+import Footer from "../layout/footer"
+import ReactPageScroller from 'react-page-scroller';
 import "./services.css"
 import { Link } from "react-router-dom"
 
 
 export default function Services() {
+    let width = window.screen.width
 return (
       
 <div>
@@ -18,6 +21,7 @@ return (
 
 
    {/* Section-One begins here */}
+   <ReactPageScroller>
    <div className="video-container .text-danger .bg-danger">
         <video autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
@@ -222,42 +226,10 @@ return (
         </div>
 
     </section>
-    
-
-
-
-    
-
-
-
-
-
-    
-
-
-
-
-    
-
-
-
-
-
-
-
-    <Contact />
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+    <Contact isMobile={width}/>
+    <Footer />
+    </ReactPageScroller> 
 </div>
 )
 }

@@ -1,10 +1,11 @@
 import ToolBar from '../layout/toolbar';
 import "./websites.css"
 import Contact from "../layout/contact"
-
-
+import Footer from "../layout/footer"
+import ReactPageScroller from 'react-page-scroller';
 
 export default function Websites() {
+    let width = window.screen.width;
 return (
       
 <div>
@@ -18,6 +19,7 @@ return (
 
 
   {/* Section-One begins here */}
+  <ReactPageScroller>
     <div className="video-container .text-danger .bg-danger">
         <video autoPlay muted loop className='overall' >
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
@@ -152,23 +154,9 @@ return (
     </section>
     {/* Section-One ends here */}
 
-    <Contact />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <Contact isMobile={width}/>
+        <Footer />
+    </ReactPageScroller>
 </div>
 )
 }

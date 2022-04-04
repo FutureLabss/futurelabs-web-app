@@ -1,10 +1,13 @@
 
 import ToolBar from '../layout/toolbar';
 import Contact from "../layout/contact"
+import Footer from "../layout/footer"
+import ReactPageScroller from 'react-page-scroller';
 import "./branding.css"
 
 
 export default function Branding() {
+  let width = window.screen.width;
 return (
       
 <div>
@@ -18,6 +21,7 @@ return (
 
 
     {/* Section-One begins here */}
+    <ReactPageScroller>
     <section className="section1 branding-image1">
 
         <div className="container">
@@ -142,23 +146,9 @@ return (
     {/* Section-One ends here */}
 
 
-    <Contact />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <Contact isMobile={width} />
+    <Footer />
+    </ReactPageScroller>
 </div>
 )
 }

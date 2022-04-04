@@ -1,9 +1,12 @@
 import ToolBar from '../layout/toolbar';
 import Contact from "../layout/contact"
+import Footer from "../layout/footer"
+import ReactPageScroller from 'react-page-scroller';
 import "./digitalart.css"
 
 
 export default function DigitalArt() {
+  let width = window.screen.width;
 return (
       
 <div>
@@ -17,6 +20,7 @@ return (
 
 
     {/* Section-One begins here */}
+    <ReactPageScroller>
     <section className="section1 digital-image1">
 
         <div className="container">
@@ -215,23 +219,9 @@ return (
 
 
 
-    <Contact />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <Contact isMobile={width} />
+    <Footer />
+</ReactPageScroller>
 </div>
 )
 }

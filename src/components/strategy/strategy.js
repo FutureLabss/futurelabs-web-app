@@ -1,9 +1,12 @@
 import ToolBar from '../layout/toolbar';
 import Contact from "../layout/contact"
+import Footer from "../layout/footer"
+import ReactPageScroller from 'react-page-scroller';
 import "./strategy.css"
 
 
 export default function Strategy() {
+  let width = window.screen.width
 return (
       
 <div>
@@ -16,6 +19,7 @@ return (
   {/* *********************************************************************** */}
 
   {/* Section-One begins here */}
+  <ReactPageScroller>
   <div className="video-container">
         <video autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
@@ -150,23 +154,9 @@ return (
 
 
 
-    <Contact />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <Contact isMobile={width} />
+    <Footer />
+    </ReactPageScroller>
 </div>
 )
 }

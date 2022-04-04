@@ -1,8 +1,12 @@
 import "./about.css"
 import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
+import Footer from '../layout/footer';
+import ReactPageScroller from 'react-page-scroller';
 
 export default function About() {
+    let width = window.screen.width
+
 return (
       
 <div>
@@ -16,6 +20,7 @@ return (
 
 
     {/* Section-One begins here */}
+    <ReactPageScroller >
     <section className="section1 about-image1">
 
         <div className="container">
@@ -405,7 +410,9 @@ return (
     </section>
 
 
-    <Contact />
+    <Contact isMobile={width}/>
+    <Footer />
+    </ReactPageScroller>
     {/* Section-One ends here */}
 
     {/* *********************************************************************** */}

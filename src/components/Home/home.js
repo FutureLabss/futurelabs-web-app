@@ -13,7 +13,7 @@ import useElementOnScreen2 from '../hooks/useElementOnScreen2';
 import useElementOnScreen3 from '../hooks/useElementOnScreen3';
 import ReactPageScroller from 'react-page-scroller';
 import Footer from '../layout/footer';
-import Contact from '../layout/contact'
+import Contact from '../layout/contact';
 // import React, {Suspense, useState, useEffect} from 'react';
 // import React, { Suspense } from 'react';
 // import ScrollableContainer from "react-full-page-scroll";
@@ -65,15 +65,20 @@ const [ containerRef3, videoRef3] = useElementOnScreen3({
   rootMargin: "0px",
   threshold: 0.5
 })
+let width = window.screen.width
+let value = 3
+if(width <= 600){
+  value = 1
+}
 
 useEffect(() => {
-  axios.get(`${SERVER_URL}/?limit=3`)
+  axios.get(`${SERVER_URL}/?limit=${value}`)
   .then(data => {
     setPosts(data.data.articles.data)
     setLoading(false)    
   })
   .catch(error => console.log(error))
-},[])
+},[value])
 
 // console.log("post ==>", posts)
 
@@ -416,45 +421,45 @@ return (
   {/* <Suspense fallback={<div>Loading …</div>}> */}
   {/* <PageComponent> */}
 
-  <div className="video-container .text-danger .bg-danger">
-  <span ref={containerRef1}>
+  <section className="video-container .text-danger .bg-danger">
+    <span ref={containerRef1}>
 
-    <video autoPlay muted loop ref={videoRef1} className="overall">
-      {/* <Transformation endOffset="30" videoCodec="auto" /> */}
-      <source 
-        src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 
-      /> 
-        
-      
-    </video> 
-  </span>
+      <video autoPlay muted loop ref={videoRef1} className="overall">
+        {/* <Transformation endOffset="30" videoCodec="auto" /> */}
+        <source 
+          src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 
+        /> 
 
-    <div className="parent-box5 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
-      <div className="text-box .bg-danger">
-        <h5 className="line6 ">
-          Seamless Cross-border <br className="mobile-no"/>
-          Payments and Currency <br className="mobile-no"/> 
-          Conversion
-        </h5>
 
-        <h5 className="line5 ">
-          Securing Payments for Tomorrow on the Web
-        </h5>
-        {/* <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link> */}
+      </video> 
+    </span>
 
+      <div className="parent-box5 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="text-box .bg-danger">
+          <h5 className="line6 ">
+            Seamless Cross-border <br className="mobile-no"/>
+            Payments and Currency <br className="mobile-no"/> 
+            Conversion
+          </h5>
+
+          <h5 className="line5 ">
+            Securing Payments for Tomorrow on the Web
+          </h5>
+          {/* <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link> */}
+
+
+        </div>
+
+
+        {/* THE MUTE ICON IS HERE */}
+        <div className="mute-box text-center .bg-info">
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+        </div>
 
       </div>
 
 
-      {/* THE MUTE ICON IS HERE */}
-      <div className="mute-box text-center .bg-info">
-          <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-      </div>
-
-    </div>
-
-
-  </div>
+  </section>
   {/* </PageComponent> */}
   {/* </Suspense> */}
 
@@ -532,8 +537,8 @@ return (
 
 
   </section>
-    <Contact />
-    <Footer/>
+    <Contact isMobile={width}/>
+    <Footer />
   </ReactPageScroller>
   {/* </PageComponent> */}
   

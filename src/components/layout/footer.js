@@ -10,7 +10,7 @@ export default function Footer(props) {
   }, []);
 
   return (
-    <div className="footer">
+  <section className="footer">
       <div className="container mt-5">
         <div className="row mt-5 d-flex justify-content-around lastted mobile-nop3 ">
           <div className="col-sm-3">
@@ -131,6 +131,6 @@ export default function Footer(props) {
         &copy;<span class="copyright_spacing">{date}</span>
         <span class="copyright_spacing">FUTURELABS</span>
       </div>
-    </div>
+    </section>
   );
 }

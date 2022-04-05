@@ -2,12 +2,39 @@ import ToolBar from "../layout/toolbar";
 import Contact from "../layout/contact"
 import Footer from "../layout/footer"
 import ReactPageScroller from 'react-page-scroller';
-import "./services.css"
 import { Link } from "react-router-dom"
+import useElementOnScreen from '../hooks/useElementOnScreen'
+import useElementOnScreen1 from '../hooks/useElementOnScreen1'
+import useElementOnScreen2 from '../hooks/useElementOnScreen2'
+import useElementOnScreen3 from '../hooks/useElementOnScreen3'
+import "./services.css"
 
 
 export default function Services() {
     let width = window.screen.width
+
+    const [ containerRef, videoRef ] = useElementOnScreen({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1,
+    })
+
+    const [ containerRef1, videoRef1 ] = useElementOnScreen1({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1,
+    })
+
+    const [ containerRef2, videoRef2 ] = useElementOnScreen2({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1,
+    })
+    const [ containerRef3, videoRef3 ] = useElementOnScreen3({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1,
+    })
 return (
       
 <div>
@@ -22,8 +49,8 @@ return (
 
    {/* Section-One begins here */}
    <ReactPageScroller>
-   <div className="video-container .text-danger .bg-danger">
-        <video autoPlay muted loop className='overall'>
+   <div ref={containerRef} className="video-container .text-danger .bg-danger">
+        <video ref={videoRef} autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/eacademy/video/upload/v1643989706/Agency/Strategy.mp4" type="video/mp4" 
@@ -57,8 +84,8 @@ return (
 
 
     {/* Section-One begins here */}
-   <div className="video-container .text-danger .bg-danger">
-        <video autoPlay muted loop className="overall">
+   <div ref={containerRef1} className="video-container .text-danger .bg-danger">
+        <video ref={videoRef1} autoPlay muted loop className="overall">
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/not-set/video/upload/v1643984600/Rude_Ui_animation_co2vvu.mp4" type="video/mp4" 
@@ -93,8 +120,8 @@ return (
 
 
     {/* Section-One begins here */}
-   <div className="video-container .text-danger .bg-danger">
-        <video autoPlay muted loop className="overall">
+   <div ref={containerRef2} className="video-container .text-danger .bg-danger">
+        <video ref={videoRef2} autoPlay muted loop className="overall">
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/not-set/video/upload/v1640267570/around_main_comp_d1x979.mp4" type="video/mp4" 
@@ -160,8 +187,8 @@ return (
 
 
      {/* Section-One begins here */}
-   <div className="video-container .text-danger .bg-danger">
-        <video autoPlay muted loop className='overall'>
+   <div ref={containerRef3} className="video-container .text-danger .bg-danger">
+        <video ref={videoRef3} autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/not-set/video/upload/v1644321263/Military_Drone_Animation_by_Maverick_for_FutureLABS_jm6vgp.mp4" type="video/mp4" 

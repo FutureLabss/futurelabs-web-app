@@ -6,13 +6,13 @@ export default function Contact(props) {
     let value = "268px"
     
     if(isMobile <= 600){
-        value = "100px"
+        value = "150px"
     }
 
     return (
         <section className="contact-section">
-            <div className="container">
-                <h1 className="contact mb-5">Contact Us</h1>
+            <div className="container mt-5">
+                <h1 className="contact mb-5 text-center">Contact Us</h1>
                 <div className="row">
                 <div className="col-sm-6">
                 <input className="form-control vred form-control-lg " type="text" name placeholder="Your name "></input>

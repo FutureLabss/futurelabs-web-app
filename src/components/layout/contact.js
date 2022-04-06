@@ -1,33 +1,53 @@
 import "./contact.css";
-import React from 'react'
+import React, {useState} from 'react'
+import axios from "axios";
+
+const SERVER_URL = 'https://futurelabs-blog.herokuapp.com/contact';
 
 export default function Contact(props) {
+    const [value, setValue] = useState({})
+
     const {isMobile} = props
-    let value = "268px"
+    let width = "268px"
     
     if(isMobile <= 600){
-        value = "150px"
+        width = "150px"
+    }
+
+    const handleChange = e => {
+        const {name, value} = e.target;
+        
+        setValue({ ...value, [name]:value })
+        console.log("Value from onchange ==>",value)
+    }
+
+    const handleSubmit = e => {
+        console.log("Value from submit ==>",value)
+        e.preventDefault();
+        axios.post(SERVER_URL, value)
     }
 
     return (
         <section className="contact-section">
             <div className="container mt-5">
-                <h1 className="contact mb-5 text-center">Contact Us</h1>
-                <div className="row">
-                <div className="col-sm-6">
-                <input className="form-control vred form-control-lg " type="text" name placeholder="Your name "></input>
-                <input className="form-control vred form-control-lg " type="text" phone placeholder="Your phone number"></input>
-                <input className="form-control vred form-control-lg " type="text" company placeholder="Your company"></input>
-                <input className="form-control vred form-control-lg " type="text" email placeholder="Your@email.com"></input>
+                <form onSubmit={handleSubmit}>
+                    <h1 className="contact mb-5 text-center">Contact Us</h1>
+                    <div className="row">
+                    <div className="col-sm-6">
+                    <input className="form-control vred form-control-lg " type="text" onChange={handleChange} name="name" placeholder="Your name "></input>
+                    <input className="form-control vred form-control-lg " type="text" onChange={handleChange} name="phone" placeholder="Your phone number"></input>
+                    <input className="form-control vred form-control-lg " type="text" onChange={handleChange} name="company" placeholder="Your company"></input>
+                    <input className="form-control vred form-control-lg " type="text" onChange={handleChange} name="email" placeholder="Your@email.com"></input>
+                        </div>
+                        <div className="col-sm-6 text-center">
+                        <div className="form-floating vred">
+                      <textarea className="form-control contact-textarea vred" onChange={handleChange} name="message" placeholder="Leave a comment here" id="floatingTextarea2" style={{height: width}}></textarea>
+                      <label for="floatingTextarea2 vred">Leave a comment here</label>
                     </div>
-                    <div className="col-sm-6 text-center">
-                    <div className="form-floating vred">
-                  <textarea className="form-control contact-textarea vred" placeholder="Leave a comment here" id="floatingTextarea2" style={{height: value}}></textarea>
-                  <label for="floatingTextarea2 vred">Leave a comment here</label>
-                </div>
-                <button type="button" class=" buttons  text-center mt-5">Submit</button>
-                </div>
-                </div>
+                    <button type="submit" class=" buttons  text-center mt-5">Submit</button>
+                    </div>
+                    </div>
+                </form>
             </div>
 
         </section>

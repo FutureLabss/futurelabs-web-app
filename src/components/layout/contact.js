@@ -5,7 +5,7 @@ import axios from "axios";
 const SERVER_URL = 'https://futurelabs-blog.herokuapp.com/contact';
 
 export default function Contact(props) {
-    const [value, setValue] = useState({})
+    const [values, setValues] = useState({})
 
     const {isMobile} = props
     let width = "268px"
@@ -15,16 +15,14 @@ export default function Contact(props) {
     }
 
     const handleChange = e => {
-        const {name, value} = e.target;
-        
-        setValue({ ...value, [name]:value })
-        console.log("Value from onchange ==>",value)
+        const {name, value} = e.target;        
+        setValues({ ...values, [name]:value })        
     }
 
-    const handleSubmit = e => {
-        console.log("Value from submit ==>",value)
-        e.preventDefault();
-        axios.post(SERVER_URL, value)
+    const handleSubmit = async(e) => {        
+        e.preventDefault();      
+        await axios.post(SERVER_URL, values)
+        .catch(error => console.error(error))      
     }
 
     return (

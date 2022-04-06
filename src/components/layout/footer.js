@@ -122,15 +122,15 @@ export default function Footer(props) {
           </div>
         </div>
       </div>
-      <div className="container-fluid">
+      {/* <div className="container-fluid">
         <div className="row">
           <div className="col-12 foot"></div>
         </div>
-      </div>
+      </div> */}
       <div className="copyright">
         &copy;<span class="copyright_spacing">{date}</span>
         <span class="copyright_spacing">FUTURELABS</span>
       </div>
-    </section>
+  </section>
   );
 }

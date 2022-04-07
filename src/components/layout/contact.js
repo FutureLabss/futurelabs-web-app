@@ -1,13 +1,15 @@
 import "./contact.css";
 import React, {useState} from 'react'
 import axios from "axios";
-import { CircularProgress } from "@mui/material";
+import { CircularProgress,  Alert } from "@mui/material";
 
 const SERVER_URL = 'https://futurelabs-blog.herokuapp.com/contact';
 
 export default function Contact(props) {
     const [values, setValues] = useState({})
     const [loading, setLoading] = useState(false)
+    const [error, setError] = useState("")
+    const [message, setMessage] = useState("")
 
     const {isMobile} = props
     let width = "268px"
@@ -18,7 +20,8 @@ export default function Contact(props) {
 
     const handleChange = e => {
         const {name, value} = e.target;        
-        setValues({ ...values, [name]:value })        
+        setValues({ ...values, [name]:value })  
+              
     }
 
     const handleReset = () => {
@@ -32,14 +35,18 @@ export default function Contact(props) {
 
     const handleSubmit = async(e) => {        
         e.preventDefault();
-        setLoading(true)      
-        await axios.post(SERVER_URL, values)
-        .catch(error => console.error(error))
-        .then(() => {
-            setLoading(false);
-            handleReset();
-        })
+        try{
+            setError("")
+            setLoading(true)      
+            await axios.post(SERVER_URL, values)
+            console.log(values)
+            setMessage("Successfully sent!")
+            handleReset();         
             
+        }catch(error){
+            setError("Failed to send, please try again")
+        }
+        setLoading(false);            
     }
 
     return (
@@ -59,8 +66,22 @@ export default function Contact(props) {
                       <textarea className="form-control contact-textarea vred" onChange={handleChange} name="message" placeholder="Leave a comment here" id="floatingTextarea2" style={{height: width}}></textarea>
                       <label for="floatingTextarea2 vred">Leave a comment here</label>
                     </div>
+                        {
+                            error && (
+                                <Alert severity="error">
+                                    {error}
+                                </Alert>
+                            )
+                        }
+                        {
+                            message && (
+                                <Alert severity="success">
+                                    {message}
+                                </Alert>
+                            )
+                        }
                     {loading ?  <div className="text-center mt-5"><CircularProgress size={30} /></div>: 
-                        <button type="submit" class="buttons  text-center mt-5">Submit</button>
+                        <button type="submit" class="buttons  text-center mt-3">Submit</button>
                     }
                     </div>
                     </div>

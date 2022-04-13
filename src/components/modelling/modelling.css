@@ -18,29 +18,44 @@ video{
 
 
 
-.parent-box1 {
-    width: 100vw;
+
+
+/* .parent-box1 {
+    width: 50vw; */
     /* CURRENTz-index: 4 !important; */
-    position: absolute;
-    bottom: 1%;
+    /* position: absolute;
+    bottom: 1%; */
+    /* border: solid red; */
   
     /* top: 500%; */
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
 
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-}
+/* } */
 
 .video-container {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: relative;
     
-
 }
 
-.parent-box2 {
+.video-container video{
+    position: relative;
+    z-index: 0;
+}
+.overlay{
     width: 100vw;
-    /* CURENTz-index: 4 !important; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* .parent-box2 {
+    width: 100vw;
+    CURENTz-index: 4 !important;
     position: absolute;
    
     bottom: -101%;
@@ -48,18 +63,41 @@ video{
     transform: translateY(-50%);
 
     
-}
+} */
+/* .parent-box3 {
+    width: 100vw;
+    CURENTz-index: 4 !important;
+    position: absolute;
+   
+    bottom: -201%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    
+} */
+/* .parent-box {
+    width: 100vw;
+    CURENTz-index: 4 !important;
+    position: absolute;
+   
+    bottom: -101%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    
+} */
 
 .mute-box {
     width: 25vw;
     display: flex;
+    /* border: solid white; */
+    justify-content: flex-end;   
 }
 
 .mute-img {
- 
-    align-self: flex-end;
+    align-self: flex-start;
     /* float: right !important; */
-    
+    margin-bottom: 3rem;
     
     
 }
@@ -75,8 +113,8 @@ video{
 
 
 
-.section1 {
-    /* background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png'); */
+/* .section1 {
+    background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png');
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -85,7 +123,7 @@ video{
     background-size: cover;
     padding-top: 54vh;
 
-}
+} */
 
 .line3 {
     font-family: Roboto;
@@ -121,6 +159,11 @@ video{
         
     }
 
+    .text-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 
 }
 

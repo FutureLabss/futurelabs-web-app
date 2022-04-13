@@ -12,10 +12,102 @@
     
 }
 .footer{
-    height: 94vh;
+    border-bottom: solid #FF9000;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+.container--carousel{  
+    height: 300px;
+    display: flex;
+    margin-bottom: 30px;
+}
+.container--carousel>section{
+   
+    width: 50%;
+}
+.carousel--left{
+    background-color: #FF9000;
+}
+/* .carousel--left>div{
+    border: solid red;
+} */
+.carousel--text{
+    height: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 40px;
+}
+.carousel--controls{
+    height: 20%;
+    display: flex;
+    justify-content: right;
+    padding-right: 2rem;
+}
+.carousel--controls>button{
+    height: 2rem;
+    width: 3rem;
+    border: none;
+}
+.carousel--controls>button:nth-child(1){
+    border-right: .5px solid black;
+}
+.prev{
+    position: relative;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.next{
+    position: relative;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.prev:after, .next:after{
+    content: "";
+    background: #FF9000;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.prev:active:after, .next:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;       
+}
+.testimonial{
+    height: 60%;
+    text-align: justify;
+    padding: 2rem .6rem 0 .6rem;
+}
+.profile{
+    height: 40%;
+    text-align: center;
+    line-height: 4rem;
 }
 .colors{
     background-color: #FF9000;
@@ -96,6 +188,9 @@ color: #000000;
 }
 
 @media only screen and (max-width: 600px) {
+    .container--carousel{
+        display: none;
+    }
     .ph-no{
         display: flex;
         

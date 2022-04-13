@@ -65,6 +65,7 @@ const [ containerRef3, videoRef3] = useElementOnScreen3({
   rootMargin: "0px",
   threshold: 0.5
 })
+
 let width = window.screen.width
 let value = 3
 if(width <= 600){
@@ -242,7 +243,7 @@ return (
 
 
       <div ref={containerRef} className="video-container-half .text-danger .bg-danger">
-        <video autoPlay="true" muted loop ref={videoRef} className="overall-half">
+        <video autoPlay muted loop ref={videoRef} className="overall-half">
           {/* <Transformation endOffset="30" videoCodec="auto" /> */}
           <source 
             src="https://res.cloudinary.com/not-set/video/upload/v1644576276/FutureLabs.agency1_3_izapfv.mp4" type="video/mp4" 

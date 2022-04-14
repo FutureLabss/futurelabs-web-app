@@ -1,207 +1,109 @@
-import React from 'react';
-import clsx from 'clsx';
-// import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { makeStyles} from '@material-ui/core/styles';
-// import Drawer from '@material-ui/core/Drawer';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
-// import Divider from '@material-ui/core/Divider';
-// import IconButton from '@material-ui/core/IconButton';
-// import MenuIcon from '@material-ui/icons/Menu';
-// import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-// import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import Navbar from 'react-bootstrap/Navbar'
 import { Nav } from 'react-bootstrap'
-// import { Link } from 'react-router-dom'
-// import { useAuth } from '../../contexts/AuthContext'
+import   { Offcanvas } from 'react-bootstrap'
+//import { Link } from 'react-router-dom'
 
-const drawerWidth = 240;
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-  },
-  appBar: {
-    backgroundColor: '#FF9000',
-    transition: theme.transitions.create(['margin', 'width'], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-  },
-  appBarShift: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(['margin', 'width'], {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    marginRight: drawerWidth,
-  },
-  title: {
-    flexGrow: 1,
-  },
-  hide: {
-    display: 'none',
-  },
-  drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  drawerHeader: {
-    display: 'flex',
-    alignItems: 'center',
-    padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
-    ...theme.mixins.toolbar,
-    justifyContent: 'flex-start',
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-  },
-  content: {
-    flexGrow: 1,
-    padding: theme.spacing(0),
-    transition: theme.transitions.create('margin', {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    marginRight: -drawerWidth,
-  },
-  contentShift: {
-    transition: theme.transitions.create('margin', {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    marginRight: -drawerWidth,
-  },
-  hero: {
-    backgroundImage: "url('https://res.cloudinary.com/dremo/image/upload/v1634903273/IMG_0107_1_a80rgw.png')",
-    height: "500px",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    position: "relative",
-    display: "flex",
-    justifyContent: "beginning",
-    alignItems: "center",
-    color: "#fff",
-    fontSize: "2.5rem",
-    fontFamily: "Raleway",
-    fontStyle: "normal",
-    fontWeight: "bold"
-    
-  },
-  heros: {
-    position: "relative",
-    top: "-190px",
-    display: "flex",
-    justifyContent: "beginning",
-    alignItems: "center",
-    color: "#fff",
-    fontSize: "1.5rem",
-    fontFamily: "Roboto",
-    fontStyle: "normal",
-    fontWeight: "bold"
-  },
-  blogContainer: {
-     paddingTop: theme.spacing(1)
-  },
-  blogTitle: {
-    fontWeight: "bold",
-     paddingBottom: theme.spacing(1),
-     position: "relative",
-     display: "flex",
-     fontFamily: "Raleway",
-     fontStyle: "normal",
-  },
-  link: {
-    textDecoration: 'none',
-    paddingLeft: '.8rem',
-    color: '#FF9000',
-    fontSize: '1rem',
-  }
-}));
 
-export default function PersistentDrawerRight() {
-    // const { currentUser } = useAuth();
-    // const [display, setDisplay] = useState(false)
-    const classes = useStyles();
-    // const theme = useTheme();
+import './toolbar.css'
 
-    // const [open, setOpen] = React.useState(false);
-    // const [display, setDisplay] = useState(true)
-  
-    //  const handleDrawerOpen = () => {
-    //   setOpen(true);
-    //  };
-  
-    // const handleDrawerClose = () => {
-    //   setOpen(false);
-    // };
 
-    // useEffect(() => {
-    //   if(currentUser === null){
-    //     setDisplay(false)
-    //   }else {
-    //     setDisplay(true)
-    //   }
-    // },[currentUser])
-
-    // const handleDrawerToggle = () => {
-      // setMobileOpen(!mobileOpen);
-    // };
-    // const [mobileOpen, setMobileOpen] = React.useState(false)
-   
+export default function ToolBar(props){
     return (
-      <div className={classes.root}>
-        <CssBaseline />
-        <AppBar
-          position="fixed"
-          className={clsx(classes.appBar, {
-            // [classes.appBarShift]: open,
-          })}
-        >
-          <Toolbar>
-            <Typography variant="h6" noWrap className={classes.title}>
-            <Nav.Link href="https://futurelabs-agency1.netlify.app/" style={{textDecoration: 'none', color: 'white'}}>FutureLabs</Nav.Link>  
-            </Typography>
-            {/* <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="end"
-              onClick={handleDrawerOpen}
-              // onClick={handleDrawerToggle}
-              className={clsx(open && classes.hide)}
-            >
-              <MenuIcon />
-            </IconButton> */}
-          </Toolbar>
-        </AppBar>
-       
-        {/* <Drawer
-          className={classes.drawer}
-          variant="persistent"
-          anchor="right"
-          open={open}
-          classes={{
-            paper: classes.drawerPaper,
-          }}
-        >
-          <div className={classes.drawerHeader}>
-            <IconButton onClick={handleDrawerClose}>
-              {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-            </IconButton>
-          </div>
-          <Divider />
-          <Nav.Link href="/"><img src="https://res.cloudinary.com/not-set/image/upload/v1634900477/Futurelabs-logo_1_szyxc8.png" alt=""/></Nav.Link>
-          <Link to="/" className={classes.link}>Home</Link>
-          <Link to="/signin" className={classes.link}>Login</Link>
-          <Link to="/signup" className={classes.link}>Signup</Link>
-          {display && (<Link to="/user" className={classes.link}>Dashboard</Link>)}
-        </Drawer> */}
-     </div>
-    );
-  }
+        <div className="nav text-white">
+    <div className="picyture">
+      <Nav.Link href="/">{/* Logo image is here */}</Nav.Link>
+    </div>
+    
+
+    <div className="sub-nav">
+      <div>
+        <div className="mobile-yes my-auto">
+          <h6 className="text-white yes">
+            
+          </h6>
+        </div>
+
+        <div className="mobile-no my-auto">
+          <h6 className="text-white noise">
+            {/* All categories */}
+          </h6>
+        </div>
+
+      </div>
+
+      <div className="mx-3 mx-sm-4 my-auto horizontal rounded my-auto">
+        {/* Dividing hr */}
+      </div>
+      <Navbar  bg="" expand={false}>
+  <div className="container-fluid text-decoration-none textd">
+  
+
+    <Navbar.Toggle aria-controls="offcanvasNavbar  " className="bg-white text-decoration-none textd" /> 
+    <Navbar.Offcanvas
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel" className="bg-light text-decoration-none textd"
+      placement="end">
+      <Nav.Link href="/"> <img  className="w-50 mt-5  container"src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt=""/> </Nav.Link>
+      <Offcanvas.Header closeButton>
+        <Offcanvas.Title id="offcanvasNavbarLabel " className="textd"></Offcanvas.Title>
+      </Offcanvas.Header> 
+      <Offcanvas.Body className="textd">
+
+      
+
+           
+
+        <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
+        <Nav.Link className="text-muted container-fluid my-0 py-0" href="https://futurelabs-agency1.netlify.app/about"><h4 className="text-dark">ABOUT</h4></Nav.Link>
+        <Nav.Link className="text-muted container-fluid my-0 py-0" href="https://futurelabs-agency1.netlify.app/services"><h4 className="text-dark">SERVICES</h4></Nav.Link>
+         {/* <Nav.Link className="textd my-2 text-muted" href="/"><strong>HOME</strong> </Nav.Link> */}
+
+  
+         {/* <Nav.Link className="textd .my-2 text-muted" href="/about2"><strong>ABOUT</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted" href="/services2"><strong>SERVICES</strong></Nav.Link> */}
+
+         {/* <Link className="textd mt-2 text-muted" to="/strategy"> <strong>STRATEGY</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="https://futurelabs-agency1.netlify.app/strategy"><strong>STRATEGY</strong></Nav.Link>
+
+          {/* <Link className="textd mt-2 text-muted" to="/products"><strong>PRODUCTS</strong></Link> */}
+          <Nav.Link className="textd .my-2 text-muted" href="https://futurelabs-agency1.netlify.app/products"><strong>PRODUCTS</strong></Nav.Link>
+
+          {/* <Link className="textd mt-2 text-muted" to="/websites"> <strong>WEBSITES</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="https://futurelabs-agency1.netlify.app/websites"><strong>WEBSITES</strong></Nav.Link>
+
+         <Nav.Link className="textd .my-2 text-muted" href="https://futurelabs-agency1.netlify.app/branding"><strong>BRANDING</strong></Nav.Link>
+
+         {/* <Link className="textd mt-2 text-muted" to="/modelling"> <strong>3-D MODELLING</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="https://futurelabs-agency1.netlify.app/modelling"><strong>3-D MODELLING</strong></Nav.Link>
+
+        
+
+        
+
+         {/* <Link className="textd mt-2 text-muted" to="/digitalart"> <strong>DIGITAL ART</strong></Link> */}
+         <Nav.Link className="textd .my-2 text-muted" href="https://futurelabs-agency1.netlify.app/digitalart"><strong>DIGITAL ARTS & NFTs</strong></Nav.Link>
+         {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
+
+         
+
+         <Nav.Link className="textd .my-2 text-muted" href="https://futurelabs-blog.netlify.app/"><strong>BLOG</strong></Nav.Link>
+         
+
+        </Nav>
+              
+      </Offcanvas.Body>
+    </Navbar.Offcanvas>
+  </div>
+    
+ 
+</Navbar>
+      <div>
+      
+      </div>
+    </div>
+
+  </div>
+
+    )
+}

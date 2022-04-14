@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    overflow-x: hidden;
+    text-decoration: none;
+}
+      
+.horizontal {
+    height: 23px;
+    width: 2px;
+    background-color: rgb(139, 139, 138);
+}
+div.container-fluid{
+    text-decoration: none;
+}
+
+.nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 34px;
+    padding-right: 34px;
+    position: fixed;
+    width: 100%;
+    z-index: 1 !important;
+                                    
+    
+}
+
+.down:hover {
+    font-weight: 300;
+}
+   
+
+
+.sub-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .logo {
+    height: 20px;
+    width: 140px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  
+} */
+
+.picyture {
+    background-image: url('https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png');
+    height: 25px;
+    width: 140px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    
+  
+} */
+
+
+.noise{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 28px;
+
+color: #FFFFFF;
+text-decoration: none;
+
+}
+
+.textd{
+    text-decoration: none;
+}        

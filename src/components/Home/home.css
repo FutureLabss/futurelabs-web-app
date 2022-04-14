@@ -19,7 +19,22 @@
 }
 
 
+.video-container{
+    position: relative;
+}
 
+.video-container video{
+    position: relative;
+    z-index: 0;
+}
+
+.overlay{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
 
 
 
@@ -322,7 +337,7 @@ color: #212121;
     font-family: Raleway;
     font-style: Bold;
     font-size: 17px;
-    line-height: 25px;
+    line-height: 15px;
 }
 
 .line4 {

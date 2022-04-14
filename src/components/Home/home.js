@@ -11,9 +11,11 @@ import useElementOnScreen from '../hooks/useElementOnScreen';
 import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';
 import useElementOnScreen3 from '../hooks/useElementOnScreen3';
+import useSound from '../hooks/useSound'
 import ReactPageScroller from 'react-page-scroller';
 import Footer from '../layout/footer';
 import Contact from '../layout/contact';
+import {icons} from '../../assets'
 // import React, {Suspense, useState, useEffect} from 'react';
 // import React, { Suspense } from 'react';
 // import ScrollableContainer from "react-full-page-scroll";
@@ -66,6 +68,8 @@ const [ containerRef3, videoRef3] = useElementOnScreen3({
   threshold: 0.5
 })
 
+const [sound, sound1, sound2, sound3, handleSound ] = useSound(videoRef,videoRef1,videoRef2)
+
 let width = window.screen.width
 let value = 3
 if(width <= 600){
@@ -115,14 +119,15 @@ return (
           <span>
           <h5 className="line2">
             We are a dedicated team<br  className="mobile-no" />
-            of creative strategists,<br  className="mobile-no" />
+            of creative strategists,<br className="mobile-no" />
             Designers & Developers.<br  className="mobile-no" />
-          </h5>
-          {/* <h6 className="line3"> We will help you turn ideas into the reality <br className="mobile-no" /> you hope to create.</h6> */}
-          <p className="line3">
+            {/* <p >
             We will help you turn ideas into<br  className="mobile-no" />
             the reality you hope to create...
-          </p>
+          </p> */}
+          </h5>
+          {/* <h6 className="line3"> We will help you turn ideas into the reality <br className="mobile-no" /> you hope to create.</h6> */}
+          
           </span>
         </div>
         
@@ -257,8 +262,12 @@ return (
 
 
           {/* THE MUTE ICON IS HERE */}
-          <div className="mute-box-half text-center .bg-info">
-            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+          <div className="mute-box .bg-info" onClick={() => handleSound(0)}>
+          {sound ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
           </div>
 
         </div>
@@ -326,8 +335,12 @@ return (
 
 
           {/* THE MUTE ICON IS HERE */}
-          <div className="mute-box-half text-center .bg-info">
-            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+          <div className="mute-box .bg-info" onClick={() => handleSound(3)}>
+          {sound3 ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
           </div>
 
         </div>
@@ -371,8 +384,8 @@ return (
   {/* Section-One begins here */}
 
   <div className="video-container .text-danger .bg-danger">
-  <span ref={containerRef2}>
-    <video autoPlay muted loop ref={videoRef2} className="overall">
+  <span ref={containerRef1}>
+    <video autoPlay muted loop ref={videoRef1} className="overall">
       {/* <Transformation endOffset="30" videoCodec="auto" /> */}
       <source 
         src="https://res.cloudinary.com/not-set/video/upload/v1644590584/FutureLabs.agency1_4_mqq6ds.mp4" type="video/mp4" 
@@ -381,7 +394,7 @@ return (
       
     </video> 
   </span>
-    <div className="parent-box4 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+    <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
       <div className="text-box .bg-danger">
         <h5 className="line6">
           <span className="italicize">We Strategize.</span>
@@ -398,9 +411,15 @@ return (
 
 
       {/* THE MUTE ICON IS HERE */}
-      <div className="mute-box text-center .bg-info">
-          <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+      <div className="mute-box .bg-info" onClick={() => handleSound(1)}>
+          {sound1 ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
       </div>
+
+      
 
     </div>
 
@@ -423,9 +442,9 @@ return (
   {/* <PageComponent> */}
 
   <section className="video-container .text-danger .bg-danger">
-    <span ref={containerRef1}>
+    <span ref={containerRef2}>
 
-      <video autoPlay muted loop ref={videoRef1} className="overall">
+      <video autoPlay muted loop ref={videoRef2} className="overall">
         {/* <Transformation endOffset="30" videoCodec="auto" /> */}
         <source 
           src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 
@@ -435,7 +454,7 @@ return (
       </video> 
     </span>
 
-      <div className="parent-box5 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
         <div className="text-box .bg-danger">
           <h5 className="line6 ">
             Seamless Cross-border <br className="mobile-no"/>
@@ -453,9 +472,13 @@ return (
 
 
         {/* THE MUTE ICON IS HERE */}
-        <div className="mute-box text-center .bg-info">
-            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-        </div>
+        <div className="mute-box .bg-info" onClick={() => handleSound(2)}>
+          {sound2 ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
+          </div>
 
       </div>
 

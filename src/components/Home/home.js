@@ -134,9 +134,9 @@ return (
 
 
         {/* THE MUTE ICON IS HERE */}
-        <div className="col-3 .bg-info text-center pt-5">
+        {/* <div className="col-3 .bg-info text-center pt-5">
           <img className=".img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-        </div>
+        </div> */}
 
       </div>
     </div>

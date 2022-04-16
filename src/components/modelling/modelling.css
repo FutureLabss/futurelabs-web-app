@@ -91,6 +91,7 @@ video{
     width: 25vw;
     display: flex;
     /* border: solid white; */
+    padding-right: 2rem;
     justify-content: flex-end;   
 }
 
@@ -98,7 +99,7 @@ video{
     align-self: flex-start;
     /* float: right !important; */
     margin-bottom: 3rem;
-    
+    cursor: pointer;
     
 }
 

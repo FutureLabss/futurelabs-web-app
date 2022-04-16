@@ -285,6 +285,10 @@ color: #212121;
         font-size: 25px !important;
         line-height: 32px !important;
     }
+
+    .blog_section{
+        display: none;
+    }
     
 
 

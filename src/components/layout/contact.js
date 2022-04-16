@@ -1,5 +1,5 @@
 import "./contact.css";
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import axios from "axios";
 import { CircularProgress,  Alert } from "@mui/material";
 
@@ -20,9 +20,8 @@ export default function Contact(props) {
 
     const handleChange = e => {
         const {name, value} = e.target;        
-        setValues({ ...values, [name]:value })  
-              
-    }
+        setValues({ ...values, [name]:value })        
+    }    
 
     const handleReset = () => {
         Array.from(document.querySelectorAll('input')).forEach(
@@ -35,11 +34,11 @@ export default function Contact(props) {
 
     const handleSubmit = async(e) => {        
         e.preventDefault();
+       
         try{
             setError("")
             setLoading(true)      
             await axios.post(SERVER_URL, values)
-            console.log(values)
             setMessage("Successfully sent!")
             handleReset();         
             
@@ -56,14 +55,14 @@ export default function Contact(props) {
                     <h1 className="contact mb-5 text-center">Contact Us</h1>
                     <div className="row">
                     <div className="col-sm-6">
-                    <input className="form-control vred form-control-lg " type="text"  onChange={handleChange} name="name" placeholder="Your name "></input>
-                    <input className="form-control vred form-control-lg " type="text" onChange={handleChange} name="phone" placeholder="Your phone number"></input>
-                    <input className="form-control vred form-control-lg " type="text" onChange={handleChange} name="company" placeholder="Your company"></input>
-                    <input className="form-control vred form-control-lg " type="text" onChange={handleChange} name="email" placeholder="Your@email.com"></input>
+                    <input className="form-control vred form-control-lg " type="text"  onChange={handleChange} name="name" placeholder="Your name " required/>
+                    <input className="form-control vred form-control-lg " type="text" onChange={handleChange} name="phone" placeholder="Your phone number" required/>
+                    <input className="form-control vred form-control-lg " type="text" onChange={handleChange} name="company" placeholder="Your company" required/>
+                    <input className="form-control vred form-control-lg " type="text" onChange={handleChange} name="email" placeholder="Your@email.com" required/>
                         </div>
                         <div className="col-sm-6 text-center">
                         <div className="form-floating vred">
-                      <textarea className="form-control contact-textarea vred" onChange={handleChange} name="message" placeholder="Leave a comment here" id="floatingTextarea2" style={{height: width}}></textarea>
+                      <textarea className="form-control contact-textarea vred" onChange={handleChange} name="message" placeholder="Leave a comment here" id="floatingTextarea2" style={{height: width}} required></textarea>
                       <label for="floatingTextarea2 vred">Leave a comment here</label>
                     </div>
                         {
@@ -81,7 +80,7 @@ export default function Contact(props) {
                             )
                         }
                     {loading ?  <div className="text-center mt-5"><CircularProgress size={30} /></div>: 
-                        <button type="submit" class="buttons  text-center mt-3">Submit</button>
+                        <button type="submit" class="buttons  text-center mt-3" disabled={false}>Submit</button>
                     }
                     </div>
                     </div>

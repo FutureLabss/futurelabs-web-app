@@ -550,16 +550,6 @@ return (
       ))}
       </div>
     </div>
-
-
-
-    
-    {/* <Suspense fallback={<div>Loading …</div>}><Contact /></Suspense> */}
-    {/* <PageComponent><Contact /></PageComponent> */}
-
-  
-
-
   </section>
     <Contact isMobile={width}/>
     <Footer />

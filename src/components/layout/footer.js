@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./footer.css";
-import { Nav } from "react-bootstrap";
+import { Nav, Carousel} from "react-bootstrap";
 import {icons} from "../../assets";
 
 const testimonial = [
@@ -9,74 +9,70 @@ const testimonial = [
     name: "Ima-obong",
     career: "Senior Designer at FutureLabs",
     testimonial: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: icons.profile,
+    image: icons.Imaobong,
   },
   {
     id: 1,
     name: "Abasifreke",
     career: "CTO at FutureLabs",
     testimonial: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
-    image: icons.profile,
+    image: icons.Abas,
   },
   {
     id: 2,
     name: "Triumph",
     career: "Senior Model Designer at FutureLabs",
     testimonial: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
-    image: icons.profile,
+    image: icons.Triumph,
   },
 ]
 
 export default function Footer(props) {
   const [date, setDate] = useState();
   const [data] = useState(testimonial)
-  let [count, setCount] = useState(0)
+  const [index, setIndex] = useState(0);
+  
+    const handleSelect = (selectedIndex, e) => {
+      setIndex(selectedIndex);
+    };
   
   useEffect(() => {
     setDate(new Date().getFullYear());
   },[data]);
 
- 
-
-  const handleClick = (value) => {
-    if(value === "prev" && count !== 0 ){
-      count--;
-      setCount(count)
-      console.log("prev ==> ", count)
-    }
-    if(value === "next" && count < data.length - 1 ){
-      count++;
-      setCount(count)
-      console.log("next ==> ", count)
-    }
-  }
-
   return (
   <section className="footer">
-      <div className="container">
-      <div className="container--carousel">
-        <section className="carousel--left">
-          <h4 class="carousel--text">What Our <br />Customers<br/> Are Saying</h4>
-          <div class="carousel--controls">
-            <button className="prev" onClick={() => handleClick("prev")}><img src={icons.left} alt="left" width="20px"/></button>
-            <button className="next" onClick={() => handleClick("next")}><img src={icons.right} alt="right" width="20px"/></button>
+  <Carousel className="container--carousel" activeIndex={index} onSelect={handleSelect}>
+        {data.map(item => (
+          <Carousel.Item style={{backgroundImage: `url("${item.image}")`}}>
+          {/* <img
+            className="d-block w-100 carousel-image-big"
+            src={testimonial[0].image}
+            alt="First slide"
+          />  */}
+          <div className="background-effect"></div>
+          <Carousel.Caption>
+          <img
+            className="carousel-image-small"
+            src={item.image}
+            alt="First slide"
+            width="50"
+            height="50"
+          /> 
+          <p>{item.testimonial}</p>
+          <div>
+            <h3>{item.name}</h3>
+            <p>{item.career}</p>
           </div>
-        </section>
-        <section className="testimonials">
-          {data.filter(item => item.id === count).map(item =>
-           (
-            <>
-            <div className="testimonial">{item.testimonial}</div>
-            <div className="profile">
-              <img src={item.image} alt="profile" />
-              <h5>{item.name}</h5>
-              <h6>{item.career}</h6>
-            </div>
-            </>
-           )
-           )}
-        </section>
-      </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        ))}
+        
+      </Carousel>
+      <div className="container">
+      {/* <div className="container--carousel"> */}
+      
+      {/* </div> */}
         <div className="row d-flex justify-content-around lastted mobile-nop3 ">
         
           <div className="col-sm-3">

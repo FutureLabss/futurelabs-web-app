@@ -68,7 +68,7 @@ const [ containerRef3, videoRef3] = useElementOnScreen3({
   threshold: 0.5
 })
 
-const [sound, sound1, sound2, sound3, handleSound ] = useSound(videoRef,videoRef1,videoRef2)
+const {sound, sound1, sound2, sound3, handleSound } = useSound(videoRef,videoRef1,videoRef2)
 
 let width = window.screen.width
 let value = 3

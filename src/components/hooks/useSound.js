@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
 function useSound(videoRef,videoRef1,videoRef2,videoRef3){
     const [sound, setSound] = useState(false)
@@ -9,8 +9,7 @@ function useSound(videoRef,videoRef1,videoRef2,videoRef3){
     const handleSound = (value) => {
         if(value === 0){
           setSound(!sound)
-          videoRef.current.muted = !videoRef.current.muted;
-          
+          videoRef.current.muted = !videoRef.current.muted;        
         }
         if(value === 1){
           setSound1(!sound1)
@@ -26,7 +25,7 @@ function useSound(videoRef,videoRef1,videoRef2,videoRef3){
         }
       }
 
-    return [sound, sound1, sound2, sound3, handleSound ]
+    return {sound, sound1, sound2, sound3, handleSound }
 }
 
 export default useSound

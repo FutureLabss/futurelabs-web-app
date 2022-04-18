@@ -36,7 +36,7 @@ export default function Modelling() {
     threshold: 1
   })
 
-  const [sound, sound1, sound2, sound3, handleSound ] = useSound(videoRef,videoRef1,videoRef2,videoRef3)
+  const {sound, sound1, sound2, sound3, handleSound } = useSound(videoRef,videoRef1,videoRef2,videoRef3)
     
 
 return (

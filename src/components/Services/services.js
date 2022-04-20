@@ -7,7 +7,11 @@ import useElementOnScreen from '../hooks/useElementOnScreen'
 import useElementOnScreen1 from '../hooks/useElementOnScreen1'
 import useElementOnScreen2 from '../hooks/useElementOnScreen2'
 import useElementOnScreen3 from '../hooks/useElementOnScreen3'
+import useElementOnScreen4 from '../hooks/useElementOnScreen4'
+// import useElementOnScreen5 from '../hooks/useElementOnScreen5'
 import "./services.css"
+import {icons} from '../../assets'
+import useSound from '../hooks/useSound'
 
 
 export default function Services() {
@@ -35,6 +39,20 @@ export default function Services() {
         rootMargin: "0px",
         threshold: 1,
     })
+    const [ containerRef4, videoRef4 ] = useElementOnScreen4({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1,
+    })
+    // const [ containerRef5, videoRef5 ] = useElementOnScreen5({
+    //     root: null,
+    //     rootMargin: "0px",
+    //     threshold: 1,
+    // })
+
+    const { sound, sound1, sound2, sound3, sound4, handleSound } = useSound(
+        videoRef, videoRef1, videoRef2, videoRef3, videoRef4
+    )
 return (
       
 <div>
@@ -59,25 +77,26 @@ return (
           
         </video> 
 
-        <div className="parent-box1 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
             <div className="text-box .bg-danger">
             <h5 className="line1">
                 Strategy
             </h5>
                 <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
 
-
             </div>
 
 
             {/* THE MUTE ICON IS HERE */}
-            <div className="mute-box text-center .bg-info">
-                <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+            <div className="mute-box .bg-info" onClick={() => handleSound(0)}>
+                {sound ? 
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+                    :
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+                }
             </div>
 
         </div>
-
-
     </div>
 
 
@@ -94,20 +113,24 @@ return (
           
         </video> 
 
-        <div className="parent-box2 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
             <div className="text-box .bg-danger">
             <h5 className="line1">
                 Product Design
             </h5>
-                <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+                <Link to="/products"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
 
 
             </div>
 
 
             {/* THE MUTE ICON IS HERE */}
-            <div className="mute-box text-center .bg-info">
-                <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+            <div className="mute-box .bg-info" onClick={() => handleSound(1)}>
+                {sound1 ? 
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+                    :
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+                }
             </div>
 
         </div>
@@ -130,20 +153,24 @@ return (
           
         </video> 
 
-        <div className="parent-box3 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
             <div className="text-box .bg-danger">
             <h5 className="line1">
                 Websites
             </h5>
-                <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
+                <Link to="/websites"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
 
 
             </div>
 
 
             {/* THE MUTE ICON IS HERE */}
-            <div className="mute-box text-center .bg-info">
-                <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+            <div className="mute-box .bg-info" onClick={() => handleSound(2)}>
+                {sound2 ? 
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+                    :
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+                }
             </div>
 
         </div>
@@ -154,32 +181,37 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 services-image6">
+    <div ref={containerRef4} className="video-container .text-danger .bg-danger">
+        <video ref={videoRef4} autoPlay muted loop className='overall'>
+            {/* <Transformation endOffset="30" videoCodec="auto" /> */}
+            <source 
+              src="https://res.cloudinary.com/usenmfon/video/upload/v1650284804/FutureLabs/Final_Branding_Video_faix3v.mp4" type="video/mp4" 
+            /> 
+            
+          
+        </video> 
 
-        <div className="container">
-            <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
-
-                    <h5 className="line1">
-                        Branding &<br className="mobile-no" /> Advertising
-                    </h5>
-                    <button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn more</button>
-
-                    {/* <h6 className="line3"> We develop corporate & brand strategies that <br className="mobile-no" /> set you apart</h6> */}
-
-
-                </div>
-                
-
-                {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-danger text-center">
-                <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div>
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
+            <div className="text-box .bg-danger">
+            <h5 className="line1">
+                Branding &<br className="mobile-no" /> Advertising
+            </h5>
+                <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
 
             </div>
-        </div>
 
-    </section>
+
+            {/* THE MUTE ICON IS HERE */}
+            <div className="mute-box .bg-info" onClick={() => handleSound(4)}>
+                {sound4 ? 
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+                    :
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+                }
+            </div>
+
+        </div>
+    </div>
     {/* Section-One ends here */}
 
 
@@ -197,7 +229,7 @@ return (
           
         </video> 
 
-        <div className="parent-box5 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
             <div className="text-box .bg-danger">
                 <h5 className="line1">
                     3D Modelling
@@ -212,8 +244,12 @@ return (
 
 
             {/* THE MUTE ICON IS HERE */}
-            <div className="mute-box text-center .bg-info">
-                <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+            <div className="mute-box .bg-info" onClick={() => handleSound(3)}>
+                {sound3 ? 
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+                    :
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+                }
             </div>
 
         </div>
@@ -227,32 +263,31 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 services-image5">
+    {/* <div ref={containerRef5} className="video-container .text-danger .bg-danger">
+        <video ref={videoRef5} autoPlay muted loop className='overall'>
+            <source 
+              src="https://res.cloudinary.com/not-set/video/upload/v1644321263/Military_Drone_Animation_by_Maverick_for_FutureLABS_jm6vgp.mp4" type="video/mp4" 
+            />   
+        </video> 
 
-        <div className="container">
-            <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
-
-                    <h5 className="line1">
-                        NFTs & Digital Art
-                    </h5>
-                    <button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn more</button>
-
-                    {/* <h6 className="line3"> We develop corporate & brand strategies that <br className="mobile-no" /> set you apart</h6> */}
-
-
-                </div>
-                
-
-                {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-danger text-center">
-                <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div>
-
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+            <div className="text-box .bg-danger">
+                <h5 className="line1">
+                    NFTs & Digital Art
+                </h5>
+                    <Link to="/modelling"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
             </div>
-        </div>
 
-    </section>
+            <div className="mute-box .bg-info" onClick={() => handleSound(5)}>
+                {sound5 ? 
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+                    :
+                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+                }
+            </div>
+
+        </div>
+    </div> */}
  
     <Contact isMobile={width}/>
     <Footer />

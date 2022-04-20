@@ -51,17 +51,18 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
   },
-  drawerHeader: {
-    display: 'flex',
-    alignItems: 'center',
-    padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
-    ...theme.mixins.toolbar,
-    justifyContent: 'flex-start',
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-  },
+  // drawerHeader: {
+  //   display: 'flex',
+  //   alignItems: 'center',
+  //   padding: theme.spacing(0, 0),
+  //   // necessary for content to be below app bar
+  //   ...theme.mixins.toolbar,
+  //   justifyContent: 'flex-start',
+  //   backgroundPosition: "center",
+  //   backgroundRepeat: "no-repeat",
+  //   backgroundSize: "cover",
+  //   border: "solid black"
+  // },
   content: {
     flexGrow: 1,
     padding: theme.spacing(0),
@@ -69,7 +70,8 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    marginRight: -drawerWidth,
+    marginRight: -drawerWidth
+    
   },
   contentShift: {
     transition: theme.transitions.create('margin', {
@@ -92,8 +94,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "2.5rem",
     fontFamily: "Raleway",
     fontStyle: "normal",
-    fontWeight: "bold"
-    
+    fontWeight: "bold",    
   },
   heros: {
     position: "relative",

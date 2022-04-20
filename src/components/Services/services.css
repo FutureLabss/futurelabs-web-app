@@ -10,19 +10,6 @@ video{
     
 }
 
-
-
-.parent-box1 {
-    width: 100vw;
-    
-    position: absolute;
-    bottom: 1%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-
-
 .video-container {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -169,9 +156,11 @@ video{
     .services-button-text:hover {
     
         background-color: #FF9000 !important;
-    }
-    
+    } 
 
+    .mute-box {
+        padding-right: 0 !important;
+    }
 
 }
 

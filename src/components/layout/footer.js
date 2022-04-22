@@ -80,19 +80,21 @@ export default function Footer(props) {
               <img
                 src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png"
                 alt=""
+                id="futurelabs_logo"
               />
             </h6>
 
-            <p className="ca">
-              +160726007432 <br />
-              hello@futurelabs.agency
-            </p>
+            <div className="ca show-text">
+              <p>+160726007432</p>
+              <p>hello@futurelabs.agency</p>
+            </div>
             <div className="row ph-no">
               <div className="col-3 mb-3 vid">
                 <a href="https://twitter.com/FutureLabsNG">
                   <img
                     src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png"
                     alt=""
+                    id="social-media__image"
                   />
                 </a>
               </div>
@@ -101,6 +103,7 @@ export default function Footer(props) {
                   <img
                     src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png"
                     alt=""
+                    id="social-media__image"
                   />
                 </a>
               </div>
@@ -109,6 +112,7 @@ export default function Footer(props) {
                   <img
                     src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png"
                     alt=""
+                    id="social-media__image"
                   />
                 </a>
               </div>
@@ -164,8 +168,8 @@ export default function Footer(props) {
           <div className="col-sm-3">
             <h6>
               <strong className="carl">Let's Get in Touch</strong>
-              <p className="ca my-3">
-                Sign up to receive our newsletter about industry trends
+              <p className="ca  my-3">
+                Sign up to receive our newsletter on industry trends
               </p>
               <div class="input-group mb-3">
                 <input

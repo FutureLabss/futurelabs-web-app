@@ -136,15 +136,42 @@ color: #000000;
 }
 
 @media only screen and (max-width: 600px) {
-    .container--carousel{
+    /* .container--carousel{
         display: none;
+    } */
+    #futurelabs_logo{
+        display: none;
+    }
+    .ca{
+        display: block;
+        
+        font-size: 14px;
+        line-height: 15px;
+
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+
+        color: #000000        
+    } 
+    
+    #social-media__image{
+        width: 20px;
+        
+    }
+
+    .show-text{
+        display: flex;
+        justify-content: space-around;
+
     }
     .ph-no{
         display: flex;
-        
+        /* border: solid black; */
+        justify-content: center;
     }
     .vid{
         margin-left: -3px;
+        /* border: solid red; */
     }
     .mobile-yest{
         display: none;

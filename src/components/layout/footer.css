@@ -140,7 +140,7 @@ color: #000000;
         display: none;
     } */
     #futurelabs_logo{
-        display: none;
+        display: block;
     }
     .ca{
         display: block;
@@ -160,14 +160,14 @@ color: #000000;
     }
 
     .show-text{
-        display: flex;
-        justify-content: space-around;
+        display: block;
+        /* justify-content: space-around; */
 
     }
     .ph-no{
         display: flex;
         /* border: solid black; */
-        justify-content: center;
+        /* justify-content: center; */
     }
     .vid{
         margin-left: -3px;

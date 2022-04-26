@@ -9,6 +9,8 @@ import './toolbar.css'
 
 
 export default function ToolBar(props){
+    // let location = props
+    // console.log("Hello", location.path)
     return (
         <div className="nav text-white">
     <div className="picyture">

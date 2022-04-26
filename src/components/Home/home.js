@@ -32,6 +32,7 @@ const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
 
 
 export default function Home() {
+
 const [posts, setPosts] = useState([])
 const [loading, setLoading] = useState(true)
 // const sectionZeroRef = useRef()
@@ -85,7 +86,6 @@ useEffect(() => {
   .catch(error => console.log(error))
 },[value])
 
-// console.log("post ==>", posts)
 
 return (
       
@@ -513,7 +513,7 @@ return (
     <div className="container-fluid">
       <div className="row px-2 px-sm-3 pt-4">
       <h1 className="contact mb-3 text-center">Latest Stories</h1>
-      {(loading ? Array.from(new Array(3)) : posts).map((item, index) => (
+      {(loading ? Array.from(new Array(value)) : posts).map((item, index) => (
         <div className="col-sm-4 py-sm-4 py-4" >
         <Nav.Link href={`https://futurelabs-blog.netlify.app/singlepost/${item ? item._id : ""}`} style={{color: 'black'}}>
           <div className="px-2 Thumbnail-parent .bg-danger">

@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./footer.css";
 import { Nav, Carousel} from "react-bootstrap";
+import axios from "axios";
 import {icons} from "../../assets";
+
+const SERVER_URL = 'https://futurelabs-blog.herokuapp.com/contact/send';
+// const SERVER_URL = 'http://localhost:5000/contact/send';
+
 
 const testimonial = [
   {
@@ -29,12 +34,35 @@ const testimonial = [
 
 export default function Footer(props) {
   const [date, setDate] = useState();
-  const [data] = useState(testimonial)
+  const [data] = useState(testimonial);
   const [index, setIndex] = useState(0);
+  const [values, setValues] = useState({});
   
-    const handleSelect = (selectedIndex, e) => {
-      setIndex(selectedIndex);
-    };
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  const handleChange = e => {
+    const {name, value} = e.target;
+    setValues({...values, [name]:value})
+  }
+
+  const handleReset = () => {
+    Array.from(document.querySelectorAll('input')).forEach(
+        input => (input.value = "")
+    )
+  } 
+
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+    try{     
+      await axios.post(SERVER_URL, values)
+      handleReset();
+    }catch(error){
+      console.log(error)
+    }
+  
+  }
   
   useEffect(() => {
     setDate(new Date().getFullYear());
@@ -171,19 +199,24 @@ export default function Footer(props) {
               <p className="ca  my-3">
                 Sign up to receive our newsletter on industry trends
               </p>
+              <form onSubmit={handleSubmit}>
               <div class="input-group mb-3">
                 <input
                   type="text"
+                  name="email"
                   class="form-control "
                   placeholder="Enter your@email.com"
                   aria-label="Recipient's username"
                   aria-describedby="basic-addon2"
+                  onChange={handleChange}
+                  required
                 />
 
-                <button class="btn colors text-white" type="button">
+                <button type="submit" class="btn colors text-white">
                   Send
                 </button>
               </div>
+              </form>
             </h6>
           </div>
         </div>

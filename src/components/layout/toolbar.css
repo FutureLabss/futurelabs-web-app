@@ -16,6 +16,19 @@ div.container-fluid{
     text-decoration: none;
 }
 
+.link{
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+.active .title--effect{
+    background-color: rgba(255, 138, 0, 1);
+    color: #fff;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
 .nav {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     display: flex;

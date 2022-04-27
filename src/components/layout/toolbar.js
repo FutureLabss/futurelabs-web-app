@@ -1,7 +1,9 @@
+// import { useEffect } from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import { Nav } from 'react-bootstrap'
 import   { Offcanvas } from 'react-bootstrap'
 //import { Link } from 'react-router-dom'
+import { useLocation, NavLink } from "react-router-dom";
 
 
 
@@ -11,6 +13,15 @@ import './toolbar.css'
 export default function ToolBar(props){
     // let location = props
     // console.log("Hello", location.path)
+    const location = useLocation();
+    console.log(location);
+
+    // useEffect(() => {
+    //   const path = location.pathname.split('/').pop()
+      
+    // })
+
+
     return (
         <div className="nav text-white">
     <div className="picyture">
@@ -57,8 +68,8 @@ export default function ToolBar(props){
            
 
         <Nav className="justify-content-end flex-grow-1 pe-3 noise text-decoration-none textd">
-        <Nav.Link className="text-muted container-fluid my-0 py-0" href="/about"><h4 className="text-dark">ABOUT</h4></Nav.Link>
-        <Nav.Link className="text-muted container-fluid my-0 py-0" href="/services"><h4 className="text-dark">SERVICES</h4></Nav.Link>
+        <NavLink className="text-muted container-fluid my-0 py-0 link" to="/about"><h4 className="text-dark title--effect">ABOUT</h4></NavLink>
+        <NavLink className="text-muted container-fluid my-0 py-0 link" to="/services"><h4 className="text-dark title--effect">SERVICES</h4></NavLink>
          {/* <Nav.Link className="textd my-2 text-muted" href="/"><strong>HOME</strong> </Nav.Link> */}
 
   
@@ -66,30 +77,30 @@ export default function ToolBar(props){
          <Nav.Link className="textd .my-2 text-muted" href="/services2"><strong>SERVICES</strong></Nav.Link> */}
 
          {/* <Link className="textd mt-2 text-muted" to="/strategy"> <strong>STRATEGY</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/strategy"><strong>STRATEGY</strong></Nav.Link>
+         <NavLink className="textd .my-2 text-muted link" to="/strategy"><strong className="title--effect">STRATEGY</strong></NavLink>
 
           {/* <Link className="textd mt-2 text-muted" to="/products"><strong>PRODUCTS</strong></Link> */}
-          <Nav.Link className="textd .my-2 text-muted" href="/products"><strong>PRODUCTS</strong></Nav.Link>
+          <NavLink className="textd .my-2 text-muted link" to="/products"><strong className="title--effect">PRODUCTS</strong></NavLink>
 
           {/* <Link className="textd mt-2 text-muted" to="/websites"> <strong>WEBSITES</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/websites"><strong>WEBSITES</strong></Nav.Link>
+         <NavLink className="textd .my-2 text-muted link" to="/websites"><strong className="title--effect">WEBSITES</strong></NavLink>
 
-         <Nav.Link className="textd .my-2 text-muted" href="/branding"><strong>BRANDING</strong></Nav.Link>
+         <NavLink className="textd .my-2 text-muted link" to="/branding"><strong className="title--effect">BRANDING</strong></NavLink>
 
          {/* <Link className="textd mt-2 text-muted" to="/modelling"> <strong>3-D MODELLING</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/modelling"><strong>3-D MODELLING</strong></Nav.Link>
+         <NavLink className="textd .my-2 text-muted link" to="/modelling"><strong className="title--effect">3-D MODELLING</strong></NavLink>
 
         
 
         
 
          {/* <Link className="textd mt-2 text-muted" to="/digitalart"> <strong>DIGITAL ART</strong></Link> */}
-         <Nav.Link className="textd .my-2 text-muted" href="/digitalart"><strong>DIGITAL ARTS & NFTs</strong></Nav.Link>
+         <NavLink className="textd .my-2 text-muted link" to="/digitalart"><strong className="title--effect">DIGITAL ARTS & NFTs</strong></NavLink>
          {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
 
          
 
-         <Nav.Link className="textd .my-2 text-muted" href="https://futurelabs-blog.netlify.app/"><strong>BLOG</strong></Nav.Link>
+         <Nav.Link className="textd .my-2 text-muted link" href="https://futurelabs-blog.netlify.app/"><strong className="title--effect">BLOG</strong></Nav.Link>
          
 
         </Nav>

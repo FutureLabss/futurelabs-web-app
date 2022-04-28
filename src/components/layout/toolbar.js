@@ -57,7 +57,7 @@ export default function ToolBar(props){
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel" className="bg-light text-decoration-none textd"
       placement="end">
-      <Nav.Link href="/"> <img  className="w-50 mt-5  container"src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt=""/> </Nav.Link>
+      <NavLink to="/"> <img  className="w-50 mt-5  container" src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png" alt=""/> </NavLink>
       <Offcanvas.Header closeButton>
         <Offcanvas.Title id="offcanvasNavbarLabel " className="textd"></Offcanvas.Title>
       </Offcanvas.Header> 

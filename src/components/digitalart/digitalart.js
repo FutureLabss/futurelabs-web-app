@@ -7,10 +7,10 @@ import "./digitalart.css"
 
 export default function DigitalArt() {
   let width = window.screen.width;
-return (
-      
+
+return (   
 <div>
-<ToolBar />
+  <ToolBar />
   {/* *********************************************************************** */}
 
     {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}
@@ -113,70 +113,8 @@ return (
     </section>
     {/* Section-One ends here */}
 
-
-
     {/* Section-One begins here */}
     <section className="section1 digital-image4">
-
-        <div className="container">
-            <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
-
-                    <h5 className="line1">
-                      Future Technologies
-                    </h5>
-                    {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
-
-                    <h6 className="line3"> Our expert artists access best-in-class  <br className="mobile-no" />technologies to deliver unmatchable excellence.</h6>
-
-
-                </div>
-                
-
-                {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-danger text-center">
-                  <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-    {/* Section-One ends here */}
-
-
-    {/* Section-One begins here */}
-    <section className="section1 digital-image5">
-
-        <div className="container">
-            <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
-
-                    <h5 className="line1">
-                      Collaboration
-                    </h5>
-                    {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
-
-                    <h6 className="line3"> We work closely with our clients & <br className="mobile-no" />keep them posted on every step of execution. </h6>
-
-
-                </div>
-                
-
-                {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-danger text-center">
-                  <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-    {/* Section-One ends here */}
-
-
-    {/* Section-One begins here */}
-    <section className="section1 digital-image6">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -220,7 +158,7 @@ return (
 
 
     <Contact isMobile={width} />
-    <Footer />
+  <Footer />
 </ReactPageScroller>
 </div>
 )

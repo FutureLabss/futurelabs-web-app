@@ -9,6 +9,7 @@ import useElementOnScreen from '../hooks/useElementOnScreen';
 import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';
 import useElementOnScreen3 from '../hooks/useElementOnScreen3';
+import useElementOnScreen4 from '../hooks/useElementOnScreen4';
 import useSound from '../hooks/useSound';
 
 export default function Modelling() {
@@ -36,7 +37,13 @@ export default function Modelling() {
     threshold: 1
   })
 
-  const {sound, sound1, sound2, sound3, handleSound } = useSound(videoRef,videoRef1,videoRef2,videoRef3)
+  const [ containerRef4, videoRef4] = useElementOnScreen4({
+    root: null,
+    rootMargin: "0px",
+    threshold: 1
+  })
+
+const {sound, sound1, sound2, sound3, sound4, handleSound } = useSound(videoRef,videoRef1,videoRef2,videoRef3,videoRef4)
     
 
 return (
@@ -53,6 +60,41 @@ return (
 
     {/* Section-One begins here */}
     <ReactPageScroller>
+  <div ref={containerRef4} className="video-container .text-danger .bg-danger">
+        <video ref={videoRef4} autoPlay muted loop className='overall'>
+            {/* <Transformation endOffset="30" videoCodec="auto" /> */}
+            <source 
+              src="https://res.cloudinary.com/usenmfon/video/upload/v1650975960/FutureLabs/All_3D_video_bxracl.mp4" type="video/mp4" 
+            /> 
+            
+          
+        </video> 
+
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
+            <div className="text-box .bg-danger">
+                  <h5 className="line1">
+                    Noiseless Design
+                  </h5>
+                  {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
+
+                  <h6 className="line3">Our deep understanding of curves, tones <br className="mobile-no" /> & texture affords us flawless execution.</h6>
+
+            </div>
+
+
+            {/* THE MUTE ICON IS HERE */}
+            <div className="mute-box .bg-info" onClick={() => handleSound(4)}>
+          {sound4 ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
+          </div>
+
+        </div>
+
+
+    </div>
   <div ref={containerRef} className="video-container .text-danger .bg-danger">
         <video ref={videoRef} autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}

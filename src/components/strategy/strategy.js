@@ -4,6 +4,8 @@ import Footer from "../layout/footer"
 import ReactPageScroller from 'react-page-scroller';
 import useElementOnScreen from '../hooks/useElementOnScreen'
 import "./strategy.css"
+import useSound from '../hooks/useSound';
+import {icons} from '../../assets'
 
 
 export default function Strategy() {
@@ -13,6 +15,9 @@ export default function Strategy() {
     rootMargin: "0px",
     threshold: 1,
 })
+
+const {sound, handleSound } = useSound(videoRef)
+
 return (
       
 <div>
@@ -36,7 +41,7 @@ return (
           
         </video> 
 
-        <div className="parent-box1 d-flex justify-space-between ontop .bg-warning px-5 text-white">
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
             <div className="text-box .bg-danger">
               <h5 className="line1">
                   Strategy
@@ -49,10 +54,13 @@ return (
 
 
             {/* THE MUTE ICON IS HERE */}
-            <div className="mute-box text-center .bg-info">
-                <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-            </div>
-
+            <div className="mute-box .bg-info" onClick={() => handleSound(0)}>
+          {sound ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
+          </div>
         </div>
 
 

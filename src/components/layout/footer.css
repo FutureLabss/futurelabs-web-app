@@ -18,10 +18,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    /* display: grid;
+    grid-template-rows: 60vh 35vh 5vh; */
 }
 
 .container--carousel{  
-    height: 50vh;
+    height: 100%;
     display: flex;
     margin-bottom: 30px;
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */

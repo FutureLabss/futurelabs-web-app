@@ -70,7 +70,8 @@ export default function Footer(props) {
 
   return (
   <section className="footer">
-  <Carousel className="container--carousel" activeIndex={index} onSelect={handleSelect}>
+  {/* <div className="container--carousel"> */}
+  <Carousel className="container--carousel"  activeIndex={index} onSelect={handleSelect}>
         {data.map(item => (
           <Carousel.Item style={{backgroundImage: `url("${item.image}")`}}>
           {/* <img
@@ -97,6 +98,7 @@ export default function Footer(props) {
         ))}
         
       </Carousel>
+      {/* </div> */}
       <div className="container">
       {/* <div className="container--carousel"> */}
       

@@ -13,7 +13,7 @@ import {
 import Contact from './components/layout/contact'; 
 
 //import Blog from './Blog/Homepage'
-// import './index.css';
+import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 

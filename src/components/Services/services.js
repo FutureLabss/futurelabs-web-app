@@ -66,7 +66,7 @@ return (
 
 
    {/* Section-One begins here */}
-   <ReactPageScroller>
+   <ReactPageScroller scrollUnavailable>
    <div ref={containerRef} className="video-container .text-danger .bg-danger">
         <video ref={videoRef} autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}

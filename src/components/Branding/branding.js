@@ -95,9 +95,9 @@ return (
                 
 
                 {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-danger text-center">
+                {/* <div className="col-3 .bg-danger text-center">
                   <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div>
+                </div> */}
 
             </div>
         </div>
@@ -120,16 +120,16 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Checkout our latest activities on Facebook <br /> <span className="visit">Visit page &#x2192; </span>  </h6>
+                    <h6 className="line3"> Checkout our latest activities on Facebook <br /> <span className="visit"><a href="https://www.facebook.com/FutureLabsNews" target="_blank" rel="noopener noreferrer">Visit page &#x2192;</a> </span>  </h6>
 
 
                 </div>
                 
 
                 {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-danger text-center">
+                {/* <div className="col-3 .bg-danger text-center">
                   <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div>
+                </div> */}
 
             </div>
         </div>
@@ -151,16 +151,16 @@ return (
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3"> Visit our Instagram page to see what we do <br /> <span className="visit">Visit page &#x2192; </span> </h6>
+                    <h6 className="line3"> Visit our Instagram page to see what we do <br /> <span className="visit"><a href="https://www.instagram.com/futurelabshq/" target="_blank" rel="noopener noreferrer">Visit page &#x2192;</a> </span> </h6>
 
 
                 </div>
                 
 
                 {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-danger text-center">
+                {/* <div className="col-3 .bg-danger text-center">
                   <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div>
+                </div> */}
 
             </div>
         </div>

@@ -20,7 +20,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <ReactPageScroller >
+    <ReactPageScroller scrollUnavailable>
     <section className="section1 about-image1">
 
         <div className="container">

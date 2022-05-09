@@ -85,10 +85,10 @@ video{
     transform: translateY(-50%);
 } */
 
-.trial {
+/* .trial {
   
     position: absolute;
-}
+} */
 
 
 
@@ -96,7 +96,7 @@ video{
 
 .section1 {
     /* background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png'); */
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     background-position: center;
     object-fit: cover;

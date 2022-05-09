@@ -20,7 +20,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <ReactPageScroller scrollUnavailable>
+    <ReactPageScroller>
     <section className="section1 about-image1">
 
         <div className="container">
@@ -42,9 +42,9 @@ return (
 
 
                 {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-info text-center pt-sm-5 mt-sm-5">
+                {/* <div className="col-3 .bg-info text-center pt-sm-5 mt-sm-5">
                     <img className=".img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div>
+                </div> */}
 
             </div>
         </div>
@@ -235,9 +235,9 @@ return (
                 
 
                 {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-info text-center">
+                {/* <div className="col-3 .bg-info text-center">
                     <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div>
+                </div> */}
 
             </div>
         </div>
@@ -400,9 +400,9 @@ return (
 
                 
                 {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-info text-center">
+                {/* <div className="col-3 .bg-info text-center">
                     <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />   
-                </div>
+                </div> */}
 
             </div>
         </div>

@@ -18,6 +18,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    /* display: grid;
+    grid-template-rows: 60vh 35vh 5vh; */
 }
 
 .container--carousel{  

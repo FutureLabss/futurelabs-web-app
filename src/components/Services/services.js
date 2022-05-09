@@ -26,23 +26,23 @@ export default function Services() {
     const [ containerRef1, videoRef1 ] = useElementOnScreen1({
         root: null,
         rootMargin: "0px",
-        threshold: 1,
+        threshold: 0.5,
     })
 
     const [ containerRef2, videoRef2 ] = useElementOnScreen2({
         root: null,
         rootMargin: "0px",
-        threshold: 1,
+        threshold: 0.5,
     })
     const [ containerRef3, videoRef3 ] = useElementOnScreen3({
         root: null,
         rootMargin: "0px",
-        threshold: 1,
+        threshold: 0.5,
     })
     const [ containerRef4, videoRef4 ] = useElementOnScreen4({
         root: null,
         rootMargin: "0px",
-        threshold: 1,
+        threshold: 0.5,
     })
     // const [ containerRef5, videoRef5 ] = useElementOnScreen5({
     //     root: null,
@@ -66,8 +66,8 @@ return (
 
 
    {/* Section-One begins here */}
-   <ReactPageScroller scrollUnavailable>
-   <div ref={containerRef} className="video-container .text-danger .bg-danger">
+   <ReactPageScroller >
+   <section ref={containerRef} className="video-container .text-danger .bg-danger">
         <video ref={videoRef} autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
@@ -97,13 +97,13 @@ return (
             </div>
 
         </div>
-    </div>
+    </section>
 
 
 
 
     {/* Section-One begins here */}
-   <div ref={containerRef1} className="video-container .text-danger .bg-danger">
+   <section ref={containerRef1} className="video-container .text-danger .bg-danger">
         <video ref={videoRef1} autoPlay muted loop className="overall">
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
@@ -136,14 +136,14 @@ return (
         </div>
 
 
-    </div>
+    </section>
 
 
 
 
 
     {/* Section-One begins here */}
-   <div ref={containerRef2} className="video-container .text-danger .bg-danger">
+   <section ref={containerRef2} className="video-container .text-danger .bg-danger">
         <video ref={videoRef2} autoPlay muted loop className="overall">
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
@@ -176,12 +176,12 @@ return (
         </div>
 
 
-    </div>
+    </section>
 
 
 
     {/* Section-One begins here */}
-    <div ref={containerRef4} className="video-container .text-danger .bg-danger">
+    <section ref={containerRef4} className="video-container .text-danger .bg-danger">
         <video ref={videoRef4} autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
@@ -211,7 +211,7 @@ return (
             </div>
 
         </div>
-    </div>
+    </section>
     {/* Section-One ends here */}
 
 
@@ -219,7 +219,7 @@ return (
 
 
      {/* Section-One begins here */}
-   <div ref={containerRef3} className="video-container .text-danger .bg-danger">
+   <section ref={containerRef3} className="video-container .text-danger .bg-danger">
         <video ref={videoRef3} autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
@@ -255,40 +255,8 @@ return (
         </div>
 
 
-    </div>
+    </section>
 
-    
-    
-
-
-
-    {/* Section-One begins here */}
-    {/* <div ref={containerRef5} className="video-container .text-danger .bg-danger">
-        <video ref={videoRef5} autoPlay muted loop className='overall'>
-            <source 
-              src="https://res.cloudinary.com/not-set/video/upload/v1644321263/Military_Drone_Animation_by_Maverick_for_FutureLABS_jm6vgp.mp4" type="video/mp4" 
-            />   
-        </video> 
-
-        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
-            <div className="text-box .bg-danger">
-                <h5 className="line1">
-                    NFTs & Digital Art
-                </h5>
-                    <Link to="/modelling"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link>
-            </div>
-
-            <div className="mute-box .bg-info" onClick={() => handleSound(5)}>
-                {sound5 ? 
-                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
-                    :
-                    <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
-                }
-            </div>
-
-        </div>
-    </div> */}
- 
     <Contact isMobile={width}/>
     <Footer />
     </ReactPageScroller> 

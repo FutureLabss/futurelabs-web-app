@@ -122,7 +122,7 @@ return (
         <video ref={videoRef3} autoPlay muted loop className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
-              src="https://res.cloudinary.com/usenmfon/video/upload/v1653341808/FutureLabs/Final_Money_flyvzc.mp4" type="video/mp4" 
+              src="https://res.cloudinary.com/usenmfon/video/upload/v1653400836/FutureLabs/Money_nudfwv.mp4" type="video/mp4" 
             /> 
             
           

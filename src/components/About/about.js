@@ -3,10 +3,39 @@ import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
 import Footer from '../layout/footer';
 import ReactPageScroller from 'react-page-scroller';
+import useElementOnScreen from '../hooks/useElementOnScreen';
+import useElementOnScreen1 from '../hooks/useElementOnScreen1';
+import useElementOnScreen2 from '../hooks/useElementOnScreen2';
+import useElementOnScreen3 from '../hooks/useElementOnScreen3';
+// import useSound from '../hooks/useSound'
+// import {icons} from '../../assets'
 
 export default function About() {
     let width = window.screen.width
 
+    const [ containerRef, videoRef ] = useElementOnScreen({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+      })
+    const [ containerRef1, videoRef1 ] = useElementOnScreen1({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+      })
+    const [ containerRef2, videoRef2 ] = useElementOnScreen2({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+      })
+    const [ containerRef3, videoRef3 ] = useElementOnScreen3({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+      })
+    
+    // const {sound, handleSound } = useSound(videoRef)
+     
 return (
       
 <div>
@@ -90,15 +119,22 @@ return (
                 </div>
             </div>
 
-            <div className="section2-image about-image2 sm-2 .bg-warning"></div>
+            <div ref={containerRef} className="video-container-half section2-image sm-2 .bg-warning">
+                    <video autoPlay muted loop ref={videoRef} className="overall-half">
+                        <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342157/FutureLabs/Comp_1_jqqeuv.mp4" type="video/mp4" />
+                    </video>
+            </div>
 
         </div>
 
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile about-image2 .bg-primary text-white">
-            <div className="vertical-centering">
-
+        <div ref={containerRef1} className="mobile-yes .bg-primary text-white">
+            <video autoPlay muted loop ref={videoRef1} className="overall">
+                <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342157/FutureLabs/Comp_1_jqqeuv.mp4" type="video/mp4" />
+            </video>
+            <div className="overlay-about">
+                
                 <div className=".bg-warning px-3">
                     <h3 className="line4">
                         <span className="italicize">
@@ -139,8 +175,11 @@ return (
         
         {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
         <div className="mobile-no sm-divider">
-
-            <div className="section2-image about-image3 sm-2 .bg-warning"></div>
+            <div ref={containerRef2} className="video-container-half section2-image sm-2 .bg-warning">
+                <video autoPlay muted loop ref={videoRef2} className="overall-half">
+                    <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342156/FutureLabs/FutueLabs_cja71m.mp4" type="video/mp4" />
+                </video>
+            </div>
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
@@ -168,8 +207,11 @@ return (
         
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile about-image3 .bg-primary text-white">
-            <div className="vertical-centering">
+        <div ref={containerRef3} className="mobile-yes .bg-primary text-white">
+            <video autoPlay muted loop ref={videoRef3} className="overall">
+                <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342156/FutureLabs/FutueLabs_cja71m.mp4" type="video/mp4" />
+            </video>
+            <div className="overlay-about">
 
                 <div className=".bg-warning px-3">
                     <h3 className="line4">

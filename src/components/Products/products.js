@@ -7,6 +7,7 @@ import {icons} from '../../assets'
 import useElementOnScreen from '../hooks/useElementOnScreen';
 import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';
+import useElementOnScreen3 from '../hooks/useElementOnScreen3';
 import useSound from '../hooks/useSound';
 
 export default function Products() {
@@ -30,7 +31,13 @@ export default function Products() {
         threshold: 1
     })
 
-  const {sound, sound1, sound2, handleSound } = useSound(videoRef,videoRef1,videoRef2)
+    const [ containerRef3, videoRef3] = useElementOnScreen3({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+    })
+
+  const {sound, sound1, sound2, sound3, handleSound } = useSound(videoRef,videoRef1,videoRef2,videoRef3)
 
 
 return (
@@ -109,7 +116,40 @@ return (
             }
           </div>
         </div>
-    </div>  
+    </div> 
+
+    <div ref={containerRef3} className="video-container .text-danger no-pad one">
+        <video ref={videoRef3} autoPlay muted loop className='overall'>
+            {/* <Transformation endOffset="30" videoCodec="auto" /> */}
+            <source 
+              src="https://res.cloudinary.com/usenmfon/video/upload/v1653341808/FutureLabs/Final_Money_flyvzc.mp4" type="video/mp4" 
+            /> 
+            
+          
+        </video> 
+
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
+            <div className="text-box .bg-danger">
+                <h5 className="line1 .text-danger">
+                    Make <br className="mobile-no" /> Faster & Secure  <br className="mobile-no" />
+                </h5>
+                <h6 className="line3">Payments</h6>
+            </div>
+
+
+            {/* THE MUTE ICON IS HERE */}
+        <div className="mute-box .bg-info" onClick={() => handleSound(3)}>
+            {sound3 ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+            }
+          </div>
+
+        </div>
+
+
+    </div> 
     {/* Section-One begins here */}
     <div ref={containerRef} className="video-container .text-danger no-pad one">
         <video ref={videoRef} autoPlay muted loop className='overall'>
@@ -143,6 +183,7 @@ return (
 
 
     </div>
+    
     {/* Section-One ends here */}
 
 

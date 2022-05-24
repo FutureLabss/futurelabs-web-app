@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import { Nav } from 'react-bootstrap'
 import   { Offcanvas } from 'react-bootstrap'
 //import { Link } from 'react-router-dom'
-import { useLocation, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -13,8 +13,8 @@ import './toolbar.css'
 export default function ToolBar(props){
     // let location = props
     // console.log("Hello", location.path)
-    const location = useLocation();
-    console.log(location);
+    // const location = useLocation();
+    // console.log(location);
 
     // useEffect(() => {
     //   const path = location.pathname.split('/').pop()

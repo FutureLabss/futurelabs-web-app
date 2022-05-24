@@ -14,7 +14,6 @@
 
 }
 
-
 .about-image1 {
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1634900141/IMG_20210805_173028_746_1_vzx1n2.png') !important;
 
@@ -112,6 +111,14 @@
         top: 60%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+    }
+
+    .overlay-about{
+        width: 100vw;
+        position: relative;
+        bottom: 20rem;
+        left: 0;
+        z-index: 1;
     }
 
     .mute {

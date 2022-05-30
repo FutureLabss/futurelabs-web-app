@@ -3,6 +3,7 @@ import Contact from "../layout/contact"
 import Footer from "../layout/footer"
 import ReactPageScroller from 'react-page-scroller';
 import useElementOnScreen from '../hooks/useElementOnScreen'
+import useElementOnScreen1 from '../hooks/useElementOnScreen1'
 import "./strategy.css"
 import useSound from '../hooks/useSound';
 import {icons} from '../../assets'
@@ -15,8 +16,13 @@ export default function Strategy() {
     rootMargin: "0px",
     threshold: 1,
 })
+  const [ containerRef1, videoRef1 ] = useElementOnScreen1({
+    root: null,
+    rootMargin: "0px",
+    threshold: 1,
+})
 
-const {sound, handleSound } = useSound(videoRef)
+const {sound, sound1, handleSound } = useSound(videoRef, videoRef1)
 
 return (
       
@@ -107,32 +113,41 @@ return (
 
 
     {/* Section-One begins here */}
-    <section className="section1 strategy-image3">
+    <div ref={containerRef1} className="video-container">
+        <video ref={videoRef1} autoPlay muted loop className='overall'>
+            {/* <Transformation endOffset="30" videoCodec="auto" /> */}
+            <source 
+              src="https://res.cloudinary.com/usenmfon/video/upload/v1653924292/FutureLabs/Idea_Generation_with_sounds_jfxvtp.mp4" type="video/mp4" 
+            /> 
+            
+          
+        </video> 
 
-        <div className="container">
-            <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
+            <div className="text-box .bg-danger">
+              <h5 className="line1">
+              Ideas Aren’t Enough
+              </h5>
+              {/* <button type="button" class="btn btn-outline-warning strategy-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h5 className="line1">
-                      Ideas Aren’t Enough
-                    </h5>
-                    {/* <button type="button" class="btn btn-outline-warning strategy-button-text mt-4 text-white">LEARN MORE</button> */}
-
-                    <h6 className="line3"> This generation is only fascinated by results, let’s <br className="mobile-no" /> help you go from ideas to MVPs rapidly </h6>
-
-
-                </div>
-                
-
-                {/* THE MUTE ICON IS HERE */}
-                <div className="col-3 .bg-danger text-center">
-                  <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div>
+              <h6 className="line3">This generation is only fascinated by results, let’s
+              <br className="mobile-no" /> help you go from ideas to MVPs rapidly</h6>
 
             </div>
+
+
+            {/* THE MUTE ICON IS HERE */}
+            <div className="mute-box .bg-info" onClick={() => handleSound(1)}>
+          {sound1 ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
+          </div>
         </div>
 
-    </section>
+
+    </div>
     {/* Section-One ends here */}
 
 

@@ -2,13 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway:ital,wght@0,600;0,700;1,700&family=Roboto:wght@500;700&display=swap');
 
-
-
 .overall-half{
     width: 50vw;
     height: 100vh;
     object-fit: cover;
     filter: brightness(50%);
+}
+
+.a-placeHolder, .b-placeHolder{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.a-placeHolder{
+    width: 50vw;
+    background-image: url("../../assets/images/homeImage1.PNG");
+    
+}
+
+.b-placeHolder{
+    background-image: url("../../assets/images/homeImage2.PNG");
+}
+
+.c-placeHolder{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/images/homeImage3.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .blog_section{
@@ -202,7 +226,10 @@ color: #212121;
         visibility: visible;
         
     }
-
+    .a-placeHolder{
+        width: 100vw;
+       
+    }
 
     .mobile-yes-1 {
         visibility: visible;

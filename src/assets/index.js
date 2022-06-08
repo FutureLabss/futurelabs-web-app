@@ -7,6 +7,9 @@ import ceo from './images/ceo.jpg'
 import Abas from './images/Abas.png'
 import Imaobong from './images/Imaobong.png'
 import Triumph from './images/Triumph.png'
+import homeImage1 from './images/homeImage1.PNG'
+import homeImage2 from './images/homeImage2.PNG'
+import homeImage3 from './images/homeImage3.PNG'
 
 export const icons ={
     mute,
@@ -17,5 +20,8 @@ export const icons ={
     ceo,
     Abas,
     Triumph,
-    Imaobong
+    Imaobong,
+    homeImage1,
+    homeImage2,
+    homeImage3,
 }

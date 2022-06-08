@@ -298,7 +298,6 @@ return (
           </h3>
 
           <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button>
-
         </div>
       </div>
 

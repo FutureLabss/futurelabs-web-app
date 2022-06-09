@@ -7,9 +7,9 @@ import ceo from './images/ceo.jpg'
 import Abas from './images/Abas.png'
 import Imaobong from './images/Imaobong.png'
 import Triumph from './images/Triumph.png'
-import homeImage1 from './images/homeImage1.PNG'
-import homeImage2 from './images/homeImage2.PNG'
-import homeImage3 from './images/homeImage3.PNG'
+import homeImage1 from './images/homeImage1.png'
+import homeImage2 from './images/homeImage2.png'
+import homeImage3 from './images/homeImage3.png'
 
 export const icons ={
     mute,

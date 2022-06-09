@@ -248,15 +248,15 @@ return (
 
 
       <div ref={containerRef} className="video-container-half .text-danger .bg-danger">
-      {
-        loading ? (<div className="a-placeHolder" ></div>) : (
+      {/* {
+        loading ? (<div className="a-placeHolder" ></div>) : ( */}
           <video autoPlay muted loop ref={videoRef} className="overall-half">
           <source 
             src="https://res.cloudinary.com/not-set/video/upload/v1644576276/FutureLabs.agency1_3_izapfv.mp4" type="video/mp4" 
           /> 
          </video> 
-        )
-      }       
+        {/* )
+      }        */}
 
         <div className="parent-box3-half d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
           <div className="text-box-half .bg-danger"></div>
@@ -311,8 +311,8 @@ return (
     <div className="mobile-yes text-white">
     
       <div ref={containerRef3} className="video-container .text-danger .bg-danger">
-        {
-          loading ? (<div className="a-placeHolder" ></div>) : (
+        {/* {
+          loading ? (<div className="a-placeHolder" ></div>) : ( */}
             <video autoPlay muted loop ref={videoRef3} className="overall">
  
           <source 
@@ -321,8 +321,8 @@ return (
             
           
         </video> 
-          )
-        }
+          {/* )
+        } */}
        
 
         <div className="parent-box3 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
@@ -390,15 +390,15 @@ return (
 
   <div className="video-container .text-danger .bg-danger">
   <span ref={containerRef1}>
-  {
-    loading ? (<div className="b-placeHolder" ></div>) : (
+  {/* {
+    loading ? (<div className="b-placeHolder" ></div>) : ( */}
       <video autoPlay muted loop ref={videoRef1} className="overall">
       <source 
         src="https://res.cloudinary.com/not-set/video/upload/v1644590584/FutureLabs.agency1_4_mqq6ds.mp4" type="video/mp4" 
       /> 
     </video> 
-    )
-  }
+    {/* )
+  } */}
    
   </span>
     <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
@@ -449,15 +449,15 @@ return (
 
   <section className="video-container .text-danger .bg-danger">
     <span ref={containerRef2}>
-          {
-            loading ? (<div className="c-placeHolder" ></div>) : (
+          {/* {
+            loading ? (<div className="c-placeHolder" ></div>) : ( */}
               <video autoPlay muted loop ref={videoRef2} className="overall">
                 <source 
                 src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 
               /> 
               </video> 
-            )
-          }
+            {/* )
+          } */}
       
     </span>
 

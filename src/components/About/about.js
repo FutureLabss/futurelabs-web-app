@@ -177,7 +177,7 @@ return (
         <div className="mobile-no sm-divider">
             <div ref={containerRef2} className="video-container-half section2-image sm-2 .bg-warning">
                 <video autoPlay muted loop ref={videoRef2} className="overall-half">
-                    <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342156/FutureLabs/FutueLabs_cja71m.mp4" type="video/mp4" />
+                    <source src="https://res.cloudinary.com/usenmfon/video/upload/v1654863914/FutureLabs/Comp_1_1_qxrp2d.mp4" type="video/mp4" />
                 </video>
             </div>
 
@@ -209,7 +209,7 @@ return (
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
         <div ref={containerRef3} className="mobile-yes .bg-primary text-white">
             <video autoPlay muted loop ref={videoRef3} className="overall">
-                <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342156/FutureLabs/FutueLabs_cja71m.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/usenmfon/video/upload/v1654863914/FutureLabs/Comp_1_1_qxrp2d.mp4" type="video/mp4" />
             </video>
             <div className="overlay-about">
 

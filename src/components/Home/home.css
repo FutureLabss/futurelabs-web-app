@@ -19,18 +19,18 @@
 
 .a-placeHolder{
     width: 50vw;
-    background-image: url("../../assets/images/homeImage1.png");
+    background-image: url("https://res.cloudinary.com/usenmfon/image/upload/v1654856157/FutureLabs/homeImage1_ikz9t6.png");
     
 }
 
 .b-placeHolder{
-    background-image: url("../../assets/images/homeImage2.png");
+    background-image: url("https://res.cloudinary.com/usenmfon/image/upload/v1654856367/FutureLabs/homeImage2_eelawc.png");
 }
 
 .c-placeHolder{
     width: 100vw;
     height: 100vh;
-    background-image: url("../../assets/images/homeImage3.png");
+    background-image: url("https://res.cloudinary.com/usenmfon/image/upload/v1654856587/FutureLabs/homeImage3_ibqy4c.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

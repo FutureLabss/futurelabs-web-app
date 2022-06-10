@@ -78,6 +78,7 @@ if(width <= 600){
 }
 
 useEffect(() => {
+  setLoading(true)
   axios.get(`${SERVER_URL}/?limit=${value}`)
   .then(data => {
     setPosts(data.data.articles.data)
@@ -86,9 +87,7 @@ useEffect(() => {
   .catch(error => console.log(error))
 },[value])
 
-
-return (
-      
+return (     
 <div>
 
   <ToolBar />

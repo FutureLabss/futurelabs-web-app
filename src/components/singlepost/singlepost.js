@@ -20,7 +20,7 @@ export default function Singlepost(props) {
     axios
       .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then((res) => {
-        console.log("single post data ==> ",res.data);
+        // console.log("single post data ==> ",res.data);
         setPost(res.data)
         // setPosts((res.data).filter(item => {
         //     return item.id < 5
@@ -32,7 +32,7 @@ export default function Singlepost(props) {
       });
   }, [id]);
 
-  console.log(id)
+  // console.log(id)
 
   return (
     <>

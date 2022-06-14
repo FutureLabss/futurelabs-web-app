@@ -74,7 +74,7 @@ const PageScroller = ({
   const lastScrolledElement = useRef(null);
   // children = React.Children.toArray(children)
   children = useMemo(() => React.Children.toArray(children), [children]);
-  console.log("rending ---> ",prevComponentIndex, " next ===> ",componentIndex, "  length ==> ", containers.length)
+  // console.log("rending ---> ",prevComponentIndex, " next ===> ",componentIndex, "  length ==> ", containers.length)
 
   const scrollPage = useCallback(
     nextComponentIndex => {
@@ -143,7 +143,7 @@ const PageScroller = ({
 
   const setRenderComponents = useCallback(() => {
     const newComponentsToRender = [];
-    console.log("setRender is log")
+    // console.log("setRender is log")
 
     let i = 0;
 

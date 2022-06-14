@@ -12,7 +12,7 @@ import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';
 import useElementOnScreen3 from '../hooks/useElementOnScreen3';
 import useSound from '../hooks/useSound'
-import ReactPageScroller from 'react-page-scroller';
+import ReactPageScroller from '../pageScroll';
 import Footer from '../layout/footer';
 import Contact from '../layout/contact';
 import {icons} from '../../assets'
@@ -25,11 +25,6 @@ import { Nav } from 'react-bootstrap';
 const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
 
 // const Contact = React.lazy(() => import('../layout/contact'));
-
-
-
-
-
 
 export default function Home() {
 

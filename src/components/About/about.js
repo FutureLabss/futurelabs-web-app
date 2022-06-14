@@ -2,7 +2,7 @@ import "./about.css"
 import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
 import Footer from '../layout/footer';
-import ReactPageScroller from 'react-page-scroller';
+import ReactPageScroller from '../pageScroll';
 import useElementOnScreen from '../hooks/useElementOnScreen';
 import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';

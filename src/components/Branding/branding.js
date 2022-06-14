@@ -2,7 +2,7 @@
 import ToolBar from '../layout/toolbar';
 import Contact from "../layout/contact"
 import Footer from "../layout/footer"
-import ReactPageScroller from 'react-page-scroller';
+import ReactPageScroller from '../pageScroll';
 import "./branding.css"
 import {icons} from '../../assets'
 import useSound from '../hooks/useSound';

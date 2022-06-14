@@ -28,7 +28,7 @@ const isNull = value => value === null;
 const TOUCHMOVE = "touchmove";
 const KEYDOWN = "keydown";
 
-const DEFAULT_ANIMATION_TIMER = 1000;
+const DEFAULT_ANIMATION_TIMER = 500;
 const DEFAULT_ANIMATION = "ease-in-out";
 const DEFAULT_CONTAINER_HEIGHT = "100vh";
 const DEFAULT_CONTAINER_WIDTH = "100vw";

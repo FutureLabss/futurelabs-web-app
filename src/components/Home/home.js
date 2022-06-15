@@ -246,7 +246,7 @@ return (
         loading ? (<div className="a-placeHolder" ></div>) : (
           <video autoPlay muted loop ref={videoRef} className="overall-half">
           <source 
-            src="https://res.cloudinary.com/not-set/video/upload/v1644576276/FutureLabs.agency1_3_izapfv.mp4" type="video/mp4" 
+            src="https://res.cloudinary.com/usenmfon/video/upload/v1655290725/FutureLabs/Comp_1_1_rr5xub.mp4" type="video/mp4" 
           /> 
          </video> 
         )
@@ -310,7 +310,7 @@ return (
             <video autoPlay muted loop ref={videoRef3} className="overall">
  
           <source 
-            src="https://res.cloudinary.com/not-set/video/upload/v1644576276/FutureLabs.agency1_3_izapfv.mp4" type="video/mp4" 
+            src="https://res.cloudinary.com/usenmfon/video/upload/v1655290725/FutureLabs/Comp_1_1_rr5xub.mp4" type="video/mp4" 
           /> 
             
           
@@ -388,7 +388,7 @@ return (
     loading ? (<div className="b-placeHolder" ></div>) : (
       <video autoPlay muted loop ref={videoRef1} className="overall">
       <source 
-        src="https://res.cloudinary.com/not-set/video/upload/v1644590584/FutureLabs.agency1_4_mqq6ds.mp4" type="video/mp4" 
+        src="https://res.cloudinary.com/usenmfon/video/upload/v1655290226/FutureLabs/flhy_-_Copy_abrth0.mp4" type="video/mp4" 
       /> 
     </video> 
     )

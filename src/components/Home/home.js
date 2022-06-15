@@ -242,16 +242,11 @@ return (
 
 
       <div ref={containerRef} className="video-container-half .text-danger .bg-danger">
-      {
-        loading ? (<div className="a-placeHolder" ></div>) : (
-          <video autoPlay muted loop ref={videoRef} className="overall-half">
+          <video autoPlay muted loop ref={videoRef} poster={icons.about2} className="overall-half">
           <source 
             src="https://res.cloudinary.com/usenmfon/video/upload/v1655290725/FutureLabs/Comp_1_1_rr5xub.mp4" type="video/mp4" 
           /> 
          </video> 
-        )
-      }       
-
         <div className="parent-box3-half d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
           <div className="text-box-half .bg-danger"></div>
 
@@ -305,19 +300,14 @@ return (
     <div className="mobile-yes text-white">
     
       <div ref={containerRef3} className="video-container .text-danger .bg-danger">
-        {
-          loading ? (<div className="a-placeHolder" ></div>) : (
-            <video autoPlay muted loop ref={videoRef3} className="overall">
+        
+            <video autoPlay muted loop ref={videoRef3} poster={icons.about2} className="overall">
  
           <source 
             src="https://res.cloudinary.com/usenmfon/video/upload/v1655290725/FutureLabs/Comp_1_1_rr5xub.mp4" type="video/mp4" 
           /> 
-            
-          
         </video> 
-          )
-        }
-       
+         
 
         <div className="parent-box3 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
           <div className="text-box .bg-danger">
@@ -384,16 +374,11 @@ return (
 
   <div className="video-container .text-danger .bg-danger">
   <span ref={containerRef1}>
-  {
-    loading ? (<div className="b-placeHolder" ></div>) : (
-      <video autoPlay muted loop ref={videoRef1} className="overall">
+      <video autoPlay muted loop ref={videoRef1} poster={icons.homeImage2} className="overall">
       <source 
         src="https://res.cloudinary.com/usenmfon/video/upload/v1655290226/FutureLabs/flhy_-_Copy_abrth0.mp4" type="video/mp4" 
       /> 
     </video> 
-    )
-  }
-   
   </span>
     <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
       <div className="text-box .bg-danger">
@@ -425,34 +410,14 @@ return (
 
 
   </div>
-  {/* </PageComponent> */}
-  {/* </Suspense> */}
- 
-
-
-
-
-
-
-
-
-
-  {/* Section-One begins here */}
-  {/* <Suspense fallback={<div>Loading …</div>}> */}
-  {/* <PageComponent> */}
 
   <section className="video-container .text-danger .bg-danger">
     <span ref={containerRef2}>
-          {
-            loading ? (<div className="c-placeHolder" ></div>) : (
-              <video autoPlay muted loop ref={videoRef2} className="overall">
+              <video autoPlay muted loop ref={videoRef2} poster={icons.homeImage3} className="overall">
                 <source 
                 src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 
               /> 
               </video> 
-            )
-          }
-      
     </span>
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">

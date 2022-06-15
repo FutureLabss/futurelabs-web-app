@@ -68,7 +68,7 @@ return (
    {/* Section-One begins here */}
    <ReactPageScroller >
    <section ref={containerRef} className="video-container .text-danger .bg-danger">
-        <video ref={videoRef} autoPlay muted loop className='overall'>
+        <video ref={videoRef} autoPlay muted loop poster={icons.service1} className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/eacademy/video/upload/v1643989706/Agency/Strategy.mp4" type="video/mp4" 
@@ -104,7 +104,7 @@ return (
 
     {/* Section-One begins here */}
    <section ref={containerRef1} className="video-container .text-danger .bg-danger">
-        <video ref={videoRef1} autoPlay muted loop className="overall">
+        <video ref={videoRef1} autoPlay muted loop poster={icons.service2} className="overall">
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/not-set/video/upload/v1643984600/Rude_Ui_animation_co2vvu.mp4" type="video/mp4" 
@@ -144,7 +144,7 @@ return (
 
     {/* Section-One begins here */}
    <section ref={containerRef2} className="video-container .text-danger .bg-danger">
-        <video ref={videoRef2} autoPlay muted loop className="overall">
+        <video ref={videoRef2} autoPlay muted loop poster={icons.service3} className="overall">
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/not-set/video/upload/v1640267570/around_main_comp_d1x979.mp4" type="video/mp4" 
@@ -182,7 +182,7 @@ return (
 
     {/* Section-One begins here */}
     <section ref={containerRef4} className="video-container .text-danger .bg-danger">
-        <video ref={videoRef4} autoPlay muted loop className='overall'>
+        <video ref={videoRef4} autoPlay muted loop poster={icons.service4} className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/usenmfon/video/upload/v1650284804/FutureLabs/Final_Branding_Video_faix3v.mp4" type="video/mp4" 
@@ -220,7 +220,7 @@ return (
 
      {/* Section-One begins here */}
    <section ref={containerRef3} className="video-container .text-danger .bg-danger">
-        <video ref={videoRef3} autoPlay muted loop className='overall'>
+        <video ref={videoRef3} autoPlay muted loop poster={icons.service5} className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/usenmfon/video/upload/v1650975960/FutureLabs/All_3D_video_bxracl.mp4" type="video/mp4" 

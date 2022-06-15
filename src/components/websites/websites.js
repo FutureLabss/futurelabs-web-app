@@ -48,7 +48,7 @@ return (
   {/* Section-One begins here */}
   <ReactPageScroller>
     <div ref={containerRef} className="video-container .text-danger .bg-danger">
-        <video ref={videoRef} autoPlay muted loop className='overall' >
+        <video ref={videoRef} autoPlay muted loop poster={icons.website1} className='overall' >
             <source src="https://res.cloudinary.com/not-set/video/upload/v1640267570/around_main_comp_d1x979.mp4" type="video/mp4"/> 
         </video> 
         <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
@@ -70,7 +70,7 @@ return (
     
     {/* Section-One begins here */}
     <div ref={containerRef1} className="video-container .text-danger .bg-danger">
-        <video ref={videoRef1} autoPlay muted loop className='overall' >
+        <video ref={videoRef1} autoPlay muted loop poster={icons.website2} className='overall' >
             <source src="https://res.cloudinary.com/usenmfon/video/upload/v1651836346/FutureLabs/VID_20220316_175006_638_lgldqz.mp4" type="video/mp4"/> 
         </video> 
         <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
@@ -126,7 +126,7 @@ return (
     <section className="video-container .text-danger .bg-danger">
     <span ref={containerRef2}>
 
-      <video autoPlay muted loop ref={videoRef2} className="overall">
+      <video autoPlay muted loop poster={icons.website3} ref={videoRef2} className="overall">
         {/* <Transformation endOffset="30" videoCodec="auto" /> */}
         <source 
           src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 

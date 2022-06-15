@@ -9,32 +9,6 @@
     filter: brightness(50%);
 }
 
-.a-placeHolder, .b-placeHolder{
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.a-placeHolder{
-    width: 50vw;
-    background-image: url("https://res.cloudinary.com/usenmfon/image/upload/v1654856157/FutureLabs/homeImage1_ikz9t6.png");
-    
-}
-
-.b-placeHolder{
-    background-image: url("https://res.cloudinary.com/usenmfon/image/upload/v1654856367/FutureLabs/homeImage2_eelawc.png");
-}
-
-.c-placeHolder{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("https://res.cloudinary.com/usenmfon/image/upload/v1654856587/FutureLabs/homeImage3_ibqy4c.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .blog_section{
     height: 100vh;
 }

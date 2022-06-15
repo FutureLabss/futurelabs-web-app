@@ -38,7 +38,7 @@ return (
   {/* Section-One begins here */}
   <ReactPageScroller>
   <div ref={containerRef} className="video-container">
-        <video ref={videoRef} autoPlay muted loop className='overall'>
+        <video ref={videoRef} autoPlay muted loop poster={icons.strategy1} className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/eacademy/video/upload/v1643989706/Agency/Strategy.mp4" type="video/mp4" 

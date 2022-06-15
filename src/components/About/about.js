@@ -8,7 +8,7 @@ import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';
 import useElementOnScreen3 from '../hooks/useElementOnScreen3';
 // import useSound from '../hooks/useSound'
-// import {icons} from '../../assets'
+import {icons} from '../../assets'
 
 export default function About() {
     let width = window.screen.width
@@ -120,7 +120,7 @@ return (
             </div>
 
             <div ref={containerRef} className="video-container-half section2-image sm-2 .bg-warning">
-                    <video autoPlay muted loop ref={videoRef} className="overall-half">
+                    <video autoPlay muted loop ref={videoRef} poster={icons.about1} className="overall-half">
                         <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342157/FutureLabs/Comp_1_jqqeuv.mp4" type="video/mp4" />
                     </video>
             </div>
@@ -130,7 +130,7 @@ return (
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
         <div ref={containerRef1} className="mobile-yes .bg-primary text-white">
-            <video autoPlay muted loop ref={videoRef1} className="overall">
+            <video autoPlay muted loop ref={videoRef1} poster={icons.about1} className="overall">
                 <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342157/FutureLabs/Comp_1_jqqeuv.mp4" type="video/mp4" />
             </video>
             <div className="overlay-about">
@@ -176,7 +176,7 @@ return (
         {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
         <div className="mobile-no sm-divider">
             <div ref={containerRef2} className="video-container-half section2-image sm-2 .bg-warning">
-                <video autoPlay muted loop ref={videoRef2} className="overall-half">
+                <video autoPlay muted loop ref={videoRef2} poster={icons.about2} className="overall-half">
                     <source src="https://res.cloudinary.com/usenmfon/video/upload/v1654863914/FutureLabs/Comp_1_1_qxrp2d.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -208,7 +208,7 @@ return (
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
         <div ref={containerRef3} className="mobile-yes .bg-primary text-white">
-            <video autoPlay muted loop ref={videoRef3} className="overall">
+            <video autoPlay muted loop ref={videoRef3} poster={icons.about2} className="overall">
                 <source src="https://res.cloudinary.com/usenmfon/video/upload/v1654863914/FutureLabs/Comp_1_1_qxrp2d.mp4" type="video/mp4" />
             </video>
             <div className="overlay-about">

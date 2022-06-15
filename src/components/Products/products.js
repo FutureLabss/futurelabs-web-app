@@ -56,7 +56,7 @@ return (
     <ReactPageScroller>
         {/* Section-One begins here */}
         <div ref={containerRef2} className="video-container .text-danger no-pad one">
-        <video ref={videoRef2} autoPlay muted loop className='overall'>
+        <video ref={videoRef2} autoPlay muted loop poster={icons.product1} className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/usenmfon/video/upload/v1651836353/FutureLabs/Rude_Ui_animation_kil6nt.mp4" type="video/mp4" 
@@ -88,7 +88,7 @@ return (
 
     </div>
     <div ref={containerRef1} className="video-container .text-danger no-pad one">
-        <video ref={videoRef1} autoPlay muted loop className='overall'>
+        <video ref={videoRef1} autoPlay muted loop poster={icons.product2} className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/usenmfon/video/upload/v1650284802/FutureLabs/Shopin_animation_qgq2kq.mp4" type="video/mp4" 
@@ -119,7 +119,7 @@ return (
     </div> 
 
     <div ref={containerRef3} className="video-container .text-danger no-pad one">
-        <video ref={videoRef3} autoPlay muted loop className='overall'>
+        <video ref={videoRef3} autoPlay muted loop  poster={icons.product3} className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/usenmfon/video/upload/v1653400836/FutureLabs/Money_nudfwv.mp4" type="video/mp4" 
@@ -152,7 +152,7 @@ return (
     </div> 
     {/* Section-One begins here */}
     <div ref={containerRef} className="video-container .text-danger no-pad one">
-        <video ref={videoRef} autoPlay muted loop className='overall'>
+        <video ref={videoRef} autoPlay muted loop  poster={icons.product4} className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/not-set/video/upload/v1645534184/VID-20220217-WA0018_rtkkjs.mp4" type="video/mp4" 

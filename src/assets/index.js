@@ -25,6 +25,7 @@ import product4 from './images/product_4.png'
 import website1 from './images/websites_1.png'
 import website2 from './images/websites_2.png'
 import website3 from './images/websites_3.png'
+import website4 from './images/websites_4.png'
 
 export const icons ={
     mute,
@@ -54,4 +55,5 @@ export const icons ={
     website1,
     website2,
     website3,
+    website4,
 }

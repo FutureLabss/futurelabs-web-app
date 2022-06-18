@@ -4,7 +4,6 @@ import useElementOnScreen1 from "../hooks/useElementOnScreen1";
 import useElementOnScreen2 from "../hooks/useElementOnScreen2";
 import useElementOnScreen3 from "../hooks/useElementOnScreen3";
 import useElementOnScreen4 from "../hooks/useElementOnScreen4";
-// import useElementOnScreen5 from '../hooks/useElementOnScreen5'
 import "./services.css";
 import { icons } from "../../assets";
 import useSound from "../hooks/useSound";
@@ -96,7 +95,7 @@ export default function Services() {
     {
       containerRef: containerRef3,
       videoRef: videoRef3,
-      icon: icons.website5,
+      icon: icons.website3,
       src: "https://res.cloudinary.com/usenmfon/video/upload/v1650975960/FutureLabs/All_3D_video_bxracl.mp4",
       line1: "3D Modelling",
       link: "/modelling",

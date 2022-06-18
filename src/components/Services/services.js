@@ -83,7 +83,7 @@ export default function Services() {
     {
       containerRef: containerRef4,
       videoRef: videoRef4,
-      icon: icons.website4,
+      icon: icons.service4,
       src: "https://res.cloudinary.com/usenmfon/video/upload/v1650284804/FutureLabs/Final_Branding_Video_faix3v.mp4",
       line1: "Branding & ",
       break: " Advertising",
@@ -95,7 +95,7 @@ export default function Services() {
     {
       containerRef: containerRef3,
       videoRef: videoRef3,
-      icon: icons.website3,
+      icon: icons.service5,
       src: "https://res.cloudinary.com/usenmfon/video/upload/v1650975960/FutureLabs/All_3D_video_bxracl.mp4",
       line1: "3D Modelling",
       link: "/modelling",

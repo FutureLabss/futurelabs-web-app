@@ -23,7 +23,7 @@ const isNil = value => value === undefined || value === null;
 
 const isNull = value => value === null;
 
- const isPositiveNumber = value => value > 0;
+const isPositiveNumber = value => value > 0;
 
 const TOUCHMOVE = "touchmove";
 const KEYDOWN = "keydown";
@@ -274,13 +274,13 @@ const PageScroller = ({
 
   useEffect(() => {
     isMounted = true;
-
+    containers.length = React.Children.count(children)
     checkRenderOnMount();
     return () => {
       isMounted = false;
-      containers.length=0
+      // containers.length=0
     };
-  }, [checkRenderOnMount]);
+  }, [checkRenderOnMount, children]);
 
   useEffect(() => {
     isScrolling = false;
@@ -332,7 +332,7 @@ const PageScroller = ({
         }
       }
     }
-  }, [customPageNumber,animationTimer, scrollPage,animationTimerBuffer, children, componentIndex, componentsToRenderLength]);
+  }, [customPageNumber, animationTimer, scrollPage, animationTimerBuffer, children, componentIndex, componentsToRenderLength]);
 
   useEffect(() => {
     if (isTransitionAfterComponentsToRenderChanged) {

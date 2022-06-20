@@ -1,4 +1,3 @@
-
 import ToolBar from '../layout/toolbar';
 import Contact from "../layout/contact"
 import Footer from "../layout/footer"
@@ -37,7 +36,7 @@ return (
     {/* Section-One begins here */}
     <ReactPageScroller>
     <div ref={containerRef} className="video-container .text-danger .bg-danger">
-        <video ref={videoRef} autoPlay muted loop className='overall'>
+        <video ref={videoRef} autoPlay muted loop poster={icons.branding1} className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}
             <source 
               src="https://res.cloudinary.com/usenmfon/video/upload/v1650284804/FutureLabs/Final_Branding_Video_faix3v.mp4" type="video/mp4" 

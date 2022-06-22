@@ -34,7 +34,7 @@ function Section(props) {
                 ) : (
                   <h6 className="line3">
                     {" "}
-                    {item.line3} <br className="mobile-no" /> {item.line4}
+                    {item.line3} <br className="mobile-no" /> {item.line4} <br className="mobile-no" />{item.line5}
                   </h6>
                 )}
               </div>

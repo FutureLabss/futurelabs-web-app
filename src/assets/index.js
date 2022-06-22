@@ -12,6 +12,9 @@ import homeImage2 from './images/homeImage2.png'
 import homeImage3 from './images/homeImage3.png'
 import about1 from './images/About_1.png'
 import about2 from './images/about_2.png'
+import about4 from './images/about_4.png'
+import about5 from './images/about_5.png'
+import about6 from './images/about_6.png'
 import branding1 from './images/branding_1.png'
 import service1 from './images/services_1.png'
 import service2 from './images/services_2.png'
@@ -20,6 +23,7 @@ import service4 from './images/services_4.png'
 import service5 from './images/services_5.png'
 import strategy1 from './images/strategy_1.png'
 import strategy2 from './images/strategy_2.png'
+import strategy3 from './images/strategy_3.png'
 import product1 from './images/product_1.png'
 import product2 from './images/product_2.png'
 import product3 from './images/product_3.png'
@@ -48,6 +52,9 @@ export const icons ={
     homeImage3,
     about2,
     about1,
+    about4,
+    about5,
+    about6,
     branding1,
     service1,
     service2,
@@ -56,6 +63,7 @@ export const icons ={
     service5,
     strategy1,
     strategy2,
+    strategy3,
     product1,
     product2,
     product3,

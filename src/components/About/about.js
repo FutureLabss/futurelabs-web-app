@@ -7,6 +7,8 @@ import useElementOnScreen from '../hooks/useElementOnScreen';
 import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';
 import useElementOnScreen3 from '../hooks/useElementOnScreen3';
+import useElementOnScreen4 from '../hooks/useElementOnScreen4';
+import useElementOnScreen5 from '../hooks/useElementOnScreen5';
 // import useSound from '../hooks/useSound'
 import {icons} from '../../assets'
 
@@ -29,6 +31,16 @@ export default function About() {
         threshold: 1
       })
     const [ containerRef3, videoRef3 ] = useElementOnScreen3({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+      })
+    const [ containerRef4, videoRef4 ] = useElementOnScreen4({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+      })
+    const [ containerRef5, videoRef5 ] = useElementOnScreen5({
         root: null,
         rootMargin: "0px",
         threshold: 1
@@ -207,8 +219,8 @@ return (
         
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div ref={containerRef3} className="mobile-yes .bg-primary text-white">
-            <video autoPlay muted loop ref={videoRef3} poster={icons.about2} className="overall">
+        <div ref={containerRef2} className="mobile-yes .bg-primary text-white">
+            <video autoPlay muted loop ref={videoRef2} poster={icons.about2} className="overall">
                 <source src="https://res.cloudinary.com/usenmfon/video/upload/v1654863914/FutureLabs/Comp_1_1_qxrp2d.mp4" type="video/mp4" />
             </video>
             <div className="overlay-about">
@@ -254,10 +266,49 @@ return (
     {/* *********************************************************************** */}
     {/* SEGMENT-TWO BEGINS HERE. (A REPEAT OF SEGMENT ONE) */}
     {/* *********************************************************************** */}
+    <section className="video-container .text-danger .bg-danger">
+    <span ref={containerRef4}>
+              <video autoPlay muted loop ref={videoRef4} poster={icons.about4} className="overall">
+                <source 
+                src="https://res.cloudinary.com/dps0unrwm/video/upload/v1655828672/Futurelabs/about_4_ewn3ye.mp4" type="video/mp4" 
+              /> 
+              </video> 
+    </span>
 
+      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="text-box .bg-danger">
+          <h5 className="line6 ">
+                We draw from our deep <br className="mobile-no"/>
+                skillsets across multiple <br className="mobile-no"/>
+                domains to build the best <br className="mobile-no"/>
+                future imaginable
+          </h5>
+
+          <h5 className="line5">
+                THE BEST FUTURE IMAGINABLE.
+           </h5>
+          {/* <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link> */}
+
+
+        </div>
+
+
+        {/* THE MUTE ICON IS HERE */}
+        {/* <div className="mute-box .bg-info" onClick={() => handleSound(2)}>
+          {sound2 ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
+          </div> */}
+
+      </div>
+
+
+  </section>
 
     {/* Section-One begins here */}
-    <section className="section1 about-image4">
+    {/* <section className="section1 about-image4">
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
@@ -276,34 +327,19 @@ return (
                 </div>
                 
 
-                {/* THE MUTE ICON IS HERE */}
-                {/* <div className="col-3 .bg-info text-center">
-                    <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div> */}
 
             </div>
         </div>
 
-    </section>
+    </section> */}
     {/* Section-One ends here */}
-
-
-
-
-
-
-
-
-    {/* Section-Two begins */}
     <section className="section2">
-        
 
-        {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
         <div className="mobile-no sm-divider">
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
-                    <h3 className="line4">
+                <h3 className="line4">
                         We effortlessly
                         <br />
                         understand our client’s
@@ -321,18 +357,24 @@ return (
                 </div>
             </div>
 
-            <div className="section2-image about-image5 sm-2 .bg-warning"></div>
+            <div ref={containerRef5} className="video-container-half section2-image sm-2 .bg-warning">
+                    <video autoPlay muted loop ref={videoRef5} poster={icons.about5} className="overall-half">
+                        <source src="https://res.cloudinary.com/dps0unrwm/video/upload/v1655828667/Futurelabs/about_5_tk0qwk.mp4" type="video/mp4" />
+                    </video>
+            </div>
 
         </div>
 
 
-        
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile about-image5 .bg-primary text-white">
-            <div className="vertical-centering">
-
+        <div ref={containerRef5} className="mobile-yes .bg-primary text-white">
+            <video autoPlay muted loop ref={videoRef5} poster={icons.about5} className="overall">
+                <source src="https://res.cloudinary.com/dps0unrwm/video/upload/v1655828667/Futurelabs/about_5_tk0qwk.mp4" type="video/mp4" />
+            </video>
+            <div className="overlay-about">
+                
                 <div className=".bg-warning px-3">
-                    <h3 className="line4">
+                <h3 className="line4">
                         We effortlessly
                         <br />
                         understand our client’s
@@ -354,23 +396,20 @@ return (
 
         
     </section>
-    {/* Section-Two ends here */}
 
-
-
-    {/* Section-Three begins here*/}
     <section className="section2">
         
-        
-
         {/* THIS PARENT DIV DISAPPEARS ONLY ON MOBILE */}
         <div className="mobile-no sm-divider">
-
-            <div className="section2-image about-image6 sm-2 .bg-warning"></div>
+            <div ref={containerRef3} className="video-container-half section2-image sm-2 .bg-warning">
+                <video autoPlay muted loop ref={videoRef3} poster={icons.about6} className="overall-half">
+                    <source src="https://res.cloudinary.com/dps0unrwm/video/upload/v1655828672/Futurelabs/About_6_s6qngi.mp4" type="video/mp4" />
+                </video>
+            </div>
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
-                    <h3 className="line4">
+                <h3 className="line4">
                         We will analyze your
                         <br />
                         brand data and draw
@@ -383,6 +422,7 @@ return (
                     <h4 className="line5">
                         SEAMLESS COLLABORATION
                     </h4>
+
                 </div>
             </div>
 
@@ -392,11 +432,14 @@ return (
         
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div className="mobile-yes section2-image-mobile about-image6 .bg-primary text-white">
-            <div className="vertical-centering">
+        <div ref={containerRef3} className="mobile-yes .bg-primary text-white">
+            <video autoPlay muted loop ref={videoRef3} poster={icons.about6} className="overall">
+                <source src="https://res.cloudinary.com/dps0unrwm/video/upload/v1655828672/Futurelabs/About_6_s6qngi.mp4" type="video/mp4" />
+            </video>
+            <div className="overlay-about">
 
                 <div className=".bg-warning px-3">
-                    <h3 className="line4">
+                <h3 className="line4">
                         We will analyze your
                         <br />
                         brand data and draw
@@ -416,9 +459,6 @@ return (
 
 
     </section>
-    {/* Section-Three ends here */}
-
-
 
     {/* Section-One begins here */}
     <section className="section1 about-image7">

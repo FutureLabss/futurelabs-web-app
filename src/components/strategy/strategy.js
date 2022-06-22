@@ -1,6 +1,7 @@
 import ToolBar from "../layout/toolbar";
 import useElementOnScreen from "../hooks/useElementOnScreen";
 import useElementOnScreen1 from "../hooks/useElementOnScreen1";
+import useElementOnScreen2 from "../hooks/useElementOnScreen2";
 import "./strategy.css";
 import useSound from "../hooks/useSound";
 import { icons } from "../../assets";
@@ -17,8 +18,13 @@ export default function Strategy() {
     rootMargin: "0px",
     threshold: 1,
   });
+  const [containerRef2, videoRef2] = useElementOnScreen2({
+    root: null,
+    rootMargin: "0px",
+    threshold: 1,
+  });
 
-  const { sound, sound1, handleSound } = useSound(videoRef, videoRef1);
+  const { sound, sound1, sound2, handleSound } = useSound(videoRef, videoRef1, videoRef2);
 
   const data = [
     {
@@ -43,6 +49,19 @@ export default function Strategy() {
       line4: "help you go from ideas to MVPs rapidly",
       index: 1,
       sound: sound1,
+      handleSound: handleSound,
+    },
+    {
+      containerRef: containerRef2,
+      videoRef: videoRef2,
+      icon: icons.strategy3,
+      src: "https://res.cloudinary.com/dps0unrwm/video/upload/v1655897190/Futurelabs/Project_1000_zlcrat.mp4",
+      line1: "Bringing You Project 1000",
+      line3: "We partnered with American Cybersecurity",
+      line4: "experts to train young mindswith digital skills,",
+      line5: "as a means to fight cyber fraud",
+      index: 2,
+      sound: sound2,
       handleSound: handleSound,
     },
   ];

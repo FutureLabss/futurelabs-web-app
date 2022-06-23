@@ -61,7 +61,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <ReactPageScroller>
+    <ReactPageScroller renderAllPagesOnFirstRender>
     <section className="section1 about-image1">
 
         <div className="container">

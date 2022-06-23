@@ -102,7 +102,7 @@ return (
 
   {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent> */}
-  <ReactPageScroller animationTimer={500}>
+  <ReactPageScroller renderAllPagesOnFirstRender>
   <section  className="section1 home-image1">
 
     <div className="container .bg-primary">

@@ -10,7 +10,7 @@ function Section(props) {
   let width = window.screen.width;
 
   return (
-    <ReactPageScroller>
+    <ReactPageScroller renderAllPagesOnFirstRender>
        {data.map((item, index) => {
         return (
           <div key={index} ref={item.containerRef} className="video-container .text-danger .bg-danger">

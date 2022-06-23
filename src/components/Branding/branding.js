@@ -34,7 +34,7 @@ return (
 
 
     {/* Section-One begins here */}
-    <ReactPageScroller>
+    <ReactPageScroller renderAllPagesOnFirstRender>
     <div ref={containerRef} className="video-container .text-danger .bg-danger">
         <video ref={videoRef} autoPlay muted loop poster={icons.branding1} className='overall'>
             {/* <Transformation endOffset="30" videoCodec="auto" /> */}

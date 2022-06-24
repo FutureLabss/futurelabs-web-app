@@ -108,6 +108,60 @@ return (
 
 
     {/* Section-One begins here */}
+    <section className="section1 branding-image1">
+
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+
+                    <h5 className="line1">
+                      Connect with us on LinkedIn
+                    </h5>
+                    {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
+
+                    <h6 className="line3"> Checkout our latest updates on LinkedIn <br /> <span className="visit"><a href="https://www.linkedin.com/company/future-labs-ng/" target="_blank" rel="noopener noreferrer">Visit page &#x2192;</a> </span>  </h6>
+
+
+                </div>
+                
+
+                {/* THE MUTE ICON IS HERE */}
+                {/* <div className="col-3 .bg-danger text-center">
+                  <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+                </div> */}
+
+            </div>
+        </div>
+
+    </section>
+
+    <section className="section1 branding-image5">
+
+        <div className="container">
+            <div className="row .bg-warning d-flex justify-space-between">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+
+                    <h5 className="line1">
+                      Connect with us on Twitter
+                    </h5>
+                    {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
+
+                    <h6 className="line3"> Checkout our latest activities on Twitter <br /> <span className="visit"><a href="https://twitter.com/FutureLabsNG" target="_blank" rel="noopener noreferrer">Visit page &#x2192;</a> </span>  </h6>
+
+
+                </div>
+                
+
+                {/* THE MUTE ICON IS HERE */}
+                {/* <div className="col-3 .bg-danger text-center">
+                  <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
+                </div> */}
+
+            </div>
+        </div>
+
+    </section>
+    
     <section className="section1 branding-image3">
 
         <div className="container">

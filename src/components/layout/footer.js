@@ -115,11 +115,11 @@ export default function Footer(props) {
             </h6>
 
             <div className="ca show-text">
-              <p>+160726007432</p>
+              <p>+2347032400529</p>
               <p>hello@futurelabs.agency</p>
             </div>
             <div className="row ph-no">
-              <div className="col-3 mb-3 vid">
+              <div className="col-2 mb-2 vid">
                 <a href="https://twitter.com/FutureLabsNG">
                   <img
                     src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png"
@@ -128,19 +128,19 @@ export default function Footer(props) {
                   />
                 </a>
               </div>
-              <div className="col-3 mb-3 vid">
-                <a href="https://www.facebook.com/FutureLabsNews">
+              <div className="col-2 mb-2 vid">
+                <a href="https://www.instagram.com/futurelabshq/">
                   <img
-                    src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png"
+                    src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png"
                     alt=""
                     id="social-media__image"
                   />
                 </a>
               </div>
-              <div className="col-3 mb-3 vid">
-                <a href="https://www.instagram.com/futurelabshq/">
+              <div className="col-2 mb-2 vid">
+                <a href="https://www.facebook.com/FutureLabsNews">
                   <img
-                    src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png"
+                    src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png"
                     alt=""
                     id="social-media__image"
                   />
@@ -198,7 +198,7 @@ export default function Footer(props) {
           <div className="col-sm-3">
             <h6>
               <strong className="carl">Let's Get in Touch</strong>
-              <p className="ca  my-3">
+              <p className="ca my-3">
                 Sign up to receive our newsletter on industry trends
               </p>
               <form onSubmit={handleSubmit}>

@@ -109,20 +109,14 @@ return (
       <div className="row .bg-warning d-flex justify-space-between  mt-sm-5 pt-sm-5">
         <div className="col-9 .bg-primary px-xs-4 px-sm-0 text-white">
 
-          <h4 className="line1">WE ARE FUTURISTS!</h4>
-          <span>
-          <h5 className="line2">
-            We are a dedicated team<br  className="mobile-no" />
-            of creative strategists,<br className="mobile-no" />
-            Designers & Developers.<br  className="mobile-no" />
-            {/* <p >
-            We will help you turn ideas into<br  className="mobile-no" />
-            the reality you hope to create...
-          </p> */}
-          </h5>
-          {/* <h6 className="line3"> We will help you turn ideas into the reality <br className="mobile-no" /> you hope to create.</h6> */}
-          
-          </span>
+          <h4 className="line1"> We are Futurists!</h4>
+          <h6 className="line3">
+          We build global systems.
+            <br />
+            Bringing your  puzzle of ideas into finished products.
+            <br />
+            What could you really do with the best Strategists,  <br className="mobile-no" /> Designers and Developers in one space?
+          </h6>
         </div>
         
 

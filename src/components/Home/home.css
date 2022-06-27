@@ -196,6 +196,9 @@ color: #212121;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .blog_desktop{
+        display: none;
+    }
     .ungroup {
         visibility: visible;
         

@@ -30,15 +30,7 @@ export default function Home() {
 
 const [posts, setPosts] = useState([])
 const [loading, setLoading] = useState(true)
-// const sectionZeroRef = useRef()
-// const sectionOneRef = useRef()
-// const sectionTwoRef = useRef()
-// const sectionThreeRef = useRef()
-// const sectionFourRef = useRef()
-// const sectionFiveRef = useRef()
-// let [count] = useState(0)
-
-// useScrollToView(count,sectionZeroRef,sectionOneRef,sectionTwoRef,sectionThreeRef,sectionFourRef,sectionFiveRef);
+const [mobile, setMobile] = useState(false)
 
 const [ containerRef, videoRef ] = useElementOnScreen({
   root: null,
@@ -68,9 +60,9 @@ const {sound, sound1, sound2, sound3, handleSound } = useSound(videoRef,videoRef
 
 let width = window.screen.width
 let value = 3
-if(width <= 600){
-  value = 1
-}
+// if(width <= 600){
+//   value = 1
+// }
 
 useEffect(() => {
   setLoading(true)
@@ -82,25 +74,20 @@ useEffect(() => {
   .catch(error => console.log(error))
 },[value])
 
+window.addEventListener('resize', function(){
+  let width = window.screen.width
+  if(width <= 600){
+    setMobile(true)
+  }else{
+    setMobile(false)
+  }
+})
+
 return (     
 <div>
 
   <ToolBar />
-  {/* *********************************************************************** */}
-
-    {/* THIS BASE IS BI-SEGMENTED FOR REUSABILITY. */}
-    {/* SEGMENT-ONE BEGINS HERE & IS REPEATED AS SEGMENT-TWO*/}
-
-  {/* *********************************************************************** */}
-
-  
-  {/* Section-One begins here */}
-  
-  
-
-  {/* <ScrollableContainer animationTime={2000}> */}
-
-  {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
+ {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent> */}
   <ReactPageScroller renderAllPagesOnFirstRender>
   <section  className="section1 home-image1">
@@ -469,56 +456,92 @@ return (
   
   {/* <Suspense fallback={<div>Loading …</div>}> */}
   {/* <PageComponent> */}
-  <section className="blog_section">
-    <div className="container-fluid">
-      <div className="row px-2 px-sm-3 pt-4">
-      <h1 className="contact mb-3 text-center">Latest Stories</h1>
-      {(loading ? Array.from(new Array(value)) : posts).map((item, index) => (
-        <div className="col-sm-4 py-sm-4 py-4" >
-        <Nav.Link href={`https://futurelabs-blog.netlify.app/singlepost/${item ? item._id : ""}`} style={{color: 'black'}}>
-          <div className="px-2 Thumbnail-parent .bg-danger">
-        {
-          item ? (
-            <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded" style={{backgroundImage: `url("${item.image}")`}}></div>
-          ) : <Skeleton variant="rectangular" minWidth={200} height={270}/>
-        }
-        <div>
-        {
-          item ? (
-            <h4 className="mt-2">{item.title}</h4>
-          ) : <Skeleton variant="text" />
-        }
-        {
-          item ? (
-            <p>
-              {new Date(item.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}
-              <hr className="under bg-warning rounded " />
-            </p>
-          ) : <Skeleton variant="text" width={200}/>
-        }
-        {
-          item ? (
-            <p>
-                {item.description}
+  {
+    mobile ? (
+      loading ? Array.from(new Array(value)) : posts).map((item, index) => (
+          <div className="col-sm-4 py-sm-4 py-4" >
+          <Nav.Link href={`https://futurelabs-blog.netlify.app/singlepost/${item ? item._id : ""}`} style={{color: 'black'}}>
+            <div className="px-2 Thumbnail-parent .bg-danger">
+          {
+            item ? (
+              <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded" style={{backgroundImage: `url("${item.image}")`}}></div>
+            ) : <Skeleton variant="rectangular" minWidth={200} height={270}/>
+          }
+          <div>
+          {
+            item ? (
+              <h4 className="mt-2">{item.title}</h4>
+            ) : <Skeleton variant="text" />
+          }
+          {
+            item ? (
+              <p>
+                {new Date(item.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}
+                <hr className="under bg-warning rounded " />
               </p>
-          ) : (<Skeleton />)
-        }
+            ) : <Skeleton variant="text" width={200}/>
+          }
+          {
+            item ? (
+              <p>
+                  {item.description}
+                </p>
+            ) : (<Skeleton />)
+          }
+          </div>
+          </div>
+          </Nav.Link>
+          </div>
+        )
+    ) : (
+      <section className="blog_section">
+        <div className="container-fluid blog_desktop">
+        <div className="row px-2 px-sm-3 pt-4">
+        <h1 className="contact mb-3 text-center">Latest Stories</h1>
+        {(loading ? Array.from(new Array(value)) : posts).map((item, index) => (
+          <div className="col-sm-4 py-sm-4 py-4" >
+          <Nav.Link href={`https://futurelabs-blog.netlify.app/singlepost/${item ? item._id : ""}`} style={{color: 'black'}}>
+            <div className="px-2 Thumbnail-parent .bg-danger">
+          {
+            item ? (
+              <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded" style={{backgroundImage: `url("${item.image}")`}}></div>
+            ) : <Skeleton variant="rectangular" minWidth={200} height={270}/>
+          }
+          <div>
+          {
+            item ? (
+              <h4 className="mt-2">{item.title}</h4>
+            ) : <Skeleton variant="text" />
+          }
+          {
+            item ? (
+              <p>
+                {new Date(item.createdAt).toLocaleDateString('en-us', { hour: "numeric"})}
+                <hr className="under bg-warning rounded " />
+              </p>
+            ) : <Skeleton variant="text" width={200}/>
+          }
+          {
+            item ? (
+              <p>
+                  {item.description}
+                </p>
+            ) : (<Skeleton />)
+          }
+          </div>
+          </div>
+          </Nav.Link>
+          </div>
+        ))}
         </div>
         </div>
-        </Nav.Link>
-        </div>
-      ))}
-      </div>
-    </div>
-  </section>
-    <Contact isMobile={width}/>
-    <Footer />
-  </ReactPageScroller>
-  {/* </PageComponent> */}
+      </section>
+    )
+  }
+      
   
-  {/* </Suspense> */}
-
-  {/* </ScrollableContainer> */}
-
+  <Contact isMobile={width}/>
+  <Footer />
+  </ReactPageScroller>  
  </div>
 )}

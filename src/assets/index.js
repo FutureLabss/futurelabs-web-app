@@ -12,9 +12,11 @@ import homeImage2 from './images/homeImage2.webp'
 import homeImage3 from './images/homeImage3.webp'
 import about1 from './images/about_1.jpg'
 import about2 from './images/about_2.webp'
+import about3 from './images/about_3.jpg'
 import about4 from './images/about_4.webp'
 import about5 from './images/about_5.webp'
 import about6 from './images/about_6.webp'
+import about7 from './images/about_7.jpg'
 import branding1 from './images/branding_1.webp'
 import service1 from './images/services_1.webp'
 import service2 from './images/services_2.webp'
@@ -50,11 +52,13 @@ export const icons ={
     homeImage1,
     homeImage2,
     homeImage3,
-    about2,
     about1,
+    about2,
+    about3,
     about4,
     about5,
     about6,
+    about7,
     branding1,
     service1,
     service2,

@@ -199,6 +199,10 @@ color: #212121;
     .blog_desktop{
         display: none;
     }
+    .blog_mobile{
+        display: block;
+        height: 100vh;
+    }
     .ungroup {
         visibility: visible;
         

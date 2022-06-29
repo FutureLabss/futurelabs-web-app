@@ -60,9 +60,12 @@ const {sound, sound1, sound2, sound3, handleSound } = useSound(videoRef,videoRef
 
 let width = window.screen.width
 let value = 3
-// if(width <= 600){
-//   value = 1
-// }
+useEffect(() => {
+  if(width <= 600){
+    setMobile(true)
+  }
+
+},[width])
 
 useEffect(() => {
   setLoading(true)
@@ -98,7 +101,7 @@ return (
 
           <h4 className="line1"> We are Futurists!</h4>
           <h6 className="line3">
-          We build global systems.
+            We build global systems.
             <br />
             Bringing your  puzzle of ideas into finished products.
             <br />
@@ -459,9 +462,9 @@ return (
   {
     mobile ? (
       loading ? Array.from(new Array(value)) : posts).map((item, index) => (
-          <div className="col-sm-4 py-sm-4 py-4" >
+          <div className="col-sm-4 py-sm-4 py-4 blog_mobile">
           <Nav.Link href={`https://futurelabs-blog.netlify.app/singlepost/${item ? item._id : ""}`} style={{color: 'black'}}>
-            <div className="px-2 Thumbnail-parent .bg-danger">
+            <div className="px-2 py-5 Thumbnail-parent .bg-danger" style={{height: '100vh'}}>
           {
             item ? (
               <div className="Thumbnail Thumbnail-image1 bg-primary py-1 rounded" style={{backgroundImage: `url("${item.image}")`}}></div>

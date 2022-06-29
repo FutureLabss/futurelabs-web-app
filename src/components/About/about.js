@@ -62,35 +62,41 @@ return (
 
     {/* Section-One begins here */}
     <ReactPageScroller renderAllPagesOnFirstRender>
-    <section className="section1 about-image1">
+    <section className="video-container .text-danger .bg-danger">
+    <span ref={containerRef1}>
+              <video autoPlay muted loop ref={videoRef1} poster={icons.about3} className="overall">
+                <source 
+                src="https://res.cloudinary.com/dps0unrwm/video/upload/v1656501998/Futurelabs/About_Hero_Video_gncryy.mp4" type="video/mp4" 
+              /> 
+              </video> 
+    </span>
 
-        <div className="container">
-            <div className="row .bg-warning d-flex justify-space-between ">
-                <div className="col-9 .bg-primary px-xs-4 px-sm-0 text-white ">
-
-                    <h4 className="line1">WE ARE FUTURISTS!</h4>
-                    
-                    <h5 className="line2">
-                        We are a dedicated team <br  className="mobile-no" />
-                        of creative strategists, <br className="mobile-no" />
-                        Designers & Developers.
-                    </h5>
-
-                    <h6 className="line3"> We will help you turn ideas into the reality <br className="mobile-no" /> you hope to create.</h6>
-
-                </div>
-                
-
-
-                {/* THE MUTE ICON IS HERE */}
-                {/* <div className="col-3 .bg-info text-center pt-sm-5 mt-sm-5">
-                    <img className=".img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-                </div> */}
-
-            </div>
+      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="text-box .bg-danger">
+        <h4 className="line1">WE ARE FUTURISTS!</h4>
+        
+        {/* <h5 className="line2">
+            We are a dedicated team <br  className="mobile-no" />
+            of creative strategists, <br className="mobile-no" />
+            Designers & Developers.
+        </h5>
+            <h6 className="line3"> We will help you turn ideas into the reality <br className="mobile-no" /> you hope to create.</h6> */}
         </div>
 
-    </section>
+
+        {/* THE MUTE ICON IS HERE */}
+        {/* <div className="mute-box .bg-info" onClick={() => handleSound(2)}>
+          {sound2 ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
+          </div> */}
+
+      </div>
+
+
+  </section>
     {/* Section-One ends here */}
 
     
@@ -141,8 +147,8 @@ return (
 
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div ref={containerRef1} className="mobile-yes .bg-primary text-white">
-            <video autoPlay muted loop ref={videoRef1} poster={icons.about1} className="overall">
+        <div ref={containerRef} className="mobile-yes .bg-primary text-white">
+            <video autoPlay muted loop ref={videoRef} poster={icons.about1} className="overall">
                 <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342157/FutureLabs/Comp_1_jqqeuv.mp4" type="video/mp4" />
             </video>
             <div className="overlay-about">
@@ -460,38 +466,47 @@ return (
 
     </section>
 
-    {/* Section-One begins here */}
-    <section className="section1 about-image7">
+    <section className="video-container .text-danger .bg-danger">
+    <span ref={containerRef1}>
+              <video autoPlay muted loop ref={videoRef1} poster={icons.about7} className="overall">
+                <source 
+                src="https://res.cloudinary.com/dps0unrwm/video/upload/v1656502026/Futurelabs/about_underscore_7_mhbbsz.mp4" type="video/mp4" 
+              /> 
+              </video> 
+    </span>
 
-        <div className="container">
-            <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="text-box .bg-danger">
+        <h5 className="line6">
+            The future was created by <br className="mobile-no" />
+            men who dared to dream <br className="mobile-no" />
+            it better than they met it.<br className="mobile-no" />
+        </h5>
 
-                    <h5 className="line6">
-                        The future was created by <br className="mobile-no" />
-                        men who dared to dream <br className="mobile-no" />
-                        it better than they met it.<br className="mobile-no" />
-                    </h5>
-                    <h5 className="line5">
-                        {/* THE BEST FUTURE IMAGINABLE. */}
-                    </h5>
-
-                </div>
+          {/* <h5 className="line5">
+                THE BEST FUTURE IMAGINABLE.
+           </h5> */}
+          {/* <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link> */}
 
 
-
-                
-                {/* THE MUTE ICON IS HERE */}
-                {/* <div className="col-3 .bg-info text-center">
-                    <img className=".img-fluid mute2 mute-mobile-yes" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />   
-                </div> */}
-
-            </div>
         </div>
 
-    </section>
+
+        {/* THE MUTE ICON IS HERE */}
+        {/* <div className="mute-box .bg-info" onClick={() => handleSound(2)}>
+          {sound2 ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
+          </div> */}
+
+      </div>
 
 
+  </section>
+
+    
     <Contact isMobile={width}/>
     <Footer />
     </ReactPageScroller>

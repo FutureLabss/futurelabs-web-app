@@ -94,11 +94,11 @@ export default function ToolBar(props){
 
          {/* <Link className="textd mt-2 text-muted" to="/digitalart"> <strong>DIGITAL ART</strong></Link> */}
          <NavLink className="textd .my-2 text-muted link" to="/digitalart"><div className="title--effect">DIGITAL ARTS & NFTs</div></NavLink>
-         <NavLink className="textd .my-2 text-muted link contact-link" to="#contact">
+         <Nav.Link className="textd .my-2 text-muted link contact-link" to="#contact">
           <ScrollIntoView selector="#contact">
             <div className="contact-link">CONTACT US</div>
           </ScrollIntoView>
-         </NavLink>
+         </Nav.Link>
          {/* <Link className="textd my-2 text-muted" to="/about2"> <strong><strong>NEW ABOUT</strong></strong> </Link> */}
 
          

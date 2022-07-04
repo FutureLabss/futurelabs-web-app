@@ -70,12 +70,19 @@ useEffect(() => {
 useEffect(() => {
   setLoading(true)
   axios.get(`${SERVER_URL}/?limit=${value}`)
-  .then(data => {
-    setPosts(data.data.articles.data)
+  .then(res => {
+    let data = res.data.articles.data
+    setPosts(data)
     setLoading(false)    
   })
   .catch(error => console.log(error))
 },[value])
+
+const renderTitle = (value) => {
+  let shortenTitle = value.split(' ', 9)
+  shortenTitle = shortenTitle.join(' ').replace(shortenTitle[8], '...')
+  return shortenTitle
+} 
 
 window.addEventListener('resize', function(){
   let width = window.screen.width
@@ -513,7 +520,7 @@ return (
           <div>
           {
             item ? (
-              <h4 className="mt-2">{item.title}</h4>
+              <h4 className="mt-2">{renderTitle(item.title)}</h4>
             ) : <Skeleton variant="text" />
           }
           {

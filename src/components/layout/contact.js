@@ -50,7 +50,7 @@ export default function Contact(props) {
     }
 
     return (
-        <section className="contact-section">
+        <section id="contact" className="contact-section">
             <div className="container mt-5">
                 <form onSubmit={handleSubmit}>
                     <h1 className="contact mb-5 text-center">Contact Us</h1>

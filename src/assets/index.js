@@ -38,6 +38,9 @@ import modelling1 from './images/modelling_1.webp'
 import modelling2 from './images/modelling_2.webp'
 import modelling3 from './images/modelling_3.webp'
 import modelling4 from './images/modelling_4.webp'
+import futurelabs from './images/futurelabs_icon.png'
+import menu from './images/menu_icon.png'
+import menu2 from './images/menu_icon_2.png'
 
 export const icons ={
     mute,
@@ -80,4 +83,7 @@ export const icons ={
     modelling2,
     modelling3,
     modelling4,
+    futurelabs,
+    menu,
+    menu2,
 }

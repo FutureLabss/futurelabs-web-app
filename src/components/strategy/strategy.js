@@ -63,6 +63,7 @@ export default function Strategy() {
       index: 2,
       sound: sound2,
       handleSound: handleSound,
+      mute: true,
     },
   ];
 

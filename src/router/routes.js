@@ -16,6 +16,7 @@ import Products from '../components/Products/products'
 import Websites from '../components/websites/websites'
 import DigitalArt from '../components/digitalart/digitalart.js'
 import singlepost from '../components/singlepost/singlepost'
+import Contact from '../components/layout/contact'
 // import PersistentDrawerRight from '../Blog/Homepage'
 
 const pageRoutes = [
@@ -28,6 +29,7 @@ const pageRoutes = [
     {path: '/products', element: Products },
     {path: '/websites', element: Websites },
     {path: '/digitalArt', element: DigitalArt },
+    {path: '#contact', element: Contact },
     {path: '/singlepost/:id', element: singlepost },
     // {path: '/blog', element: PersistentDrawerRight },
 ]

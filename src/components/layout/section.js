@@ -39,13 +39,19 @@ function Section(props) {
                 )}
               </div>
               {/* THE MUTE ICON IS HERE */}
-              <div className="mute-box .bg-info" onClick={() => item.handleSound(item.index)}>
+              {item.mute ? (
+                <div>{""}</div>
+              ): (
+                <div className="mute-box .bg-info" onClick={() => item.handleSound(item.index)}>
                 {item.sound ? (
                   <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt=""/>
                 ) : (
                   <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt=""/>
                 )}
               </div>
+              )
+              }
+              
             </div>
           </div>
         );

@@ -51,6 +51,7 @@ div.container-fluid{
 
 .link{
     margin-top: 1.5rem;
+    text-decoration: none;
 }
 
 .nav_actions{

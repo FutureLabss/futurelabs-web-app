@@ -76,7 +76,7 @@ export default function Modelling() {
       containerRef: containerRef1,
       videoRef: videoRef1,
       icon: icons.modelling3,
-      src: "https://res.cloudinary.com/usenmfon/video/upload/v1649428231/FutureLabs/FutureLabs_Audi_R8_Animation_xyyqp2.mp4",
+      src: "https://res.cloudinary.com/usenmfon/video/upload/v1656941904/FutureLabs/Triump_Car_Animation_wsfqpa.mp4",
       line1: "Fine Craftmanship",
       line3: "Our team effortlessly achieves masterpieces",
       line4: "on all commissions.",

@@ -480,7 +480,7 @@ return (
           <div>
           {
             item ? (
-              <h4 className="mt-2">{item.title}</h4>
+              <h4 className="mt-2">{renderTitle(item.title)}</h4>
             ) : <Skeleton variant="text" />
           }
           {

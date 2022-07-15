@@ -143,7 +143,7 @@ export default function Singlepost(props) {
         <Grid item columnSpacing={2} sx={{ margin: {md: '0 6rem'}, cursor: 'pointer'}} >
           <a target="_blank" rel="noreferrer" href={user.twitter}><img style={{margin: '.2rem .4rem'}} src={icons.twitter} alt="twitter icon" /></a>
           <a target="_blank" rel="noreferrer" href={user.facebook}><img style={{margin: '.2rem .4rem'}} src={icons.facebook} alt="facebook icon" /></a>
-          <a target="_blank" rel="noreferrer" href={`${user.linkedin}`}><img style={{margin: '.2rem .4rem'}} src={icons.linkedin} alt="linkedin icon" /></a>
+          <a target="_blank" rel="noreferrer" href={user.linkedin}><img style={{margin: '.2rem .4rem'}} src={icons.linkedin} alt="linkedin icon" /></a>
         </Grid>
         </Grid>
       </Grid>

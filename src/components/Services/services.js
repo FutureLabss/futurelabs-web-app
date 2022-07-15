@@ -4,6 +4,7 @@ import useElementOnScreen1 from "../hooks/useElementOnScreen1";
 import useElementOnScreen2 from "../hooks/useElementOnScreen2";
 import useElementOnScreen3 from "../hooks/useElementOnScreen3";
 import useElementOnScreen4 from "../hooks/useElementOnScreen4";
+import useElementOnScreen5 from "../hooks/useElementOnScreen5";
 import "./services.css";
 import { icons } from "../../assets";
 import useSound from "../hooks/useSound";
@@ -37,13 +38,19 @@ export default function Services() {
     rootMargin: "0px",
     threshold: 0.5,
   });
+  const [containerRef5, videoRef5] = useElementOnScreen5({
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5,
+  });
 
-  const { sound, sound1, sound2, sound3, sound4, handleSound } = useSound(
+  const { sound, sound1, sound2, sound3, sound4, sound5, handleSound } = useSound(
     videoRef,
     videoRef1,
     videoRef2,
     videoRef3,
-    videoRef4
+    videoRef4,
+    videoRef5,
   );
 
   const data = [
@@ -101,6 +108,17 @@ export default function Services() {
       link: "/modelling",
       index: 3,
       sound: sound3,
+      handleSound: handleSound,
+    },
+    {
+      containerRef: containerRef5,
+      videoRef: videoRef5,
+      icon: icons.service6,
+      src: "https://res.cloudinary.com/dps0unrwm/video/upload/v1657903348/Futurelabs/2D_Animation_olttrg.mp4",
+      line1: "Digital Art & NFTs",
+      link: "/digitalart",
+      index: 5,
+      sound: sound5,
       handleSound: handleSound,
     },
   ];

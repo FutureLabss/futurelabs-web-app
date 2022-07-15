@@ -115,25 +115,27 @@ return (
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
-                    <h3 className="line2">
-                        <span className="italicize"> 
-                          We enable you to
-                          <br />
-                          see beyond the now.
-                        </span>
-                        <br />
-                        You could either be
-                        <br />
-                        android or you go 
-                        <br />
-                        extinct like
-                        <br />
-                        Blackberry...” 
-                    </h3>
-
-                    <h4 className="line5">
+                <h4 className="line5">
                         WE ARE FUTURISTS!
                     </h4>
+                    <h3 className="line2">
+                        <span className="italicize"> 
+                        We will help you plan for 
+
+                        <br />
+                        the future with
+                        </span>
+                        <br />
+                        extraordinary foresight
+
+                        <br />
+                        You can either grow  
+                        <br />
+                        exponentially as the android OS  
+                        <br />
+                        or go extinct like blackberry
+                    </h3>
+
                 </div>
             </div>
 
@@ -154,25 +156,26 @@ return (
             <div className="overlay-about">
                 
                 <div className=".bg-warning px-3">
-                    <h3 className="line4">
-                        <span className="italicize">
-                            We enable you to
-                            <br />
-                            see beyond the now.
-                        </span>
-                        <br />
-                        You could either be
-                        <br />
-                        android or you go 
-                        <br />
-                        extinct like
-                        <br />
-                        Blackberry...” 
-                    </h3>
-
-                    <h4 className="line5">
+                <h4 className="line5">
                         WE ARE FUTURISTS!
                     </h4>
+                    <h3 className="line2">
+                        <span className="italicize"> 
+                        We will help you plan for 
+
+                        <br />
+                        the future with
+                        </span>
+                        <br />
+                        extraordinary foresight
+
+                        <br />
+                        You can either grow  
+                        <br />
+                        exponentially as the android OS  
+                        <br />
+                        or go extinct like blackberry
+                    </h3>
                 </div>
 
             </div>
@@ -346,11 +349,11 @@ return (
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
                 <h3 className="line4">
-                        We effortlessly
+                        We Intuitively
                         <br />
                         understand our client’s
                         <br />
-                        business language
+                        business language,
                         <br />
                         enabling seamless 
                         <br />
@@ -381,11 +384,11 @@ return (
                 
                 <div className=".bg-warning px-3">
                 <h3 className="line4">
-                        We effortlessly
+                        We Intuitively
                         <br />
                         understand our client’s
                         <br />
-                        business language
+                        business language,
                         <br />
                         enabling seamless 
                         <br />
@@ -422,11 +425,11 @@ return (
                         <br />
                         valuable insights to
                         <br />
-                        increase profit
+                        increase revenue
                     </h3>
 
                     <h4 className="line5">
-                        SEAMLESS COLLABORATION
+                        TURBOCHARGE YOUR KPIs
                     </h4>
 
                 </div>
@@ -452,11 +455,11 @@ return (
                         <br />
                         valuable insights to
                         <br />
-                        increase profit
+                        increase revenue
                     </h3>
 
                     <h4 className="line5">
-                        SEAMLESS COLLABORATION
+                        TURBOCHARGE YOUR KPIs
                     </h4>
                 </div>
 

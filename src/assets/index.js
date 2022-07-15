@@ -23,6 +23,7 @@ import service2 from './images/services_2.webp'
 import service3 from './images/services_3.webp'
 import service4 from './images/services_4.webp'
 import service5 from './images/services_5.webp'
+import service6 from './images/services_6.jpg'
 import strategy1 from './images/strategy_1.webp'
 import strategy2 from './images/strategy_2.webp'
 import strategy3 from './images/strategy_3.webp'
@@ -76,6 +77,7 @@ export const icons ={
     service3,
     service4,
     service5,
+    service6,
     strategy1,
     strategy2,
     strategy3,

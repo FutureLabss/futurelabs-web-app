@@ -101,13 +101,16 @@ return (
       <div className="row .bg-warning d-flex justify-space-between  mt-sm-5 pt-sm-5">
         <div className="col-9 .bg-primary px-xs-4 px-sm-0 text-white">
 
-          <h4 className="line1"> We are Futurists!</h4>
-          <h6 className="line3">
-            We build global systems.
+          {/* <h4 className="line1"> We are Futurists!</h4> */}
+          <h6 className="line3" style={{lineHeight: "35px"}}>
+            We are a dedicated team of creative and innovative strategists,
             <br />
-            Bringing your  puzzle of ideas into finished products.
+            Designers, Developers, Product Managers, Project Managers,
             <br />
-            What could you really do with the best Strategists,  <br className="mobile-no" /> Designers and Developers in one space?
+            and Business Leaders; let’s turn your ideas into 
+            <br />
+            let’s turn your ideas into  <br className="mobile-no" /> products in record time.
+
           </h6>
         </div>
         
@@ -150,14 +153,14 @@ return (
           <h4 className="line1">We are Future Labs!</h4>
 
           <h3 className="line4">
-            FutureLabs is a digital
+            We are a digital
             <br />
             agency with global
             <br />
             footprints.
           </h3>
 
-          <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
+          <h6 className="line3"> Giving Users the best experience while turning ideas <br className="mobile-no" /> into impactful solutions one happy client per time</h6>
 
           <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button>
 
@@ -263,13 +266,13 @@ return (
           <h4 className="line1">We tell stories</h4>
 
           <h3 className="line4">
-            We craft User centric
+            We are gifted storytellers, 
             <br />
-            stories about products and
+            driving viral brand adoption through compelling and 
             <br />
-            services that our target
+            relatable stories about our products and services.
             <br />
-            audience finds relatable and actionable
+            {/* audience finds relatable and actionable */}
           </h3>
 
           <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button>
@@ -295,12 +298,12 @@ return (
         </video> 
          
 
-        <div className="parent-box3 d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
           <div className="text-box .bg-danger">
             <h4 className="line1">We tell stories</h4>
 
-            <h3 className="line4">
-              We craft User centric <br className="mobile-no" />stories about products and<br className="mobile-no" /> services that our target<br className="mobile-no" /> audience finds relatable and actionable
+            <h3 className="line3">
+            We are gifted storytellers, <br className="mobile-no" />driving viral brand adoption through compelling and<br className="mobile-no" /> relatable stories about our products and services.<br className="mobile-no" />
            
             </h3>
 
@@ -342,9 +345,9 @@ return (
         <h5 className="line6">
           <span className="italicize">We Strategize.</span>
           <br />
-          We take our time <br className="mobile-no"/>
-          sifting through Data <br className="mobile-no"/>
-          and building models
+          In God we trust, <br className="mobile-no"/>
+          others must bring data, <br className="mobile-no"/>
+          we take our time sifting <br className="mobile-no"/>through data and building models.
         </h5>
       </div>
       <div className="mute-box .bg-info" onClick={() => handleSound(1)}>

@@ -41,6 +41,14 @@ import modelling4 from './images/modelling_4.webp'
 import futurelabs from './images/futurelabs_icon.png'
 import menu from './images/menu_icon.png'
 import menu2 from './images/menu_icon_2.png'
+import bookmark from './images/bookmark.png'
+import comment from './images/comment.png'
+import facebook from './images/facebook.png'
+import favourite from './images/favourite.png'
+import linkedin from './images/linkedin.png'
+import settings from './images/settings.png'
+import logout from './images/logout.png'
+import twitter from './images/twitter.png'
 
 export const icons ={
     mute,
@@ -86,4 +94,12 @@ export const icons ={
     futurelabs,
     menu,
     menu2,
+    bookmark, 
+    comment,
+    facebook,
+    favourite,
+    linkedin,
+    settings,
+    logout,
+    twitter,
 }

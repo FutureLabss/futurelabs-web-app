@@ -136,10 +136,10 @@
     background-image: url('https://res.cloudinary.com/not-set/image/upload/v1635175877/FUTURELABS_1_gl3n9e.png');
 }
 
-.section2 {
+/* .section2 {
     height: 100vh;
     width: 100vw;
-}
+} */
 
 .sm-1, .sm-2 {
     width: 50vw;

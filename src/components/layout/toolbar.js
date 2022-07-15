@@ -103,7 +103,7 @@ export default function ToolBar(props){
 
          
 
-         <Nav.Link className="textd .my-2 text-muted link" href="https://futurelabs-blog.netlify.app/"><div className="title--effect">BLOG</div></Nav.Link>
+         <NavLink className="textd .my-2 text-muted link" to="/blog"><div className="title--effect">BLOG</div></NavLink>
          
 
         </Nav>

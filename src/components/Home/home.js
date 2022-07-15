@@ -1,12 +1,7 @@
-// import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import "./home.css"
-// import Contact from "../layout/contact"
 import ToolBar from '../layout/toolbar';
-
-
 import React, {useState, useEffect} from 'react';
-// import useScrollToView from '../hooks/useScrollToView'
 import useElementOnScreen from '../hooks/useElementOnScreen';
 import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';
@@ -16,15 +11,12 @@ import ReactPageScroller from '../pageScroll';
 import Footer from '../layout/footer';
 import Contact from '../layout/contact';
 import {icons} from '../../assets'
-// import React, {Suspense, useState, useEffect} from 'react';
-// import React, { Suspense } from 'react';
-// import ScrollableContainer from "react-full-page-scroll";
 import {Skeleton} from '@mui/material';
-import { Nav } from 'react-bootstrap';
+// import { Nav } from 'react-bootstrap';
+import { useNavigate  } from "react-router-dom";
+
 
 const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
-
-// const Contact = React.lazy(() => import('../layout/contact'));
 
 export default function Home() {
 
@@ -61,6 +53,7 @@ const {sound, sound1, sound2, sound3, handleSound } = useSound(videoRef,videoRef
 let width = window.screen.width
 let value = 3
 useEffect(() => {
+  document.body.style.overflow = "hidden";
   if(width <= 600){
     setMobile(true)
   }
@@ -93,8 +86,10 @@ window.addEventListener('resize', function(){
   }
 })
 
+const history = useNavigate()
+
 return (     
-<div>
+<>
 
   <ToolBar />
  {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
@@ -333,35 +328,6 @@ return (
 
 
   </section>
-  {/* </PageComponent> */}
-  {/* </Suspense> */}
-  
-
-
-  
-  {/* Section-Three ends here */}
-
-
-  {/* *********************************************************************** */}
-  {/* END OF SEGMENT-ONE */}
-  {/* *********************************************************************** */}
-
-
-
-
-
-
-
-
-
-  {/* *********************************************************************** */}
-  {/* SEGMENT-TWO BEGINS HERE. (A REPEAT OF SEGMENT ONE) */}
-  {/* *********************************************************************** */}
-
-
-  {/* <Suspense fallback={<div>Loading …</div>}> */}
-  {/* <PageComponent> */}
-  {/* Section-One begins here */}
 
   <div className="video-container .text-danger .bg-danger">
   <span ref={containerRef1}>
@@ -380,26 +346,15 @@ return (
           sifting through Data <br className="mobile-no"/>
           and building models
         </h5>
-
-
-
       </div>
-
-
-      {/* THE MUTE ICON IS HERE */}
       <div className="mute-box .bg-info" onClick={() => handleSound(1)}>
           {sound1 ? 
             <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
             :
             <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
           }
-      </div>
-
-      
-
+      </div>    
     </div>
-
-
   </div>
 
   <section className="video-container .text-danger .bg-danger">
@@ -422,13 +377,7 @@ return (
           <h5 className="line5 ">
             Securing Payments for Tomorrow on the Web
           </h5>
-          {/* <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link> */}
-
-
         </div>
-
-
-        {/* THE MUTE ICON IS HERE */}
         <div className="mute-box .bg-info" onClick={() => handleSound(2)}>
           {sound2 ? 
             <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
@@ -441,36 +390,11 @@ return (
 
 
   </section>
-  {/* </PageComponent> */}
-  {/* </Suspense> */}
-
-  {/* mmmmmmmm */}
-
-
-  
-
-
-
-
-  {/* *********************************************************************** */}
-  {/* END OF SEGMENT TWO */}
-  {/* *********************************************************************** */}
-
-
-
-
-
-
-  {/* THE SECTION BELOW HOLDS THE THUMBNAILS */}
-
-  
-  {/* <Suspense fallback={<div>Loading …</div>}> */}
-  {/* <PageComponent> */}
-  {
+ {
     mobile ? (
       loading ? Array.from(new Array(value)) : posts).map((item, index) => (
           <div className="col-sm-4 py-sm-4 py-4 blog_mobile">
-          <Nav.Link href={`https://futurelabs-blog.netlify.app/singlepost/${item ? item._id : ""}`} style={{color: 'black'}}>
+          <div onClick={() => history(`/singlepost/${item ? item._id : ""}`)} style={{color: 'black', cursor: "pointer"}}>
             <div className="px-2 py-5 Thumbnail-parent .bg-danger" style={{height: '100vh'}}>
           {
             item ? (
@@ -500,7 +424,7 @@ return (
           }
           </div>
           </div>
-          </Nav.Link>
+          </div>
           </div>
         )
     ) : (
@@ -510,7 +434,7 @@ return (
         <h1 className="contact mb-3 text-center">Latest Stories</h1>
         {(loading ? Array.from(new Array(value)) : posts).map((item, index) => (
           <div className="col-sm-4 py-sm-4 py-4" >
-          <Nav.Link href={`https://futurelabs-blog.netlify.app/singlepost/${item ? item._id : ""}`} style={{color: 'black'}}>
+          <div onClick={() => history(`/singlepost/${item ? item._id : ""}`)} style={{color: 'black', cursor: "pointer"}}>
             <div className="px-2 Thumbnail-parent .bg-danger">
           {
             item ? (
@@ -540,7 +464,7 @@ return (
           }
           </div>
           </div>
-          </Nav.Link>
+          </div>
           </div>
         ))}
         </div>
@@ -548,10 +472,8 @@ return (
       </section>
     )
   }
-      
-  
   <Contact isMobile={width}/>
   <Footer />
   </ReactPageScroller>  
- </div>
+ </>
 )}

@@ -1,0 +1,41 @@
+.hero{
+    background-image: url('https://res.cloudinary.com/dremo/image/upload/v1634903273/IMG_0107_1_a80rgw.png');
+    height: 500px;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.aside{
+    padding-left: 30px;
+}
+
+.text, .sub_text{
+    color: white;
+    font-weight: bold;
+
+}
+.text{
+    font-family: Raleway;
+    font-size: 2.5rem;
+}
+
+.sub_text{
+    font-family: Roboto;
+    font-size: 1.5rem;
+}
+
+.title{
+    font-weight: bold;
+    font-family: Raleway;
+    margin: 50px 0;
+    padding-left: 50px;
+}
+
+.card{
+    border: solid red;
+    height:100%;
+    width: 100%;
+}

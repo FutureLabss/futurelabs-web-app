@@ -5,6 +5,7 @@ import useElementOnScreen from '../hooks/useElementOnScreen';
 import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';
 import useElementOnScreen3 from '../hooks/useElementOnScreen3';
+import useElementOnScreen4 from '../hooks/useElementOnScreen4';
 import useSound from '../hooks/useSound';
 import Section from '../layout/section';
 
@@ -34,16 +35,33 @@ export default function Products() {
         threshold: 1
     })
 
-  const {sound, sound1, sound2, sound3, handleSound } = useSound(videoRef,videoRef1,videoRef2,videoRef3)
+    const [ containerRef4, videoRef4] = useElementOnScreen4({
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+    })
+
+  const {sound, sound1, sound2, sound3, sound4, handleSound } = useSound(videoRef,videoRef1,videoRef2,videoRef3,videoRef4)
   const data = [
+    {
+      containerRef: containerRef4,
+      videoRef: videoRef4,
+      icon: icons.product4,
+      src: "https://res.cloudinary.com/dps0unrwm/video/upload/v1657962261/Futurelabs/Products_compilation_zfacx1.mp4",
+      line1: "Your product is your strategy",
+      break: "and design thinking determines",
+      break1: "your success or failure",
+      index: 4,
+      sound: sound4,
+      handleSound: handleSound,
+    },
     {
       containerRef: containerRef2,
       videoRef: videoRef2,
       icon: icons.product1,
       src: "https://res.cloudinary.com/usenmfon/video/upload/v1651836353/FutureLabs/Rude_Ui_animation_kil6nt.mp4",
-      line1: "Access Your Computer",
-      break: "Science Curriculum on the Go",
-      line3: "Redefining the science of computers",
+      line1: "Hail a bike",
+      break: "ride with ease",
       index: 2,
       sound: sound2,
       handleSound: handleSound,
@@ -54,7 +72,8 @@ export default function Products() {
       icon: icons.product2,
       src: "https://res.cloudinary.com/usenmfon/video/upload/v1650284802/FutureLabs/Shopin_animation_qgq2kq.mp4",
       line1: "Shop for your feet",
-      line3: "Securing Payments for Tomorrow",
+      break: "Get the best footwear",
+      break1: "on your mobile",
       index: 1,
       sound: sound1,
       handleSound: handleSound,

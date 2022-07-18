@@ -118,20 +118,17 @@ return (
                 <h4 className="line5">
                         WE ARE FUTURISTS!
                     </h4>
-                    <h3 className="line2">
-                        <span className="italicize"> 
+                    <h3 className="line2 italicize">
                         We will help you plan for 
 
                         <br />
-                        the future with
-                        </span>
+                        the future with extraordinary
                         <br />
-                        extraordinary foresight
+                        foresight, You can either grow
 
                         <br />
-                        You can either grow  
-                        <br />
                         exponentially as the android OS  
+                         
                         <br />
                         or go extinct like blackberry
                     </h3>
@@ -205,15 +202,12 @@ return (
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
                     <h3 className="line4">
-                        We combine a p2p
+                        We combine a p2p and deep
                         <br />
-                        and deep learning 
+                        learning model to deliver
                         <br />
-                        model to deliver
-                        <br />
-                        impactful business 
-                        <br />
-                        solutions
+                        impactful business solutions
+                        
                     </h3>
 
                     <h4 className="line5">
@@ -349,15 +343,11 @@ return (
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
                 <h3 className="line4">
-                        We Intuitively
+                        We Intuitively understand 
                         <br />
-                        understand our client’s
+                        our client’s business language,
                         <br />
-                        business language,
-                        <br />
-                        enabling seamless 
-                        <br />
-                        collaboration
+                        enabling seamless collaboration
                     </h3>
 
                     <h4 className="line5">
@@ -419,13 +409,13 @@ return (
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
                 <h3 className="line4">
-                        We will analyze your
+                        We will analyze your brand
                         <br />
-                        brand data and draw
+                        data and draw valuable 
                         <br />
-                        valuable insights to
+                        insights to increase revenue
                         <br />
-                        increase revenue
+                        
                     </h3>
 
                     <h4 className="line5">

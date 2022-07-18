@@ -103,14 +103,14 @@ return (
 
           {/* <h4 className="line1"> We are Futurists!</h4> */}
           <h6 className="line3" style={{lineHeight: "35px"}}>
-            We are a dedicated team of creative and innovative strategists,
+            We are a dedicated team of creative and <br className="mobile-no" /> innovative strategists, Designers, Developers, 
             <br />
-            Designers, Developers, Product Managers, Project Managers,
+            Product Managers, Project Managers, and
             <br />
-            and Business Leaders; let’s turn your ideas into 
+            Business Leaders; let’s turn your ideas into 
             <br />
-            let’s turn your ideas into  <br className="mobile-no" /> products in record time.
-
+            products in record time.
+  
           </h6>
         </div>
         
@@ -153,14 +153,14 @@ return (
           <h4 className="line1">We are Future Labs!</h4>
 
           <h3 className="line4">
-            We are a digital
+            We are a digital agency
             <br />
-            agency with global
+            with global footprints.
             <br />
-            footprints.
+           
           </h3>
 
-          <h6 className="line3"> Giving Users the best experience while turning ideas <br className="mobile-no" /> into impactful solutions one happy client per time</h6>
+          <h6 className="line3"> Giving Users the best experience while turning ideas <br className="mobile-no" />into impactful solutions one happy client per time.</h6>
 
           <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button>
 
@@ -268,9 +268,9 @@ return (
           <h3 className="line4">
             We are gifted storytellers, 
             <br />
-            driving viral brand adoption through compelling and 
+            driving viral brand adoption through compelling and relatable
             <br />
-            relatable stories about our products and services.
+            stories about our products and services.
             <br />
             {/* audience finds relatable and actionable */}
           </h3>
@@ -345,9 +345,9 @@ return (
         <h5 className="line6">
           <span className="italicize">We Strategize.</span>
           <br />
-          In God we trust, <br className="mobile-no"/>
-          others must bring data, <br className="mobile-no"/>
-          we take our time sifting <br className="mobile-no"/>through data and building models.
+          In God we trust, others must  <br className="mobile-no"/>
+          bring data, we take our time  <br className="mobile-no"/>
+          sifting through data and<br className="mobile-no"/>building models.
         </h5>
       </div>
       <div className="mute-box .bg-info" onClick={() => handleSound(1)}>

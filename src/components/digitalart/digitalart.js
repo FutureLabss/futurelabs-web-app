@@ -67,7 +67,7 @@ return (
 
         <div className="container">
             <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+                <div className="col-7 .bg-primary px-3 px-sm-1 text-white">
 
                     <h5 className="line1">
                     A better Future
@@ -168,12 +168,6 @@ return (
     Surfaces
     Let's impress art on the digital surfaces around you, making each one of it a conversation starter.
  */}
-
-
-
-    
-
-
 
     <Contact isMobile={width} />
   <Footer />

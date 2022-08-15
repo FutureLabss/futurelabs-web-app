@@ -6,6 +6,7 @@ import useElementOnScreen from '../hooks/useElementOnScreen';
 import useElementOnScreen1 from '../hooks/useElementOnScreen1';
 import useElementOnScreen2 from '../hooks/useElementOnScreen2';
 import useElementOnScreen3 from '../hooks/useElementOnScreen3';
+import useElementOnScreen4 from '../hooks/useElementOnScreen4';
 import useSound from '../hooks/useSound'
 import ReactPageScroller from '../pageScroll';
 import Footer from '../layout/footer';
@@ -48,7 +49,13 @@ const [ containerRef3, videoRef3] = useElementOnScreen3({
   threshold: 0.5
 })
 
-const {sound, sound1, sound2, sound3, handleSound } = useSound(videoRef,videoRef1,videoRef2)
+const [ containerRef4, videoRef4] = useElementOnScreen4({
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5
+})
+
+const {sound, sound1, sound2, sound3, handleSound } = useSound(videoRef,videoRef1,videoRef2,videoRef4)
 
 let width = window.screen.width
 let value = 3
@@ -95,14 +102,18 @@ return (
  {/* <Suspense fallback={<div className="text-danger">Loading …</div>}> */}
   {/* <PageComponent> */}
   <ReactPageScroller renderAllPagesOnFirstRender>
-  <section  className="section1 home-image1">
+  <section className="video-container .text-danger .bg-danger">
+    <span ref={containerRef4}>
+              <video autoPlay muted loop ref={videoRef4} poster={icons.homeImage4} className="overall">
+                <source 
+                src="https://res.cloudinary.com/dps0unrwm/video/upload/v1660548425/Futurelabs/Homepage_video_rlprey.mp4" type="video/mp4" 
+              /> 
+              </video> 
+    </span>
 
-    <div className="container .bg-primary">
-      <div className="row .bg-warning d-flex justify-space-between  mt-sm-5 pt-sm-5">
-        <div className="col-9 .bg-primary px-xs-4 px-sm-0 text-white">
-
-          {/* <h4 className="line1"> We are Futurists!</h4> */}
-          <h6 className="line3" style={{lineHeight: "35px"}}>
+      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="text-box .bg-danger">
+        <h6 className="line3" style={{lineHeight: "35px"}}>
             We are a dedicated team of creative and <br className="mobile-no" /> innovative strategists, Designers, Developers, 
             <br />
             Product Managers, Project Managers, and
@@ -113,16 +124,19 @@ return (
   
           </h6>
         </div>
-        
 
 
         {/* THE MUTE ICON IS HERE */}
-        {/* <div className="col-3 .bg-info text-center pt-5">
-          <img className=".img-fluid mute" src="https://res.cloudinary.com/not-set/image/upload/v1634901154/mute_1_2_joyf7a.png" alt="" />
-        </div> */}
+        {/* <div className="mute-box .bg-info" onClick={() => handleSound(2)}>
+          {sound2 ? 
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            :
+            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+          }
+          </div> */}
 
       </div>
-    </div>
+
 
   </section>
  

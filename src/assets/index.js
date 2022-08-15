@@ -10,6 +10,7 @@ import Triumph from './images/Triumph.png'
 import homeImage1 from './images/homeImage1.webp'
 import homeImage2 from './images/homeImage2.webp'
 import homeImage3 from './images/homeImage3.webp'
+import homeImage4 from './images/homeImage4.jpg'
 import about1 from './images/about_1.jpg'
 import about2 from './images/about_2.webp'
 import about3 from './images/about_3.jpg'
@@ -64,6 +65,7 @@ export const icons ={
     homeImage1,
     homeImage2,
     homeImage3,
+    homeImage4,
     about1,
     about2,
     about3,

@@ -118,7 +118,7 @@ return (
                 <h4 className="line5">
                         WE ARE FUTURISTS!
                     </h4>
-                    <h3 className="line2 italicize">
+                    <h3 className="line2">
                         We will help you plan for 
 
                         <br />

@@ -14,7 +14,7 @@ import Contact from '../layout/contact';
 import {icons} from '../../assets'
 import {Skeleton} from '@mui/material';
 // import { Nav } from 'react-bootstrap';
-import { useNavigate  } from "react-router-dom";
+import { useNavigate, Link  } from "react-router-dom";
 
 
 const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
@@ -114,15 +114,19 @@ return (
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
         <div className="text-box .bg-danger">
         <h6 className="line3" style={{lineHeight: "35px"}}>
-            We are a dedicated team of creative and <br className="mobile-no" /> innovative strategists, Designers, Developers, 
+            We transform ideas into phenomenal<br className="mobile-no" />products with unprecedented foresight
             <br />
-            Product Managers, Project Managers, and
-            <br />
-            Business Leaders; let’s turn your ideas into 
-            <br />
-            products in record time.
-  
+            for outliers
+           <br />
           </h6>
+          <Link to="/services">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning home-button-text mt-4 text-white py-1 px-5"
+                    >
+                      Learn More
+                    </button>
+          </Link>
         </div>
 
 
@@ -176,8 +180,15 @@ return (
 
           <h6 className="line3"> Giving Users the best experience while turning ideas <br className="mobile-no" />into impactful solutions one happy client per time.</h6>
 
-          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button>
-
+          {/* <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button> */}
+          <Link to="/about">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5"
+                    >
+                      Learn More
+                    </button>
+          </Link>
 
         </div>
       </div>
@@ -208,8 +219,14 @@ return (
 
           <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
 
-          <button type="button" class="btn btn-outline-light home-button-text1 mt-4 text-white py-1 px-5">Learn More</button>
-
+          <Link to="/about">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5"
+                    >
+                      Learn More
+                    </button>
+          </Link>
         </div>
 
       </div>
@@ -289,7 +306,14 @@ return (
             {/* audience finds relatable and actionable */}
           </h3>
 
-          <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button>
+          <Link to="/strategy">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5"
+                    >
+                      Learn More
+                    </button>
+          </Link>
         </div>
       </div>
 
@@ -321,7 +345,14 @@ return (
            
             </h3>
 
-            <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button>
+            <Link to="/strategy">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5"
+                    >
+                      Learn More
+                    </button>
+          </Link>
 
           </div>
 

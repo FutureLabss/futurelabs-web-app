@@ -73,7 +73,8 @@ export default function Footer(props) {
   {/* <div className="container--carousel"> */}
   <Carousel className="container--carousel"  activeIndex={index} onSelect={handleSelect}>
         {data.map(item => (
-          <Carousel.Item style={{backgroundImage: `url("${item.image}")`}}>
+          <Carousel.Item>
+          {/* <Carousel.Item style={{backgroundImage: `url("${item.image}")`}}> */}
           {/* <img
             className="d-block w-100 carousel-image-big"
             src={testimonial[0].image}

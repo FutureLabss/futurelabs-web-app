@@ -114,10 +114,8 @@ return (
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
         <div className="text-box .bg-danger">
         <h6 className="line3" style={{lineHeight: "35px"}}>
-            We transform ideas into phenomenal<br className="mobile-no" /> products with unprecedented foresight,
-            <br />
-            for outliers
-           <br />
+            Build your ideas in the Future<br className="mobile-no" />so you don't have to wait for it
+            
           </h6>
           <Link to="/services">
                     <button

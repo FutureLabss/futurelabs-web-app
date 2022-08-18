@@ -14,6 +14,7 @@ import Contact from '../layout/contact';
 import {icons} from '../../assets'
 import {Skeleton} from '@mui/material';
 // import { Nav } from 'react-bootstrap';
+import  Style from "../animations/style.module.css"
 import { useNavigate, Link  } from "react-router-dom";
 
 
@@ -114,7 +115,7 @@ return (
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
         <div className="text-box .bg-danger">
         <h6 className="line3" style={{lineHeight: "35px"}}>
-            Build your ideas in the Future<br className="mobile-no" />so you don't have to wait for it
+            Build your ideas in the Future<br className="mobile-no" /> so you don't have to wait for it
             
           </h6>
           <Link to="/services">
@@ -137,9 +138,16 @@ return (
           }
           </div> */}
 
+          <span className={Style.scroll_btn}>
+	          <a href=".">
+		        <span className={Style.mouse}>
+			        <span>
+			        </span>
+		        </span>
+	          </a>
+            <p className={Style.scroll_txt}>scroll me</p>
+          </span>
       </div>
-
-
   </section>
  
   {/* Section-One ends here */}

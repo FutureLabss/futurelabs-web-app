@@ -464,6 +464,11 @@ color: #212121;
 
     }
 
+    .home-button-text-mobile{
+        border-color: white !important;
+        color: white !important;
+    }
+
     .home-button-text:hover {
         
         background-color: #FF9000 !important;

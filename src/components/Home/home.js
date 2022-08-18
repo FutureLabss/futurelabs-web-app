@@ -228,7 +228,7 @@ return (
           <Link to="/about">
                     <button
                       type="button"
-                      class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5"
+                      class="btn btn-outline-warning home-button-text-mobile mt-4 text-dark py-1 px-5"
                     >
                       Learn More
                     </button>

@@ -116,8 +116,8 @@ export default function Footer(props) {
             </h6>
 
             <div className="ca show-text">
-              <p>+2347032400529</p>
-              <p>hello@futurelabs.agency</p>
+              <p>+234708 034 3781</p>
+              <p>info@futurelabs.com.ng</p>
             </div>
             <div className="row ph-no">
               <div className="col-2 mb-2 vid">
@@ -199,7 +199,7 @@ export default function Footer(props) {
           <div className="col-sm-3">
             <h6>
               <strong className="carl">Let's Get in Touch</strong>
-              <p className="ca my-3">
+              <p className="my-3 sign-up">
                 Sign up to receive our newsletter on industry trends
               </p>
               <form onSubmit={handleSubmit}>

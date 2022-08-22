@@ -140,7 +140,10 @@ color: #000000;
         display: none;
     } */
     #futurelabs_logo{
-        display: block;
+        display: none;
+    }
+    .sign-up{
+        display: none;
     }
     .ca{
         display: block;

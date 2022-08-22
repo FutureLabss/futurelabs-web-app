@@ -114,17 +114,18 @@ return (
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
         <div className="text-box .bg-danger">
-        <h6 className="line3" style={{lineHeight: "35px"}}>
-            Build your ideas in the Future<br className="mobile-no" /> so you don't have to wait for it
+        <h4 className="line3" style={{lineHeight: "35px"}}>
+            We transform ideas into phenomenal <br className="mobile-no" /> products with unprecedented foresight
+            <br /> for outliers
             
-          </h6>
+          </h4>
           <Link to="/services">
-                    <button
-                      type="button"
-                      class="btn btn-outline-warning home-button-text mt-4 text-white py-1 px-5"
-                    >
-                      Learn More
-                    </button>
+            <button
+              type="button"
+              class="btn btn-outline-warning home-button-text mt-4 text-white py-1 px-5"
+            >
+              Learn More
+            </button>
           </Link>
         </div>
 
@@ -145,7 +146,7 @@ return (
 			        </span>
 		        </span>
 	          </a>
-            <p className={Style.scroll_txt}>scroll me</p>
+            {/* <p className={Style.scroll_txt}>scroll me</p> */}
           </span>
       </div>
   </section>
@@ -174,15 +175,15 @@ return (
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering">
 
-          <h4 className="line1">We are Future Labs!</h4>
+          <h3 className="line1">We are Future Labs!</h3>
 
-          <h3 className="line4">
+          <h4 className="line4">
             We are a digital agency
             <br />
             with global footprints.
             <br />
            
-          </h3>
+          </h4>
 
           <h6 className="line3"> Giving Users the best experience while turning ideas <br className="mobile-no" />into impactful solutions one happy client per time.</h6>
 
@@ -213,15 +214,15 @@ return (
       <div className="vertical-centering">
 
         <div className=".bg-warning px-3">
-          <h4 className="line1">We are Future Labs!</h4>
+          <h3 className="line1">We are Future Labs!</h3>
 
-          <h3 className="line4">
+          <h4 className="line4">
             FutureLabs is a digital
             <br />
             agency with global
             <br />
             footprints
-          </h3>
+          </h4>
 
           <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
 
@@ -300,9 +301,9 @@ return (
       {/* HALF-TEXT FOR DESKTOP HERE */}
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering">
-          <h4 className="line1">We tell stories</h4>
+          <h3 className="line1">We tell stories</h3>
 
-          <h3 className="line4">
+          <h4 className="line4">
             We are gifted storytellers, 
             <br />
             driving viral brand adoption through compelling and relatable
@@ -310,7 +311,7 @@ return (
             stories about our products and services.
             <br />
             {/* audience finds relatable and actionable */}
-          </h3>
+          </h4>
 
           <Link to="/strategy">
                     <button
@@ -483,7 +484,7 @@ return (
         )
     ) : (
       <section className="blog_section">
-        <div className="container-fluid blog_desktop">
+        <div className="container-fluid blog_desktop py-4">
         <div className="row px-2 px-sm-3 pt-4">
         <h1 className="contact mb-3 text-center">Latest Stories</h1>
         {(loading ? Array.from(new Array(value)) : posts).map((item, index) => (
@@ -498,7 +499,7 @@ return (
           <div>
           {
             item ? (
-              <h4 className="mt-2">{renderTitle(item.title)}</h4>
+              <h5 className="mt-1">{renderTitle(item.title)}</h5>
             ) : <Skeleton variant="text" />
           }
           {

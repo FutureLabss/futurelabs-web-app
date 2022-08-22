@@ -379,7 +379,7 @@ color: #212121;
 
 
 .Thumbnail {
-    height: 60%;
+    height: 50%;
     background-image: url("https://res.cloudinary.com/dekbvdqnb/image/upload/v1637149802/IMG_0133_1_hysqkh.png");
     background-position: center;
     object-fit: cover;

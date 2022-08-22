@@ -114,14 +114,14 @@ return (
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
         <div className="text-box .bg-danger">
-        <h6 className="line35" style={{lineHeight: "35px"}}>
+        <h6 className="line356" style={{lineHeight: "35px"}}>
             Build your ideas in the Future<br className="mobile-no" /> so you don't have to wait for it
             
           </h6>
           <Link to="/services">
                     <button
                       type="button"
-                      class="btn btn-outline-warning home-button-text mt-4 text-white py-1 px-5 line35"
+                      class="btn btn-outline-warning home-button-text mt-4 text-white py-1 px-5 line356"
                     >
                       Learn More
                     </button>
@@ -174,7 +174,7 @@ return (
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering">
 
-          <h4 className="line12">We are Future Labs!</h4>
+          <h4 className="line1">We are Future Labs!</h4>
 
           <h3 className="line4">
             We are a digital agency
@@ -300,7 +300,7 @@ return (
       {/* HALF-TEXT FOR DESKTOP HERE */}
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering">
-          <h4 className="line12">We tell stories</h4>
+          <h4 className="line125">We tell stories</h4>
 
           <h3 className="line4">
             We are gifted storytellers, 

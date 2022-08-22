@@ -132,11 +132,12 @@
 
     }
 
-    .line1 {
+    .line19 {
         font-family: Raleway !important;
         font-style: Bold !important;
         font-size: 25px !important;
         line-height: 35px !important;
+        margin-left: -80px;
     }
     
     .line2 {
@@ -161,12 +162,27 @@
         font-size: 15px !important;
         line-height: 40px !important;
     }
+    .line56 {
+        font-family: Raleway !important;
+        font-style: Medium !important;
+        font-size: 15px !important;
+        line-height: 40px !important;
+        margin-left: -80px;
+    }
     
     .line6, .line4 {
         font-family: Roboto !important;
         font-style: Bold !important;
         font-size: 25px !important;
         line-height: 32px !important;
+       
+    }
+    .line6{
+        font-family: Roboto !important;
+        font-style: Bold !important;
+        font-size: 25px !important;
+        line-height: 32px !important;
+        margin-left: -80px;
     }
     
 
@@ -200,7 +216,7 @@
     float: right;
 }
 
-.line1 {
+.line19 {
     font-family: Raleway;
     font-style: Bold;
     font-size: 38px;
@@ -233,6 +249,13 @@
     font-size: 30px;
     line-height: 50px;
 }
+.line56 {
+    font-family: Raleway;
+    font-style: Medium;
+    font-size: 30px;
+    line-height: 50px;
+}
+
 
 .line6 {
     font-family: Roboto;

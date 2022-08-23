@@ -134,7 +134,7 @@ return (
 
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div ref={containerRef} className="mobile-yes .bg-primary text-white">
+        <div ref={containerRef} className="mobile-yes  text-white">
             <video autoPlay muted loop ref={videoRef} poster={icons.about1} className="overall">
                 <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342157/FutureLabs/Comp_1_jqqeuv.mp4" type="video/mp4" />
             </video>
@@ -275,7 +275,7 @@ return (
                 future imaginable
           </h5>
 
-          <h5 className="line5">
+          <h5 className="line545">
                 THE BEST FUTURE IMAGINABLE.
            </h5>
           {/* <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link> */}
@@ -424,9 +424,8 @@ return (
                 <source src="https://res.cloudinary.com/dps0unrwm/video/upload/v1655828672/Futurelabs/About_6_s6qngi.mp4" type="video/mp4" />
             </video>
             <div className="overlay-about">
-
                 <div className=".bg-warning px-3">
-                <h3 className="line4">
+                <h3 className="line4 mt-5">
                         We will analyze your
                         <br />
                         brand data and draw

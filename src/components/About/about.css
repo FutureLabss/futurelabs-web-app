@@ -85,7 +85,7 @@
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
     .mobile-no {
         display: none;
@@ -137,7 +137,7 @@
         font-style: Bold !important;
         font-size: 25px !important;
         line-height: 35px !important;
-        margin-left: -15%;
+        margin-left: -12%;
     }
     
     .line2 {
@@ -170,6 +170,13 @@
         line-height: 40px !important;
         margin-left: -20%;
     }
+    .line545 {
+        font-family: Raleway !important;
+        font-style: Medium !important;
+        font-size: 15px !important;
+        line-height: 40px !important;
+        margin-left: -12%;
+    }
     
      .line4 {
         font-family: Roboto !important;
@@ -183,7 +190,7 @@
         font-style: Bold !important;
         font-size: 25px !important;
         line-height: 32px !important;
-        margin-left: -15%;
+        margin-left: -12%;
     }
 
 

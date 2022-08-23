@@ -100,12 +100,12 @@ export default function Footer(props) {
         
       </Carousel>
       {/* </div> */}
-      <div>
+      <div className="container">
       {/* <div className="container--carousel"> */}
       
       {/* </div> */}
         <div className="row d-flex justify-content-around lastted mobile-nop3">
-          <div className="col-sm-3">
+          <div className="col-md-3 col-sm-5">
             <h6>
               <img
                 src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1634901054/Futurelabs-logo_1_udit2z.png"
@@ -115,7 +115,7 @@ export default function Footer(props) {
             </h6>
 
             <div className="ca show-text">
-              <p>+234708 034 3781</p>
+              <p>+234 708 034-3781</p>
               <p>info@futurelabs.com.ng</p>
             </div>
             <div className="row ph-no">
@@ -195,7 +195,7 @@ export default function Footer(props) {
             </p>
           </div>
           
-          <div className="col-sm-5">
+          <div className="col-md-5 col-sm-7">
             <h6>
               <strong className="carl">Let's Get in Touch</strong>
               <p className="my-3 sign-up">

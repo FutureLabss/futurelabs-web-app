@@ -174,6 +174,7 @@ color: #212121;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  
 }
 
 .section2-image {
@@ -197,8 +198,11 @@ color: #212121;
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 746px) {
+    .overlay{
+        display: flex;
+        align-items: flex-end;
+    }
     .blog_desktop{
         display: none;
     }
@@ -343,8 +347,9 @@ color: #212121;
     font-style: italic !important;
 }
 
-.horizontal-centering {
-    padding-left: 103px;
+.horizontal-centering-home {
+    padding-left: 20px;
+    /* border: solid black; */
 }
 
 .mute {
@@ -512,6 +517,7 @@ color: #212121;
 
 
     }
+
 
     .home-button-text-mobile{
         border-color: white !important;

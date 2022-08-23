@@ -112,9 +112,9 @@ return (
               </video> 
     </span>
 
-      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+      <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
         <div className="text-box .bg-danger">
-        <h4 className="line3" style={{lineHeight: "35px"}}>
+        <h4 className="" style={{lineHeight: "35px"}}>
             We transform ideas into phenomenal <br className="mobile-no" /> products with unprecedented foresight
             <br /> for outliers
             
@@ -122,7 +122,7 @@ return (
           <Link to="/services">
                     <button
                       type="button"
-                      class="btn btn-outline-warning home-button-text mt-4 text-white py-1 px-5 line35"
+                      class="btn btn-outline-warning home-button-text mt-4 text-white py-1 px-5"
                     >
                       Learn More
                     </button>
@@ -173,11 +173,11 @@ return (
     <div className="mobile-no sm-divider">
 
       <div className="sm-1 .bg-danger">
-        <div className=".bg-warning vertical-centering horizontal-centering">
+        <div className=".bg-warning vertical-centering horizontal-centering-home">
 
           <h4 className="line12">We are Future Labs!</h4>
 
-          <h4 className="line4">
+          <h4 className="line12">
             We are a digital agency
             <br />
             with global footprints.
@@ -185,7 +185,7 @@ return (
            
           </h4>
 
-          <h6 className="line3"> Giving Users the best experience while turning ideas <br className="mobile-no" />into impactful solutions one happy client per time.</h6>
+          <h6 className="line3">Giving Users the best experience while turning ideas <br className="mobile-no" />into impactful solutions one happy client per time.</h6>
 
           {/* <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button> */}
           <Link to="/about">
@@ -274,7 +274,7 @@ return (
             src="https://res.cloudinary.com/usenmfon/video/upload/v1655290725/FutureLabs/Comp_1_1_rr5xub.mp4" type="video/mp4" 
           /> 
          </video> 
-        <div className="parent-box3-half d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="parent-box3-half d-flex justify-space-between ontop .bg-warning px-5 mx-sm-7 text-white">
           <div className="text-box-half .bg-danger"></div>
 
 
@@ -301,7 +301,7 @@ return (
       {/* HALF-TEXT FOR DESKTOP HERE */}
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering">
-          <h4 className="line12">We tell stories</h4>
+          <h3 className="line12">We tell stories</h3>
 
           <h4 className="line4">
             We are gifted storytellers, 
@@ -343,19 +343,19 @@ return (
         </video> 
          
 
-        <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+        <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
           <div className="text-box .bg-danger">
-            <h4 className="line35">We tell stories</h4>
+            <h3>We tell stories</h3>
 
-            <h3 className="line35">
+            <h4>
             We are gifted storytellers, <br className="mobile-no" />driving viral brand adoption through compelling and<br className="mobile-no" /> relatable stories about our products and services.<br className="mobile-no" />
            
-            </h3>
+            </h4>
 
             <Link to="/strategy">
                     <button
                       type="button"
-                      class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5 line35"
+                      class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5"
                     >
                       Learn More
                     </button>
@@ -392,15 +392,15 @@ return (
       /> 
     </video> 
   </span>
-    <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+    <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
       <div className="text-box .bg-danger">
-        <h5 className="line6">
+        <h4 className="">
           <span className="italicize">We Strategize.</span>
           <br />
           In God we trust, others must  <br className="mobile-no"/>
           bring data, we take our time  <br className="mobile-no"/>
           sifting through data and<br className="mobile-no"/>building models.
-        </h5>
+        </h4>
       </div>
       <div className="mute-box .bg-info" onClick={() => handleSound(1)}>
           {sound1 ? 
@@ -421,16 +421,16 @@ return (
               </video> 
     </span>
 
-      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+      <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
         <div className="text-box .bg-danger">
-          <h5 className="line6 ">
+          <h4 className=" ">
             Seamless Cross-border <br className="mobile-no"/>
             Payments and Currency <br className="mobile-no"/> 
             Conversion
-          </h5>
+          </h4>
 
 
-          <h5 className="line35 ">
+          <h5>
             Securing Payments for Tomorrow on the Web
           </h5>
         </div>

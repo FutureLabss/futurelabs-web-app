@@ -77,7 +77,8 @@ div.container-fluid{
 
 .title--effect:hover, .contact-link:hover{
     color: #ff8a00;
-    font-size: larger;
+    font-weight: 800;
+    /* font-size: large; */
 }
 
 .active .title--effect{

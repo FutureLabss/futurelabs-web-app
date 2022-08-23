@@ -72,26 +72,14 @@ return (
     </span>
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
-        <div className="text-box .bg-danger">
-        <h4 className="line19">WE ARE FUTURISTS!</h4>
-        
-        {/* <h5 className="line2">
-            We are a dedicated team <br  className="mobile-no" />
-            of creative strategists, <br className="mobile-no" />
-            Designers & Developers.
-        </h5>
-            <h6 className="line3"> We will help you turn ideas into the reality <br className="mobile-no" /> you hope to create.</h6> */}
+      <div className="text-box ">
+        <h4 className="line1">WE ARE FUTURISTS!</h4>
+      
         </div>
 
 
         {/* THE MUTE ICON IS HERE */}
-        {/* <div className="mute-box .bg-info" onClick={() => handleSound(2)}>
-          {sound2 ? 
-            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
-            :
-            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
-          }
-          </div> */}
+       
 
       </div>
 
@@ -146,7 +134,7 @@ return (
 
 
         {/* THIS PARENT DIV APPEARS ONLY ON MOBILE */}
-        <div ref={containerRef} className="mobile-yes .bg-primary text-white">
+        <div ref={containerRef} className="mobile-yes  text-white">
             <video autoPlay muted loop ref={videoRef} poster={icons.about1} className="overall">
                 <source src="https://res.cloudinary.com/usenmfon/video/upload/v1653342157/FutureLabs/Comp_1_jqqeuv.mp4" type="video/mp4" />
             </video>
@@ -287,7 +275,7 @@ return (
                 future imaginable
           </h5>
 
-          <h5 className="line56">
+          <h5 className="line545">
                 THE BEST FUTURE IMAGINABLE.
            </h5>
           {/* <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link> */}
@@ -323,7 +311,7 @@ return (
                         domains to build the best <br className="mobile-no"/>
                         future imaginable
                     </h5>
-                    <h5 className="line5">
+                    <h5 className="line5" style={{border: "solid white"}}>
                         THE BEST FUTURE IMAGINABLE.
                     </h5>
 
@@ -436,9 +424,8 @@ return (
                 <source src="https://res.cloudinary.com/dps0unrwm/video/upload/v1655828672/Futurelabs/About_6_s6qngi.mp4" type="video/mp4" />
             </video>
             <div className="overlay-about">
-
                 <div className=".bg-warning px-3">
-                <h3 className="line4">
+                <h3 className="line4 mt-5">
                         We will analyze your
                         <br />
                         brand data and draw
@@ -470,11 +457,11 @@ return (
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
         <div className="text-box .bg-danger">
-        <h6 className="line6">
-            The future was created by<br /> 
-            men who dared to dream<br /> 
-            it better than they met it.
-        </h6>
+        <h5 className="line6">
+            The future was created by <br />
+            men who dared to dream <br />
+            it better than they met it.<br />
+        </h5>
 
           {/* <h5 className="line5">
                 THE BEST FUTURE IMAGINABLE.

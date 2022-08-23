@@ -85,7 +85,7 @@
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 746px) {
+@media only screen and (max-width: 800px) {
 
     .mobile-no {
         display: none;
@@ -132,12 +132,12 @@
 
     }
 
-    .line19 {
+    .line1 {
         font-family: Raleway !important;
         font-style: Bold !important;
         font-size: 25px !important;
         line-height: 35px !important;
-        margin-left: -80px;
+        margin-left: -12%;
     }
     
     .line2 {
@@ -161,30 +161,37 @@
         font-style: Medium !important;
         font-size: 15px !important;
         line-height: 40px !important;
+    
     }
-    .line56 {
+    .line54 {
         font-family: Raleway !important;
         font-style: Medium !important;
         font-size: 15px !important;
         line-height: 40px !important;
-        margin-left: -80px;
+        margin-left: -20%;
+    }
+    .line545 {
+        font-family: Raleway !important;
+        font-style: Medium !important;
+        font-size: 15px !important;
+        line-height: 40px !important;
+        margin-left: -12%;
     }
     
-    .line6, .line4 {
+     .line4 {
         font-family: Roboto !important;
         font-style: Bold !important;
         font-size: 25px !important;
         line-height: 32px !important;
-       
+        
     }
     .line6{
         font-family: Roboto !important;
         font-style: Bold !important;
         font-size: 25px !important;
         line-height: 32px !important;
-        margin-left: -80px;
+        margin-left: -12%;
     }
-    
 
 
 }
@@ -216,7 +223,7 @@
     float: right;
 }
 
-.line19 {
+.line1 {
     font-family: Raleway;
     font-style: Bold;
     font-size: 38px;
@@ -249,13 +256,6 @@
     font-size: 30px;
     line-height: 50px;
 }
-.line56 {
-    font-family: Raleway;
-    font-style: Medium;
-    font-size: 30px;
-    line-height: 50px;
-}
-
 
 .line6 {
     font-family: Roboto;

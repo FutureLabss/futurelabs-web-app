@@ -175,7 +175,7 @@ return (
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering-home">
 
-          <h4 className="line12">We are Future Labs!</h4>
+          <h4 className="line1">We are Future Labs!</h4>
 
           <h4 className="line12">
             We are a digital agency

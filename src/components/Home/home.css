@@ -11,6 +11,8 @@
 
 .blog_section{
     height: 100vh;
+    width: 100%;
+    background-size: cover;
 }
 
 
@@ -196,6 +198,7 @@ color: #212121;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    
     .blog_desktop{
         display: none;
     }
@@ -259,6 +262,22 @@ color: #212121;
         font-size: 25px !important;
         line-height: 35px !important;
     }
+    .line12 {
+        font-family: Raleway !important;
+        font-style: Bold !important;
+        font-size: 25px !important;
+        line-height: 35px !important;
+       
+    }
+
+    .l20 {
+        font-family: Raleway !important;
+        font-style: Bold !important;
+        font-size: 25px !important;
+        line-height: 35px !important;
+        margin-left: -800px;
+       
+    }
     
     .line2 {
         font-family: Poppins !important;
@@ -273,6 +292,16 @@ color: #212121;
         font-size: 15px !important;
         line-height: 24px !important;
         width: 14rem;
+       
+    }
+    .line35 {
+        font-family: Raleway !important;
+        font-style: Bold !important;
+        font-size: 15px !important;
+        line-height: 24px !important;
+        width: 14rem;
+        margin-left: -80px;
+       
     }
 
 
@@ -285,11 +314,18 @@ color: #212121;
     }
     
 
-    .line6, .line4 {
+    .line6 {
         font-family: Roboto !important;
         font-style: Bold !important;
         font-size: 25px !important;
         line-height: 32px !important;
+    }
+    .line4 {
+        font-family: Roboto !important;
+        font-style: Bold !important;
+        font-size: 25px !important;
+        line-height: 32px !important;
+       
     }
 
 
@@ -328,6 +364,12 @@ color: #212121;
     font-size: 38px;
     line-height: 48px
 }
+.line12 {
+    font-family: Raleway;
+    font-style: Bold;
+    font-size: 38px;
+    line-height: 48px
+}
 
 .line2 {
     font-family: Poppins;
@@ -344,6 +386,13 @@ color: #212121;
     font-size: 17px;
     line-height: 15px;
 }
+.line35 {
+    font-family: Raleway;
+    font-style: Bold;
+    font-size: 17px;
+    line-height: 15px;
+}
+
 
 .line4 {
     font-family: Roboto;

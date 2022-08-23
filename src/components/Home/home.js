@@ -120,12 +120,12 @@ return (
             
           </h4>
           <Link to="/services">
-            <button
-              type="button"
-              class="btn btn-outline-warning home-button-text mt-4 text-white py-1 px-5"
-            >
-              Learn More
-            </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning home-button-text mt-4 text-white py-1 px-5 line35"
+                    >
+                      Learn More
+                    </button>
           </Link>
         </div>
 
@@ -175,7 +175,7 @@ return (
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering">
 
-          <h3 className="line1">We are Future Labs!</h3>
+          <h4 className="line12">We are Future Labs!</h4>
 
           <h4 className="line4">
             We are a digital agency
@@ -214,7 +214,7 @@ return (
       <div className="vertical-centering">
 
         <div className=".bg-warning px-3">
-          <h3 className="line1">We are Future Labs!</h3>
+          <h4 className="line12">We are Future Labs!</h4>
 
           <h4 className="line4">
             FutureLabs is a digital
@@ -301,7 +301,7 @@ return (
       {/* HALF-TEXT FOR DESKTOP HERE */}
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering">
-          <h3 className="line1">We tell stories</h3>
+          <h4 className="line12">We tell stories</h4>
 
           <h4 className="line4">
             We are gifted storytellers, 
@@ -345,9 +345,9 @@ return (
 
         <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
           <div className="text-box .bg-danger">
-            <h4 className="line1">We tell stories</h4>
+            <h4 className="line35">We tell stories</h4>
 
-            <h3 className="line3">
+            <h3 className="line35">
             We are gifted storytellers, <br className="mobile-no" />driving viral brand adoption through compelling and<br className="mobile-no" /> relatable stories about our products and services.<br className="mobile-no" />
            
             </h3>
@@ -355,7 +355,7 @@ return (
             <Link to="/strategy">
                     <button
                       type="button"
-                      class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5"
+                      class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5 line35"
                     >
                       Learn More
                     </button>
@@ -429,7 +429,8 @@ return (
             Conversion
           </h5>
 
-          <h5 className="line5 ">
+
+          <h5 className="line35 ">
             Securing Payments for Tomorrow on the Web
           </h5>
         </div>
@@ -448,7 +449,7 @@ return (
  {
     mobile ? (
       loading ? Array.from(new Array(value)) : posts).map((item, index) => (
-          <div className="col-sm-4 py-sm-4 py-4 blog_mobile">
+          <div className="col-sm-12 py-sm-4 py-4 blog_mobile">
           <div onClick={() => history(`/singlepost/${item ? item._id : ""}`)} style={{color: 'black', cursor: "pointer"}}>
             <div className="px-2 py-5 Thumbnail-parent .bg-danger" style={{height: '100vh'}}>
           {
@@ -488,7 +489,7 @@ return (
         <div className="row px-2 px-sm-3 pt-4">
         <h1 className="contact mb-3 text-center">Latest Stories</h1>
         {(loading ? Array.from(new Array(value)) : posts).map((item, index) => (
-          <div className="col-sm-4 py-sm-4 py-4" >
+          <div className="col-md-4 " >
           <div onClick={() => history(`/singlepost/${item ? item._id : ""}`)} style={{color: 'black', cursor: "pointer"}}>
             <div className="px-2 Thumbnail-parent .bg-danger">
           {

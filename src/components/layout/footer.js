@@ -100,12 +100,11 @@ export default function Footer(props) {
         
       </Carousel>
       {/* </div> */}
-      <div className="container">
+      <div>
       {/* <div className="container--carousel"> */}
       
       {/* </div> */}
-        <div className="row d-flex justify-content-around lastted mobile-nop3 ">
-        
+        <div className="row d-flex justify-content-around lastted mobile-nop3">
           <div className="col-sm-3">
             <h6>
               <img
@@ -196,7 +195,7 @@ export default function Footer(props) {
             </p>
           </div>
           
-          <div className="col-sm-3">
+          <div className="col-sm-5">
             <h6>
               <strong className="carl">Let's Get in Touch</strong>
               <p className="my-3 sign-up">

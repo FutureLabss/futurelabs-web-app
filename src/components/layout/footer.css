@@ -186,14 +186,13 @@ color: #000000;
         display: none;
     }
     .lastted{
-       
-            /* font-size: small; */
+
             font-family: Raleway;
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
             line-height: 21px;
-           margin-right: 1.2rem;
+            margin-right: 1.2rem;
        
     }
     /* .footer{

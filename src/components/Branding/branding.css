@@ -83,6 +83,11 @@
 
 }
 
+.container-box{
+    height: 100%;
+    padding-top: 16vh;
+}
+
 
 .branding-image1 {
     background-image: url('../../assets/images/LinkedIn.jpg');

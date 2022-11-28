@@ -65,7 +65,8 @@ return (
   </section>
     <section className="section1 digital-image1">
 
-        <div className="container">
+          
+        <div className="container container-box">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-7 .bg-primary px-3 px-sm-1 text-white">
 
@@ -117,7 +118,7 @@ return (
     {/* Section-One begins here */}
     <section className="section1 digital-image3">
 
-        <div className="container">
+        <div className="container container-box">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
@@ -140,7 +141,7 @@ return (
     {/* Section-One begins here */}
     <section className="section1 digital-image4">
 
-        <div className="container">
+        <div className="container container-box">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 

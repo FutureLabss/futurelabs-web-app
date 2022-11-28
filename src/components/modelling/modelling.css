@@ -103,10 +103,10 @@ video{
     
 }
 
-.text-box {
+/* .text-box {
     width: 75vw;
     
-}
+} */
 
 
 
@@ -165,7 +165,6 @@ video{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        /* border: solid red; */
     }
 
    

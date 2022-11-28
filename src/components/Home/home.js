@@ -138,8 +138,13 @@ return (
             <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
           }
           </div> */}
-
-          <span className={Style.scroll_btn}>
+          {
+            mobile ? ( 
+              <span></span>
+            )
+            :
+            (
+              <span className={Style.scroll_btn}>
 	          <a href=".">
 		        <span className={Style.mouse}>
 			        <span>
@@ -147,7 +152,10 @@ return (
 		        </span>
 	          </a>
             {/* <p className={Style.scroll_txt}>scroll me</p> */}
-          </span>
+            </span>
+            )
+          }
+          
       </div>
   </section>
  

@@ -72,7 +72,7 @@ return (
     </span>
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
-      <div className="text-box ">
+      <div>
         <h4 className="line1">WE ARE FUTURISTS!</h4>
       
         </div>
@@ -267,7 +267,7 @@ return (
     </span>
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
-        <div className="text-box .bg-danger">
+        <div className=".bg-danger">
           <h5 className="line6 ">
                 We draw from our deep <br className="mobile-no"/>
                 skillsets across multiple <br className="mobile-no"/>
@@ -456,7 +456,7 @@ return (
     </span>
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
-        <div className="text-box .bg-danger">
+        <div className=".bg-danger">
         <h5 className="line6">
             The future was created by <br />
             men who dared to dream <br />

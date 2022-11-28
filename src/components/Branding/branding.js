@@ -78,7 +78,7 @@ return (
     {/* Section-One begins here */}
     <section className="section1 branding-image2">
 
-        <div className="container">
+        <div className="container container-box">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
@@ -110,7 +110,7 @@ return (
     {/* Section-One begins here */}
     <section className="section1 branding-image1">
 
-        <div className="container">
+        <div className="container container-box">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
@@ -137,7 +137,7 @@ return (
 
     <section className="section1 branding-image5">
 
-        <div className="container">
+        <div className="container container-box">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
@@ -164,7 +164,7 @@ return (
     
     <section className="section1 branding-image3">
 
-        <div className="container">
+        <div className="container container-box">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
@@ -195,7 +195,7 @@ return (
     {/* Section-One begins here */}
     <section className="section1 branding-image4">
 
-        <div className="container">
+        <div className="container container-box">
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 

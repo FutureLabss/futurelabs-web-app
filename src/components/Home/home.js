@@ -221,7 +221,7 @@ return (
     <div className="mobile-yes section2-image-mobile home-image2 .bg-warning text-white">
       <div className="vertical-centering">
 
-        <div className=".bg-warning px-3">
+        <div className=".bg-warning px-4">
           <h4 className="line12">We are Future Labs!</h4>
 
           <h4 className="line4">

@@ -107,14 +107,14 @@ return (
     <span ref={containerRef4}>
               <video autoPlay muted loop ref={videoRef4} poster={icons.homeImage4} className="overall">
                 <source 
-                src="https://res.cloudinary.com/dps0unrwm/video/upload/v1660548425/Futurelabs/Homepage_video_rlprey.mp4" type="video/mp4" 
+                src="https://res.cloudinary.com/unlimitedreactive/video/upload/v1669901267/Homepage_video_qd3fs5.mp4" type="video/mp4" 
               /> 
               </video> 
     </span>
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
         <div className="text-box .bg-danger">
-        <h4 className="" style={{lineHeight: "35px"}}>
+        <h4 className="paragraph-1">
             We transform ideas into phenomenal <br className="mobile-no" /> products with unprecedented foresight
             <br /> for outliers
             
@@ -183,17 +183,17 @@ return (
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering-home">
 
-          <h4 className="line1">We are Future Labs!</h4>
+          <h4 className="paragraph-3" style={{fontWeight: 500, letterSpacing: 3.0, color: "orange"}}>WE ARE FUTURELABS !</h4>
 
-          <h4 className="line12">
-            We are a digital agency
+          <h4 className="heading-2" style={{lineHeight: "120%"}}>
+            We are<br /> A digital agency
             <br />
-            with global footprints.
+            With global footprints.
             <br />
            
           </h4>
 
-          <h6 className="line3">Giving Users the best experience while turning ideas <br className="mobile-no" />into impactful solutions one happy client per time.</h6>
+          <h6 className="paragraph-2" style={{margin: "24px 0 8px 0"}}>Giving Users the best experience while turning ideas <br className="mobile-no" />into impactful solutions one happy client per time.</h6>
 
           {/* <button type="button" class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5">Learn More</button> */}
           <Link to="/about">
@@ -309,14 +309,14 @@ return (
       {/* HALF-TEXT FOR DESKTOP HERE */}
       <div className="sm-1 .bg-danger">
         <div className=".bg-warning vertical-centering horizontal-centering">
-          <h3 className="line12">We tell stories</h3>
+          <h3 className="heading-2">We tell stories</h3>
 
-          <h4 className="line4">
+          <h4 className="paragraph-2" style={{margin: "0 0 8px 0"}}>
             We are gifted storytellers, 
-            <br />
-            driving viral brand adoption through compelling and relatable
-            <br />
-            stories about our products and services.
+
+            driving viral brand adoption <br /> through
+            compelling and relatable
+            stories about our <br />products and services.
             <br />
             {/* audience finds relatable and actionable */}
           </h4>
@@ -402,8 +402,8 @@ return (
   </span>
     <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
       <div className="text-box .bg-danger">
-        <h4 className="">
-          <span className="italicize">We Strategize.</span>
+        <h4 className="heading-3">
+          <span >We Strategize.</span>
           <br />
           In God we trust, others must  <br className="mobile-no"/>
           bring data, we take our time  <br className="mobile-no"/>
@@ -431,7 +431,7 @@ return (
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
         <div className="text-box .bg-danger">
-          <h4 className=" ">
+          <h4 className="heading-3">
             Seamless Cross-border <br className="mobile-no"/>
             Payments and Currency <br className="mobile-no"/> 
             Conversion

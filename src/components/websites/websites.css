@@ -73,17 +73,9 @@ video{
 .text-box {
     width: 75vw;
     color: white;
-    /* border: solid white; */
-    padding-left: 5vw;
+    padding-left: 8%;
     filter: brightness(100%);
 }
-
-
-
-
-
-
-
 
 
 

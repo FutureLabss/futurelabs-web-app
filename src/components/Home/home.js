@@ -402,7 +402,7 @@ return (
   </span>
     <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
       <div className="text-box .bg-danger">
-        <h4 className="heading-3">
+        <h4 className="paragraph-1">
           <span >We Strategize.</span>
           <br />
           In God we trust, others must  <br className="mobile-no"/>
@@ -431,7 +431,7 @@ return (
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
         <div className="text-box .bg-danger">
-          <h4 className="heading-3">
+          <h4 className="paragraph-1">
             Seamless Cross-border <br className="mobile-no"/>
             Payments and Currency <br className="mobile-no"/> 
             Conversion

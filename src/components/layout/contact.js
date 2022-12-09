@@ -53,7 +53,7 @@ export default function Contact(props) {
         <section id="contact" className="contact-section">
             <div className="container py-5">
                 <form onSubmit={handleSubmit}>
-                    <h1 className="contact mb-5 text-center">Contact Us</h1>
+                    <h1 className="contact mb-0 text-center">Contact Us</h1>
                     <div className="row">
                     <div className="col-sm-6">
                     <input className="form-control vred form-control-lg " type="text"  onChange={handleChange} name="name" placeholder="Your name " required/>

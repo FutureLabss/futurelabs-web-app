@@ -119,15 +119,20 @@ video{
 
     }
 
-    
-
-    .websites-button-text {
+        .websites-button-text {
         font-family: Roboto;
         font-style: Medium;
         font-size: 9px;
         
     }
-
+    .mute-box {
+        width: 10vw;
+        display: flex;
+    }
+    
+    .text-box {
+        width: 100vw;
+    }
 
 }
 

@@ -222,7 +222,7 @@ return (
       <div className="vertical-centering">
 
         <div className=".bg-warning px-4">
-          <h4 className="line12">We are Future Labs!</h4>
+          <h4 className="line12" style={{fontWeight: 500, letterSpacing: 3.0, fontSize: "14px", fontFamily: "Inter" }}>WE ARE FUTURELABS!</h4>
 
           <h4 className="line4">
             FutureLabs is a digital
@@ -232,7 +232,7 @@ return (
             footprints
           </h4>
 
-          <h6 className="line3"> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
+          <h6 className="paragraph-2" style={{color: "white"}}> Enhancing User Experiences and turning ideas <br className="mobile-no" /> to realities one elated client a time</h6>
 
           <Link to="/about">
                     <button
@@ -351,34 +351,38 @@ return (
         </video> 
          
 
-        <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
+        <div className="overlay-mobile ontop .bg-warning px-3 mx-sm-7 text-white" style={{display: "flex", flexDirection: "column"}}>
           <div className="text-box .bg-danger">
-            <h3>We tell stories</h3>
+            <h3 className="heading-2">We tell stories</h3>
 
-            <h4>
+            <h4 className="paragraph-2">
             We are gifted storytellers, <br className="mobile-no" />driving viral brand adoption through compelling and<br className="mobile-no" /> relatable stories about our products and services.<br className="mobile-no" />
            
             </h4>
 
-            <Link to="/strategy">
-                    <button
-                      type="button"
-                      class="btn btn-outline-warning home-button-text mt-4 text-dark py-1 px-5"
-                    >
-                      Learn More
-                    </button>
-          </Link>
+            
 
           </div>
 
 
           {/* THE MUTE ICON IS HERE */}
-          <div className="mute-box .bg-info" onClick={() => handleSound(3)}>
+          <div style={{ width: "inherit", display: "flex", justifyContent: "space-between", marginTop: "16px",}}>
+          <Link to="/strategy">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning home-button-text text-dark py-2 px-5"
+                      style={{marginLeft: "25px"}}
+                    >
+                      Learn More
+                    </button>
+          </Link>
+          <div className=".bg-info" style={{paddingTop: "10px"}} onClick={() => handleSound(3)}>
           {sound3 ? 
-            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt="" />
+            <img className=".img-fluid mute-img  .bg-danger" src={icons.unmute} alt="" />
             :
-            <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt="" />
+            <img className=".img-fluid mute-img  .bg-danger" src={icons.mute} alt="" />
           }
+          </div>
           </div>
 
         </div>
@@ -401,13 +405,13 @@ return (
     </video> 
   </span>
     <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
-      <div className="text-box .bg-danger">
-        <h4 className="paragraph-1">
-          <span >We Strategize.</span>
+      <div className="text-box-2 .bg-danger">
+        <h4 className="paragraph-2">
+          <span className="heading-2">We Strategize.</span>
           <br />
-          In God we trust, others must  <br className="mobile-no"/>
+          In God we trust, others must  
           bring data, we take our time  <br className="mobile-no"/>
-          sifting through data and<br className="mobile-no"/>building models.
+          sifting through data and building models.
         </h4>
       </div>
       <div className="mute-box .bg-info" onClick={() => handleSound(1)}>
@@ -430,16 +434,17 @@ return (
     </span>
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
-        <div className="text-box .bg-danger">
-          <h4 className="paragraph-1">
-            Seamless Cross-border <br className="mobile-no"/>
-            Payments and Currency <br className="mobile-no"/> 
-            Conversion
+        <div className="text-box-2 .bg-danger">
+          <h4 className="heading-2">
+          Securing Payments <br className="mobile-no" /> For Tomorrow on the Web
+           
           </h4>
 
 
-          <h5>
-            Securing Payments for Tomorrow on the Web
+          <h5 className="paragraph-2">
+            Seamless Cross-border
+            Payments and Currency
+            Conversion
           </h5>
         </div>
         <div className="mute-box .bg-info" onClick={() => handleSound(2)}>

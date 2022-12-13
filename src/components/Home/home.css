@@ -254,9 +254,32 @@ color: #212121;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 746px) {
+    .text-box-2 {
+        width: 100vw;
+        padding-left: 2%;
+    }
+    .overlay-mobile{
+        display: flex;
+        align-items: flex-end;
+        width: 100vw;
+        position: absolute;
+        bottom: 4rem;
+        left: 0;
+        z-index: 1;
+    }
     .overlay{
         display: flex;
         align-items: flex-end;
+    }
+    .paragraph-1{
+        font-size: 24px;
+    }
+    .paragraph-2{
+        font-size: 18px;
+        color: #e3e1de;
+    }
+    .heading-2{
+        font-size: 26px;
     }
     .blog_desktop{
         display: none;
@@ -428,7 +451,7 @@ color: #212121;
     font-family: 'Inter', sans-serif;
     font-style: Bold;
     font-size: 38px;
-    line-height: 48px
+    /* line-height: 48px */
 }
 
 .line2 {

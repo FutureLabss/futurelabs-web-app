@@ -88,7 +88,15 @@
     z-index: 1;
 }
 
-
+.overlay-mobile{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
 
 .parent-box3-half {
     width: 50vw;

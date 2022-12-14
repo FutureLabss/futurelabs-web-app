@@ -404,7 +404,7 @@ return (
       /> 
     </video> 
   </span>
-    <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
+    <div className="overlay-mobile d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
       <div className="text-box-2 .bg-danger">
         <h4 className="paragraph-2">
           <span className="heading-2">We Strategize.</span>
@@ -433,7 +433,7 @@ return (
               </video> 
     </span>
 
-      <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
+      <div className="overlay-mobile d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
         <div className="text-box-2 .bg-danger">
           <h4 className="heading-2">
           Securing Payments <br className="mobile-no" /> For Tomorrow on the Web

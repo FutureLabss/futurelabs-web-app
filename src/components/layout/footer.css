@@ -18,7 +18,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
     /* display: grid;
     grid-template-rows: 60vh 35vh 5vh; */
 }
@@ -26,12 +25,12 @@
 .container--carousel{  
     height: 100%;
     display: flex;
-    margin-bottom: fit-content;
+    margin-bottom: 55px;
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
 }
 
 .carousel-item{
-    height:100%;  
+    height: 100%;  
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -140,6 +139,12 @@ color: #000000;
     /* .container--carousel{
         display: none;
     } */
+    .container--carousel{  
+        height: 100%;
+        display: flex;
+        margin-bottom: 10px;
+        /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    }
     #futurelabs_logo{
         display: none;
     }

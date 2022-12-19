@@ -42,8 +42,8 @@ return (
     </span>
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
-        <div className="text-box .bg-danger">
-          <h5 className="line6 ">
+        <div className="text-box .bg-danger" style={{ paddingLeft: "0" }}>
+          <h5 className="heading-2">
           Art bridges the gulf between <br className="mobile-no"/>
           dreams and reality <br className="mobile-no"/> 
            
@@ -68,14 +68,14 @@ return (
           
         <div className="container container-box">
             <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-7 .bg-primary px-3 px-sm-1 text-white">
+                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    <h5 className="line1">
+                    <h5 className="heading-2">
                     A better Future
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3">Art helps us reimagine what could be, the future is a masterpiece</h6>
+                    <h6 className="paragraph-2">Art helps us reimagine what could be, the future is a masterpiece</h6>
 
 
                 </div>
@@ -122,12 +122,12 @@ return (
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    <h5 className="line1">
+                    <h5 className="heading-2">
                       Attention to details
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3">Imagine a future where resources are illimitable,<br className="mobile-no" /> if we can dream it, we can build it.</h6>
+                    <h6 className="paragraph-2">Imagine a future where resources are illimitable,<br className="mobile-no" /> if we can dream it, we can build it.</h6>
 
 
                 </div>
@@ -145,12 +145,12 @@ return (
             <div className="row .bg-warning d-flex justify-space-between">
                 <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
 
-                    <h5 className="line1">
+                    <h5 className="heading-2">
                       Versatile
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning digital-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                    <h6 className="line3">We use both digital and local media to pass messages<br className="mobile-no" /><br className="mobile-no" /></h6>
+                    <h6 className="paragraph-2">We use both digital and local media to pass messages<br className="mobile-no" /><br className="mobile-no" /></h6>
 
 
                 </div>

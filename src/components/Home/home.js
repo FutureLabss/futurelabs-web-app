@@ -407,7 +407,7 @@ return (
     <div className="overlay-mobile d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
       <div className="text-box-2 .bg-danger">
         <h4 className="paragraph-2">
-          <span className="heading-2">We Strategize.</span>
+          <span className="heading-2">We Strategize</span>
           <br />
           In God we trust, others must  
           bring data, we take our time  <br className="mobile-no"/>

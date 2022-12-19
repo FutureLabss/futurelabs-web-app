@@ -3,6 +3,7 @@ import { icons } from "../../assets";
 import ReactPageScroller from "../pageScroll";
 import Footer from "../layout/footer";
 import Contact from "../layout/contact";
+import "./section.css";
 import { Link } from "react-router-dom"
 
 function Section(props) {
@@ -18,9 +19,9 @@ function Section(props) {
               <source src={item.src} type="video/mp4"/>
             </video>
             <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
-              <div className="text-box .bg-danger">
-                <h5 className="line1">
-                    {item.line1} <br className="mobile-no" />  {item.break} <br className="mobile-no" /> {item.break1}
+              <div className="text-box-section .bg-danger">
+                <h5 className="heading-2">
+                    {item.line1}  {item.break} {item.break1}
                 </h5>
                 {item.link ? (
                   <Link to={item.link}>
@@ -32,21 +33,24 @@ function Section(props) {
                     </button>
                   </Link>
                 ) : (
-                  <h6 className="line3">
+                  <h6 className="paragraph-2">
                     {" "}
                     {item.line3} <br className="mobile-no" /> {item.line4} <br className="mobile-no" />{item.line5}
                   </h6>
                 )}
               </div>
               {/* THE MUTE ICON IS HERE */}
+              <div>
+                
+              </div>
               {item.mute ? (
                 <div>{""}</div>
               ): (
                 <div className="mute-box .bg-info" onClick={() => item.handleSound(item.index)}>
                 {item.sound ? (
-                  <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.unmute} alt=""/>
+                  <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" style={{marginBottom: "0px"}} src={icons.unmute} alt=""/>
                 ) : (
-                  <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" src={icons.mute} alt=""/>
+                  <img className=".img-fluid mute-img mute-mobile-yes .bg-danger" style={{marginBottom: "0px"}} src={icons.mute} alt=""/>
                 )}
               </div>
               )

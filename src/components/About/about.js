@@ -71,9 +71,9 @@ return (
               </video> 
     </span>
 
-      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-3 text-white">
       <div>
-        <h4 className="line1">WE ARE FUTURISTS!</h4>
+        <h4 className="heading-3">WE ARE FUTURISTS!</h4>
       
         </div>
 
@@ -103,21 +103,15 @@ return (
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
-                <h4 className="line5">
+                <h4 className="heading-2">
                         WE ARE FUTURISTS!
                     </h4>
-                    <h3 className="line2">
+                    <h3 className="paragraph-2">
                         We will help you plan for 
-
-                        <br />
                         the future with extraordinary
                         <br />
                         foresight, You can either grow
-
-                        <br />
-                        exponentially as the android OS  
-                         
-                        <br />
+                        exponentially as the  <br /> android OS  
                         or go extinct like blackberry
                     </h3>
 
@@ -141,11 +135,11 @@ return (
             <div className="overlay-about">
                 
                 <div className=".bg-warning px-3">
-                <h4 className="line5">
+                <h4 className="heading-2">
                         WE ARE FUTURISTS!
                     </h4>
-                    <h3 className="line2">
-                        <span className="italicize"> 
+                    <h3 className="paragraph-2">
+                        <span className=""> 
                         We will help you plan for 
 
                         <br />
@@ -189,18 +183,14 @@ return (
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
-                    <h3 className="line4">
-                        We combine a p2p and deep
-                        <br />
-                        learning model to deliver
-                        <br />
-                        impactful business solutions
-                        
-                    </h3>
-
-                    <h4 className="line5">
-                        THE BEST FUTURE IMAGINABLE.
+                    <h4 className="heading-2" style={{fontSize: "38px"}}>
+                        THE BEST FUTURE IMAGINABLE
                     </h4>
+                    <h3 className="paragraph-2">
+                        We combine a p2p and deep
+                        learning model <br />
+                        to deliver impactful business solutions
+                    </h3>
                 </div>
             </div>
 
@@ -217,7 +207,10 @@ return (
             <div className="overlay-about">
 
                 <div className=".bg-warning px-3">
-                    <h3 className="line4">
+                    <h4 className="heading-2">
+                        THE BEST FUTURE IMAGINABLE
+                    </h4>
+                    <h3 className="paragraph-2">
                         We combine a p2p
                         <br />
                         and deep learning 
@@ -228,10 +221,6 @@ return (
                         <br />
                         solutions
                     </h3>
-
-                    <h4 className="line5">
-                        THE BEST FUTURE IMAGINABLE.
-                    </h4>
                 </div>
 
             </div>
@@ -266,21 +255,18 @@ return (
               </video> 
     </span>
 
-      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
+      <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-3 text-white">
         <div className=".bg-danger">
-          <h5 className="line6 ">
-                We draw from our deep <br className="mobile-no"/>
+            <h5 className="heading-2">
+                THE BEST FUTURE IMAGINABLE
+           </h5>
+          <h5 className="paragraph-2">
+                We draw from our deep 
                 skillsets across multiple <br className="mobile-no"/>
-                domains to build the best <br className="mobile-no"/>
+                domains to build the best 
                 future imaginable
           </h5>
-
-          <h5 className="line545">
-                THE BEST FUTURE IMAGINABLE.
-           </h5>
           {/* <Link to="/strategy"><button type="button" class="btn btn-outline-warning services-button-text mt-4 text-white py-1 px-5">Learn More</button></Link> */}
-
-
         </div>
 
 
@@ -330,17 +316,17 @@ return (
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
-                <h3 className="line4">
+                    <h4 className="heading-2" style={{fontSize: "42px"}}>
+                        SEAMLESS COLLABORATION
+                    </h4>
+                <h3 className="paragraph-2">
                         We Intuitively understand 
-                        <br />
+                        
                         our client’s business language,
                         <br />
                         enabling seamless collaboration
                     </h3>
 
-                    <h4 className="line5">
-                        SEAMLESS COLLABORATION
-                    </h4>
                 </div>
             </div>
 
@@ -361,7 +347,10 @@ return (
             <div className="overlay-about">
                 
                 <div className=".bg-warning px-3">
-                <h3 className="line4">
+                    <h4 className="heading-2">
+                        SEAMLESS COLLABORATION
+                    </h4>
+                <h3 className="paragraph-2">
                         We Intuitively
                         <br />
                         understand our client’s
@@ -373,9 +362,6 @@ return (
                         collaboration
                     </h3>
 
-                    <h4 className="line5">
-                        SEAMLESS COLLABORATION
-                    </h4>
                 </div>
 
             </div>
@@ -396,19 +382,18 @@ return (
 
             <div className="sm-1 .bg-danger">
                 <div className=".bg-warning vertical-centering horizontal-centering">
-                <h3 className="line4">
+                    <h4 className="heading-2" style={{fontSize: "38px"}}>
+                        TURBOCHARGE YOUR KPIs
+                    </h4>
+                <h3 className="paragraph-2">
                         We will analyze your brand
-                        <br />
+                        
                         data and draw valuable 
                         <br />
                         insights to increase revenue
-                        <br />
                         
                     </h3>
 
-                    <h4 className="line5">
-                        TURBOCHARGE YOUR KPIs
-                    </h4>
 
                 </div>
             </div>
@@ -425,7 +410,10 @@ return (
             </video>
             <div className="overlay-about">
                 <div className=".bg-warning px-3">
-                <h3 className="line4 mt-5">
+                    <h4 className="heading-2">
+                        TURBOCHARGE YOUR KPIs
+                    </h4>
+                <h3 className="paragraph-2 mt-5">
                         We will analyze your
                         <br />
                         brand data and draw
@@ -435,9 +423,6 @@ return (
                         increase revenue
                     </h3>
 
-                    <h4 className="line5">
-                        TURBOCHARGE YOUR KPIs
-                    </h4>
                 </div>
 
             </div>
@@ -457,8 +442,8 @@ return (
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
         <div className=".bg-danger">
-        <h5 className="line6">
-            The future was created by <br />
+        <h5 className="paragraph-2">
+            The future was created by 
             men who dared to dream <br />
             it better than they met it.<br />
         </h5>

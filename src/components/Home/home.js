@@ -113,7 +113,7 @@ return (
     </span>
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
-        <div className="text-box .bg-danger">
+        <div className="text-box-home .bg-danger">
         <h4 className="paragraph-1">
             We transform ideas into phenomenal <br className="mobile-no" /> products with unprecedented foresight
             <br /> for outliers

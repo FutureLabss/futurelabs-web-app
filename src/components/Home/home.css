@@ -258,6 +258,13 @@ color: #212121;
     visibility: hidden;
 }
 
+.text-box-home{
+    padding-left: 4%;
+    width: vw;
+    color: white;
+    filter: brightness(100%);
+}
+
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -434,7 +441,7 @@ color: #212121;
 }
 
 .horizontal-centering-home {
-    padding-left: 5vw;
+    padding-left: 4%;
     /* border: solid black; */
 }
 

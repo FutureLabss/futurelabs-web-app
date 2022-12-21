@@ -23,6 +23,7 @@
     "react-router-dom": "^6.0.0",
     "react-scripts": "4.0.3",
     "react-scroll-into-view": "^1.12.0",
+    "react-slideshow-image": "^4.1.1",
     "reactstrap": "^8.10.1",
     "web-vitals": "^1.1.2"
   },

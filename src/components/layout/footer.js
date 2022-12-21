@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./footer.css";
-import { Nav, Carousel} from "react-bootstrap";
+import { Nav, } from "react-bootstrap";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 import axios from "axios";
 import {icons} from "../../assets";
 
@@ -12,21 +14,21 @@ const testimonial = [
   {
     id: 0,
     name: "Ima-obong",
-    career: "Senior Designer at FutureLabs",
+    position: "Senior Designer at FutureLabs",
     testimonial: "Working with Futurelabs has been a wonderful experience. I had been entrusted with opportunities and responsibilities early on, helping me accelerate my growth.The work culture of Futurelabs is nurturing. The communication channels are open and frank. ",
     image: icons.Imaobong,
   },
   {
     id: 1,
     name: "Abasifreke",
-    career: "CTO at FutureLabs",
+    position: "CTO at FutureLabs",
     testimonial: "When I set foot into Futurelabs in 2021 as a Senior Software Engineer since then I’ve had numerous chances to be part of something exciting, to be able to learn new things as well as demonstrate my strong commitment and contributions.",
     image: icons.Abas,
   },
   {
     id: 2,
     name: "Triumph",
-    career: "Senior Model Designer at FutureLabs",
+    position: "Senior Model Designer at FutureLabs",
     testimonial: "Let me start by saying Futurelabs has a talented team of programmers and artists. They are able to produce work that is of a very high standard. They also strive to deliver projects within budget.",
     image: icons.Triumph,
   },
@@ -35,17 +37,26 @@ const testimonial = [
 export default function Footer(props) {
   const [date, setDate] = useState();
   const [data] = useState(testimonial);
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
   const [values, setValues] = useState({});
+  const [mobile, setMobile] = useState(false)
   
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
+  // const handleSelect = (selectedIndex, e) => {
+  //   setIndex(selectedIndex);
+  // };
 
   const handleChange = e => {
     const {name, value} = e.target;
     setValues({...values, [name]:value})
   }
+
+let width = window.screen.width
+useEffect(() => {
+  if(width <= 600){
+    setMobile(true)
+  }
+
+},[width])
 
   const handleReset = () => {
     Array.from(document.querySelectorAll('input')).forEach(
@@ -70,16 +81,30 @@ export default function Footer(props) {
 
   return (
   <section className="footer">
-  {/* <div className="container--carousel"> */}
-  <Carousel className="container--carousel"  activeIndex={index} onSelect={handleSelect}>
+
+  <div className="slide-container">
+    <Slide arrows={false} slidesToShow={mobile ? 1 : 2}>
+      {
+        data.map((item, index) => (
+          <div className="each-slide" key={index}>
+            <div className="slide-sub-container">
+               <div className="slide-box">
+                 <img className="carousel-image-small" src={item.image} alt="client" key={index} />
+                 <p className="testimonial">{item.testimonial}</p>
+                 <p>{item.name}</p>
+                 <p>{item.position}</p>
+               </div>
+            </div>
+          </div>
+        ))
+      }
+
+    </Slide>
+  </div>
+
+  {/* <Carousel className="container--carousel"  activeIndex={index} onSelect={handleSelect}>
         {data.map(item => (
           <Carousel.Item>
-          {/* <Carousel.Item style={{backgroundImage: `url("${item.image}")`}}> */}
-          {/* <img
-            className="d-block w-100 carousel-image-big"
-            src={testimonial[0].image}
-            alt="First slide"
-          />  */}
           <div className="background-effect"></div>
           <Carousel.Caption>
           <img
@@ -92,13 +117,13 @@ export default function Footer(props) {
           <p>{item.testimonial}</p>
           <div>
             <h3>{item.name}</h3>
-            <p>{item.career}</p>
+            <p>{item.position}</p>
           </div>
           </Carousel.Caption>
         </Carousel.Item>
         ))}
         
-      </Carousel>
+      </Carousel> */}
       {/* </div> */}
       <div className="container">
       {/* <div className="container--carousel"> */}

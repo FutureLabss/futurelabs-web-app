@@ -22,36 +22,36 @@
     grid-template-rows: 60vh 35vh 5vh; */
 }
 
-.container--carousel{  
-    height: 100%;
-    display: flex;
+
+.slide-container{
     margin-bottom: 55px;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
 }
 
-.carousel-item{
-    height: 100%;  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.slide-sub-container{
+    display: flex;
+    justify-content: center;
 }
 
-.background-effect{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 144, 0, 0.5);
-}
 
 .carousel-image-small{
     border-radius: 50%;
+    height: 100px;
+    width: 100px;
 }
-.carousel-caption{
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;   
+.slide-box{
+    border-radius: 20px;
+    background: #fafafa;
+    box-shadow:  20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff;
+    text-align: center;
+    width: 400px;
+    height: 300px;
 }
+.testimonial{
+    padding: 20px;
+    text-align: justify;
+    font-size: 12px;
+}
+
 
 .profile{
     height: 40%;
@@ -136,15 +136,21 @@ color: #000000;
 }
 
 @media only screen and (max-width: 600px) {
-    /* .container--carousel{
-        display: none;
-    } */
-    .container--carousel{  
-        height: 100%;
-        display: flex;
-        margin-bottom: 10px;
-        /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    .carousel-image-small{
+        height: 75px;
+        width: 75px;
     }
+
+    .slide-container{
+        margin-bottom: 10px;
+    }
+
+    .slide-box{
+        border-radius: 20px;
+        width: 350px;
+        height: 250px;
+    }
+   
     #futurelabs_logo{
         display: none;
     }

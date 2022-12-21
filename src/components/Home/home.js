@@ -436,15 +436,14 @@ return (
       <div className="overlay-mobile d-flex justify-space-between ontop .bg-warning px-3 mx-sm-7 text-white">
         <div className="text-box-2 .bg-danger">
           <h4 className="heading-2">
-          Securing Payments <br className="mobile-no" /> For Tomorrow on the Web
+          Seamless Cross-border <br className="mobile-no" /> Payments
+            
            
           </h4>
 
 
           <h5 className="paragraph-2">
-            Seamless Cross-border
-            Payments and Currency
-            Conversion
+          Securing Payments For Tomorrow on the Web
           </h5>
         </div>
         <div className="mute-box .bg-info" onClick={() => handleSound(2)}>

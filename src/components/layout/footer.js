@@ -6,7 +6,7 @@ import "react-slideshow-image/dist/styles.css";
 import axios from "axios";
 import {icons} from "../../assets";
 
-const SERVER_URL = 'https://futurelabs-blog.herokuapp.com/contact/send';
+const SERVER_URL = 'https://futurelabs-blog.onrender.com/contact/send';
 // const SERVER_URL = 'http://localhost:5000/contact/send';
 
 
@@ -53,6 +53,7 @@ export default function Footer(props) {
 let width = window.screen.width
 useEffect(() => {
   if(width <= 600){
+    
     setMobile(true)
   }
 

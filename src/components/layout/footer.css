@@ -25,14 +25,19 @@
 
 .slide-container{
     height: 100%;
-    margin-bottom: 55px;
 }
 
-.slide-sub-container{
+/* .slide-sub-container{
     display: flex;
     justify-content: center;
-}
+} */
 
+.each-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
 
 .carousel-image-small{
     border-radius: 50%;
@@ -142,14 +147,18 @@ color: #000000;
         width: 75px;
     }
 
-    .slide-container{
-        margin-bottom: 10px;
+    .each-slide{
+        height: 300px;
     }
+
+    /* .slide-container{
+        margin-bottom: 10px;
+    } */
 
     .slide-box{
         border-radius: 20px;
         width: 350px;
-        height: 250px;
+        height: 300px;
     }
    
     #futurelabs_logo{

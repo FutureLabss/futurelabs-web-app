@@ -83,18 +83,16 @@ useEffect(() => {
   <section className="footer">
 
   <div className="slide-container">
-    <Slide arrows={false} slidesToShow={mobile ? 1 : 2}>
+    <Slide arrows={false} slidesToShow={mobile ? 1 : 3}>
       {
         data.map((item, index) => (
           <div className="each-slide" key={index}>
-            <div className="slide-sub-container">
                <div className="slide-box">
                  <img className="carousel-image-small" src={item.image} alt="client" key={index} />
                  <p className="testimonial">{item.testimonial}</p>
                  <p>{item.name}</p>
                  <p>{item.position}</p>
                </div>
-            </div>
           </div>
         ))
       }

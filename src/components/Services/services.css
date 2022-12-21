@@ -144,7 +144,7 @@ video{
     }
 
     .services-button-text {
-        font-family: Roboto;
+        font-family: 'Inter';
         font-style: Medium;
         font-size: 15px !important;
 
@@ -165,7 +165,7 @@ video{
 
 
 .services-button-text {
-    font-family: Roboto;
+    font-family: 'Inter';
     font-style: Medium;
     font-size: 17px;
 
@@ -196,7 +196,7 @@ video{
 
 
 .line1 {
-    font-family: Raleway;
+    font-family: 'Inter';
     font-style: Bold;
     font-size: 52px;
     line-height: 61px;

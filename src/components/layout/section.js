@@ -21,7 +21,7 @@ function Section(props) {
             <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
               <div className="text-box-section .bg-danger">
                 <h5 className="heading-2">
-                    {item.line1}  {item.break} {item.break1}
+                    {item.line1} <br/> {item.break} {item.break1}
                 </h5>
                 {item.link ? (
                   <Link to={item.link}>

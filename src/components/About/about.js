@@ -442,11 +442,14 @@ return (
 
       <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 mx-sm-5 text-white">
         <div className=".bg-danger">
-        <h5 className="paragraph-2">
+        <h4 className="heading-2">
+           DREAM BIG
+        </h4>
+        <h3 className="paragraph-2">
             The future was created by 
             men who dared to dream <br />
             it better than they met it.<br />
-        </h5>
+        </h3>
 
           {/* <h5 className="line5">
                 THE BEST FUTURE IMAGINABLE.

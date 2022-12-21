@@ -80,7 +80,7 @@ video{
 }
 
 .line3 {
-    font-family: Roboto;
+    font-family: 'Inter';
     font-style: Bold;
     font-size: 24px;
     line-height: 28px;
@@ -107,7 +107,7 @@ video{
     }
 
     .strategy-button-text {
-        font-family: Roboto;
+        font-family: 'Inter';
         font-style: Medium;
         font-size: 11px;
         
@@ -119,7 +119,7 @@ video{
 
 
 .strategy-button-text {
-    font-family: Roboto;
+    font-family: 'Inter';
     font-style: Medium;
     font-size: 1.8rem;
     
@@ -143,7 +143,7 @@ video{
 
 
 .line1 {
-    font-family: Raleway;
+    font-family: 'Inter';
     font-style: Bold;
     font-size: 36px;
     line-height: 42px;

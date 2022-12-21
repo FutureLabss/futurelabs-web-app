@@ -18,7 +18,7 @@ import  Style from "../animations/style.module.css"
 import { useNavigate, Link  } from "react-router-dom";
 
 
-const SERVER_URL = "https://futurelabs-blog.herokuapp.com";
+const SERVER_URL = "https://futurelabs-blog.onrender.com";
 
 export default function Home() {
 

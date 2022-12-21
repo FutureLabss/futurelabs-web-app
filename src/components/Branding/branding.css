@@ -17,14 +17,31 @@
 }
 
 .line3 {
-    font-family: Roboto;
+    font-family: 'Inter';
     font-style: Bold;
     font-size: 24px;
     line-height: 28px;
 }
 
+.text-box-branding {
+    width: 75vw;
+    color: white;
+    padding-left: 2%;
+    filter: brightness(100%);
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .line_branding {
+        font-family: 'Inter';
+        font-style: Bold !important;
+        font-size: 25px !important;
+        line-height: 35px !important;
+    }
+
+    .text-box-branding {
+        width: 100vw;
+    }
 
     .mobile-no {
         display: none;
@@ -42,18 +59,18 @@
     }
 
     .modelling-button-text {
-        font-family: Roboto;
+        font-family: 'Inter';
         font-style: Medium;
         font-size: 9px;
         
     }
-
+    
 
 }
 
 
 .modelling-button-text {
-    font-family: Roboto;
+    font-family: 'Inter';
     font-style: Medium;
     font-size: 1.8rem;
 }
@@ -75,8 +92,8 @@
 }
 
 
-.line1 {
-    font-family: Raleway;
+.line_branding {
+    font-family: 'Inter';
     font-style: Bold;
     font-size: 36px;
     line-height: 42px;
@@ -86,6 +103,7 @@
 .container-box{
     height: 100%;
     padding-top: 16vh;
+    padding-left: 6%;
 }
 
 
@@ -116,7 +134,7 @@
 } */
 
 .visit {
-    font-family: Roboto;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
     /* font-size: 24px; */

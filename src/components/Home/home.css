@@ -91,8 +91,8 @@
 .overlay-mobile{
     width: 100vw;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 2rem;
+    left: 1.5rem;
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -234,6 +234,7 @@ color: #212121;
 .vertical-centering {
   margin: 0;
   position: relative;
+  padding-left: 2%;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -441,7 +442,7 @@ color: #212121;
 }
 
 .horizontal-centering-home {
-    padding-left: 4%;
+    padding-left: 8%;
     /* border: solid black; */
 }
 
@@ -493,7 +494,7 @@ color: #212121;
 
 
 .line4 {
-    font-family: Roboto;
+    font-family: 'Inter';
     font-size: 40px;
     line-height: 47px;
 }
@@ -507,7 +508,7 @@ color: #212121;
 }
 
 .line6 {
-    font-family: Roboto;
+    font-family: 'Inter';
     font-style: Bold;
     font-size: 38px;
     line-height: 44px;

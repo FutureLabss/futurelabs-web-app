@@ -4,7 +4,7 @@
 
 .lastted {
     /* font-size: small; */
-    font-family: Raleway;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -62,7 +62,7 @@
     background-color: #FF9000;
 }
 .fot{
-    font-family: Roboto;
+    font-family: 'Inter';
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -79,7 +79,7 @@ margin-bottom: 5px;
 }
 
 .carl{
-    font-family: Raleway;
+    font-family: 'Inter';
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -88,7 +88,7 @@ line-height: 28px;
 color: #000000;
 }
 .ca{
-    font-family: Roboto;
+    font-family: 'Inter';
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
@@ -114,7 +114,7 @@ color: #000000
     height: 500px;
 }
 .view{
-    font-family: Roboto;
+    font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
 font-size: 24px;
@@ -193,7 +193,7 @@ color: #000000;
     }
     .lastted{
 
-            font-family: Raleway;
+            font-family: 'Inter';
             font-style: normal;
             font-weight: normal;
             font-size: 18px;

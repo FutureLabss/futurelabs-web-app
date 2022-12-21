@@ -46,13 +46,13 @@ return (
         </video> 
 
         <div className="overlay d-flex justify-space-between ontop .bg-warning px-5 text-white">
-            <div className="text-box .bg-danger">
-                  <h5 className="line1">
+            <div className="text-box-branding .bg-danger">
+                  <h5 className="heading-2">
                   Branding & Advertising
                   </h5>
                   {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
 
-                  <h6 className="line3">Brand visibility is one of our core values</h6>
+                  <h6 className="paragraph-2">Brand visibility is one of our core values</h6>
 
             </div>
 
@@ -78,11 +78,11 @@ return (
     {/* Section-One begins here */}
     <section className="section1 branding-image2">
 
-        <div className="container container-box">
+        <div className="container-box">
             <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+                <div className="col-9 .bg-primary px-5 px-sm-1 text-white">
 
-                    <h5 className="line1">
+                    <h5 className="line_branding">
                       Community & Connectivity
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
@@ -110,11 +110,11 @@ return (
     {/* Section-One begins here */}
     <section className="section1 branding-image1">
 
-        <div className="container container-box">
+        <div className="container-box">
             <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+                <div className="col-9 .bg-primary px-5 px-sm-1 text-white">
 
-                    <h5 className="line1">
+                    <h5 className="line_branding">
                       Connect with us on LinkedIn
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
@@ -137,11 +137,11 @@ return (
 
     <section className="section1 branding-image5">
 
-        <div className="container container-box">
+        <div className="container-box">
             <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+                <div className="col-9 .bg-primary px-5 px-sm-1 text-white">
 
-                    <h5 className="line1">
+                    <h5 className="line_branding">
                       Connect with us on Twitter
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
@@ -164,11 +164,11 @@ return (
     
     <section className="section1 branding-image3">
 
-        <div className="container container-box">
+        <div className="container-box">
             <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+                <div className="col-9 .bg-primary px-5 px-sm-1 text-white">
 
-                    <h5 className="line1">
+                    <h5 className="line_branding">
                       Connect with us on Facebook
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}
@@ -195,11 +195,11 @@ return (
     {/* Section-One begins here */}
     <section className="section1 branding-image4">
 
-        <div className="container container-box">
+        <div className="container-box">
             <div className="row .bg-warning d-flex justify-space-between">
-                <div className="col-9 .bg-primary px-3 px-sm-1 text-white">
+                <div className="col-9 .bg-primary px-5 px-sm-1 text-white">
 
-                    <h5 className="line1">
+                    <h5 className="line_branding">
                       We are on Instagram
                     </h5>
                     {/* <button type="button" class="btn btn-outline-warning modelling-button-text mt-4 text-white">LEARN MORE</button> */}

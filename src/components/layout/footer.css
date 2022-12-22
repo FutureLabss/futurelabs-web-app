@@ -162,9 +162,9 @@ color: #000000;
         /* display: flex; */
     }
 
-    /* .copyright{
-        height: 10%;
-    } */
+    .copyright{
+        height: 12%;
+    }
 
     .carousel-image-small{
         height: 55px;

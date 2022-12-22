@@ -154,11 +154,11 @@ color: #000000;
 
 @media only screen and (max-width: 600px) {
     .slide-container{
-        height: 70%;
+        height: 60%;
     }
 
     .footer-container{
-        height: 30%;
+        height: 50%;
         display: flex;
     }
 
@@ -181,8 +181,8 @@ color: #000000;
 
     .slide-box{
         border-radius: 20px;
-        width: 350px;
-        height: 340px;
+        width: 340px;
+        height: 330px;
     }
 
     .socials{

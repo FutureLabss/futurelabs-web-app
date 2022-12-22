@@ -52,7 +52,7 @@ export default function Footer(props) {
 
 let width = window.screen.width
 useEffect(() => {
-  if(width <= 600){
+  if(width <= 824){
     
     setMobile(true)
   }
@@ -139,34 +139,31 @@ useEffect(() => {
             </h6>
 
             <div className="ca show-text">
-              <p>+234 708 034-3781</p>
-              <p>info@futurelabs.com.ng</p>
+              <p><strong>Get directions:</strong> +234 708 034-3781</p>
+              <p><strong>Quick response:</strong> info@futurelabs.com.ng</p>
             </div>
-            <div className="row ph-no">
-              <div className="col-2 mb-2 vid">
+            <div className="socials">
+              <div className="">
                 <a href="https://twitter.com/FutureLabsNG">
                   <img
                     src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718872/Vector_tdilvr.png"
                     alt=""
-                    id="social-media__image"
                   />
                 </a>
               </div>
-              <div className="col-2 mb-2 vid">
+              <div className="">
                 <a href="https://www.instagram.com/futurelabshq/">
                   <img
                     src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718842/Vector_2_mjerqh.png"
                     alt=""
-                    id="social-media__image"
                   />
                 </a>
               </div>
-              <div className="col-2 mb-2 vid">
+              <div className="">
                 <a href="https://www.facebook.com/FutureLabsNews">
                   <img
                     src="https://res.cloudinary.com/dekbvdqnb/image/upload/v1636718859/Vector_1_txd0dt.png"
                     alt=""
-                    id="social-media__image"
                   />
                 </a>
               </div>

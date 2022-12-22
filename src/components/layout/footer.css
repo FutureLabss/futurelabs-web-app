@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .lastted {
-    /* font-size: small; */
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -18,19 +17,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* display: grid;
-    grid-template-rows: 60vh 35vh 5vh; */
 }
 
 
 .slide-container{
     height: 100%;
 }
-
-/* .slide-sub-container{
-    display: flex;
-    justify-content: center;
-} */
 
 .each-slide{
     display: flex;
@@ -88,6 +80,18 @@ margin-bottom: 5px;
     font-weight: 300;
 }
 
+.socials{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.socials img{
+    width: 40px;
+    height: 40px;
+}
+
 .carl{
     font-family: 'Inter';
 font-style: normal;
@@ -104,8 +108,8 @@ font-weight: normal;
 font-size: 14px;
 line-height: 21px;
 
-margin-top: 20px !important;
-margin-bottom: 20px !important;
+/* margin-top: 20px !important; */
+/* margin-bottom: 20px !important; */
 
 color: #000000
 }
@@ -162,14 +166,19 @@ color: #000000;
         margin-bottom: 0rem;
     }
 
-    /* .slide-container{
-        margin-bottom: 10px;
-    } */
-
     .slide-box{
         border-radius: 20px;
         width: 320px;
         height: 250px;
+    }
+
+    .socials{
+        width: 155px;
+    }
+
+    .socials img{
+        width: 30px;
+        height: 30px;
     }
    
     #futurelabs_logo{
@@ -190,10 +199,6 @@ color: #000000;
         color: #000000        
     } 
     
-    #social-media__image{
-        width: 20px;
-        
-    }
 
     .show-text{
         display: block;

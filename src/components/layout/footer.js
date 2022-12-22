@@ -91,7 +91,7 @@ useEffect(() => {
                <div className="slide-box">
                  <img className="carousel-image-small" src={item.image} alt="client" key={index} />
                  <p className="testimonial">{item.testimonial}</p>
-                 <p className="client-name">{item.name}</p>
+                 <p className="client-name"><strong>{item.name}</strong></p>
                  <p className="client-position">{item.position}</p>
                </div>
           </div>

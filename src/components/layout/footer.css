@@ -158,8 +158,12 @@ color: #000000;
     }
 
     .footer-container{
-        height: 40%;
+        height: 30%;
         /* display: flex; */
+    }
+
+    .copyright{
+        height: 10%;
     }
 
     .carousel-image-small{

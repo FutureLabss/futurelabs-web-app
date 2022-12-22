@@ -158,8 +158,8 @@ color: #000000;
     }
 
     .footer-container{
-        height: 50%;
-        display: flex;
+        height: 40%;
+        /* display: flex; */
     }
 
     .carousel-image-small{
@@ -169,8 +169,9 @@ color: #000000;
     }
 
     .each-slide{
-        height: 500px;
+        /* height: 500px; */
         align-items: flex-end;
+        /* border: solid; */
     }
 
 

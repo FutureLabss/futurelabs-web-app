@@ -20,6 +20,7 @@
 }
 
 
+
 .slide-container{
     height: 100%;
 }
@@ -150,26 +151,36 @@ color: #000000;
 }
 
 @media only screen and (max-width: 600px) {
+    .slide-container{
+        height: 70%;
+    }
+
+    .footer-container{
+        height: 30%;
+        display: flex;
+    }
+
     .carousel-image-small{
         height: 55px;
         width: 55px;
+        margin-top: 20px;
     }
 
     .each-slide{
-        height: 315px;
+        height: 500px;
         align-items: flex-end;
     }
 
 
     .testimonial, .client-name, .client-position{
         font-size: 12px;
-        margin-bottom: 0rem;
+        margin-bottom: 1rem;
     }
 
     .slide-box{
         border-radius: 20px;
-        width: 320px;
-        height: 250px;
+        width: 350px;
+        height: 340px;
     }
 
     .socials{

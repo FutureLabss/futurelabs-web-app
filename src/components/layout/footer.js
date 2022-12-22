@@ -124,7 +124,7 @@ useEffect(() => {
         
       </Carousel> */}
       {/* </div> */}
-      <div className="container">
+      <div className="container footer-container">
       {/* <div className="container--carousel"> */}
       
       {/* </div> */}

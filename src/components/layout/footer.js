@@ -15,7 +15,7 @@ const testimonial = [
     id: 0,
     name: "Ima-obong",
     position: "Senior Designer at FutureLabs",
-    testimonial: "Working with Futurelabs has been a wonderful experience. I had been entrusted with opportunities and responsibilities early on, helping me accelerate my growth.The work culture of Futurelabs is nurturing. The communication channels are open and frank. ",
+    testimonial: "Working with Futurelabs has been a wonderful experience. I had been entrusted with opportunities and responsibilities early on, helping me accelerate my growth.The work culture of Futurelabs is nurturing.",
     image: icons.Imaobong,
   },
   {
@@ -91,8 +91,8 @@ useEffect(() => {
                <div className="slide-box">
                  <img className="carousel-image-small" src={item.image} alt="client" key={index} />
                  <p className="testimonial">{item.testimonial}</p>
-                 <p>{item.name}</p>
-                 <p>{item.position}</p>
+                 <p className="client-name">{item.name}</p>
+                 <p className="client-position">{item.position}</p>
                </div>
           </div>
         ))

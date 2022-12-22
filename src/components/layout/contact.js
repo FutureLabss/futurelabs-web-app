@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import axios from "axios";
 import { CircularProgress,  Alert } from "@mui/material";
 
-const SERVER_URL = 'https://futurelabs-blog.herokuapp.com/contact';
+const SERVER_URL = 'https://futurelabs-blog.onrender.com/contact';
 // const SERVER_URL = 'http://localhost:5000/contact';
 
 export default function Contact(props) {

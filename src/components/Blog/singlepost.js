@@ -29,7 +29,7 @@ export default function Singlepost(props) {
   //   console.log(id);
   //   try {
   //     axios
-  //       .delete(`https://futurelabs-blog.herokuapp.com/${id}`)
+  //       .delete(`https://futurelabs-blog.onrender.com/${id}`)
   //       .then(() => console.log("blog deleted"))
   //       .catch((err) => {
   //         console.log(err);

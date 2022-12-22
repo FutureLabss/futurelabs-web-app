@@ -139,8 +139,8 @@ useEffect(() => {
             </h6>
 
             <div className="ca show-text">
-              <p><strong>Get directions:</strong> +234 708 034-3781</p>
-              <p><strong>Quick response:</strong> info@futurelabs.com.ng</p>
+              <p><strong>Get directions:</strong><a href="tel:2347080343781" > +234 708 034-3781</a></p>
+              <p><strong>Quick response:</strong><a href="mailto:info@futurelabs.com.ng"> info@futurelabs.com.ng</a></p>
             </div>
             <div className="socials">
               <div className="">
